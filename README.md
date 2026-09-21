@@ -28,6 +28,7 @@ Sources can include books, scientific papers, public guidance and reputable webs
 - `/knowledge/` and original resource content: CC BY-NC-SA 4.0
 - Third-party source material remains the copyright of its respective owners.
 
+
 ## Offline/local-first behaviour
 
 Aletheia Waste to Garden now:
