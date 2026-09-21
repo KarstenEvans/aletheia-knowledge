@@ -399,4 +399,85 @@ async function loadDefault(){
     const cached=await cacheGet();
     if(cached?.text){
       useMarkdown(cached.text,"local-cache");
-      $("#status").textContent=`${cards.length} cards loaded locally • ${cards.filter(c=>c.section==="COMPOST").length} COMPOST • ${cards.filter(c=>c.section==="GROW").length} GRO
+      $("#status").textContent=`${cards.length} cards loaded locally • ${cards.filter(c=>c.section==="COMPOST").length} COMPOST • ${cards.filter(c=>c.section==="GROW").length} GROW • ${cards.filter(c=>c.section==="REUSE").length} REUSE`;
+      checkOnline(false);
+      return;
+    }
+  }catch(e){}
+
+  const candidates=[LIBRARY,REMOTE_LIBRARY];
+  for(const url of candidates){
+    try{
+      const r=await fetch(url,{cache:"no-store"});
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      const md=await r.text();
+      useMarkdown(md,url===REMOTE_LIBRARY?"online":"repository");
+      $("#status").textContent=`${cards.length} cards loaded online • ${cards.filter(c=>c.section==="COMPOST").length} COMPOST • ${cards.filter(c=>c.section==="GROW").length} GROW • ${cards.filter(c=>c.section==="REUSE").length} REUSE`;
+      return;
+    }catch(e){}
+  }
+  loadError="No saved local library was found and the GitHub copy could not be reached.";
+  render();
+}
+$("#q").addEventListener("input",render);
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+  currentSection=b.dataset.section;
+  $("#q").value="";
+  render();
+  populateCardSelect();
+});
+$("#randomBtn").onclick=()=>{
+  const pool=cards.filter(c=>currentSection==="ALL"||c.section===currentSection);
+  if(!pool.length)return;
+  const c=pool[Math.floor(Math.random()*pool.length)];
+  $("#q").value=c.id; render();
+  setTimeout(()=>document.querySelector(".card")?.classList.add("open"),0);
+};
+$("#fileInput").addEventListener("change",async e=>{
+  const f=e.target.files[0]; if(!f)return;
+  try{
+    const md=await f.text();
+    useMarkdown(md,"local-file");
+    await cachePut(md);
+    $("#status").textContent=`${cards.length} cards loaded from ${f.name} • remembered locally`;
+    clearUpdateMessage();
+    if(navigator.onLine) checkOnline(false);
+  }catch(err){
+    cards=[];
+    loadError="That file did not contain a valid Aletheia Waste to Garden knowledge library.";
+    render();
+  }
+});
+$("#cardSelect").addEventListener("change",e=>jumpToCard(e.target.value));
+
+$("#storeLink").addEventListener("click",async e=>{
+  e.preventDefault();
+  if(!currentMarkdown){
+    setUpdateMessage("Load the knowledge library first, then store it locally.");
+    return;
+  }
+  try{
+    await cachePut(currentMarkdown);
+    $("#status").textContent=`${cards.length} cards stored for offline use in this browser`;
+    try{
+      await saveMarkdownFile(currentMarkdown);
+      setUpdateMessage("✓ Knowledge is stored in the browser for offline use, and a .md copy has been offered for saving. On browsers without a save-location picker, it will normally go to Downloads.");
+    }catch(err){
+      setUpdateMessage("✓ Knowledge is stored in the browser for offline use. The separate .md file save was cancelled.");
+    }
+  }catch(err){
+    setUpdateMessage(`Could not store the browser copy: ${esc(err.message)}`);
+  }
+});
+
+$("#checkLink").addEventListener("click",e=>{
+  e.preventDefault();
+  checkOnline(true);
+});
+
+loadDefault();
+</script>
+</body>
+</html>
