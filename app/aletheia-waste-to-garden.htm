@@ -18,7 +18,7 @@ header{padding:22px 18px 14px;background:linear-gradient(180deg,#eef3df,var(--bg
 h1{margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:-.03em;white-space:nowrap}
 .tagline{margin:0;color:var(--muted);font-size:14px;line-height:1.35;max-width:330px}
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
-.controls{display:grid;grid-template-columns:minmax(260px,680px) auto;gap:10px;margin:12px 0 8px}
+.controls{display:grid;grid-template-columns:minmax(260px,600px) auto;gap:10px;margin:12px 0 8px}
 input[type=search]{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:white;font-size:17px}
 button,.btn{border:0;border-radius:999px;padding:11px 15px;background:var(--accent);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
 button.secondary,.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line)}
@@ -50,6 +50,8 @@ button.secondary,.btn.secondary{background:white;color:var(--ink);border:1px sol
 input[type=file]{max-width:100%}
 .sticky-tools{position:sticky;top:0;z-index:1000;background:rgba(245,243,234,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 4px 14px rgba(20,40,20,.06);padding:7px 18px}
 .sticky-tools .nav-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.compact-offline .notice{margin:7px 0 3px;padding:8px 12px;font-size:13px}
+.compact-offline .btn{padding:7px 10px;font-size:12px}
 .home-float{position:fixed;right:14px;bottom:16px;z-index:1200;width:46px;height:46px;padding:0;border-radius:50%;font-size:22px;line-height:46px;box-shadow:0 5px 20px rgba(20,40,20,.18)}
 footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);font-size:14px}
 @media(max-width:700px){
@@ -77,16 +79,6 @@ footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);f
       <input id="q" type="search" placeholder="Type here to search: carrot tops, coffee grounds, potato, bad smell…">
       <button id="randomBtn">SURPRISE ME</button>
     </div>
-    <span id="status" class="sr-only" aria-live="polite">Loading knowledge library…</span>
-    <div id="updateBox" class="updatebox"></div>
-    <div class="notice">
-      Want to use this app offline?
-      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>.
-      Already saved a copy?
-      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
-      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
-      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>.
-    </div>
   </div>
 </header>
 
@@ -106,7 +98,20 @@ footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);f
       </select>
 </div>
   </div>
+  </div>
 </div>
+
+<div class="wrap compact-offline">
+<span id="status" class="sr-only" aria-live="polite">Loading knowledge library…</span>
+    <div id="updateBox" class="updatebox"></div>
+    <div class="notice">
+      Want to use this app offline?
+      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>.
+      Already saved a copy?
+      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
+      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
+      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>.
+    </div>
 </div>
 
 <main class="wrap">
