@@ -998,6 +998,7 @@ Small capacity and frequent additions can make it hard to run as a true batch sy
 - https://www.gardenorganic.org.uk/expert-advice/garden-management/composting/different-composting-methods
 
 ---
+
 ## WTG-COMP-031 | Bokashi
 SECTION: COMPOST
 KEY: bokashi fermentation
@@ -1996,6 +1997,7 @@ DEEP_QUERY: Cardboard tubes as pots gardening evidence RHS Garden Organic univer
 
 ### Summary
 Plain cardboard tubes can become deep temporary pots for seedlings that appreciate root depth.
+
 ### How
 Stand tubes tightly in a tray, fill with compost and sow. Transplant while the tube is still structurally sound.
 
