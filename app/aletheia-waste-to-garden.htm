@@ -46,6 +46,10 @@ button.secondary,.btn.secondary{background:white;color:var(--ink);border:1px sol
 .updatebox.show{display:block}
 .card.flash{outline:3px solid #9bb56a;outline-offset:3px}
 input[type=file]{max-width:100%}
+.sticky-tools{position:sticky;top:0;z-index:1000;background:rgba(245,243,234,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 4px 14px rgba(20,40,20,.06);padding:8px 18px}
+.sticky-tools .tabs{margin:0 0 7px}
+.sticky-tools .jumpbox{margin:0;max-width:none}
+.home-float{position:fixed;right:14px;bottom:16px;z-index:1200;width:46px;height:46px;padding:0;border-radius:50%;font-size:22px;line-height:46px;box-shadow:0 5px 20px rgba(20,40,20,.18)}
 footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);font-size:14px}
 @media(max-width:600px){.controls{grid-template-columns:1fr}.controls button{width:100%}.jumpbox{grid-template-columns:1fr}.jumpbox label{margin-bottom:-5px}}
 </style>
@@ -59,6 +63,22 @@ footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);f
       <input id="q" type="search" placeholder="Try: carrot tops, coffee grounds, pallet, potato, bad smell…">
       <button id="randomBtn">SURPRISE ME</button>
     </div>
+    <div class="filebox">
+      <span id="status" class="status">Loading knowledge library…</span>
+      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
+      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
+      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>
+      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>
+    </div>
+    <div id="updateBox" class="updatebox"></div>
+    <div class="notice">
+      The app uses a saved browser copy first when one exists, then checks the Aletheia Knowledge library online. For a portable offline copy, use <b>STORE KNOWLEDGE LOCALLY</b> or <b>LOAD .MD LOCALLY</b>.
+    </div>
+  </div>
+</header>
+
+<div class="sticky-tools">
+  <div class="wrap">
     <div class="tabs">
       <button class="tab active" data-section="ALL">ALL</button>
       <button class="tab" data-section="GROW">GROW</button>
@@ -71,20 +91,8 @@ footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);f
         <option value="">Loading card index…</option>
       </select>
     </div>
-    <div class="filebox">
-      <span id="status" class="status">Loading knowledge library…</span>
-      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
-      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
-      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>
-      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>
-    </div>
-    <div id="updateBox" class="updatebox"></div>
-    <div class="notice">
-      The app loads <code>../knowledge/aletheia-waste-to-garden.md</code> from the Aletheia Knowledge repository on GitHub Pages.
-      If you open this file directly on your PC and the browser blocks local fetching, use <b>LOAD .MD LOCALLY</b>.
-    </div>
   </div>
-</header>
+</div>
 
 <main class="wrap">
   <div id="grid" class="grid"></div>
@@ -100,6 +108,8 @@ footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);f
     <a class="btn" href="../resources/aletheia-waste-to-garden-rsc.htm">RESOURCES</a>
   </div>
 </section>
+
+<button id="homeBtn" class="home-float" type="button" aria-label="Back to top" title="Back to top">🏠</button>
 
 <footer>
   <div class="wrap">
@@ -123,6 +133,16 @@ const CACHE_KEY = "waste-to-garden";
 const $ = s => document.querySelector(s);
 
 const esc = s => (s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function openSmallWindow(url){
+  const width=900, height=760;
+  const left=Math.max(0,Math.round((screen.availWidth-width)/2));
+  const top=Math.max(0,Math.round((screen.availHeight-height)/2));
+  const features=`popup=yes,width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`;
+  const win=window.open(url,"aletheiaExternal",features);
+  if(win) win.focus();
+  return win;
+}
 
 function bytesOf(text){ return new Blob([text]).size; }
 function prettyBytes(n){
@@ -351,7 +371,7 @@ function score(c,q){
 }
 function deepSearch(c){
   const q = c.deep || `${c.title} gardening evidence RHS Garden Organic university`;
-  window.open("https://www.google.com/search?q="+encodeURIComponent(q),"_blank","noopener");
+  openSmallWindow("https://www.google.com/search?q="+encodeURIComponent(q));
 }
 function render(){
   if(!cards.length){
@@ -475,6 +495,17 @@ $("#storeLink").addEventListener("click",async e=>{
 $("#checkLink").addEventListener("click",e=>{
   e.preventDefault();
   checkOnline(true);
+});
+
+$("#homeBtn").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+// External links use the Swindon.org.uk GUI popup rule: about 900 × 760,
+// resizable and scrollable, keeping this app underneath.
+document.addEventListener("click",e=>{
+  const a=e.target.closest('a[target="_blank"]');
+  if(!a || !/^https?:/i.test(a.href)) return;
+  e.preventDefault();
+  openSmallWindow(a.href);
 });
 
 loadDefault();
