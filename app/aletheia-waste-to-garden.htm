@@ -14,13 +14,15 @@
 body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
 header{padding:22px 18px 14px;background:linear-gradient(180deg,#eef3df,var(--bg));border-bottom:1px solid var(--line)}
 .wrap{max-width:1050px;margin:auto}
-h1{margin:0;font-size:clamp(28px,5vw,48px);letter-spacing:-.03em}
-.tagline{margin:4px 0 0;color:var(--muted)}
-.controls{display:grid;grid-template-columns:1fr auto;gap:10px;margin:18px 0 10px}
+.brand-row{display:flex;align-items:center;justify-content:space-between;gap:22px}
+h1{margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:-.03em;white-space:nowrap}
+.tagline{margin:0;color:var(--muted);font-size:14px;line-height:1.35;max-width:330px}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.controls{display:grid;grid-template-columns:minmax(260px,680px) auto;gap:10px;margin:12px 0 8px}
 input[type=search]{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:white;font-size:17px}
 button,.btn{border:0;border-radius:999px;padding:11px 15px;background:var(--accent);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
 button.secondary,.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line)}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0}
 .tab.active{background:var(--accent2);color:#10200e}
 .status{font-size:14px;color:var(--muted);margin:8px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;padding:16px 0 40px}
@@ -37,49 +39,61 @@ button.secondary,.btn.secondary{background:white;color:var(--ink);border:1px sol
 .details p{margin:0}
 .source-list{padding-left:18px;word-break:break-all}
 .notice{background:#fff8dc;border:1px solid #e6d797;border-radius:14px;padding:12px 14px;margin:12px 0}
-.filebox{margin:12px 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.jumpbox{display:grid;grid-template-columns:auto minmax(240px,1fr);gap:10px;align-items:center;margin:10px 0 2px;max-width:820px}
-.jumpbox label{font-size:13px;font-weight:800;color:var(--muted)}
-.jumpbox select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);font-size:15px}
+.filebox{margin:8px 0 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.jumpbox{display:flex;gap:8px;align-items:center;margin:0;min-width:300px;flex:1 1 380px}
+.jumpbox label{font-size:12px;font-weight:800;color:var(--muted);white-space:nowrap}
+.jumpbox select{width:100%;min-width:220px;padding:9px 11px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);font-size:14px}
 .textlink{color:var(--accent);font-weight:800;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .updatebox{display:none;background:#eef3df;border:1px solid #b9c99a;border-radius:13px;padding:10px 12px;margin:8px 0;max-width:900px}
 .updatebox.show{display:block}
 .card.flash{outline:3px solid #9bb56a;outline-offset:3px}
 input[type=file]{max-width:100%}
-.sticky-tools{position:sticky;top:0;z-index:1000;background:rgba(245,243,234,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 4px 14px rgba(20,40,20,.06);padding:8px 18px}
-.sticky-tools .tabs{margin:0 0 7px}
-.sticky-tools .jumpbox{margin:0;max-width:none}
+.sticky-tools{position:sticky;top:0;z-index:1000;background:rgba(245,243,234,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 4px 14px rgba(20,40,20,.06);padding:7px 18px}
+.sticky-tools .nav-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .home-float{position:fixed;right:14px;bottom:16px;z-index:1200;width:46px;height:46px;padding:0;border-radius:50%;font-size:22px;line-height:46px;box-shadow:0 5px 20px rgba(20,40,20,.18)}
 footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);font-size:14px}
-@media(max-width:600px){.controls{grid-template-columns:1fr}.controls button{width:100%}.jumpbox{grid-template-columns:1fr}.jumpbox label{margin-bottom:-5px}}
+@media(max-width:700px){
+  .brand-row{align-items:flex-start;flex-direction:column;gap:3px}
+  h1{white-space:normal}
+  .tagline{max-width:none}
+  .controls{grid-template-columns:1fr auto}
+  .jumpbox{min-width:100%;flex-basis:100%}
+}
+@media(max-width:520px){
+  .controls{grid-template-columns:1fr}
+  .controls button{width:100%}
+  .jumpbox{flex-direction:column;align-items:stretch;gap:4px}
+}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <h1>Aletheia Waste to Garden 🌱</h1>
-    <p class="tagline">Grow it. Compost it. Reuse it. Check the gardening folklore before it escapes.</p>
+    <div class="brand-row">
+      <h1>Aletheia Waste to Garden 🌱</h1>
+      <p class="tagline">Grow it. Compost it. Reuse it.<br>Check the gardening folklore before it escapes.</p>
+    </div>
     <div class="controls">
-      <input id="q" type="search" placeholder="Try: carrot tops, coffee grounds, pallet, potato, bad smell…">
+      <input id="q" type="search" placeholder="Type here to search: carrot tops, coffee grounds, potato, bad smell…">
       <button id="randomBtn">SURPRISE ME</button>
     </div>
-    <div class="filebox">
-      <span id="status" class="status">Loading knowledge library…</span>
-      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
-      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
-      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>
-      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>
-    </div>
+    <span id="status" class="sr-only" aria-live="polite">Loading knowledge library…</span>
     <div id="updateBox" class="updatebox"></div>
     <div class="notice">
-      The app uses a saved browser copy first when one exists, then checks the Aletheia Knowledge library online. For a portable offline copy, use <b>STORE KNOWLEDGE LOCALLY</b> or <b>LOAD .MD LOCALLY</b>.
+      Want to use this app offline?
+      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>.
+      Already saved a copy?
+      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
+      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
+      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>.
     </div>
   </div>
 </header>
 
 <div class="sticky-tools">
   <div class="wrap">
-    <div class="tabs">
+    <div class="nav-row">
+<div class="tabs">
       <button class="tab active" data-section="ALL">ALL</button>
       <button class="tab" data-section="GROW">GROW</button>
       <button class="tab" data-section="COMPOST">COMPOST</button>
@@ -90,8 +104,9 @@ footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);f
       <select id="cardSelect" aria-label="Jump to a knowledge card">
         <option value="">Loading card index…</option>
       </select>
-    </div>
+</div>
   </div>
+</div>
 </div>
 
 <main class="wrap">
@@ -358,10 +373,11 @@ function parseMarkdown(md){
 function score(c,q){
   if(!q) return 1;
   q=q.toLowerCase().trim();
-  const hay=(c.title+" "+c.key+" "+c.keywords+" "+c.summary+" "+c.technical).toLowerCase();
+  const hay=(c.id+" "+c.title+" "+c.key+" "+c.keywords+" "+c.summary+" "+c.technical).toLowerCase();
   const words=q.split(/\s+/).filter(Boolean);
   let s=0;
   for(const w of words){
+    if(c.id.toLowerCase().includes(w)) s+=10;
     if(c.title.toLowerCase().includes(w)) s+=8;
     if(c.key.toLowerCase().includes(w)) s+=6;
     if(c.keywords.toLowerCase().includes(w)) s+=4;
@@ -452,8 +468,18 @@ $("#randomBtn").onclick=()=>{
   const pool=cards.filter(c=>currentSection==="ALL"||c.section===currentSection);
   if(!pool.length)return;
   const c=pool[Math.floor(Math.random()*pool.length)];
-  $("#q").value=c.id; render();
-  setTimeout(()=>document.querySelector(".card")?.classList.add("open"),0);
+  $("#q").value=c.title;
+  render();
+  $("#cardSelect").value=c.id;
+  requestAnimationFrame(()=>{
+    const el=document.querySelector(`.card[data-id="${CSS.escape(c.id)}"]`);
+    if(!el)return;
+    el.classList.add("open","flash");
+    const more=el.querySelector(".more");
+    if(more) more.textContent="LESS";
+    el.scrollIntoView({behavior:"smooth",block:"center"});
+    setTimeout(()=>el.classList.remove("flash"),1800);
+  });
 };
 $("#fileInput").addEventListener("change",async e=>{
   const f=e.target.files[0]; if(!f)return;
