@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aletheia Waste to Garden</title>
+<meta name="description" content="Grow, compost and reuse household and garden waste with checked gardening guidance.">
+<style>
+:root{
+  --bg:#f5f3ea;--panel:#fffdf6;--ink:#1d2a20;--muted:#667267;--line:#d8dccf;
+  --accent:#315c3b;--accent2:#7c9a55;--chip:#e8efdd;--warn:#fff2c8;
+}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:22px 18px 14px;background:linear-gradient(180deg,#eef3df,var(--bg));border-bottom:1px solid var(--line)}
+.wrap{max-width:1050px;margin:auto}
+h1{margin:0;font-size:clamp(28px,5vw,48px);letter-spacing:-.03em}
+.tagline{margin:4px 0 0;color:var(--muted)}
+.controls{display:grid;grid-template-columns:1fr auto;gap:10px;margin:18px 0 10px}
+input[type=search]{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:white;font-size:17px}
+button,.btn{border:0;border-radius:999px;padding:11px 15px;background:var(--accent);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+button.secondary,.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tab.active{background:var(--accent2);color:#10200e}
+.status{font-size:14px;color:var(--muted);margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;padding:16px 0 40px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 4px 18px rgba(20,40,20,.04)}
+.card h2{font-size:20px;line-height:1.2;margin:8px 0}
+.meta{display:flex;gap:7px;flex-wrap:wrap}
+.chip{display:inline-block;padding:4px 8px;border-radius:999px;background:var(--chip);font-size:12px;font-weight:700}
+.chip.evidence{background:var(--warn)}
+.summary{color:#354137}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.details{display:none;margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+.card.open .details{display:block}
+.details h3{font-size:14px;text-transform:uppercase;letter-spacing:.08em;margin:16px 0 3px;color:var(--muted)}
+.details p{margin:0}
+.source-list{padding-left:18px;word-break:break-all}
+.notice{background:#fff8dc;border:1px solid #e6d797;border-radius:14px;padding:12px 14px;margin:12px 0}
+.filebox{margin:12px 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.jumpbox{display:grid;grid-template-columns:auto minmax(240px,1fr);gap:10px;align-items:center;margin:10px 0 2px;max-width:820px}
+.jumpbox label{font-size:13px;font-weight:800;color:var(--muted)}
+.jumpbox select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);font-size:15px}
+.textlink{color:var(--accent);font-weight:800;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.updatebox{display:none;background:#eef3df;border:1px solid #b9c99a;border-radius:13px;padding:10px 12px;margin:8px 0;max-width:900px}
+.updatebox.show{display:block}
+.card.flash{outline:3px solid #9bb56a;outline-offset:3px}
+input[type=file]{max-width:100%}
+footer{border-top:1px solid var(--line);padding:20px 0 50px;color:var(--muted);font-size:14px}
+@media(max-width:600px){.controls{grid-template-columns:1fr}.controls button{width:100%}.jumpbox{grid-template-columns:1fr}.jumpbox label{margin-bottom:-5px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Aletheia Waste to Garden 🌱</h1>
+    <p class="tagline">Grow it. Compost it. Reuse it. Check the gardening folklore before it escapes.</p>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Try: carrot tops, coffee grounds, pallet, potato, bad smell…">
+      <button id="randomBtn">SURPRISE ME</button>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-section="ALL">ALL</button>
+      <button class="tab" data-section="GROW">GROW</button>
+      <button class="tab" data-section="COMPOST">COMPOST</button>
+      <button class="tab" data-section="REUSE">REUSE</button>
+    </div>
+    <div class="jumpbox">
+      <label for="cardSelect">JUMP TO CARD</label>
+      <select id="cardSelect" aria-label="Jump to a knowledge card">
+        <option value="">Loading card index…</option>
+      </select>
+    </div>
+    <div class="filebox">
+      <span id="status" class="status">Loading knowledge library…</span>
+      <label class="btn secondary" for="fileInput">LOAD .MD LOCALLY</label>
+      <input id="fileInput" type="file" accept=".md,text/markdown,text/plain" hidden>
+      <a href="#" id="storeLink" class="textlink">STORE KNOWLEDGE LOCALLY</a>
+      <a href="#" id="checkLink" class="textlink">CHECK ONLINE</a>
+    </div>
+    <div id="updateBox" class="updatebox"></div>
+    <div class="notice">
+      The app loads <code>../knowledge/aletheia-waste-to-garden.md</code> from the Aletheia Knowledge repository on GitHub Pages.
+      If you open this file directly on your PC and the browser blocks local fetching, use <b>LOAD .MD LOCALLY</b>.
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="grid" class="grid"></div>
+</main>
+
+
+<section class="wrap" style="padding:0 0 26px">
+  <div class="notice" style="display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+    <div>
+      <b>🎁💡 Gardening resources & gift ideas</b><br>
+      <span style="color:var(--muted)">Books, composting gear, propagation gifts and useful garden ideas.</span>
+    </div>
+    <a class="btn" href="../resources/aletheia-waste-to-garden-rsc.htm">RESOURCES</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>Evidence first.</b> This is an original Aletheia knowledge base inspired by gardening books and checked against current horticultural sources. It is not a reproduction of those books.
+  </div>
+</footer>
+
+<script>
+const LIBRARY = "../knowledge/aletheia-waste-to-garden.md";
+const REMOTE_LIBRARY = "https://raw.githubusercontent.com/KarstenEvans/aletheia-knowledge/main/knowledge/aletheia-waste-to-garden.md";
+let cards = [];
+let currentSection = "ALL";
+let currentMarkdown = "";
+let currentSource = "";
+let currentMeta = {};
+let loadError = "";
+const CACHE_DB = "aletheia-knowledge";
+const CACHE_STORE = "libraries";
+const CACHE_KEY = "waste-to-garden";
+
+const $ = s => document.querySelector(s);
+
+const esc = s => (s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function bytesOf(text){ return new Blob([text]).size; }
+function prettyBytes(n){
+  if(n < 1024) return `${n} B`;
+  if(n < 1024*1024) return `${(n/1024).toFixed(1)} KB`;
+  return `${(n/1024/1024).toFixed(1)} MB`;
+}
+function parseLibraryMeta(md){
+  const version = (md.match(/^Version:\s*(.+)$/mi)||[])[1]?.trim() || "";
+  const date = (md.match(/^Date:\s*(.+)$/mi)||[])[1]?.trim() || "";
+  return {version,date,bytes:bytesOf(md)};
+}
+function useMarkdown(md,source){
+  const parsed = parseMarkdown(md);
+  if(!parsed.length) throw new Error("No Aletheia knowledge cards found");
+  cards = parsed;
+  currentMarkdown = md;
+  currentSource = source;
+  currentMeta = parseLibraryMeta(md);
+  loadError = "";
+  render();
+  populateCardSelect();
+}
+function openDb(){
+  return new Promise((resolve,reject)=>{
+    if(!("indexedDB" in window)) return reject(new Error("IndexedDB unavailable"));
+    const req=indexedDB.open(CACHE_DB,1);
+    req.onupgradeneeded=()=>{ const db=req.result; if(!db.objectStoreNames.contains(CACHE_STORE)) db.createObjectStore(CACHE_STORE,{keyPath:"key"}); };
+    req.onsuccess=()=>resolve(req.result);
+    req.onerror=()=>reject(req.error);
+  });
+}
+async function cacheGet(){
+  try{
+    const db=await openDb();
+    return await new Promise((resolve,reject)=>{
+      const tx=db.transaction(CACHE_STORE,"readonly");
+      const req=tx.objectStore(CACHE_STORE).get(CACHE_KEY);
+      req.onsuccess=()=>resolve(req.result||null);
+      req.onerror=()=>reject(req.error);
+    });
+  }catch(e){
+    try{
+      const raw=localStorage.getItem("aletheia-cache-"+CACHE_KEY);
+      return raw?JSON.parse(raw):null;
+    }catch(_){ return null; }
+  }
+}
+async function cachePut(md){
+  const rec={key:CACHE_KEY,text:md,meta:parseLibraryMeta(md),savedAt:new Date().toISOString()};
+  try{
+    const db=await openDb();
+    await new Promise((resolve,reject)=>{
+      const tx=db.transaction(CACHE_STORE,"readwrite");
+      tx.objectStore(CACHE_STORE).put(rec);
+      tx.oncomplete=()=>resolve();
+      tx.onerror=()=>reject(tx.error);
+    });
+  }catch(e){
+    localStorage.setItem("aletheia-cache-"+CACHE_KEY,JSON.stringify(rec));
+  }
+  return rec;
+}
+function setUpdateMessage(htmlText){
+  const box=$("#updateBox");
+  box.innerHTML=htmlText;
+  box.classList.add("show");
+}
+function clearUpdateMessage(){
+  const box=$("#updateBox");
+  box.innerHTML="";
+  box.classList.remove("show");
+}
+asy
