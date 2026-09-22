@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.1
+version: 0.2
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://swindon.org.uk/resources/aletheia-secret-windows-rsc.htm
@@ -196,6 +196,21 @@ SW-WEB-002     | WEB ADMIN     | submit sitemap.xml and expose it in robots.txt
 SW-WEB-003     | WEB ADMIN     | URL Inspection is the correct single-page diagnostic
 SW-WEB-004     | WEB ADMIN     | canonical signals should agree on one HTTPS URL
 SW-WEB-005     | WEB ADMIN     | Cloudflare must not accidentally obstruct legitimate crawlers
+SW-LIFE-007    | SERVER        | Server 2012/R2 ESU ends in October 2026
+SW-LIFE-008    | SERVER        | Server 2016 extended support ends in January 2027
+SW-LIFE-009    | SERVER        | Server 2019 extended support ends in January 2029
+SW-CMD-010     | INVENTORY     | systeminfo captures OS and hardware configuration
+SW-CMD-011     | IDENTITY      | whoami shows the current security token
+SW-CMD-012     | DRIVERS       | driverquery inventories installed drivers
+SW-CMD-013     | CLIPBOARD     | clip sends command output to the clipboard
+SW-CMD-014     | CREDENTIALS   | cmdkey inventories and manages stored credentials
+SW-FS-001      | PERMISSIONS   | icacls reads and changes NTFS permissions
+SW-FS-002      | PERMISSIONS   | takeown recovers ownership but changes security state
+SW-SVC-001     | SERVICES      | sc query inspects service and driver state
+SW-EVT-001     | EVENTS        | wevtutil queries and exports event logs
+SW-CFG-001     | REGISTRY      | reg query reads registry state without changing it
+SW-SYS-001     | POWER         | shutdown schedules restart/shutdown and /a can abort
+SW-ID-001      | ACCOUNTS      | net user lists or administers user accounts
 
 ---
 
@@ -2180,6 +2195,401 @@ This is the practical end section requested alongside the Windows knowledge work
    - Keep Aletheia Knowledge Markdown evidence-first and free of affiliate tracking parameters.
    - Knowledge cards may carry a plain resource backlink once the corresponding resource page is live.
    - Affiliate systems must never affect evidence ranking or card content.
+
+
+# V0.2 COMMAND-ATLAS ADDITIONS
+
+These cards were promoted after a second pass over the supplied A-to-Z command material. They concentrate on commands that remain explicitly documented for current Windows 10/11 and supported Windows Server releases.
+
+## SW-LIFE-007 | Server 2012/R2 ESU ends in October 2026
+
+STATUS: VERIFIED
+APPLIES_TO: Windows Server 2012 and Windows Server 2012 R2 enrolled in Extended Security Updates
+LIFECYCLE: ESU ENDING
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Normal extended support for Windows Server 2012 and 2012 R2 ended in 2023. Microsoft's third and final Extended Security Update year ends in October 2026. Microsoft's current release-health notice gives 13 October 2026 as the end of ESU protection.
+
+### Practical consequence
+A remaining 2012/R2 server should be treated as an urgent migration item rather than a stable long-term platform. Record application dependencies before changing it, but do not mistake ESU for a new normal support lifecycle.
+
+### Sources
+- https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2012-r2
+- https://learn.microsoft.com/en-us/windows/release-health/status-windows-8.1-and-windows-server-2012-r2
+
+---
+
+## SW-LIFE-008 | Server 2016 extended support ends in January 2027
+
+STATUS: VERIFIED
+APPLIES_TO: Windows Server 2016
+LIFECYCLE: SUPPORTED-LEGACY
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Windows Server 2016 is in extended support. Microsoft's English lifecycle page lists 13 January 2027 as its extended-support end date.
+
+### Practical consequence
+Machines still on Server 2016 are close enough to end of support that application compatibility, replacement hardware, backup/restore testing and upgrade paths should already be known.
+
+### Source
+- https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016
+
+---
+
+## SW-LIFE-009 | Server 2019 extended support ends in January 2029
+
+STATUS: VERIFIED
+APPLIES_TO: Windows Server 2019
+LIFECYCLE: SUPPORTED-LEGACY
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Windows Server 2019 left mainstream support in January 2024 and remains in extended support through 10 January 2029.
+
+### Why useful
+"Server 2019" still sounds fairly modern in mixed estates. Lifecycle data gives a better planning signal than the product name.
+
+### Source
+- https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2019
+
+---
+
+## SW-CMD-010 | systeminfo captures OS and hardware configuration
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+SYSTEMINFO displays detailed information about Windows and the computer, including OS configuration, hardware properties, memory and network information.
+
+Examples:
+
+    systeminfo
+    systeminfo /fo list
+    systeminfo /fo csv
+
+### Useful pattern
+Capture a baseline before troubleshooting or changing a machine:
+
+    systeminfo > "%USERPROFILE%\Desktop\systeminfo.txt"
+
+### Privacy note
+Inventory output can include computer names, network information and other environment details. Remove sensitive fields before posting it publicly.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/systeminfo
+
+---
+
+## SW-CMD-011 | whoami shows the current security token
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+WHOAMI can show the current user, groups, security identifiers, claims and privileges. It is one of the quickest ways to answer "who am I actually running as?"
+
+Examples:
+
+    whoami
+    whoami /groups
+    whoami /priv
+    whoami /all
+
+### Why useful
+Many "access denied" problems are really context problems: wrong user, missing group membership, unelevated token or a privilege that is present but disabled.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/whoami
+
+---
+
+## SW-CMD-012 | driverquery inventories installed drivers
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+DRIVERQUERY lists installed device drivers and their properties. It can produce table, list or CSV output and can show verbose or signed-driver information.
+
+Examples:
+
+    driverquery
+    driverquery /v
+    driverquery /si
+    driverquery /fo csv
+
+### Why useful
+It creates a quick before/after record when a driver update is suspected of causing a problem, without changing any driver.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/driverquery
+
+---
+
+## SW-CMD-013 | clip sends command output to the clipboard
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+CLIP sends text or another command's output to the Windows clipboard.
+
+Examples:
+
+    whoami /all | clip
+    ipconfig /all | clip
+    dir | clip
+
+### Privacy note
+The clipboard is convenient, not private storage. Before piping diagnostics to CLIP, consider whether the output contains usernames, machine names, IP addresses, paths or other information you do not intend to paste elsewhere.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/clip
+
+---
+
+## SW-CMD-014 | cmdkey inventories and manages stored credentials
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+CMDKEY can create, list and delete stored credentials.
+
+Safe inventory:
+
+    cmdkey /list
+
+### Security rule
+Avoid putting a plaintext password directly in a command line or script. If a command can prompt for a password, prefer the prompt. Process history, scripts, terminal transcripts and screenshots are bad places to store secrets.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey
+
+---
+
+## SW-FS-001 | icacls reads and changes NTFS permissions
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR INSPECTION; HIGH FOR RECURSIVE CHANGES
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ICACLS displays or modifies discretionary access-control lists on files and folders. Microsoft identifies it as the replacement for deprecated CACLS.
+
+Safe inspection:
+
+    icacls "C:\Path"
+
+### Before changing
+ICACLS can save ACLs to a file and restore them later. For important trees, preserve the current permissions before attempting grants, resets or ownership changes.
+
+### Danger
+Recursive /T operations can spread a mistaken ACL through a large tree. Never test a permissions recipe against Windows, Program Files or an unfamiliar shared-data root.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls
+
+---
+
+## SW-FS-002 | takeown recovers ownership but changes security state
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: HIGH
+ADMIN_REQUIRED: YES
+LAST_CHECKED: 2026-09-23
+
+### Summary
+TAKEOWN lets an administrator recover access to a file by making the administrator or Administrators group the owner.
+
+### Aletheia rule
+"Access denied" does not automatically mean "take ownership." First identify the intended owner and ACL. Ownership changes can defeat carefully designed application, service or operating-system permissions.
+
+### Recursion warning
+The /R option operates recursively. Do not aim it casually at Windows system folders, application trees or enterprise shares.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/takeown
+
+---
+
+## SW-SVC-001 | sc query inspects service and driver state
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR QUERY
+LAST_CHECKED: 2026-09-23
+
+### Summary
+SC.EXE QUERY displays information about services and drivers, including state and status fields.
+
+Examples:
+
+    sc.exe query
+    sc.exe query wuauserv
+    sc.exe query state= all
+
+### Syntax trap
+SC parameters such as state= require a space between the equals sign and the value.
+
+### Safety distinction
+SC QUERY is observation. Other SC operations can reconfigure or delete services. Microsoft explicitly warns against using SC DELETE to remove built-in operating-system services.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-query
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/sc-delete
+
+---
+
+## SW-EVT-001 | wevtutil queries and exports event logs
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR QUERY/EXPORT; HIGH FOR CLEAR/CONFIGURE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+WEVTUTIL can enumerate logs and publishers, query events, inspect log configuration, and export or archive event logs.
+
+Examples:
+
+    wevtutil el
+    wevtutil qe System /c:20 /rd:true /f:text
+    wevtutil epl System "%USERPROFILE%\Desktop\System.evtx"
+
+### Evidence rule
+Export before clearing. Clearing an event log can destroy precisely the diagnostic or audit evidence needed to explain a failure.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil
+
+---
+
+## SW-CFG-001 | reg query reads registry state without changing it
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+REG QUERY reads registry keys and values without modifying them. It can search recursively, filter by value/type and explicitly choose the 32-bit or 64-bit registry view.
+
+Examples:
+
+    reg query HKCU\Software
+    reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName
+
+### Why useful
+When investigating a suggested registry tweak, query the existing value first. Record what is actually present before applying someone else's expected value.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-query
+
+---
+
+## SW-SYS-001 | shutdown schedules restart/shutdown and /a can abort
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM; HIGH WITH /F
+LAST_CHECKED: 2026-09-23
+
+### Summary
+SHUTDOWN can shut down, restart, hibernate or schedule power actions locally or remotely. A pending timed shutdown can be aborted with:
+
+    shutdown /a
+
+### Safety note
+The /F switch forces applications to close and can lose unsaved work. A timed restart without /F is generally preferable when people may have open work.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown
+
+---
+
+## SW-ID-001 | net user lists or administers user accounts
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11, Server 2016/2019/2022/2025
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR LISTING; HIGH FOR ACCOUNT CHANGES
+LAST_CHECKED: 2026-09-23
+
+### Summary
+NET USER can list local user accounts, show account details, and with appropriate permissions add, modify or delete local or domain user accounts.
+
+Safe inspection:
+
+    net user
+    net user username
+
+### Security rule
+Do not put passwords directly into reusable command text. For account administration, prefer password prompts or managed identity tools rather than storing credentials in scripts.
+
+### Source
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/net-user
+
+---
 
 # RESEARCH BACKLOG
 
