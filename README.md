@@ -34,7 +34,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 - Knowledge: knowledge/aletheia-secret-windows.md
 - Scope: Windows 7 legacy context, Windows 10/11, supported Windows Server, CMD, PowerShell, repair/recovery, networking, safe debloat, administration, Chrome and a small web-admin crossover.
 - Discovery sources: supplied Windows command, Server, PowerShell and beginner guides are used as topic maps only.
-- Status: curated v0.1 knowledge-only library; resource page is planned, not yet live.
+- Status: curated v0.2 knowledge-only library; resource page is planned, not yet live.
 - Method: every time-sensitive or version-sensitive claim is independently checked against current primary documentation and tagged for lifecycle/risk.
 - Safety design: read/observe first, reversible changes before destructive ones, no blind service/AppX/registry debloat scripts.
 
