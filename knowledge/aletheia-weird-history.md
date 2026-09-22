@@ -5,29 +5,39 @@ domain: history
 collection: weird-history
 status: curated
 language: en-GB
-version: 0.2
+version: 0.3
 created: 2026-09-22
 last_reviewed: 2026-09-22
+resource_url: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm
 ---
 
 # Aletheia Weird History Knowledge Library
 
 Purpose: a searchable, source-traced collection of strange, memorable and revealing historical knowledge. It uses popular-history books as **discovery maps**, then independently verifies claims before they become reusable Aletheia knowledge.
 
-## Retrieval design
+## Portable knowledge design
 
-This file is written for both humans and retrieval systems.
+Aletheia Knowledge is **vendor-neutral Markdown first**. The file must remain useful if GitHub, Cloudflare, a browser app or any particular AI service disappears.
 
-Each knowledge card is deliberately self-contained and begins with a stable ID and compact metadata. Headings and short sections create natural chunk boundaries for semantic and keyword search.
+Core rules:
+- Markdown is the canonical knowledge format.
+- Cards are readable by people and simple software without a database or API.
+- Stable IDs and plain-text metadata help search but are not tied to one vendor.
+- Verify-source URLs are ordinary web links.
+- Each card carries a plain `RESOURCE_URL` back to the matching Aletheia resource page.
+- No affiliate tracking code is stored in the knowledge cards.
 
-Recommended document-level AI Search metadata if this file is indexed through Cloudflare AI Search:
-- `domain=history`
-- `collection=weird-history`
-- `status=curated`
-- `language=en-GB`
-- `version=0.2`
+### Resource backlink rule
 
-Cloudflare AI Search currently supports a maximum of five custom metadata fields per instance, so these five should remain broad. Card-level fields below are primarily retrieval text unless the collection is later split into one document per card.
+When an app, AI or export presents an individual card, it should preserve or append:
+
+`More / resources: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm`
+
+That page can contain books, related resources and clearly disclosed affiliate links. Commercial arrangements must never change a card's evidence status, confidence or wording.
+
+### Optional integrations
+
+Cloudflare AI Search, local browser search, another RAG system, or a future Aletheia search service may index this same Markdown. Those services are **additional abilities, not foundation bricks**. The knowledge library must continue to work without them.
 
 ## Knowledge rule
 
@@ -180,6 +190,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The Norman victory at Hastings was not merely a change of monarch. It was followed by a large transfer of land and political power, new fortress building and major changes in governance, elite culture and architecture.
@@ -211,6 +222,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Domesday Book recorded landholding, value and resources across much of England after the Norman Conquest. It helped William I understand who controlled land, what it was worth and what revenue or obligations could be extracted from it.
@@ -241,6 +253,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Magna Carta emerged from a political crisis between King John and rebel barons in 1215. It contained practical feudal and administrative provisions as well as principles that later generations associated with lawful government and limits on arbitrary power.
@@ -271,6 +284,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Simon de Montfort's 1265 parliament brought together nobles and clergy with knights from the counties and representatives from towns to discuss national matters. It became an important stage in the development of the later House of Commons.
@@ -301,6 +315,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The Black Death killed a very large share of England's population. The resulting labour shortage changed the balance between workers and landowners: survivors could demand higher wages or resist older labour obligations.
@@ -330,6 +345,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The 1381 rising grew from overlapping grievances including repeated poll taxes, labour controls and local abuses of authority. Participants were not all agricultural serfs; townspeople, artisans and other groups also took part.
@@ -357,6 +373,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Henry Tudor defeated Richard III at Bosworth in 1485 and became Henry VII. His victory established the Tudor dynasty and helped end the long sequence of dynastic conflicts conventionally grouped as the Wars of the Roses.
@@ -384,6 +401,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The Act of Supremacy of 1534 declared Henry VIII supreme head of the Church of England and formally severed ecclesiastical authority from Rome.
@@ -411,6 +429,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Between 1536 and 1540 the Crown suppressed monasteries and other religious houses, taking their income and assets. This redistributed land and wealth on a large scale and changed landscapes, communities and patterns of patronage.
@@ -438,6 +457,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Francis Drake's famous voyages combined navigation, commerce, privateering and conflict with Spain. His 1577–1580 voyage made him the first Englishman to circumnavigate the globe.
@@ -467,6 +487,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The mid-seventeenth-century crisis was not simply a two-team English contest between Cavaliers and Roundheads. England, Scotland and Ireland were tied together by dynastic rule, religion, rebellion and military intervention.
@@ -494,6 +515,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 After the second civil war, a specially created High Court tried Charles I for treason. He disputed the court's authority, was condemned and was executed outside the Banqueting House in Whitehall on 30 January 1649.
@@ -524,6 +546,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 After James II's departure and the accession of William and Mary, the Bill of Rights of 1689 set out important parliamentary liberties and limits on royal government, including principles concerning taxation, elections and parliamentary speech.
@@ -551,6 +574,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The Bank of England was founded in 1694 in a period when the state needed new ways to finance government and war. Its creation helped bind private capital, public borrowing and the machinery of the state together.
@@ -578,6 +602,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The South Sea Company became deeply involved in schemes to restructure government debt. In 1720 its share price rose dramatically amid speculative enthusiasm and then collapsed, ruining many investors.
@@ -604,6 +629,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The East India Company began as a commercial corporation, but in the eighteenth century it increasingly acquired military and political power. Victory at Plassey in 1757 and the right to collect Bengal's revenues in 1765 were pivotal in turning a trading company into a territorial ruler.
@@ -635,6 +661,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Mechanised textile production helped make Manchester and the surrounding region a centre of industrialisation. Mills used increasingly powerful machinery and steam, while raw cotton arrived through global trading networks.
@@ -665,6 +692,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The Liverpool and Manchester Railway opened in 1830 and dramatically reduced journey time between two major industrial cities. It demonstrated the practical power of scheduled steam railway transport for both people and goods.
@@ -695,6 +723,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Before national standard time, towns could keep local solar time. Fast railway timetables made those differences operationally awkward. The Great Western Railway adopted London time across its stations in 1840, and other railways followed.
@@ -725,6 +754,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 The Great Exhibition of 1851 placed manufactured goods, machinery, raw materials and art from Britain, its empire and many other countries inside Joseph Paxton's enormous prefabricated Crystal Palace.
@@ -754,6 +784,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Britain's 1868 expedition to Abyssinia, now Ethiopia, was launched after Emperor Tewodros II held British and European hostages. The expedition moved a large Anglo-Indian force hundreds of miles through difficult terrain.
@@ -783,6 +814,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 After the capture of Maqdala, British forces destroyed the fortress and removed large quantities of manuscripts, religious objects and other material. Loot was auctioned and objects entered British collections.
@@ -813,6 +845,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Ernest Shackleton's Imperial Trans-Antarctic Expedition failed in its planned crossing after *Endurance* became trapped and was crushed by sea ice. The expedition then became a prolonged survival and rescue operation.
@@ -842,6 +875,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 Popular history often makes a story memorable by calling something the first, biggest, greatest, oldest or most important. These claims are unusually fragile because the answer depends on definitions and comparison sets.
@@ -878,6 +912,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
 DISCOVERY_ROLE: topic seed / provenance only  
 LAST_CHECKED: 2026-09-22
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 
 ### Summary
 *Stick a Flag in It* is deliberately comic popular history, not a neutral reference work. Its authorial voice openly celebrates Britain's eccentricity and historical influence.
@@ -908,6 +943,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *The Rotten Romans* / Horrible Histories source family  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Roman Britain curse tablets theft Bath Sulis Minerva
 
 ### Claim
@@ -944,6 +980,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *The Rotten Romans* / Horrible Histories source family  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Vindolanda Claudia Severa birthday invitation tablet
 
 ### Claim
@@ -978,6 +1015,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Horrible Histories: Terrifying Tudors*  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Henry VIII foot combat armour codpiece Royal Armouries
 
 ### Claim
@@ -1012,6 +1050,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Horrible Histories: Wales*  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Rebecca Riots Daughters of Rebecca tollgates Wales
 
 ### Claim
@@ -1047,6 +1086,7 @@ CONFIDENCE: HIGH_FOR_DOCUMENTED_CASES
 DISCOVERY_SOURCE: *Horrible Histories: Wales*  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Welsh Not schools evidence punishment Welsh language
 
 ### Claim
@@ -1082,6 +1122,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Horrible Histories: Revolting France*  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: French Republican calendar 1793 months decades Fabre d'Eglantine
 
 ### Claim
@@ -1117,6 +1158,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Horrible Histories: Revolting France* / weird-history source family  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: French Revolution decimal time ten hour day 1793
 
 ### Claim
@@ -1152,6 +1194,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *Horrible Histories: England* / weird-history source family  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Cromwell Ireton Bradshaw exhumed hanged Tyburn 1661
 
 ### Claim
@@ -1187,6 +1230,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *All About History: Book of Weird History* source family  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: Great Stink Thames Parliament 1858 sewage Hansard
 
 ### Claim
@@ -1223,6 +1267,7 @@ CONFIDENCE: HIGH
 DISCOVERY_SOURCE: *All About History: Book of Weird History* source family  
 DISCOVERY_ROLE: topic seed only  
 LAST_CHECKED: 2026-09-22  
+RESOURCE_URL: https://swindon.org.uk/resources/aletheia-weird-history-rsc.htm  
 DEEP_QUERY: resurrectionists body snatching Anatomy Act 1832 medical schools
 
 ### Claim
