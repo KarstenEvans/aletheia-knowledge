@@ -20,12 +20,13 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ## Knowledge libraries
 
-### Aletheia British History Curiosities
+### Aletheia Weird History
 
-- Knowledge: `knowledge/aletheia-british-history-curiosities.md`
-- Source inspiration: Arran Lomas, *Stick a Flag in It*
-- Status: knowledge-only library; no dedicated app or resource page yet.
-- Method: memorable topics are independently checked and rewritten as source-traced Aletheia cards rather than copied from the book.
+- Knowledge: `knowledge/aletheia-weird-history.md`
+- Discovery sources: *Stick a Flag in It*, selected *Horrible Histories* books, and *All About History: Book of Weird History*.
+- Status: curated knowledge-only library; no dedicated app or resource page yet.
+- Method: books provide topic discovery only. Claims are independently checked, source-traced, context-qualified and stored as self-contained retrieval cards.
+- Retrieval design: stable IDs, card metadata, natural Markdown chunk boundaries, evidence/confidence fields and review dates; structured for later Cloudflare AI Search indexing.
 
 ## Knowledge approach
 
