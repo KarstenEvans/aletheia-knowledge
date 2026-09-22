@@ -8,3 +8,4 @@ Naming convention:
 
 Current:
 - `aletheia-waste-to-garden-rsc.htm`
+- `aletheia-weird-history-rsc.htm`
