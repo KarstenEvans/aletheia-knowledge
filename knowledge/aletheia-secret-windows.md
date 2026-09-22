@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.2
+version: 0.3
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://swindon.org.uk/resources/aletheia-secret-windows-rsc.htm
@@ -211,6 +211,13 @@ SW-EVT-001     | EVENTS        | wevtutil queries and exports event logs
 SW-CFG-001     | REGISTRY      | reg query reads registry state without changing it
 SW-SYS-001     | POWER         | shutdown schedules restart/shutdown and /a can abort
 SW-ID-001      | ACCOUNTS      | net user lists or administers user accounts
+SW-UPD-001     | WINDOWS UPDATE| ESU does not remove all supported update control
+SW-UPD-002     | WINDOWS UPDATE| Controlled Update mode is safer than killing Windows Update
+SW-UPD-003     | DRIVERS       | Windows Update drivers can be excluded on supported editions
+SW-UPD-004     | DRIVERS       | roll back a driver after a bad Windows Update
+SW-DRV-001     | DRIVERS       | export existing third-party drivers before changing them
+SW-DRV-002     | DRIVERS       | AI may find driver candidates but must not choose blindly
+SW-UPD-005     | RECOVERY      | use an update-recovery ladder before Reset this PC
 
 ---
 
@@ -2591,6 +2598,297 @@ Do not put passwords directly into reusable command text. For account administra
 
 ---
 
+
+# WINDOWS 10 ESU, DRIVER CONTROL AND LEGACY-PC STABILITY
+
+These cards support the companion **Aletheia Windows Debloat** app. The design goal is not to make an old PC "modern"; it is to keep a working machine useful, predictable and recoverable with the least unnecessary background load.
+
+The evidence supports a more precise model than "Windows 10 must be allowed to update whenever Microsoft wants." Microsoft product terms authorise automatic updates **unless the device has been configured to prevent automatic updates using supported methods**. Consumer ESU still depends on Windows Update for monthly security servicing, so disabling the update machinery permanently trades stability risk for security risk rather than eliminating risk.
+
+## SW-UPD-001 | ESU does not remove all supported update control
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10 22H2 enrolled or enrolling in ESU
+LIFECYCLE: ESU
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft's current Windows product terms authorise automatic downloading and installation of Windows 10/11 updates unless the device is configured to prevent automatic updates using supported methods. ESU itself provides critical and important security updates; it does not turn every update or driver into a mandatory feature upgrade.
+
+### ESU prerequisite
+Consumer ESU enrollment requires an eligible Windows 10 22H2 device and current prerequisite servicing. Microsoft also distributes ESU preparation packages through Windows Update.
+
+### Aletheia check
+Do not state that accepting ESU means the user legally or technically loses all update control. The defensible statement is narrower: ESU relies on the Windows servicing system, and the PC must periodically receive applicable ESU security updates if the user wants ESU protection.
+
+### Sources
+- https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/MCA
+- https://www.microsoft.com/en-US/windows/extended-security-updates
+- https://support.microsoft.com/en-us/servicing/os/windows-10/2026/09/kb5126256-windows-10-21h2-22h2-standalone-cbs
+
+---
+
+## SW-UPD-002 | Controlled Update mode is safer than killing Windows Update
+
+STATUS: METHOD
+APPLIES_TO: Windows 10, especially legacy hardware and ESU systems
+LIFECYCLE: CURRENT / ESU
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+For an old but still useful Windows 10 PC, the preferred Aletheia strategy is **Controlled Update mode**, not permanently breaking Windows Update services.
+
+### Controlled Update mode
+1. Identify Windows edition and build.
+2. Back up user data and current drivers.
+3. Exclude driver delivery from quality updates where the edition supports that policy.
+4. On editions with Group Policy, use **Configure Automatic Updates = 2: Notify for download and auto install** when the user wants manual timing.
+5. On Windows 10 Home, use the supported Pause Updates control when temporary deferral is needed.
+6. Install ESU security updates deliberately, preferably after checking known issues and having a rollback path.
+7. Restart at a chosen time and test sound, display, networking, storage and peripherals.
+8. If an update causes a regression, use the documented rollback/recovery route.
+
+### Why not simply disable the Windows Update service?
+Service-disable tricks can be undone by servicing components, may interfere with ESU, Store/MSIX or other Windows components, and leave the machine unpatched without clearly telling the user what security debt was created.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows/deployment/update/waas-wu-settings
+- https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/pause-updates-in-windows
+
+---
+
+## SW-UPD-003 | Windows Update drivers can be excluded on supported editions
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10 Pro, Enterprise, Education and other editions supporting the documented policy
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft provides a supported policy named **Do not include drivers with Windows Updates**. When enabled, Windows quality updates do not include updates classified as drivers.
+
+### Group Policy path
+Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Do not include drivers with Windows Updates
+
+Microsoft maps the policy to:
+
+    HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate
+    ExcludeWUDriversInQualityUpdate = 1
+
+### Why useful on older PCs
+A stable vendor driver can be more valuable than a newer generic driver. Excluding driver-classified Windows Update packages lets security servicing continue while driver changes are handled separately.
+
+### Caveat
+The policy is not a guarantee that every hardware-related component will remain untouched forever; firmware, servicing components and software packages can be delivered through different mechanisms. Verify the actual update classification.
+
+### Sources
+- https://learn.microsoft.com/windows/client-management/mdm/policy-csp-update
+- https://learn.microsoft.com/en-us/windows/deployment/update/waas-wu-settings
+
+---
+
+## SW-UPD-004 | roll back a driver after a bad Windows Update
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft explicitly documents driver rollback when a device stops working correctly after Windows Update.
+
+### GUI route
+Device Manager > device > Properties > Driver > Roll Back Driver
+
+The rollback option is available only when Windows still has a previous driver version to restore.
+
+### Aletheia rule
+If a display, sound, network or other device fails immediately after an update, inspect the driver change before escalating to Reset this PC.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/update-drivers-through-device-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6
+- https://support.microsoft.com/en-gb/windows/hardware/audio/fix-audio-stops-working-after-a-windows-update-in-windows
+
+---
+
+## SW-DRV-001 | export existing third-party drivers before changing them
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10 version 1607+, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR EXPORT
+ADMIN_REQUIRED: RECOMMENDED
+LAST_CHECKED: 2026-09-23
+
+### Summary
+PnPUtil can enumerate and export third-party driver packages from the Windows driver store before an update or rebuild.
+
+Examples:
+
+    pnputil /enum-drivers
+    pnputil /export-driver * C:\DriverBackup
+
+### Why useful
+On an older PC, the currently working driver may be hard to find years later. A local driver export gives the user a recovery asset before experimenting.
+
+### Important limitation
+Exported driver packages do not constitute a complete machine backup and do not guarantee that every OEM utility, firmware package or device-specific application has been preserved.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax
+- https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-examples
+
+---
+
+## SW-DRV-002 | AI may find driver candidates but must not choose blindly
+
+STATUS: METHOD
+APPLIES_TO: Aletheia Windows Debloat driver-assistance workflow
+LIFECYCLE: CURRENT
+EVIDENCE: CONTEXT
+CONFIDENCE: HIGH
+RISK: HIGH IF AUTOMATED WITHOUT VERIFICATION
+LAST_CHECKED: 2026-09-23
+
+### Summary
+AI can help search for a driver, but it should not decide that a vaguely similar download is correct and silently install it.
+
+### Safe driver-discovery workflow
+1. Enumerate the exact device and hardware IDs.
+2. Record the currently installed provider, version and date.
+3. Export the existing third-party driver package first.
+4. Prefer the PC/OEM support page for laptops and integrated hardware.
+5. Otherwise prefer the actual component manufacturer.
+6. Confirm the candidate explicitly supports the device hardware ID and Windows version/architecture.
+7. Prefer signed packages and HTTPS vendor sources.
+8. Present the candidate to the user with source, version, date and rollback path.
+9. Install only after explicit user choice.
+10. Test the device before moving to the next driver.
+
+Useful enumeration on supported Windows:
+
+    pnputil /enum-devices /deviceids
+    pnputil /enum-devices /drivers
+    pnputil /enum-drivers
+
+### Aletheia rule
+AI is a **research assistant**, not a driver authority. A fabricated or mismatched driver URL can turn a performance tool into a very efficient bricklayer.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax
+- https://support.microsoft.com/en-us/windows/hardware/drivers/automatically-get-recommended-and-updated-hardware-drivers
+
+---
+
+## SW-UPD-005 | use an update-recovery ladder before Reset this PC
+
+STATUS: METHOD
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: HIGH
+LAST_CHECKED: 2026-09-23
+
+### Summary
+If a Windows update makes a previously working PC fail to boot or behave correctly, do not jump immediately to Reset this PC.
+
+### Recovery ladder
+Depending on symptoms and what Windows Recovery Environment offers:
+
+1. Record the update/error if possible.
+2. Try Startup Repair for a boot-specific failure.
+3. Roll back a recently changed driver where applicable.
+4. Uninstall the latest update from Windows Recovery Environment if the failure follows an update.
+5. Use System Restore when a suitable restore point exists.
+6. Use DISM/SFC when system-file corruption is plausible and Windows can run.
+7. Back up important data if not already protected.
+8. Use Reset this PC only when less disruptive repair routes are unsuitable or have failed.
+9. Use installation/recovery media or a clean install when Reset is unavailable or the system state is too damaged.
+
+### Correction
+Reset this PC does not always require separate installation media. Current Windows can offer local reinstall and, on supported configurations, cloud download. However, reset can remove installed applications and settings, so it remains a major recovery action rather than a routine post-update fix.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/experience/backup-recovery/recovery-options-in-windows
+- https://support.microsoft.com/en-us/windows/experience/backup-recovery/backup-restore-and-recovery-in-windows
+
+---
+
+# COMPANION APP AND RESOURCE ARCHITECTURE
+
+## Aletheia Windows Debloat
+
+**Aletheia Secret Windows** is the evidence library. **Aletheia Windows Debloat** is the companion application that may use selected cards to inspect and configure a PC.
+
+The app should:
+- detect Windows edition/build before offering a change;
+- explain what each change does;
+- show memory/background-process impact where measurable;
+- distinguish recommended, optional, advanced and legacy-machine actions;
+- create or confirm recovery assets before high-risk changes;
+- support undo wherever Windows supports it;
+- never silently install an AI-selected driver;
+- treat update control as a profile, not as one irreversible "OFF" switch.
+
+Suggested update profiles:
+
+### ESU CONTROLLED
+Keep Windows 10 ESU security updates available, exclude Windows Update drivers where supported, notify before downloading on supported editions, and let the user choose servicing time.
+
+### QUIET LEGACY
+Reduce startup/background software, scheduled updaters and non-essential applications while retaining operating-system security servicing.
+
+### FROZEN / ISOLATED
+For a machine deliberately kept in a fixed state for legacy software or hardware. This profile should carry a prominent warning that disabling security servicing makes an internet-connected PC progressively less safe. It is best suited to isolated or tightly restricted machines.
+
+## Proposed physical files
+
+The clean architecture is **four files across the two projects/sites**:
+
+1. **Knowledge**
+   aletheia-knowledge/knowledge/aletheia-secret-windows.md
+   Canonical checked knowledge. This file exists now.
+
+2. **App**
+   aletheia-app/aletheia-windows-debloat/aletheia-windows-debloat.htm
+   The executable browser/PowerShell-assistance interface.
+
+3. **Aletheia resource page**
+   aletheia-app/aletheia-windows-debloat/aletheia-windows-debloat-rsc.htm
+   App-facing resources, documentation, driver/vendor guidance and disclosed affiliate links where appropriate.
+
+4. **Swindon.org.uk resource page**
+   swindon.org.uk/resources/aletheia-windows-debloat-rsc.htm
+   Search/AEO-oriented public resource page for discovery, books/tools/resources and clearly disclosed affiliate links.
+
+### Canonical rule
+Do not make two competing copies of the knowledge Markdown. There should be **one canonical knowledge file**. The two resource HTML pages can have different presentation and commercial context, while both point back to the same Aletheia knowledge/app family.
+
+### Backlinks
+When the app and resource pages are live, add plain links near the end of this knowledge file:
+
+    Companion app: <Aletheia Windows Debloat public URL>
+    App resources: <Aletheia resource URL>
+    Swindon resources: https://swindon.org.uk/resources/aletheia-windows-debloat-rsc.htm
+
+Until those URLs exist, keep them marked PLANNED rather than publishing dead links.
+
+
 # RESEARCH BACKLOG
 
 Candidate additions for a later version, each requiring a current version check before promotion:
@@ -2661,3 +2959,5 @@ Candidate additions for a later version, each requiring a current version check 
 10. Browser, DNS, Search Console and Cloudflare diagnostics belong in the same practical toolbox when the Windows PC is being used to administer a website.
 11. Resource/affiliate pages are distribution and funding surfaces; evidence remains independent.
 12. Every time-sensitive card should be rechecked before it becomes an automated action.
+13. For legacy PCs, "controlled servicing" is a safer default than either unrestricted updating or permanently disabling the update stack.
+14. AI can research drivers, but exact hardware IDs, vendor provenance, signatures and rollback determine whether a driver should be installed.
