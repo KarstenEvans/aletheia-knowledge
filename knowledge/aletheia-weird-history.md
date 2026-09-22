@@ -50,6 +50,8 @@ A book appearing on Scribd is not evidence that its text may be republished, and
 - **PROVISIONAL** — promising but not sufficiently checked.
 - **DISPUTED** — credible interpretations or factual readings conflict.
 - **REJECTED** — memorable claim failed checking; keep only when useful as a myth-correction card.
+- **METHOD** — a rule for checking or storing knowledge rather than a historical claim.
+- **READING_LENS** — interpretive guidance for avoiding misleading framing.
 
 ## Evidence / confidence
 
@@ -170,6 +172,14 @@ SECTION: CONQUEST
 KEY: Norman conquest state control  
 KEYWORDS: 1066 Hastings castles landholding governance Norman  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Norman England  
+DATE_RANGE: 1066 onward  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The Norman victory at Hastings was not merely a change of monarch. It was followed by a large transfer of land and political power, new fortress building and major changes in governance, elite culture and architecture.
@@ -193,6 +203,14 @@ SECTION: CONQUEST
 KEY: Domesday Book taxation landholding  
 KEYWORDS: Domesday 1086 land tax survey William Conqueror  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Norman England  
+DATE_RANGE: 1086  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Domesday Book recorded landholding, value and resources across much of England after the Norman Conquest. It helped William I understand who controlled land, what it was worth and what revenue or obligations could be extracted from it.
@@ -215,6 +233,14 @@ SECTION: LAW
 KEY: Magna Carta rule of law  
 KEYWORDS: Magna Carta King John Runnymede barons rights law 1215  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Medieval  
+DATE_RANGE: 1215  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Magna Carta emerged from a political crisis between King John and rebel barons in 1215. It contained practical feudal and administrative provisions as well as principles that later generations associated with lawful government and limits on arbitrary power.
@@ -237,6 +263,14 @@ SECTION: PARLIAMENT
 KEY: Simon de Montfort parliament representation  
 KEYWORDS: parliament Commons burgesses knights 1265 de Montfort  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Medieval  
+DATE_RANGE: 1265  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Simon de Montfort's 1265 parliament brought together nobles and clergy with knights from the counties and representatives from towns to discuss national matters. It became an important stage in the development of the later House of Commons.
@@ -259,6 +293,14 @@ SECTION: SOCIETY
 KEY: Black Death labour shortage  
 KEYWORDS: plague wages labour feudalism 1348 1349  
 EVIDENCE: GOOD
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Medieval  
+DATE_RANGE: 1348-1350s  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The Black Death killed a very large share of England's population. The resulting labour shortage changed the balance between workers and landowners: survivors could demand higher wages or resist older labour obligations.
@@ -280,6 +322,14 @@ SECTION: SOCIETY
 KEY: Peasants Revolt poll tax  
 KEYWORDS: 1381 poll tax Wat Tyler revolt labour taxation  
 EVIDENCE: GOOD
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Medieval  
+DATE_RANGE: 1381  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The 1381 rising grew from overlapping grievances including repeated poll taxes, labour controls and local abuses of authority. Participants were not all agricultural serfs; townspeople, artisans and other groups also took part.
@@ -299,6 +349,14 @@ SECTION: TUDORS
 KEY: Bosworth Henry VII Tudor  
 KEYWORDS: Richard III Henry Tudor Bosworth Wars Roses 1485  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Late medieval / early Tudor  
+DATE_RANGE: 1485 onward  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Henry Tudor defeated Richard III at Bosworth in 1485 and became Henry VII. His victory established the Tudor dynasty and helped end the long sequence of dynastic conflicts conventionally grouped as the Wars of the Roses.
@@ -318,6 +376,14 @@ SECTION: REFORMATION
 KEY: Act of Supremacy Church of England  
 KEYWORDS: Henry VIII Rome papacy Reformation 1534 supremacy  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Tudor Reformation  
+DATE_RANGE: 1534  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The Act of Supremacy of 1534 declared Henry VIII supreme head of the Church of England and formally severed ecclesiastical authority from Rome.
@@ -337,6 +403,14 @@ SECTION: REFORMATION
 KEY: Dissolution monasteries wealth land  
 KEYWORDS: monasteries abbeys Thomas Cromwell Crown property 1536 1540  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Tudor Reformation  
+DATE_RANGE: 1536-1540  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Between 1536 and 1540 the Crown suppressed monasteries and other religious houses, taking their income and assets. This redistributed land and wealth on a large scale and changed landscapes, communities and patterns of patronage.
@@ -356,6 +430,14 @@ SECTION: MARITIME
 KEY: Francis Drake circumnavigation privateering  
 KEYWORDS: Golden Hind Elizabeth I privateer piracy slavery circumnavigation  
 EVIDENCE: GOOD
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Elizabethan  
+DATE_RANGE: 1577-1580; earlier slaving voyages  
+GEOGRAPHY: England / Atlantic and Pacific worlds  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Francis Drake's famous voyages combined navigation, commerce, privateering and conflict with Spain. His 1577–1580 voyage made him the first Englishman to circumnavigate the globe.
@@ -377,6 +459,14 @@ SECTION: CIVIL WAR
 KEY: Wars of the Three Kingdoms  
 KEYWORDS: England Scotland Ireland Charles I civil war 1642 1651  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Wars of the Three Kingdoms  
+DATE_RANGE: 1642-1651  
+GEOGRAPHY: England, Scotland and Ireland  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The mid-seventeenth-century crisis was not simply a two-team English contest between Cavaliers and Roundheads. England, Scotland and Ireland were tied together by dynastic rule, religion, rebellion and military intervention.
@@ -396,6 +486,14 @@ SECTION: CIVIL WAR
 KEY: trial execution Charles I  
 KEYWORDS: regicide Westminster Hall high court 1649  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Wars of the Three Kingdoms  
+DATE_RANGE: 1649  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 After the second civil war, a specially created High Court tried Charles I for treason. He disputed the court's authority, was condemned and was executed outside the Banqueting House in Whitehall on 30 January 1649.
@@ -418,6 +516,14 @@ SECTION: CONSTITUTION
 KEY: Bill Rights 1689 parliamentary authority  
 KEYWORDS: William Mary James II Parliament taxation elections speech  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Glorious Revolution settlement  
+DATE_RANGE: 1689  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 After James II's departure and the accession of William and Mary, the Bill of Rights of 1689 set out important parliamentary liberties and limits on royal government, including principles concerning taxation, elections and parliamentary speech.
@@ -437,6 +543,14 @@ SECTION: FINANCE
 KEY: Bank of England 1694 state finance  
 KEYWORDS: public credit national debt banking government war  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Early modern finance  
+DATE_RANGE: 1694  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The Bank of England was founded in 1694 in a period when the state needed new ways to finance government and war. Its creation helped bind private capital, public borrowing and the machinery of the state together.
@@ -456,6 +570,14 @@ SECTION: FINANCE
 KEY: South Sea Bubble speculation  
 KEYWORDS: 1720 stock market debt speculation South Sea Company  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Georgian finance  
+DATE_RANGE: 1720  
+GEOGRAPHY: Great Britain  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The South Sea Company became deeply involved in schemes to restructure government debt. In 1720 its share price rose dramatically amid speculative enthusiasm and then collapsed, ruining many investors.
@@ -474,6 +596,14 @@ SECTION: EMPIRE
 KEY: East India Company territorial rule  
 KEYWORDS: Plassey Bengal Clive taxation diwani Company empire 1757 1765  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Company rule / empire  
+DATE_RANGE: 1757-1765  
+GEOGRAPHY: Bengal / India  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The East India Company began as a commercial corporation, but in the eighteenth century it increasingly acquired military and political power. Victory at Plassey in 1757 and the right to collect Bengal's revenues in 1765 were pivotal in turning a trading company into a territorial ruler.
@@ -497,6 +627,14 @@ SECTION: INDUSTRY
 KEY: cotton Industrial Revolution global supply chain  
 KEYWORDS: Manchester Cottonopolis steam mills slavery industrialisation  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Industrial Revolution  
+DATE_RANGE: 18th-19th centuries  
+GEOGRAPHY: Britain / Atlantic world  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Mechanised textile production helped make Manchester and the surrounding region a centre of industrialisation. Mills used increasingly powerful machinery and steam, while raw cotton arrived through global trading networks.
@@ -519,6 +657,14 @@ SECTION: RAILWAYS
 KEY: Liverpool Manchester Railway speed  
 KEYWORDS: Rocket railway Manchester Liverpool 1830 passenger transport  
 EVIDENCE: GOOD
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Railway age  
+DATE_RANGE: 1830  
+GEOGRAPHY: England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The Liverpool and Manchester Railway opened in 1830 and dramatically reduced journey time between two major industrial cities. It demonstrated the practical power of scheduled steam railway transport for both people and goods.
@@ -541,6 +687,14 @@ SECTION: RAILWAYS
 KEY: railway time Greenwich standardisation  
 KEYWORDS: GWR Greenwich Mean Time local time timetables 1840  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Railway age  
+DATE_RANGE: 1840-1880  
+GEOGRAPHY: Great Britain  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Before national standard time, towns could keep local solar time. Fast railway timetables made those differences operationally awkward. The Great Western Railway adopted London time across its stations in 1840, and other railways followed.
@@ -563,6 +717,14 @@ SECTION: VICTORIAN
 KEY: Great Exhibition Crystal Palace  
 KEYWORDS: 1851 Prince Albert Paxton Crystal Palace industry world fair  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Victorian  
+DATE_RANGE: 1851  
+GEOGRAPHY: London, England  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 The Great Exhibition of 1851 placed manufactured goods, machinery, raw materials and art from Britain, its empire and many other countries inside Joseph Paxton's enormous prefabricated Crystal Palace.
@@ -584,6 +746,14 @@ SECTION: EMPIRE
 KEY: Abyssinia expedition logistics  
 KEYWORDS: Ethiopia Tewodros Napier Magdala railway elephants 1868  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Victorian imperial  
+DATE_RANGE: 1868  
+GEOGRAPHY: Ethiopia / British Empire  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Britain's 1868 expedition to Abyssinia, now Ethiopia, was launched after Emperor Tewodros II held British and European hostages. The expedition moved a large Anglo-Indian force hundreds of miles through difficult terrain.
@@ -605,6 +775,14 @@ SECTION: EMPIRE
 KEY: Maqdala loot collections  
 KEYWORDS: Ethiopia Maqdala British Museum restitution objects 1868  
 EVIDENCE: STRONG
+STATUS: VERIFIED_WITH_CONTEXT  
+PERIOD: Victorian imperial  
+DATE_RANGE: 1868 and legacy  
+GEOGRAPHY: Maqdala, Ethiopia / United Kingdom  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 After the capture of Maqdala, British forces destroyed the fortress and removed large quantities of manuscripts, religious objects and other material. Loot was auctioned and objects entered British collections.
@@ -627,6 +805,14 @@ SECTION: EXPLORATION
 KEY: Shackleton Endurance survival  
 KEYWORDS: Antarctic Endurance Shackleton Elephant Island James Caird rescue  
 EVIDENCE: STRONG
+STATUS: VERIFIED  
+PERIOD: Heroic Age of Antarctic Exploration  
+DATE_RANGE: 1914-1916  
+GEOGRAPHY: Antarctica / South Georgia  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Ernest Shackleton's Imperial Trans-Antarctic Expedition failed in its planned crossing after *Endurance* became trapped and was crushed by sea ice. The expedition then became a prolonged survival and rescue operation.
@@ -648,6 +834,14 @@ SECTION: CLAIM CHECK
 KEY: first greatest world first historical superlatives  
 KEYWORDS: first ever greatest unique myth fact check popular history  
 EVIDENCE: CHECK
+STATUS: METHOD  
+PERIOD: Knowledge method  
+DATE_RANGE: general  
+GEOGRAPHY: general  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 Popular history often makes a story memorable by calling something the first, biggest, greatest, oldest or most important. These claims are unusually fragile because the answer depends on definitions and comparison sets.
@@ -676,6 +870,14 @@ SECTION: READING LENS
 KEY: source framing popular history empire  
 KEYWORDS: historiography bias framing humour British Empire omissions  
 EVIDENCE: CONTEXT
+STATUS: READING_LENS  
+PERIOD: Historiography  
+DATE_RANGE: general  
+GEOGRAPHY: Britain / empire / general  
+CONFIDENCE: HIGH  
+DISCOVERY_SOURCE: *Stick a Flag in It* — Arran Lomas  
+DISCOVERY_ROLE: topic seed / provenance only  
+LAST_CHECKED: 2026-09-22
 
 ### Summary
 *Stick a Flag in It* is deliberately comic popular history, not a neutral reference work. Its authorial voice openly celebrates Britain's eccentricity and historical influence.
