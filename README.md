@@ -18,6 +18,15 @@ Structured, source-traced knowledge libraries and lightweight browser apps for A
 
 The app loads its Markdown library from `../knowledge/` when hosted. It also supports **LOAD .MD LOCALLY** for offline use or local testing.
 
+## Knowledge libraries
+
+### Aletheia British History Curiosities
+
+- Knowledge: `knowledge/aletheia-british-history-curiosities.md`
+- Source inspiration: Arran Lomas, *Stick a Flag in It*
+- Status: knowledge-only library; no dedicated app or resource page yet.
+- Method: memorable topics are independently checked and rewritten as source-traced Aletheia cards rather than copied from the book.
+
 ## Knowledge approach
 
 Sources can include books, scientific papers, public guidance and reputable websites. Copyrighted books are used for topic discovery and provenance, not copied into the repository. Aletheia knowledge cards are independently written, checked and updated.
