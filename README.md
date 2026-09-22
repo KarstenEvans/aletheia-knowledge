@@ -1,6 +1,6 @@
 # Aletheia Knowledge
 
-Structured, source-traced knowledge libraries and lightweight browser apps for Aletheia. Evidence-checked and usable online or locally.
+Structured, source-traced knowledge libraries and lightweight browser apps for Aletheia. Evidence-checked, vendor-neutral and usable online or locally.
 
 ## Repository structure
 
@@ -26,11 +26,14 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 - Discovery sources: *Stick a Flag in It*, selected *Horrible Histories* books, and *All About History: Book of Weird History*.
 - Status: curated knowledge-only library; no dedicated app or resource page yet.
 - Method: books provide topic discovery only. Claims are independently checked, source-traced, context-qualified and stored as self-contained retrieval cards.
-- Retrieval design: stable IDs, card metadata, natural Markdown chunk boundaries, evidence/confidence fields and review dates; structured for later Cloudflare AI Search indexing.
+- Portable design: stable IDs, plain Markdown metadata, evidence/confidence fields, review dates and a normal resource backlink. Cloudflare AI Search or other retrieval services may add capabilities, but are optional.
+- Resources: `resources/aletheia-weird-history-rsc.htm`
 
 ## Knowledge approach
 
 Sources can include books, scientific papers, public guidance and reputable websites. Copyrighted books are used for topic discovery and provenance, not copied into the repository. Aletheia knowledge cards are independently written, checked and updated.
+
+The canonical knowledge is plain Markdown and must not depend on a particular AI, cloud service, database or affiliate network. Optional services may index, search or distribute it. Resource pages may contain clearly disclosed affiliate links, while the knowledge cards themselves contain only ordinary backlinks.
 
 ## Planned licence model
 
