@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.8
+version: 0.9
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
@@ -254,6 +254,14 @@ SW-AI-015      | AI            | Live, Standard and Advanced Voice are different
 SW-AI-016      | AI            | Web search, chat search and search-query privacy are different
 SW-AI-017      | AI            | Free allows existing GPTs, Library and Think, not GPT creation
 SW-AI-018      | AI            | Privacy controls: training, Temporary Chat and deletion differ
+SW-COP-001     | AI / COPILOT  | Do not confuse three different kinds of Copilot
+SW-COP-002     | AI / COPILOT  | Launch Windows Copilot with the keyboard or opt-in wake word
+SW-COP-003     | AI / COPILOT  | Copilot file search is not the same as Copilot+ semantic Windows Search
+SW-COP-004     | AI / COPILOT  | Copilot Vision views only what you choose to share
+SW-COP-005     | AI / COPILOT  | Microsoft Designer turns prompts into images and edits
+SW-COP-006     | AI / COPILOT  | Recall is opt-in and limited to qualifying Copilot+ PCs
+SW-COP-007     | AI / COPILOT  | Use a 2024 Copilot book as a topic map, not as a 2026 manual
+SW-COP-008     | AI / COPILOT  | Ask Windows Copilot to guide you to settings before making changes
 
 ---
 
@@ -3830,6 +3838,204 @@ Do not say switching off training guarantees that conversations linked to volunt
 - https://help.openai.com/en/articles/7730893
 - https://help.openai.com/en/articles/8590148
 - https://help.openai.com/en/articles/20001274
+
+---
+
+## SW-COP-001 | Do not confuse three different kinds of Copilot
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 11 with consumer Copilot; Microsoft 365 work subscriptions; Copilot+ PCs
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+A Windows Copilot app, Copilot in Microsoft 365 and Copilot+ PC hardware are related names for different capabilities. A Copilot key does not imply that the machine has an NPU or every paid Microsoft 365 feature.
+
+### Why useful
+The consumer Windows app serves a personal Microsoft account and has its own Windows integrations. A licensed work or school account may connect Copilot to company Microsoft 365 content, subject to its licence and administrator. A Copilot+ PC is a hardware class with an NPU supporting certain on-device AI features such as Recall and semantic search. Confirm which account, plan, app and hardware are in use before explaining an advanced feature.
+
+### Aletheia check
+Never suggest buying a Copilot+ PC just to run the ordinary free Copilot app. Do not assume a personal account can access an employer's Microsoft 365 data.
+
+### Sources
+- https://support.microsoft.com/en-us/microsoft-365-copilot/what-is-microsoft-copilot-app
+- https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-on-windows
+- https://support.microsoft.com/en-us/windows/privacy/privacy-and-control-over-your-recall-experience
+
+---
+
+## SW-COP-002 | Launch Windows Copilot with the keyboard or opt-in wake word
+
+STATUS: VERIFIED
+APPLIES_TO: Supported Windows 11 installations of the current Microsoft Copilot app
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Windows Copilot can be opened from Start or the taskbar, with the Copilot keyboard key or with Win+C where supported. The optional 'Hey Copilot' wake word must be enabled deliberately.
+
+### Why useful
+The Copilot shortcut can open the full app or Quick View; check the app's Account > Settings > Copilot Keyboard Shortcuts for the current assignment. If a shortcut does nothing, confirm that the current app is installed and that a system or keyboard policy has not remapped the key. Hands-free wake word requires the appropriate microphone permissions.
+
+### Aletheia check
+Win+C has changed across Windows/Copilot generations. Do not promise the shortcut or wake word will work on every older installation.
+
+### Sources
+- https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-on-windows
+
+---
+
+## SW-COP-003 | Copilot file search is not the same as Copilot+ semantic Windows Search
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Current Copilot Windows app; semantic indexing specifically for supported Copilot+ PCs
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+The Windows Copilot app can help find, open and ask questions about local and synced OneDrive files. Copilot+ PCs additionally support local semantic indexing in Windows Search, which can retrieve related concepts rather than exact terms.
+
+### Why useful
+A user can test ordinary Windows Search using the taskbar or File Explorer without Copilot. On eligible Copilot+ PCs, Microsoft says semantic indexes remain on-device and aren't used for AI training. Indexing locations and types can be managed in Settings > Privacy & security > Searching Windows > Advanced indexing options. Review file access and ask Copilot to identify the actual source document before treating a summary as evidence.
+
+### Aletheia check
+File search depends on the app version, permission, available files and account; a local semantic index is not blanket authorisation to upload or disclose private files.
+
+### Sources
+- https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-on-windows
+- https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/find-your-files-and-apps-in-windows
+
+---
+
+## SW-COP-004 | Copilot Vision views only what you choose to share
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Copilot Vision on supported Windows/Edge/mobile platforms; subscription and rollout vary
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Copilot Vision lets a user share a selected screen, app or compatible Edge page and ask spoken questions about it. It is off until the user starts a supported Voice/Vision session and authorises sharing.
+
+### Why useful
+Start a Voice conversation, choose Share screen, pick the intended window(s), then use the visible control to stop sharing when finished. Microsoft's current consumer guidance says Vision is not an autonomous mouse or keyboard agent: it can explain what to click but does not click, type or scroll for you. Availability may require an eligible Microsoft 365 Personal, Family or Premium plan; check the app's live entitlement before promising a free feature.
+
+### Aletheia check
+Check the current plan and the data-sharing/retention notice before showing sensitive material. A visible share boundary matters more than any AI claim that content is private.
+
+### Sources
+- https://support.microsoft.com/en-us/microsoft-copilot/using-copilot-vision-with-microsoft-copilot
+
+---
+
+## SW-COP-005 | Microsoft Designer turns prompts into images and edits
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Microsoft Designer and supported personal Microsoft accounts; some Microsoft 365 integrations are paid
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft Designer can generate AI images, greeting cards and layouts, then edit, restyle or remove backgrounds from uploaded pictures. It is related to Copilot Image Creator, but is a separate design workspace.
+
+### Why useful
+Use a descriptive prompt, review the output and refine it in Designer rather than pretending a generated picture is a documentary photo. Microsoft documents free personal access with possible extra charges for frequent generation, and describes the personal-use licence as non-commercial. Features embedded in Word/PowerPoint may require a suitable Microsoft 365 subscription.
+
+### Aletheia check
+For commercial website assets, check the applicable current licence before publishing AI-generated content; do not assume free personal Designer output has unrestricted commercial-use rights.
+
+### Sources
+- https://support.microsoft.com/en-us/designer/welcome-to-microsoft-designer
+- https://support.microsoft.com/en-us/designer/frequently-asked-questions-about-microsoft-designer
+
+---
+
+## SW-COP-006 | Recall is opt-in and limited to qualifying Copilot+ PCs
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Eligible Copilot+ PCs with Windows 11; preview status and organisational policy vary
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Recall is a separate Copilot+ PC feature for searching past screen snapshots. It is not the conversation history of the ordinary Copilot app and is not present merely because Windows has a Copilot key.
+
+### Why useful
+Microsoft states that Recall snapshot saving requires opt-in. It processes and stores snapshots locally, allows users to pause, filter apps/websites and delete stored snapshots, and requires supported hardware and Windows Hello protections. Published minimums include a 40-TOPS NPU, 16 GB RAM and 256 GB storage, with free-space requirements. For any device with sensitive accounts, inspect filtering and retention settings before enabling snapshot collection.
+
+### Aletheia check
+Recall's filters and supported browsers have limits. The on-device claim concerns Recall snapshots, not everything shared with cloud Copilot or Microsoft 365.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/privacy/privacy-and-control-over-your-recall-experience
+
+---
+
+## SW-COP-007 | Use a 2024 Copilot book as a topic map, not as a 2026 manual
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Anand Narayanaswamy, Microsoft Copilot for Windows 11, Apress 2024
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+The 2024 book covers Windows Copilot, Edge, Bing, Skype, Image Creator, Designer, Microsoft 365, the Copilot key and Copilot+ PCs. Its publisher offers licensed PDF and EPUB editions plus preview content.
+
+### Why useful
+Use the table of contents as research leads, then verify each practical claim against current Microsoft documentation. The Skype chapter is now historical because Microsoft retired consumer Skype on 6 May 2025. Product names, GPT/plugin menus, subscription entitlements and keyboard shortcuts have also evolved; avoid turning old screenshots into present-day instructions.
+
+### Aletheia check
+This library does not reproduce the copyrighted book. It records publisher provenance and independently checked current Microsoft support sources.
+
+### Sources
+- https://link.springer.com/book/10.1007/979-8-8688-0583-7
+- https://learn.microsoft.com/en-us/lifecycle/products/skype-for-consumer
+- https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-on-windows
+
+---
+
+## SW-COP-008 | Ask Windows Copilot to guide you to settings before making changes
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Current Windows Copilot app and supported Windows 11 settings
+LIFECYCLE: CURRENT / BOOK SOURCE 2024 AND SOFTWARE MAY CHANGE
+EVIDENCE: STRONG FOR CITED CURRENT MICROSOFT DOCUMENTATION; BOOK USED FOR TOPIC DISCOVERY
+CONFIDENCE: HIGH FOR CITED FEATURES; CHECK ACCOUNT AND CURRENT VERSION
+RISK: LOW FOR READING; MEDIUM WHEN SHARING FILES, SCREENS OR CHANGING SETTINGS
+LAST_CHECKED: 2026-09-23
+
+### Summary
+The Windows Copilot app can explain Windows settings and guide a user to the relevant control for tasks such as making text more readable or reducing distractions. This is not a licence for unexplained system-wide 'AI optimisation'.
+
+### Why useful
+Example prompt: 'On this Windows 11 PC, show me the normal Settings route to enlarge text, explain what it changes and tell me how to undo it.' For drivers, updates, recovery or registry changes, prefer the documented settings path and a backup or rollback plan. Copilot's answer can still be wrong for the installed Windows build.
+
+### Aletheia check
+Ask for the exact Windows version and use Settings/official instructions rather than an unverified script. Do not give Copilot unsupervised privileges to change security or delete files.
+
+### Sources
+- https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-on-windows
 
 ---
 
