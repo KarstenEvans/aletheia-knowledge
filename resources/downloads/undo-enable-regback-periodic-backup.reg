@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; Aletheia Secret Windows
+; Remove only the EnablePeriodicBackup value added by the companion file.
+; This returns the setting to Windows' default/not-configured state.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Configuration Manager]
+"EnablePeriodicBackup"=-
