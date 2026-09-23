@@ -144,6 +144,28 @@ When a new collection app and/or resource page is published, add it to `index.ht
 
 Acceptance: root index remains a useful, mobile-friendly front door with working collection buttons and no raw source-file detours.
 
+## Cross-project: Aletheia Storyteller
+
+### AK-050 | DONE / VERIFY LIVE | Storyteller biographies, index and reusable tag conventions
+
+The separate `KarstenEvans/aletheia-app` repository contains the actual Storyteller; this Knowledge repository contains the shared collaboration rules. Before any future change, fetch the app's current `aletheia-storyteller.htm`, `aletheia-storyteller.md`, `aletheia-storyteller-page.md`, `stories/stories.json` and the exact image/story files.
+
+On 2026-09-23, five independently selectable fictional bio stories were created: `bio-ToomorrowMan.md`, `bio-AI-PI.md`, `bio-Schrodinger.md`, `bio-Elsie.md`, `bio-Prudence.md`. The Storyteller manifest contains the original adventure plus all five bios. The app now presents a searchable story/BIO index and supports deliberate `[bio-ToomorrowMan.md]` includes from the same story directory.
+
+The shared `aletheia-knowledge-GUI.md` and `aletheia-knowledge-code.md` now document the distinct cinematic GUI, screenshot/asset verification discipline, hotspot camera grammar and prompt for authoring a new illustrated bio. App-specific documentation and a new `aletheia-storyteller-page.md` were committed in the app repo.
+
+Static checks passed: app script syntax, 6 manifest items, 5 standalone bio cue counts, inline include, alternative ToomorrowMan spelling, missing include errors and circular include rejection. **A live Android/desktop playback test has not yet been completed.**
+
+Published player: https://karstenevans.github.io/aletheia-app/aletheia-storyteller.htm
+
+### AK-051 | TODO | Recover missing Storyteller art and verify the live player
+
+The first story references four missing GitHub image paths: `Into-the-Forgotten-Mechanics-Institution.webp`, `Youre-Late.webp`, `The-Department-of-Applied-Impossibility.webp`, and `Guardian-of-the-Misty-Primeval-Pond.webp`. Four other story images have been verified present and reused. The Elsie and Prudence bios currently use existing setting illustrations, **not portraits of those characters**.
+
+Ask the owner for the missing originals or agree on new character and scene artwork before changing established visuals. Do not silently substitute branding art that changes ToomorrowMan's established appearance or pretend a missing file is published.
+
+Live acceptance: test the story/BIO index, mobile layout, deep links (e.g. `?story=bio-AI-PI`), audio start/stop, camera focus positions, image-load fallback, optional inline bio test story and local folder import. Insert biography includes into the original adventure only with explicit editorial agreement, since they change its length and camera sequence.
+
 ## Next-session handover block
 
 When another ChatGPT or AI joins this project, start by reading the three root guides **and current target files**. Pick one task ID; announce the files you intend to change; preserve concurrent work. Do not regenerate HTML from memories of a previous chat. Source Markdown, approved shared guides and a matching page specification are the durable instructions; HTML is the rendered website. GitHub Pages is how the owner should open or share the library.
