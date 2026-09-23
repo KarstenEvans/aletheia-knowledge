@@ -26,7 +26,7 @@ Free offers generally unlimited everyday text chat, subject to abuse safeguards,
 
 ## 2. Use the right microphone: Voice versus Dictation
 
-**Voice:** Choose a live spoken conversation for company, brainstorming, language practice and discussing ideas. ChatGPT's Live mode can search the web and use memory where available, but uses a different conversation-oriented model (GPT-Live-1 mini on Free). A spoken answer and its transcript may be less convenient when you need exact quotations, tables, sources or a reusable document. Live can accept text and images in the same chat when enabled, but cannot currently retrieve files directly from your ChatGPT Library.
+**Voice:** Choose a live spoken conversation for company, brainstorming, language practice and discussing ideas. ChatGPT's Live mode can search the web and use memory where available, but uses a different conversation-oriented model (GPT-Live-1 mini on Free). A spoken answer and its transcript may be less convenient when you need exact quotations, tables, sources or a reusable document. Live can accept text and images in the same chat when enabled, but cannot currently retrieve files directly from your ChatGPT Library. Live can also use available connected plugins, but any action requiring approval must be reviewed on screen: spoken approval is not supported.
 
 **Voice options:** Under Settings > Voice, your account may offer Live (natural interruption/back-and-forth), Standard (transcribes each turn before answering) or Advanced (older real-time experience with mobile video/screen sharing for eligible subscribers). Available options, limits and controls depend on your account; Live does not support video or screen sharing.
 
@@ -51,7 +51,7 @@ Turning Memory off is not the same as deleting chat history. Turning model impro
 
 ## 4. Put short rules in Custom Instructions
 
-Open Settings > Personalization or Customize ChatGPT and find the Custom Instructions controls. They are available on Free accounts, with a **1,500-character limit** for Free and Go. Make sure Enable customization is on. Updates apply immediately, but will not erase references to older instructions from earlier conversations. Menu wording may differ between desktop and mobile. A third-party plugin you use may receive relevant instructions, so avoid putting secrets in the global profile.
+Open Settings > Personalization or Customize ChatGPT and find the Custom Instructions controls. They are available on Free accounts, with a **1,500-character limit** for Free and Go. Make sure Enable customization is on. Updates apply immediately, but will not erase references to older instructions from earlier conversations. Menu wording may differ between desktop and mobile. A third-party plugin you use may receive relevant instructions, so avoid putting secrets in the global profile. People viewing a shared chat link do not see your Custom Instructions as a separate profile.
 
 A practical short baseline to paste:
 
@@ -73,7 +73,7 @@ Instructions help, but they are not a guarantee. They cannot create a tool your 
 
 Create a Project called Aletheia, Family History, House Repairs or anything meaningful. Put its durable working rules in Project instructions and add only relevant files. Free users can create unlimited Projects, with up to five files per Project and separate upload-rate limits. **Project instructions override global Custom Instructions inside that Project.**
 
-In Project settings, where available, choose Default or Project-only memory according to whether the project should draw on context outside itself. Shared Projects automatically use Project-only memory; permitted collaborators can see the shared chats, files and instructions. Free owners can currently share a Project with up to five collaborators. Before sharing, inspect every file and the project's permissions. You can also move eligible old chats into a Project or save a useful ChatGPT answer as a Project source.
+In Project settings, where available, choose Default or Project-only memory according to whether the project should draw on context outside itself. Shared Projects automatically use Project-only memory; permitted collaborators can see the shared chats, files and instructions. Free owners can currently share a Project with up to five collaborators. Before sharing, inspect every file and the project's permissions. You can also move eligible old chats into a Project or save a useful ChatGPT answer as a Project source. Chats originally created with a GPT cannot currently be moved into a Project; use a reviewed Aletheia HANDOVER summary to carry the relevant context instead.
 
 For Aletheia AI Easy, use the small `aletheia-bootstrap.md` in the Project instructions, then add your reviewed `aletheia-memory.md` as a Project file if you want portable context. The bootstrap should offer Aletheia's evidence/continuity rules, optional Thalia humour, and explicit choices for other apps. It must not silently enable them or claim to have saved data that was only displayed.
 
