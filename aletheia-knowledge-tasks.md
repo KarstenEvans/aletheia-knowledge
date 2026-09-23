@@ -166,6 +166,17 @@ Ask the owner for the missing originals or agree on new character and scene artw
 
 Live acceptance: test the story/BIO index, mobile layout, deep links (e.g. `?story=bio-AI-PI`), audio start/stop, camera focus positions, image-load fallback, optional inline bio test story and local folder import. Insert biography includes into the original adventure only with explicit editorial agreement, since they change its length and camera sequence.
 
+
+### AK-052 | DONE / VERIFY LIVE | Actor voices, single-sentence captions and local backup
+
+On 2026-09-23, the actual `KarstenEvans/aletheia-app` source was fetched and inspected before any changes. An exact original was committed to `backup/aletheia-storyteller-before-character-voices-20260923.htm` (unchanged original Git blob `9b9f18d544db8ca7234dab49053e57aa882a7250`), and a local self-contained voice-test HTML was prepared before modifying the published app.
+
+The updated app supports compact character profile definitions at the beginning of a story, persistent `[voice:Character]` for quoted dialogue only, automatic narrator voice for unquoted text, and explicit `[voice:]` reset. It falls back when foreign-language/target voices are unavailable. The first story now includes six profiles and editor-specified dialogue changes, with original prose and camera commands preserved. Default captions changed to one spoken cue; 2, 3 and Off remain available. The previously removed “New title” prefix was checked again; the silent 400-ms heading pause remains. Static parser test of the real first story yielded **634 cues** and six profiles. A build marker was added to the app menu.
+
+Future bilingual/dual-language captioning is written as an *idea* in `aletheia-app/ideas.md` and not falsely advertised as available.
+
+**Still to test:** live published HTML and browser TTS on the owner's PC and Android, unavailable foreign voices and fixed MP3 mode. The local downloadable zip currently includes the voice experiment and a Save Local helper; its full-repository ZIP button lets the owner download the entire current source, including the exact backup. It is not itself an offline bundle of all the site's stories and images. Record the user's playback findings and any source-file corrections before closing the live-verification part.
+
 ## Next-session handover block
 
 When another ChatGPT or AI joins this project, start by reading the three root guides **and current target files**. Pick one task ID; announce the files you intend to change; preserve concurrent work. Do not regenerate HTML from memories of a previous chat. Source Markdown, approved shared guides and a matching page specification are the durable instructions; HTML is the rendered website. GitHub Pages is how the owner should open or share the library.
