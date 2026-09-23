@@ -177,6 +177,24 @@ Future bilingual/dual-language captioning is written as an *idea* in `aletheia-a
 
 **Still to test:** live published HTML and browser TTS on the owner's PC and Android, unavailable foreign voices and fixed MP3 mode. The local downloadable zip currently includes the voice experiment and a Save Local helper; its full-repository ZIP button lets the owner download the entire current source, including the exact backup. It is not itself an offline bundle of all the site's stories and images. Record the user's playback findings and any source-file corrections before closing the live-verification part.
 
+## Cross-collection: free AI onboarding in Secret Windows
+
+### AK-060 | DONE / VERIFY LIVE | ChatGPT Free cards, guide and Voice-vs-Dictation advice
+
+23 September 2026: added 11 new `SW-AI-001..011` cards under a newly visible **AI / CHATGPT** category in `knowledge/aletheia-secret-windows.md`; each has an informative summary and source URL. The reader now has an AI tab and a short introductory AI paragraph linking a dedicated ChatGPT Free guide and the existing Aletheia AI Easy setup. `resources/aletheia-secret-windows-rsc.htm` also includes a concise AI section and links.
+
+New source guide: `knowledge/aletheia-chatgpt-free-guide.md`. New visitor-facing page: `resources/aletheia-chatgpt-free-guide.htm`, pre-rendered static content with copyable instructions and primary help references. New rebuild specs: `app/aletheia-secret-windows-page.md` and `resources/aletheia-chatgpt-free-guide-page.md`.
+
+Accuracy boundary: Live Voice **can** web-search and use memory on available experiences, but its conversation-oriented model/tool set, transcription limitations and spoken UX make editable Dictation plus ordinary text preferable for many research, table and document tasks. Shortcuts such as EXECUTE, NO FAFF, ELI5, SEARCH CURRENT and SOURCE CHECK are explicit prompt recipes, **not** built-in privileged modes. Free features and limits were checked against official OpenAI help pages on 23 September 2026.
+
+**Source checks passed:** 124 total Secret Windows card starts including all 11 AI cards; each AI card has a meaningful Summary and at least one official OpenAI source; AI category/tab and resource links are present; both current reader JavaScript blocks parse. A pre-existing literal `\\n` event-handler corruption in the reader was discovered by the syntax check and fixed, rather than shipping a new tab on an already-broken script.
+
+**Still to verify:** actual GitHub Pages deployment, desktop/Android navigation, source links, AI-tab filtering, search auto-reset, Jump to Card, SURPRISE ME, MORE/LESS, and guide's Copy Prompt fallback. Direct web inspection of the GitHub Pages URLs was unavailable from this session; do not mark browser/live tests complete.
+
+Published routes to check:
+- https://karstenevans.github.io/aletheia-knowledge/app/aletheia-secret-windows.htm
+- https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-chatgpt-free-guide.htm
+
 ## Next-session handover block
 
 When another ChatGPT or AI joins this project, start by reading the three root guides **and current target files**. Pick one task ID; announce the files you intend to change; preserve concurrent work. Do not regenerate HTML from memories of a previous chat. Source Markdown, approved shared guides and a matching page specification are the durable instructions; HTML is the rendered website. GitHub Pages is how the owner should open or share the library.
