@@ -26,17 +26,17 @@ Cards display a stable ID, evidence/status/risk badges when provided, applicabil
 
 ## Exact collection-specific parse contract
 
-A card starts with `## SW-PREFIX-000 | Meaningful title`. The reader parses `### Summary` (or `### Claim` / `### Why useful` fallback), evidence/risk/status/lifecycle fields and `### Sources` URL bullets. NEW: `SW-AI-###` belongs to group `AI`. All 11 current AI cards have `### Summary` and original official provider sources. The guide article `knowledge/aletheia-chatgpt-free-guide.md` is a separate Markdown document, **not** a set of Secret Windows cards; do not make the card parser swallow its article headings.
+A card starts with `## SW-PREFIX-000 | Meaningful title`. The reader parses `### Summary` (or `### Claim` / `### Why useful` fallback), evidence/risk/status/lifecycle fields and `### Sources` URL bullets. NEW: `SW-AI-###` belongs to group `AI`. All 18 current AI cards have `### Summary` and original official provider sources. The guide article `knowledge/aletheia-chatgpt-free-guide.md` is a separate Markdown document, **not** a set of Secret Windows cards; do not make the card parser swallow its article headings.
 
 Current parser renders only whitelisted detail headings and simple Markdown-like bold, code and line breaks. Improve only with a tested formatter that does not break existing multiline cards or clickable source links. Literal two-character `\\n` sequences in the reader's JS handler previously caused a syntax error and were corrected on 23 September 2026. Add a JavaScript syntax regression check before every deployment.
 
 ## AI content and accuracy exceptions
 
-ChatGPT Free product capabilities and limits are time-sensitive; maintain LAST_CHECKED and primary help sources on SW-AI-001..011. Distinguish documented capabilities from Aletheia methods. Do not call plain-language prompt recipes built-in commands or imply EXECUTE/TRUTH forces truth or tool use. Live Voice can do web search and use memory where enabled; the recommendation to use editable Dictation plus normal text for research is workflow advice, not a claim Voice is incapable. Custom Instructions, Memory and Projects have separate persistence and privacy boundaries.
+ChatGPT Free product capabilities and limits are time-sensitive; maintain LAST_CHECKED and primary help sources on SW-AI-001..018. Distinguish documented capabilities from Aletheia methods. Do not call plain-language prompt recipes built-in commands or imply EXECUTE/TRUTH forces truth or tool use. Live Voice can do web search and use memory where enabled; the recommendation to use editable Dictation plus normal text for research is workflow advice, not a claim Voice is incapable. Custom Instructions, Memory and Projects have separate persistence and privacy boundaries.
 
 ## Acceptance tests
 
-- Parse the **actual current Markdown**, assert all intended cards render and all SW-AI-001..011 cards have an informative Summary and clickable primary source.
+- Parse the **actual current Markdown**, assert all intended cards render and all SW-AI-001..018 cards have an informative Summary and clickable primary source.
 - Syntax-check both real `<script>` blocks; no literal escaped-newline regressions or duplicate event handlers.
 - Activate AI / CHATGPT; only the 11 AI cards should appear. Search AI terms while another category is selected and confirm automatic ALL reset.
 - Check Jump to Card, SURPRISE ME, MORE/LESS, risk badges, source links, sticky toolbar, responsive card sizes and keyboard focus.
@@ -45,4 +45,8 @@ ChatGPT Free product capabilities and limits are time-sensitive; maintain LAST_C
 
 ## Change log
 
-2026-09-23: Added AI / CHATGPT tab, short AI paragraph, 11 checked cards and a companion public ChatGPT Free guide. Repaired pre-existing literal escaped line breaks in the search input's event handler. Source-level cards, links and JavaScript syntax validated. GitHub Pages behaviour on the owner's PC/Android still requires confirmation.
+2026-09-23: Added AI / CHATGPT tab, short AI paragraph, 18 checked cards and a companion public ChatGPT Free guide. Repaired pre-existing literal escaped line breaks in the search input's event handler. Source-level cards, links and JavaScript syntax validated. GitHub Pages behaviour on the owner's PC/Android still requires confirmation.
+
+## OpenAI eight-guide audit (23 September 2026)
+
+Additional verified topics now include Free GPT usage and 500 MB Library; 1,500-character Custom Instructions on Free; Project memory, instructions and sharing boundaries; Memory sources and full removal; Live/Advanced/Standard voice distinctions and Dictation retention; web search privacy; and separate Data controls. The companion public HTML guide was regenerated from its canonical Markdown after this audit. Static parser/script validation passed with 131 total Windows cards and 18 AI cards. Live desktop/mobile checking remains open.
