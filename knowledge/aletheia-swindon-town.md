@@ -801,6 +801,7 @@ region: Swindon, Wiltshire, England
 language: en-GB
 evidence_policy: current-first, provenance-aware
 last_researched: 2026-09-23
+resource_page: https://swindon.org.uk/resources/aletheia-swindon-town-rsc.htm
 ```
 
 ---
