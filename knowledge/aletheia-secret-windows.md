@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.6
+version: 0.7
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
@@ -3354,6 +3354,297 @@ Primary sources:
 - https://learn.microsoft.com/en-us/windows/package-manager/winget/upgrade
 - https://support.microsoft.com/en-us/windows/experience/backup-recovery/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files
 - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk
+
+---
+
+
+# AI & CHATGPT FREE | Practical use and reusable prompts
+
+These cards cover using AI **on** Windows, Android and iOS, not Windows system functions. Platform features are time-sensitive, and the usage advice is distinguished from documented product behaviour.
+
+## SW-AI-001 | Free ChatGPT is more than a text-only chatbot
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ChatGPT Free includes everyday text chat, web search, file and image uploads, some data analysis, image generation and limited Voice. Separate feature limits apply, so availability and capacity vary.
+
+### Why useful
+For a current question, request web search and dated sources. Upload a relevant document when available instead of asking the model to guess what it says. Free users can also try Think for harder questions where it appears. Projects are available without a paid subscription.
+
+### Aletheia check
+Do not suggest that Free cannot upload files or search the web. Do not promise unlimited tools or rely on older fixed message limits.
+
+### Sources
+- https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+- https://help.openai.com/en/articles/9237897
+- https://help.openai.com/en/articles/8555545
+
+---
+
+## SW-AI-002 | Talking to ChatGPT is not the same as dictating a research task
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG for features; CONTEXT for workflow
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Use Voice when you want a natural spoken discussion. For careful research, an editable transcript, a table or a document, consider microphone dictation into the normal text composer and review the prompt before sending.
+
+### Why useful
+Voice's Live mode can use web search and memory where available; it is not incapable of research. However, it uses a different conversation-oriented model, supports a different tool set and its transcript may not reproduce speech exactly. Dictation converts a recording into editable text for the normal chat. Where offered, use the response's Read Aloud or speaker action to listen to the finished text without giving up a readable answer.
+
+### Aletheia check
+Voice is a choice, not a safety rating. Ask for visible sources and a written output, then check any important claims. Button names and voice options vary by app/version.
+
+### Sources
+- https://help.openai.com/en/articles/20001274
+- https://help.openai.com/en/articles/12168547
+
+---
+
+## SW-AI-003 | Prompt shortcuts are plain-language instructions, not magic codes
+
+STATUS: METHOD
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: CONTEXT
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Short commands can help shape an answer, but phrases such as EXECUTE, NO FAFF and TRUTH are not special ChatGPT control codes. Tell the AI exactly what behaviour you want, especially for important tasks.
+
+### Why useful
+**EXECUTE:** Complete the task in this reply, using the available tools; report anything you could not do.
+**NO FAFF:** Start with the result, then give only essential detail.
+**ELI5 / ELI10:** Explain this for a five-year-old / ten-year-old without changing the factual answer.
+**SHORT:** Summarise in five sentences.
+**STEP BY STEP:** Give numbered instructions; wait before irreversible actions.
+**COMPARE:** Put the differences and trade-offs in a table.
+**CHALLENGE:** Test my assumptions and show counterarguments.
+**SOURCE CHECK:** Separate confirmed facts, uncertain points and missing evidence.
+
+### Aletheia check
+These are Aletheia-recommended prompt recipes. Their success depends on context and available tools; a keyword alone cannot guarantee truth, research, compliance or persistence.
+
+### Sources
+- https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+
+---
+
+## SW-AI-004 | Ask ChatGPT to search the web when freshness matters
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+For news, prices, rules, software features and recent events, tell ChatGPT to search current sources and show publication dates. ChatGPT Free can search the web, subject to limits.
+
+### Why useful
+Reusable prompt: **SEARCH CURRENT:** Search the web for this question. Prefer primary sources, include links and dates, and separate verified information from your interpretation. For conflicting results, tell me what each source actually says. The /Search shortcut or search control is available in supported interfaces, but a normal-language request also works.
+
+### Aletheia check
+Never confuse a model's memory of an older web page with an actual search. Clicking a citation should reach a source that supports the claim.
+
+### Sources
+- https://help.openai.com/en/articles/9237897
+
+---
+
+## SW-AI-005 | Ask for the output format before the AI starts
+
+STATUS: METHOD
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: CONTEXT
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+When you want a table, a checklist, a downloadable file or a direct answer, say that in the prompt. The ordinary text interface makes structured results easier to inspect and reuse than a voice-first conversation.
+
+### Why useful
+**TABLE:** Show a table with columns Topic | What is known | Source | Uncertainty.
+**ONE QUESTION:** Ask only the single question needed to proceed, otherwise complete the task.
+**DO NOT GUESS:** If a necessary fact is missing, label it unknown and say how to verify it.
+**COPYABLE:** Give the final version in plain text with no preamble.
+**AUDIT:** List the assumptions, calculations and facts that need checking.
+
+### Aletheia check
+An AI can still make a convincing-looking wrong table. Check the source rows and any important figures.
+
+### Sources
+- https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+
+---
+
+## SW-AI-006 | Custom Instructions are available on ChatGPT Free
+
+STATUS: VERIFIED
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: MEDIUM: PROFILE MAY CONTAIN PRIVATE PREFERENCES
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ChatGPT Free users can set Custom Instructions so ordinary chats start with their preferred tone, level of detail and working style without repeating those preferences every time.
+
+### Why useful
+Find the available Personalization or Customize ChatGPT controls in Settings. Example: 'Lead with the answer. Be concise and precise. Do not invent facts, links or citations. Clearly label uncertainty. Ask only essential questions. Use light humour only when appropriate. When information may have changed, search and cite sources if search is available.'
+
+### Aletheia check
+Instructions guide behaviour but cannot confer missing tools or override platform safeguards. Keep private identifiers, secrets and unnecessary medical or financial details out of shared instruction templates.
+
+### Sources
+- https://help.openai.com/en/articles/8096356
+- https://help.openai.com/en/articles/7039943
+
+---
+
+## SW-AI-007 | Audit what ChatGPT remembers before correcting its assumptions
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: MEDIUM: PERSONAL DATA
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Memory can make ChatGPT more useful but is not a complete or guaranteed record of every conversation. Review Memory in Settings > Personalization; use the Memory summary and its Manage controls if available.
+
+### Why useful
+Ask 'What do you currently remember about my preferences for this topic, and which parts are assumptions?' Compare the answer with the Memory summary and the original source chats/files. To correct or fully remove an unwanted personal detail, update the memory summary and remove original chats and other sources containing it. Memory controls and availability can vary by account.
+
+### Aletheia check
+Do not claim that saying 'forget this' instantly erases every source. Turning memory off is not the same as deleting history, and a chat summary is not proof of what all stored sources contain.
+
+### Sources
+- https://help.openai.com/en/articles/8590148
+
+---
+
+## SW-AI-008 | A free Project can carry Aletheia between chats
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: MEDIUM: CHECK CONTENT BEFORE UPLOAD
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Projects are available on ChatGPT Free. Create a Project for a continuing subject, add compact Aletheia bootstrap instructions and, if wanted, your own portable aletheia-memory.md file.
+
+### Why useful
+Use Project instructions for Aletheia's evidence and task rules. Keep the user-controlled memory file short and review it before upload. Free accounts currently allow five files per Project, with additional daily file-upload limits. Thalia humour and extra Aletheia apps should be explicitly selected rather than silently turned on.
+
+### Aletheia check
+Project instructions are not a replacement for checking whether the AI has actually loaded the right file. Do not claim a file was updated unless you can verify the write.
+
+### Sources
+- https://help.openai.com/en/articles/10169521
+- https://help.openai.com/en/articles/8555545
+
+---
+
+## SW-AI-009 | Clean up privacy and chat history without confusing the controls
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: STRONG
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: MEDIUM: DELETION CAN BE IRREVERSIBLE
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ChatGPT's Settings > Data controls lets eligible users manage model-improvement settings, request a data export and delete chats. Temporary Chat can be useful for one-off conversations you do not want in normal history.
+
+### Why useful
+'Improve the model for everyone' controls use of eligible new conversation data for model improvement; turning it off does not delete existing conversations. Temporary chats stay out of normal history unless saved and do not create new memories. Privacy-sensitive material should not be uploaded merely to make a generic bootstrap more detailed.
+
+### Aletheia check
+Archive, delete, disable training, disable memory and remove an item from a portable memory file are different actions. Review Library files and connected-app sources separately when complete removal matters.
+
+### Sources
+- https://help.openai.com/en/articles/7730893
+- https://help.openai.com/en/articles/7039943
+
+---
+
+## SW-AI-010 | Use an evidence challenge instead of the word TRUTH
+
+STATUS: METHOD
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: CONTEXT
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Typing TRUTH is not a guarantee that ChatGPT will verify an answer. Request an evidence audit with explicit tests, citations and clear unknowns.
+
+### Why useful
+**VERIFY THIS:** Identify each checkable claim; search current primary sources when available; give the supporting links and dates; flag unsupported or contested claims; correct errors; and finish with 'What remains unknown'.
+**RED TEAM:** Give the strongest factual objections to this proposal and explain what evidence would change the conclusion.
+**CONFIDENCE CHECK:** State which parts rest on direct evidence and which are interpretation; do not invent a numerical confidence score.
+
+### Aletheia check
+Prompts can reduce careless output, not eliminate hallucinations. For health, legal, financial and safety-critical questions, independently verify with appropriate primary sources or qualified professionals.
+
+### Sources
+- https://help.openai.com/en/articles/9237897
+- https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+
+---
+
+## SW-AI-011 | Make a portable checkpoint before changing AI or starting fresh
+
+STATUS: METHOD
+APPLIES_TO: ChatGPT Free on supported web, Windows, Android and iOS experiences; check current interface
+EVIDENCE: CONTEXT
+CONFIDENCE: HIGH for cited product behaviour; CONTEXT for suggested usage
+RISK: LOW
+LIFECYCLE: CURRENT / FEATURES AND LIMITS CAN CHANGE
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Aletheia's CHECKPOINT and HANDOVER prompts create an inspectable summary of the task, rather than trusting any provider to remember every detail from an earlier conversation.
+
+### Why useful
+**CHECKPOINT:** Summarise the current goal, completed work, open questions, sources, constraints, corrections and the next specific action.
+**HANDOVER:** Produce a portable Markdown brief with confirmed facts, unresolved conflicts, file names, links and decisions, clearly labelling what has not been checked. Use it with the reviewed Aletheia bootstrap and optional personal memory file in a new chat or another AI.
+
+### Aletheia check
+Do not insert passwords, API keys or private records into a portable handover. A checkpoint is only as complete as the context the AI can actually access.
+
+### Sources
+- https://help.openai.com/en/articles/10169521
+- https://help.openai.com/en/articles/8590148
 
 ---
 
