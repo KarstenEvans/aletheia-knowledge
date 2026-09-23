@@ -386,3 +386,53 @@ Public deep link:
 https://karstenevans.github.io/aletheia-app/aletheia-storyteller.htm?story=bio-Schrodinger
 
 The first adventure currently depicts ToomorrowMan as a human, and AI-PI as a floating robot; alternate Robot PI branding should not silently retcon the characters. Verify original artwork before designing new portraits. The existing YouTube channel link for ToomorrowMan was supplied by the project owner, but channel contents must be independently inspected before treating them as biographical evidence.
+
+
+### Character speech grammar and reusable prompt G (implemented)
+
+In `KarstenEvans/aletheia-app`, the current Storyteller parses `[voice-profile;...]` definitions from the **beginning of the chosen story**, not from every full character biography. Its `parseStory` passes `speaker` and `profiles` metadata to the browser TTS renderer. Ordinary unquoted text is narrated with the app-selected voice even after a character selection. Only paired `“...”` or `"..." ` double-quoted spans use the active actor's chosen installed browser voice.
+
+```text
+[voice-profile;TM;lang=en-GB;gender=male;avoid=George;rate=0.97;pitch=0.88]
+[voice-profile;AI-PI;lang=th-TH;fallback=George;pitch=1.05]
+[voice-profile;PRUDENCE;lang=ja-JP;gender=female;fallback=Female]
+
+## The parcel
+
+[voice:TM]
+“Postmark?” asked ToomorrowMan.
+
+[voice:AI-PI]
+“Tomorrow,” said AI-PI.
+
+ToomorrowMan examined the parcel.
+
+[voice:]
+“An unidentified speaker,” said a figure in the doorway.
+```
+
+**Important:** `[voice:]` clears the actor; it is not needed before ordinary unquoted prose, which always uses the narrator. Preserve existing single and double quotation marks correctly: apostrophes in contractions must never cause a switch. For multiple characters on one line, add explicit tags between independently quoted passages on separate lines. If a locale is unavailable, use the configured named fallback or user-selected narrator, not a fabricated voice. Browser TTS supports voice, rate and pitch; expressive inflection or emotional acting cannot be guaranteed. Prerecorded MP3/VTT remains one fixed recording and cannot react to these character tags.
+
+The default captions have changed from two cues to **one**. The narrator still reads headings without any synthetic prefix and waits for a silent 400-ms gap. Inspect the app's menu **Build 2026-09-23 voice cast** line to distinguish fresh deployment from a cached older build.
+
+**Ready-to-paste prompt G:**
+
+```text
+Before modifying Aletheia Storyteller, fetch the exact current app,
+the target story, its manifest and Storyteller page spec from GitHub.
+Save an exact previous-version backup before writing the new HTML.
+The user-selected browser voice is always the narrator. Put character
+[voice-profile;...] declarations at the start of the story Markdown.
+Use explicit [voice:TM], [voice:AI-PI], etc., when known speakers change.
+Only paired double-quoted dialogue gets the actor voice. Narrative
+text, quoted text with no actor and Markdown headings use the narrator.
+[voice:] explicitly clears the current actor. Do not guess speakers or
+download whole biography files just for voice selection.
+Make captions default to one spoken cue and retain optional 2, 3 and Off.
+Do not reintroduce the synthetic words "New title"; preserve the
+400-ms silent heading pause. Run syntax and real-story parser tests,
+then test on Android and desktop using their installed TTS voices.
+Prepare a local HTML test and a full original backup before publishing.
+Give a .github.io URL to the runnable Storyteller; document bilingual
+dual-caption translation only as a future idea in ideas.md.
+```
