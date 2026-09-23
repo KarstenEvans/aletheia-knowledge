@@ -19,6 +19,16 @@ nav a:hover,.btn:hover{background:var(--soft)}section{padding:30px 0;border-top:
 .notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:15px 0}.clean{background:#edf5ef;border-color:#c7d9ce}.money{background:#f8f0dc;border-color:#dfc88c}.small{font-size:14px;color:var(--muted)}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:750;margin:2px 3px 2px 0;background:#fff}footer{border-top:1px solid var(--line);padding:24px 0 50px;color:var(--muted)}
 @media(max-width:620px){.grid{grid-template-columns:1fr}}
+
+.roundabout-art{height:140px;display:grid;place-items:center;overflow:hidden}
+.track{position:relative;display:block;border:3px dashed #c1ccd2;border-radius:50%;width:106px;height:106px;animation:rotate 11s linear infinite}
+.track i{position:absolute;width:19px;height:19px;background:#1b667f;border:3px solid white;border-radius:50%;box-shadow:0 0 0 2px #1b667f;left:39px;top:-10px}
+.track i:nth-child(2){transform:rotate(72deg);transform-origin:10px 63px}
+.track i:nth-child(3){transform:rotate(144deg);transform-origin:10px 63px}
+.track i:nth-child(4){transform:rotate(216deg);transform-origin:10px 63px}
+.track i:nth-child(5){transform:rotate(288deg);transform-origin:10px 63px}
+@keyframes rotate{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}}
 </style>
 </head>
 <body>
@@ -29,7 +39,7 @@ nav a:hover,.btn:hover{background:var(--soft)}section{padding:30px 0;border-top:
 <p>Things to buy, give, visit, read and enjoy around Swindon, plus useful free resources and sensible affiliate ideas.</p>
 </div>
 <div class="wrap"><nav>
-<a href="#gifts">Gifts</a><a href="#daysout">Days out</a><a href="#books">Books & music</a><a href="#make">Make your own</a><a href="#free">Free resources</a><a href="#affiliate">Affiliate notes</a>
+<a href="#gifts">Gifts</a><a href="#daysout">Days out</a><a href="#books">Books & music</a><a href="#make">Make your own</a><a href="#free">Free resources</a><a href="#gifs">GIFs</a><a href="#affiliate">Affiliate notes</a>
 <a href="../app/aletheia-swindon-town.htm">KNOWLEDGE</a><a href="../index.html">ALETHEIA KNOWLEDGE</a><a href="https://swindon.org.uk/">SWINDON.ORG.UK</a>
 </nav></div>
 </header>
@@ -44,7 +54,7 @@ nav a:hover,.btn:hover{background:var(--soft)}section{padding:30px 0;border-top:
 <article class="card"><div class="eyebrow">Local art • Experiences too</div><h3>Eastcott Studios Gallery</h3><p>Local art, ceramics, sculpture, crafts and handmade gifts, plus workshops and vouchers.</p><div class="actions"><a class="local" href="https://eastcottstudiosgallery.co.uk/">LOCAL ART & WORKSHOPS</a></div></article>
 <article class="card"><div class="eyebrow">Football • Official shop</div><h3>Swindon Town FC</h3><p>The official club shop carries current kit, training wear, fashion, accessories, gifts and souvenirs.</p><div class="actions"><a class="local" href="https://stfcdirect.com/">OFFICIAL STFC SHOP</a></div></article>
 <article class="card"><div class="eyebrow">Town centre • Independent</div><h3>Independent gift shops</h3><p>Current local guides include Something Different in the Brunel Plaza and other Swindon independents.</p><div class="actions"><a class="alt" href="https://swindonpost.co.uk/articles/independent-shops-swindon" data-awinignore>INDEPENDENT SHOPS GUIDE</a></div></article>
-<article class="card"><div class="eyebrow">Magic Roundabout • Gift idea</div><h3>Roundabout oddities</h3><p>Mugs, shirts, coasters, stickers and other Magic Roundabout gifts exist online. For Aletheia, original artwork is the better long-term route.</p><div class="actions"><a class="alt" href="https://www.zazzle.co.uk/magic%2Broundabout">BROWSE IDEAS</a></div></article>
+<article class="card"><div class="eyebrow">Magic Roundabout • Gift idea</div><h3>Roundabout oddities</h3><p>Mugs, shirts, coasters, stickers and other Magic Roundabout gifts exist online. For Aletheia, original artwork is the better long-term route.</p><div class="actions"><a class="alt" href="https://www.zazzle.co.uk/magic%2Broundabout?rf=238019056946001651" data-awinignore>BROWSE IDEAS</a></div></article>
 </div></section>
 
 <section id="daysout"><h2>Give somebody Swindon instead of stuff</h2><p class="intro">Tickets, hotel stays, heritage days and workshops make good presents and support local organisations directly.</p>
@@ -55,19 +65,67 @@ nav a:hover,.btn:hover{background:var(--soft)}section{padding:30px 0;border-top:
 <article class="card"><div class="eyebrow">Local creativity • Voucher idea</div><h3>Make something at Eastcott</h3><p>Creative workshops, pottery, glass, sculpture and local-art browsing. A present that does not require another shelf.</p><div class="actions"><a class="local" href="https://eastcottstudiosgallery.co.uk/">WHAT'S ON</a></div></article>
 </div></section>
 
-<section id="books"><h2>Books, music & Swindon on the shelf</h2><p class="intro">Books work twice: as presents and as routes into the knowledge behind the town.</p>
-<div class="grid">
-<article class="card"><div class="eyebrow">Film • Biography</div><h3>The Real Diana Dors</h3><p>Anna Cale's biography of the Swindon-born film star.</p><div class="actions"><a class="bookshop" href="https://uk.bookshop.org/shop/aletheia" data-awinignore>ALETHEIA BOOKSHOP</a><a class="alt" href="https://www.pen-and-sword.co.uk/The-Real-Diana-Dors-Hardback/p/19091">PUBLISHER</a></div></article>
-<article class="card"><div class="eyebrow">Music • Swindon</div><h3>XTC</h3><p>Look for authorised records, CDs, books and magazine specials about XTC, formed in Swindon. Current searches are safer than freezing one edition forever.</p><div class="actions"><a class="bookshop" href="https://uk.bookshop.org/shop/aletheia" data-awinignore>ALETHEIA BOOKSHOP</a><a class="alt" href="https://www.waterstones.com/books/search/term/XTC+Swindon">SEARCH WATERSTONES</a></div></article>
-<article class="card"><div class="eyebrow">Literary Swindon</div><h3>Swindon in fiction</h3><p><i>The Curious Incident of the Dog in the Night-Time</i> and Jasper Fforde's Thursday Next novels both give Swindon a parallel life in fiction.</p><div class="actions"><a class="bookshop" href="https://uk.bookshop.org/shop/aletheia" data-awinignore>ALETHEIA BOOKSHOP</a><a class="alt" href="https://www.waterstones.com/books/search/term/Thursday+Next+Jasper+Fforde">THURSDAY NEXT</a></div></article>
-<article class="card"><div class="eyebrow">Nature writing • Coate</div><h3>Richard Jefferies</h3><p>Try editions of <i>The Story of My Heart</i> and related Jefferies books for a strongly local literary gift.</p><div class="actions"><a class="bookshop" href="https://uk.bookshop.org/shop/aletheia" data-awinignore>ALETHEIA BOOKSHOP</a></div></article>
-</div></section>
 
-<section id="make"><h2>Make your own Swindon gift</h2><p class="intro">Three different models: local printing, direct affiliate commission, or a no-stock print-on-demand shop.</p>
+<section id="books">
+<h2>Books, music &amp; Swindon on the shelf</h2>
+<p class="intro">Real titles and identified editions, not generic searches that lead nowhere. Browse the Aletheia Bookshop or jump straight to a named book.</p>
+<div class="grid">
+<article class="card">
+<div class="eyebrow">Film • Swindon-born star</div>
+<h3>The Real Diana Dors</h3>
+<p>Anna Cale's biography of Diana Dors. The 2021 hardback is ISBN <b>9781526782151</b>.</p>
+<div class="actions">
+<a class="bookshop" href="https://uk.bookshop.org/a/18254/9781526782151" data-awinignore>THE REAL DIANA DORS</a>
+<a class="alt" href="https://uk.bookshop.org/beta-search?keywords=Diana+Dors" data-awinignore>OTHER DIANA DORS BOOKS</a>
+</div>
+</article>
+<article class="card">
+<div class="eyebrow">Music • Andy Partridge of XTC</div>
+<h3>Complicated Game</h3>
+<p><i>Inside the Songs of XTC</i> by Andy Partridge with Todd Bernhardt. A book about the band's songwriting with a guided tour of Partridge's Swindon. ISBN <b>9781908279781</b>.</p>
+<div class="actions">
+<a class="bookshop" href="https://uk.bookshop.org/a/18254/9781908279781" data-awinignore>COMPLICATED GAME</a>
+</div>
+</article>
+<article class="card">
+<div class="eyebrow">Fiction • Set in Swindon</div>
+<h3>The Curious Incident of the Dog in the Night-Time</h3>
+<p>Mark Haddon's novel follows Christopher Boone, a teenager living in Swindon who investigates the death of a neighbour's dog. A verified Bookshop paperback edition has ISBN <b>9780099450252</b>.</p>
+<div class="actions">
+<a class="bookshop" href="https://uk.bookshop.org/a/18254/9780099450252" data-awinignore>THE CURIOUS INCIDENT</a>
+</div>
+</article>
+<article class="card">
+<div class="eyebrow">Fiction • Alternative Swindon</div>
+<h3>The Eyre Affair</h3>
+<p>What is <b>Thursday Next</b>? She's a literary detective in Jasper Fforde's alternative 1985, where characters can be kidnapped from novels. <i>The Eyre Affair</i> starts the series and makes Swindon part of its fictional world. Paperback ISBN <b>9780340733561</b>.</p>
+<div class="actions">
+<a class="bookshop" href="https://uk.bookshop.org/a/18254/9780340733561" data-awinignore>THE EYRE AFFAIR</a>
+</div>
+</article>
+<article class="card">
+<div class="eyebrow">Nature writing • Born at Coate</div>
+<h3>Richard Jefferies</h3>
+<p>Nature writing, country-life essays and early speculative fiction. Start with <i>The Story of My Heart</i> or <i>Wild Life in a Southern County</i>. There are many editions, so check which ISBN Bookshop accepts.</p>
+<div class="actions">
+<a class="bookshop" href="https://uk.bookshop.org/beta-search?keywords=The+Story+of+My+Heart" data-awinignore>THE STORY OF MY HEART</a>
+<a class="bookshop" href="https://uk.bookshop.org/beta-search?keywords=Richard+Jefferies" data-awinignore>RICHARD JEFFERIES BOOKS</a>
+<a class="alt" href="downloads/richard-jefferies-bookshop-isbns.csv" download>ISBN UPLOAD CSV</a>
+</div>
+<p class="small">The downloadable ISBN list is a researched edition list, not a promise that every edition is stocked by Bookshop.</p>
+</article>
+</div>
+<div class="notice clean">
+<b>Explore the complete Aletheia Bookshop</b><br>
+<a class="btn" href="https://uk.bookshop.org/shop/aletheia" data-awinignore>OPEN ALETHEIA BOOKSHOP</a>
+</div>
+</section>
+
+<section id="make"><h2>Make your own Swindon gift</h2><p class="intro">Print an original Swindon T-shirt locally, personalise a gift, or browse creators’ ready-made designs.</p>
 <div class="grid">
 <article class="card"><div class="eyebrow">Swindon business • Free listing</div><h3>Teeone</h3><p>Teeone is a Swindon-based custom clothing and embroidery business at Cheney Manor. It prints and embroiders T-shirts, polos, hoodies, workwear and other clothing, with an in-house Swindon design team.</p><p><span class="tag">LOCAL</span><span class="tag">NO AFFILIATE ASSUMED</span></p><div class="actions"><a class="local" href="https://teeone.co.uk/" data-awinignore>TEEONE SWINDON</a></div></article>
-<article class="card"><div class="eyebrow">Direct affiliate • Custom products</div><h3>Contrado</h3><p>Contrado's own UK affiliate programme currently advertises up to 15% commission on UK sales, 10% worldwide, a 90-day cookie and PayPal payouts. It is a <b>direct programme</b>, not Awin.</p><p><span class="tag">DIRECT AFFILIATE</span><span class="tag">UP TO 15% UK</span><span class="tag">90 DAYS</span></p><div class="actions"><a class="direct" href="https://www.contrado.co.uk/affiliate" data-awinignore>CONTRADO AFFILIATE</a><a class="alt" href="https://www.contrado.co.uk/design-your-own-clothes" data-awinignore>DESIGN CLOTHING</a></div></article>
-<article class="card"><div class="eyebrow">Print on demand • Own margin</div><h3>Spreadshop / Spreadshirt</h3><p>A no-stock route for original Swindon.org.uk or Aletheia designs. Spreadshirt handles production, shipping and customer service while the shop owner sets the margin.</p><p><span class="tag">POD MARGIN</span><span class="tag">NO STOCK</span></p><div class="actions"><a class="direct" href="https://www.spreadshirt.co.uk/start-selling" data-awinignore>START A SPREADSHOP</a><a class="alt" href="https://www.spreadshirt.co.uk/personalised/t-shirts" data-awinignore>CUSTOM T-SHIRTS</a></div></article>
+<article class="card"><div class="eyebrow">Personalised gifts</div><h3>Contrado</h3><p>Design and order personalised clothing and gifts, including original Swindon-themed T-shirts.</p><div class="actions"><a class="alt" href="https://www.contrado.co.uk/design-your-own-clothes" data-awinignore>DESIGN CLOTHING</a></div></article>
+<article class="card"><div class="eyebrow">Print on demand</div><h3>Spreadshop / Spreadshirt</h3><p>A no-stock route for original Swindon.org.uk or Aletheia designs. Spreadshirt handles production, shipping and customer service while the shop owner sets the margin.</p><div class="actions"><a class="direct" href="https://www.spreadshirt.co.uk/start-selling" data-awinignore>EXPLORE SPREADSHOP</a><a class="alt" href="https://www.spreadshirt.co.uk/personalised/t-shirts" data-awinignore>CUSTOM T-SHIRTS</a></div></article>
 <article class="card"><div class="eyebrow">Original ideas • Test small</div><h3>Aletheia / Swindon.org.uk designs</h3><p>Good first tests: a clean Magic Roundabout diagram, <b>ALETHEIA KNOWLEDGE — BUILT IN SWINDON</b>, and a Weird Swindon design. Keep artwork original.</p><p class="small">Possible later ranges: Thalia, Toomorrowman, AI PI and Dragonfold.</p></article>
 </div></section>
 
@@ -79,15 +137,25 @@ nav a:hover,.btn:hover{background:var(--soft)}section{padding:30px 0;border-top:
 <article class="card"><div class="eyebrow">Heritage • Official</div><h3>Historic England: Swindon</h3><p>Listed buildings, archaeology reports and authoritative heritage records.</p><div class="actions"><a class="alt" href="https://historicengland.org.uk/local/locations/swindon/" data-awinignore>HISTORIC ENGLAND</a></div></article>
 </div></section>
 
+<section id="gifs"><h2>Swindon GIFs &amp; moving pictures</h2>
+<p class="intro">Looking for something to send rather than buy? Explore existing Swindon GIFs or enjoy our own tiny animated Magic Roundabout sketch.</p>
+<div class="grid">
+<article class="card"><div class="eyebrow">Animated • Free to browse</div><h3>Swindon Town GIFs</h3>
+<p>Browse football and town-related animated GIFs on GIPHY. Check the creator's licence before using someone else's animation commercially.</p>
+<div class="actions"><a class="alt" href="https://giphy.com/explore/swindon-town" data-awinignore>BROWSE GIFS</a>
+<a class="alt" href="https://giphy.com/explore/swindon-stickers" data-awinignore>SWINDON STICKERS</a></div></article>
+<article class="card"><div class="eyebrow">Original • Aletheia animation</div><h3>The five-roundabout shuffle</h3>
+<p>An original, lightweight animated sketch inspired by Swindon's Magic Roundabout. This is a playful illustration, not a road-layout or traffic-direction guide.</p>
+<div class="roundabout-art" role="img" aria-label="Five small dots travel around a central circle">
+<span class="track"><i></i><i></i><i></i><i></i><i></i></span>
+</div></article>
+</div></section>
 <section id="lost"><h2>Lost Swindon corner</h2><div class="notice"><h3>Luck Skywalkers / Skywalkers Promotions</h3><p>Historic directories record a fancy-dress business called <b>Luck Skywalkers</b> at 33 Faringdon Road and Skywalkers Promotions in the Brunel Centre. Treat it as historical, not a current shop.</p><p class="small">The surviving Spider-Man sign is retained here as local recollection rather than independently verified historical evidence.</p><p><a class="btn" href="https://www.swindon.co.uk/fancy-dress/" data-awinignore>HISTORICAL DIRECTORY LEAD</a></p></div></section>
 
-<section id="how"><h2>How the money bit should work</h2><div class="notice clean"><b>KISS order:</b> best local match → trustworthy current source → affiliate opportunity where available.</div>
-<div class="grid">
-<article class="card"><div class="eyebrow">Bookshop.org</div><h3>Aletheia Bookshop</h3><p>Use Bookshop.org's own affiliate attribution for books. These links use <code>data-awinignore</code>.</p><div class="actions"><a class="bookshop" href="https://uk.bookshop.org/shop/aletheia" data-awinignore>ALETHEIA BOOKSHOP</a></div></article>
-<article class="card"><div class="eyebrow">Awin MasterTag</div><h3>Ordinary retailer links</h3><p>The page includes Awin Publisher MasterTag <b>3182162</b>. Eligible ordinary merchant links can be converted when that merchant/programme is active. Do not claim an individual merchant earns commission until confirmed.</p></article>
-<article class="card"><div class="eyebrow">Direct programme</div><h3>Contrado stays separate</h3><p>Contrado currently runs its own direct affiliate programme, so its links are excluded from Awin conversion.</p></article>
-<article class="card"><div class="eyebrow">Free links</div><h3>Local still comes first</h3><p>Teeone, STEAM, Lydiard Park and local makers belong here even if they pay nothing.</p></article>
-</div></section>
+<section id="how"><h2>About these links</h2>
+<div class="notice clean"><p>We feature independent Swindon businesses and free local resources alongside selected shops. Some links may earn a commission at no extra cost to you. Book availability, prices and individual shop terms can change.</p>
+<a class="btn secondary" href="../app/aletheia-swindon-town.htm" data-awinignore>EXPLORE THE KNOWLEDGE CARDS</a></div>
+</section>
 </main>
 
 <footer><div class="wrap"><p><b>Aletheia Knowledge • Swindon Town</b></p><p class="small">Resource companion to <code>knowledge/aletheia-swindon-town.md</code>. Stock, tickets and affiliate terms can change.</p></div></footer>
