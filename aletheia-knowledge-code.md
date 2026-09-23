@@ -298,3 +298,91 @@ deployment was verified unless it actually was. Update tasks with results.
 ## 9. Reusable snippets versus deployed code
 
 The examples above are **not** shared assets being fetched at runtime today. Existing apps contain collection-specific CSS/JS; standardising popup, Markdown rendering or cards into actual shared files is a future task, subject to testing and preserving offline/portable use. Avoid introducing bundlers, paid APIs, Cloudflare dependencies or complicated frameworks for a problem that static HTML and Markdown already solve.
+
+## 10. Storyteller Markdown and camera prompt (cross-repository)
+
+The executable Storyteller is in **`KarstenEvans/aletheia-app`**, not in this knowledge repository. Read the current root `aletheia-storyteller.htm`, `aletheia-storyteller.md` and `aletheia-storyteller-page.md`, then `stories/stories.json` and the exact target `.md` and illustration files **directly from GitHub before editing**. When an anticipated file is absent, identify what is missing and ask for or plan the original artwork rather than inventing a file path.
+
+Its published app link is:
+https://karstenevans.github.io/aletheia-app/aletheia-storyteller.htm
+
+### Literal story and image tags
+
+Put commands on their own lines inside the narrative Markdown. The image path is relative to the selected story's directory and must match a confirmed filename on GitHub.
+
+```text
+[image;Toomorrow-Mystery-in-the-Abandoned-Mechanics-Hall.webp;tm=29,22,2.2;aipi=41,31,2.5;schrodinger=67,62,2.4]
+[wide;dur=1.7]
+
+The old lift opened on an unfamiliar floor.
+
+[zoom;schrodinger;dur=2.3]
+
+The cat was already waiting.
+
+[pan;aipi;dur=2.0]
+
+AI-PI checked the sign.
+
+[hold;1.0]
+[wide;dur=2.0]
+```
+
+Image focus values `name=x%,y%,preferredZoom` are **estimated against each particular image**. Use the actual published image to verify named character positions. `zoom` centres a named hotspot and uses its preferred zoom; `pan` moves toward the named hotspot at approximately the current zoom; `wide` returns to the whole image; `hold` waits before the next spoken cue. Duration is in seconds. These commands already exist in the app; do not describe planned `fade`, `sound` or `quiz` tags as implemented.
+
+### Biography include grammar
+
+Independent biography files are named `stories/bio-ToomorrowMan.md`, `bio-AI-PI.md`, `bio-Schrodinger.md`, `bio-Elsie.md` and `bio-Prudence.md`. They are selectable as ordinary story entries under `type: "bio"` in the explicit manifest. Inside another story, optional **inline inclusion** uses:
+
+```text
+[bio-ToomorrowMan.md]
+```
+
+The requested alternate spelling `[bio-TomorrowMan.md]` is a supported alias for the canonical two-o filename. The include loads and narrates the other Markdown *including its image and camera cues* at that exact location. Do not insert it into an existing long story merely because the bio file exists. Keep MP3/VTT narration limited to stories whose speech-cue timing is known to match; dynamic bio inclusion defaults to browser TTS.
+
+Security and portability rule: accept only a plain `bio-*.md` name from the selected story's own directory, not `../`, external URLs or arbitrary user-controlled paths. Check for missing files, include cycles and excessive expansion. A static website cannot automatically enumerate all GitHub folder entries: every new published `.md` story/bio must be entered into `stories/stories.json`. User-selected OPEN FOLDER is the separate local enumeration route.
+
+### Ready-to-paste prompt F: write an illustrated Storyteller biography
+
+```text
+Work in the current KarstenEvans/aletheia-app main branch.
+Fetch the real aletheia-storyteller.htm, aletheia-storyteller.md,
+aletheia-storyteller-page.md, stories/stories.json, original story Markdown,
+and exact proposed image files from GitHub before editing. Do not rely on
+files mentioned in another chat if they are missing from the repository.
+
+Write an original, concise, narratable bio as stories/bio-CHARACTER.md.
+Preserve the original story's established canon. Clearly distinguish new
+fictional extensions from facts about an external public figure or channel.
+Use one confirmed illustration for an opening [image;...] tag. Add only
+verified image-specific hotspots and [zoom], [pan], [wide], [hold] camera
+commands at meaningful narrative beats. Avoid placing long narrative text
+inside a command tag.
+
+Add the standalone bio to stories/stories.json as type "bio", and verify it
+appears in Storyteller's visible, searchable story index. Implement a literal
+[bio-CHARACTER.md] inline include only when asked to place it in a host story;
+a new biography must not silently lengthen the first adventure. For any
+missing image, name it exactly and ask about the original asset or record a
+pending dedicated portrait, rather than saying it has been published.
+
+Test the parsed cue count, every referenced image filename, hotspot names,
+direct ?story=bio-... link and safe optional include. Update the Storyteller
+page spec and relevant shared task/handover record. Give the user a
+.github.io app URL as the primary result, not a raw GitHub .md file.
+```
+
+### Example manifest entry and URL
+
+```json
+{
+  "file": "stories/bio-Schrodinger.md",
+  "title": "BIO: Schrödinger the Dragonfold",
+  "type": "bio"
+}
+```
+
+Public deep link:
+https://karstenevans.github.io/aletheia-app/aletheia-storyteller.htm?story=bio-Schrodinger
+
+The first adventure currently depicts ToomorrowMan as a human, and AI-PI as a floating robot; alternate Robot PI branding should not silently retcon the characters. Verify original artwork before designing new portraits. The existing YouTube channel link for ToomorrowMan was supplied by the project owner, but channel contents must be independently inspected before treating them as biographical evidence.
