@@ -199,6 +199,18 @@ Published routes to check:
 
 **23 September 2026 feedback-training correction:** Verified the current OpenAI Data controls FAQ. Even when a user has switched off model improvement, voluntarily giving thumbs-up or thumbs-down response feedback may allow the *entire linked conversation* to be used for training. Added this warning to SW-AI-018, the canonical ChatGPT Free guide and its published HTML with a visible callout. The companion AI Easy setup displays the same caution. Static checks pass; public browser refresh still to be confirmed.
 
+### AK-061 | DONE / VERIFY LIVE | Remove raw Markdown visitor buttons and add current Copilot book/topic cards
+
+23 September 2026: The user identified the unnecessary `OPEN RAW KNOWLEDGE` (reader) and `KNOWLEDGE .MD` (resources) buttons. Both were removed from the visitor-facing HTML **without deleting the canonical Markdown or changing the reader's internal data fetch**. Kept developer repository access distinct from normal visitor navigation.
+
+Looked up Anand Narayanaswamy's *Microsoft Copilot for Windows 11* (Apress, September 2024): publisher offers legitimate licensed EPUB/PDF and preview; OverDrive lists an ebook, but lending requires a participating library. A freely redistributable full book was not found. Its chapter list was used only for research discovery, with **eight independently worded SW-COP-001..008 cards verified against primary Microsoft documentation**. The older Skype chapter was marked historical because consumer Skype retired 6 May 2025.
+
+Updated the reader's tab to **AI / CHATGPT / COPILOT**, mapped `SW-COP` IDs to the existing AI grouping, added a resource-page digital-book/lending section, recorded publisher provenance in the knowledge registry and reconciled the reader page spec. Created `resources/aletheia-secret-windows-rsc-page.md` to document actual visitor-facing resource behaviours and source/affiliate separation.
+
+**Static acceptance passed:** 139 total Windows knowledge cards, including 18 ChatGPT and eight Copilot cards (26 under AI). Each new Copilot card has an informative Summary, last-checked date and primary source. Both public pages have **zero exposed raw Markdown links**, the reader's internal MD fetch remains, scripts parse, the book links are present, and the existing resource MasterTag appears once.
+
+**VERIFY LIVE:** The GitHub Pages host could not be fetched from the available web viewer (DisabledError). Owner should confirm on PC/Android that the two unwanted MD buttons have disappeared, the AI tab shows 26 cards, Copilot search/Jump/MORE work, and the resource book links open as intended. If a browser still shows the previous build, check deploy status and cache before modifying sources again.
+
 ## Next-session handover block
 
 When another ChatGPT or AI joins this project, start by reading the three root guides **and current target files**. Pick one task ID; announce the files you intend to change; preserve concurrent work. Do not regenerate HTML from memories of a previous chat. Source Markdown, approved shared guides and a matching page specification are the durable instructions; HTML is the rendered website. GitHub Pages is how the owner should open or share the library.
