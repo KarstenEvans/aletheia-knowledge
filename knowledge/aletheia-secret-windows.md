@@ -8,8 +8,9 @@ language: en-GB
 version: 0.4
 created: 2026-09-23
 last_reviewed: 2026-09-23
-resource_url: https://swindon.org.uk/resources/aletheia-secret-windows-rsc.htm
-resource_status: planned
+resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
+resource_status: live
+resource_mirror_planned: https://swindon.org.uk/resources/aletheia-secret-windows-rsc.htm
 ---
 
 # Aletheia Secret Windows Knowledge Library
