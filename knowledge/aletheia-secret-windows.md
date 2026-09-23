@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.4
+version: 0.5
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
@@ -222,6 +222,12 @@ SW-UPD-005     | RECOVERY      | use an update-recovery ladder before Reset this
 SW-REG-001     | REGISTRY      | Windows stopped automatic RegBack in Windows 10 1803
 SW-REG-002     | REGISTRY      | save touched registry keys before applying a profile
 SW-BACK-001    | BACKUP        | build a recovery pack before debloat or update changes
+SW-UPD-006     | WINDOWS UPDATE| ESU changes the security window, not every update-control rule
+SW-REG-003     | REGISTRY      | downloadable RegBack enable and undo files
+SW-OPT-007     | UPGRADE       | replacing an HDD with an SSD can transform an old PC
+SW-OPT-008     | UPGRADE       | 8 GB RAM is a strong practical target for light Windows use
+SW-OPT-009     | UPGRADE       | research the exact machine before buying RAM or SSD
+SW-OPT-010     | UPGRADE       | an optical-bay caddy can reuse the old HDD
 
 ---
 
@@ -2993,6 +2999,208 @@ If the SSD containing Windows fails while personal data lives safely on another 
 - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wbadmin-start-backup
 - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wbadmin
 - https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/bare-metal-recovery
+
+---
+
+
+## SW-UPD-006 | ESU changes the security window, not every update-control rule
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10 22H2 Consumer ESU
+LIFECYCLE: ESU
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Windows 10 Consumer ESU extends the period in which an eligible Windows 10 22H2 PC can receive critical and important security updates. It does not restore normal Windows 10 feature development.
+
+Under default Windows Update settings, applicable updates can still download and install automatically. On supported editions, Microsoft still documents update policies including Configure Automatic Updates and Do not include drivers with Windows Updates.
+
+### Important distinction
+There is not good evidence for the stronger claim that accepting ESU makes it technically impossible to control Windows Update or forces every update regardless of supported policy. What is true is that Windows servicing components can repair or reverse unsupported service-disabling tricks, and Windows Home offers fewer policy controls than Pro/Enterprise.
+
+### Legacy-PC concern
+On an older PC, any update can expose a latent driver or compatibility problem. This is why Aletheia Windows Debloat should combine:
+- driver backup;
+- driver-update exclusion where supported;
+- a chosen update window;
+- restore/rollback preparation;
+- post-update checks for display, audio, network, storage and peripherals.
+
+### Sources
+- https://www.microsoft.com/en-US/windows/extended-security-updates
+- https://learn.microsoft.com/en-us/windows/deployment/update/waas-wu-settings
+- https://learn.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb
+
+---
+
+## SW-REG-003 | downloadable RegBack enable and undo files
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10 version 1803 and later
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft documents EnablePeriodicBackup=1 to restore the legacy periodic RegBack behaviour. Secret Windows provides a transparent .reg file and a matching undo file.
+
+### Downloads
+Enable:
+https://karstenevans.github.io/aletheia-knowledge/resources/downloads/enable-regback-periodic-backup.reg
+
+Undo:
+https://karstenevans.github.io/aletheia-knowledge/resources/downloads/undo-enable-regback-periodic-backup.reg
+
+### Registry setting
+
+    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Configuration Manager]
+    "EnablePeriodicBackup"=dword:00000001
+
+After enabling, restart Windows. Microsoft says Windows then backs up the registry to RegBack and creates the RegIdleBackup scheduled task for later backups.
+
+### Safety
+Inspect registry files before importing them. Aletheia should also save the specific registry keys it is about to change before applying any wider tweak profile.
+
+### Source
+- https://learn.microsoft.com/en-us/troubleshoot/windows-client/installing-updates-features-roles/system-registry-no-backed-up-regback-folder
+
+---
+
+## SW-OPT-007 | replacing an HDD with an SSD can transform an old PC
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: PCs currently booting Windows from a mechanical HDD
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft describes SSDs as faster than HDDs, and its Windows performance guidance identifies storage speed as a major factor in responsiveness. On an otherwise serviceable older PC that still boots from a mechanical HDD, moving Windows and applications to an SSD is often one of the highest-impact hardware upgrades.
+
+### Capacity guide
+For a basic legacy Windows PC:
+- 240/250/256 GB can work for Windows and light applications.
+- 480/500/512 GB is a comfortable default when budget permits.
+- 1 TB is useful when the machine actually needs that capacity.
+
+Do not confuse capacity with interface. A 500 GB SATA SSD and a 500 GB NVMe SSD may fit completely different machines.
+
+### Before buying
+Identify the exact model and confirm whether it accepts:
+- 2.5-inch SATA;
+- mSATA;
+- M.2 SATA;
+- M.2 NVMe;
+- another documented interface.
+
+### Sources
+- https://support.microsoft.com/en-US/Windows/Experience/Compatibility/all-about-ssd-hdd-and-storage-types
+- https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows
+
+---
+
+## SW-OPT-008 | 8 GB RAM is a strong practical target for light Windows use
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows PCs with upgradeable memory
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft says 4 GB can be enough for basic web, documents and video, while recommending 8 GB for longer-term everyday use; 16 GB or more may suit heavier work.
+
+### Legacy-PC interpretation
+A 4 GB Windows PC can still be useful, especially with an SSD, but browsers and modern applications can push it into paging quickly. If the machine supports an inexpensive upgrade to 8 GB, that can materially improve multitasking. Moving to 16 GB can help heavier workloads, but only if the chipset, firmware, slots and memory type support it.
+
+### 32-bit warning
+A 32-bit Windows 10 installation is limited to about 4 GB of physical address space by the OS family. Do not buy extra RAM before confirming whether the machine and installed Windows can use it.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/experience/compatibility/all-about-computer-memory
+- https://learn.microsoft.com/en-us/windows/win32/memory/memory-limits-for-windows-releases
+
+---
+
+## SW-OPT-009 | research the exact machine before buying RAM or SSD
+
+STATUS: METHOD
+APPLIES_TO: legacy PC upgrade planning
+LIFECYCLE: CURRENT
+EVIDENCE: GOOD
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### Summary
+The model number matters more than the marketing family name. Two laptops sold under almost the same name can have different soldered RAM, slot counts, storage interfaces or maximum memory.
+
+### Copy/paste research prompt
+
+    Find the official specification and service/maintenance manual for this exact computer:
+    MAKE/MODEL: [PASTE THE FULL MODEL OR PRODUCT NUMBER HERE]
+
+    Tell me:
+    1. The exact CPU and chipset options for this model.
+    2. How much RAM it was supplied with.
+    3. Whether any RAM is soldered/onboard.
+    4. How many RAM slots exist, how many are currently likely to be occupied, and the maximum supported RAM.
+    5. Required RAM type, DDR generation, SO-DIMM/DIMM form, speed and voltage.
+    6. Whether mixed capacities are supported and whether matched pairs are preferred.
+    7. Every supported internal storage interface: 2.5-inch SATA, mSATA, M.2 SATA or M.2 NVMe, including M.2 length/key if relevant.
+    8. Whether the optical drive bay can accept a SATA HDD/SSD caddy and its physical height if documented.
+    9. BIOS/UEFI or boot limitations that affect an SSD upgrade.
+    10. Give links to the official manufacturer manual/specification first.
+    11. Then cross-check the model with Crucial and Kingston compatibility tools.
+    Do not guess from a similar model. Mark anything not confirmed as UNKNOWN.
+
+### Useful compatibility tools
+- Crucial System Scanner / Upgrade Selector.
+- Kingston PC Scanner / model search.
+
+### Sources
+- https://www.crucial.com/store/systemscanner
+- https://www.kingston.com/en/solutions/pc-performance/pc-scanner
+
+---
+
+## SW-OPT-010 | an optical-bay caddy can reuse the old HDD
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: laptops/desktops with a compatible removable optical drive bay
+LIFECYCLE: LEGACY HARDWARE
+EVIDENCE: GOOD
+CONFIDENCE: MEDIUM-HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+A common legacy-laptop upgrade is:
+- SSD in the primary drive bay for Windows and applications;
+- the old healthy HDD in a compatible optical-bay SATA caddy for bulk data.
+
+### Check before buying
+Do not buy a caddy from the laptop's screen size alone. Confirm:
+- optical bay exists and is removable;
+- interface is SATA rather than an older PATA/IDE design;
+- caddy height, commonly 9.5 mm or 12.7 mm on older designs;
+- connector position and bezel fit;
+- BIOS/UEFI behaviour.
+
+### Safety
+The old HDD is not a backup merely because it moved into a second bay. Keep another copy of irreplaceable data.
+
+### Source
+- https://www.ifixit.com/Wiki/Optical_Bay_to_Hard_Drive_Enclosures
 
 ---
 
