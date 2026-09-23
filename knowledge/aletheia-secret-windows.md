@@ -3818,13 +3818,13 @@ RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
 LAST_CHECKED: 2026-09-23
 
 ### Summary
-Switching off model improvement does not delete chat history. A Temporary Chat stays outside normal history, creates no new memories and is not used for training, but may use existing personalization if selected.
+Turning off model training does not delete existing chats. Important exception: if you send thumbs-up or thumbs-down feedback about a response, OpenAI says the entire conversation linked to that feedback may still be used for training, even when you opted out.
 
 ### Why useful
-In Settings > Data controls, choose whether eligible new conversations can be used for model improvement. Temporary Chat can start with personalization enabled or disabled where offered; if saved, it becomes a regular chat. For deletion of remembered content, change the Memory summary and remove all source chats, Library files and connected app data. Archiving is not deletion. Before irreversible cleanup, consider an account data export and review existing shared links.
+In Settings > Data controls, choose whether eligible new conversations can be used for model improvement. **Feedback warning:** giving a response thumbs up or thumbs down is optional. According to OpenAI's Data controls FAQ, choosing to give this feedback may allow the **entire associated conversation** to be used to train models even after opting out. Consider what personal or confidential information is in the conversation before sending feedback. Temporary Chat can start with personalization enabled or disabled where offered; if saved, it becomes a regular chat. For deletion of remembered content, change the Memory summary and remove all source chats, Library files and connected app data. Archiving is not deletion. Before irreversible cleanup, consider an account data export and review existing shared links.
 
 ### Aletheia check
-Separate voice/dictation recording settings from training, Memory and chat retention. Avoid promising complete immediate erasure.
+Do not say switching off training guarantees that conversations linked to voluntary feedback cannot be used for training. Separate voice/dictation recording settings from training, Memory and chat retention. Avoid promising complete immediate erasure.
 
 ### Sources
 - https://help.openai.com/en/articles/7730893
