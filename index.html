@@ -35,6 +35,7 @@ footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted);font-s
     <p>Windows 10/11 and Server knowledge: updates, drivers, recovery, debloat, CMD, PowerShell, networking and lifecycle traps.</p>
     <a class="btn" href="app/aletheia-secret-windows.htm">OPEN APP</a>
     <a class="btn secondary" href="knowledge/aletheia-secret-windows.md">KNOWLEDGE .MD</a>
+    <a class="btn secondary" href="resources/aletheia-secret-windows-rsc.htm">RESOURCES</a>
   </section>
 
   <section class="card">
@@ -42,6 +43,7 @@ footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted);font-s
     <p>Checked gardening knowledge for composting, growing from scraps and practical reuse.</p>
     <a class="btn" href="app/aletheia-waste-to-garden.htm">OPEN APP</a>
     <a class="btn secondary" href="knowledge/aletheia-waste-to-garden.md">KNOWLEDGE .MD</a>
+    <a class="btn secondary" href="resources/aletheia-waste-to-garden-rsc.htm">RESOURCES</a>
   </section>
 
   <section class="card">
@@ -63,6 +65,35 @@ footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted);font-s
   <b>Aletheia Knowledge</b> · Markdown first · optional browser apps · no cloud service required for the canonical knowledge.
 </footer>
 </div>
+<script>
+(function(){
+  function openAletheiaWindow(url){
+    const width=900, height=760;
+    const left=Math.max(0,Math.round((screen.availWidth-width)/2));
+    const top=Math.max(0,Math.round((screen.availHeight-height)/2));
+    return window.open(
+      url,
+      '_blank',
+      'width='+width+',height='+height+',left='+left+',top='+top+',resizable=yes,scrollbars=yes,toolbar=yes,location=yes'
+    );
+  }
+
+  document.querySelectorAll('a[href]:not([download])').forEach(function(a){
+    a.target='_blank';
+    a.rel='noopener';
+    a.addEventListener('click',function(e){
+      const raw=a.getAttribute('href')||'';
+      if(raw.startsWith('#')||raw.startsWith('mailto:')||raw.startsWith('tel:')||raw.startsWith('javascript:')) return;
+      const w=openAletheiaWindow(a.href);
+      if(w){
+        e.preventDefault();
+        try{w.focus();}catch(_){}
+      }
+    });
+  });
+})();
+</script>
+<!-- Awin Publisher MasterTag. Bookshop.org affiliate links use data-awinignore. -->
 <script src="https://www.dwin2.com/pub.3182162.min.js"></script>
 </body>
 </html>
