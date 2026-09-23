@@ -236,6 +236,17 @@ SW-OPT-012     | MAINTENANCE   | Windows can pause maintenance when you return t
 SW-OPT-013     | STORAGE       | Disk Cleanup can save named cleanup presets
 SW-OPT-014     | DEBLOAT       | A hidden startup workload may be a scheduled task
 SW-OPT-015     | BROWSER       | A browser cache is useful; routine purging can backfire
+SW-AI-001      | AI            | Free ChatGPT is more than a text-only chatbot
+SW-AI-002      | AI            | Talking to ChatGPT is not the same as dictating a research task
+SW-AI-003      | AI            | Prompt shortcuts are plain-language instructions, not magic codes
+SW-AI-004      | AI            | Ask ChatGPT to search the web when freshness matters
+SW-AI-005      | AI            | Ask for the output format before the AI starts
+SW-AI-006      | AI            | Custom Instructions are available on ChatGPT Free
+SW-AI-007      | AI            | Audit what ChatGPT remembers before correcting its assumptions
+SW-AI-008      | AI            | A free Project can carry Aletheia between chats
+SW-AI-009      | AI            | Clean up privacy and chat history without confusing the controls
+SW-AI-010      | AI            | Use an evidence challenge instead of the word TRUTH
+SW-AI-011      | AI            | Make a portable checkpoint before changing AI or starting fresh
 SW-AI-012      | AI            | Free Custom Instructions have a 1,500-character limit
 SW-AI-013      | AI            | Audit memory sources before correcting or deleting
 SW-AI-014      | AI            | Free Projects: five files, project-specific rules and safe sharing
