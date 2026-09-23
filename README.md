@@ -2,6 +2,16 @@
 
 Structured, source-traced knowledge libraries and lightweight browser apps for Aletheia. Evidence-checked, vendor-neutral and usable online or locally.
 
+## START HERE: multi-AI collaboration
+
+- **Public knowledge website:** https://karstenevans.github.io/aletheia-knowledge/ . Send visitors here or to a published app page, not to the raw `.md` or GitHub file viewer.
+- **[GUI and behaviour contract](aletheia-knowledge-GUI.md):** layout, mobile use, substantive card previews, MORE, links and resources.
+- **[Common code and reusable prompts](aletheia-knowledge-code.md):** HTML patterns, safe parsing, page-spec template and fresh-chat work prompts.
+- **[Shared task register](aletheia-knowledge-tasks.md):** handover, active work, verification and follow-up.
+
+Before editing, read those three guides **and** the current target Markdown/HTML. Every HTML page should have a matching `*-page.md` build specification (see the task register for legacy pages still awaiting theirs). The GitHub source is shared master; reconcile more recent local edits rather than overwriting them. Canonical facts live in `knowledge/`; the runnable website lives on GitHub Pages.
+
+
 ## Repository structure
 
 - `app/` — lightweight `.htm` interfaces.
@@ -24,7 +34,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 - Knowledge: `knowledge/aletheia-weird-history.md`
 - Discovery sources: *Stick a Flag in It*, selected *Horrible Histories* books, and *All About History: Book of Weird History*.
-- Status: curated knowledge-only library; no dedicated app or resource page yet.
+- Status: curated library with a published GitHub Pages reader and resource page.
 - Method: books provide topic discovery only. Claims are independently checked, source-traced, context-qualified and stored as self-contained retrieval cards.
 - Portable design: stable IDs, plain Markdown metadata, evidence/confidence fields, review dates and a normal resource backlink. Cloudflare AI Search or other retrieval services may add capabilities, but are optional.
 - Resources: `resources/aletheia-weird-history-rsc.htm`
@@ -40,7 +50,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 - Knowledge: knowledge/aletheia-secret-windows.md
 - Scope: Windows 7 legacy context, Windows 10/11, supported Windows Server, CMD, PowerShell, repair/recovery, networking, safe debloat, administration, Chrome and a small web-admin crossover.
 - Discovery sources: supplied Windows command, Server, PowerShell and beginner guides are used as topic maps only.
-- Status: curated v0.5 library with a GitHub Pages knowledge reader and live resource page.
+- Status: curated library with a GitHub Pages knowledge reader and live resource page. Check the current Markdown front matter for its version.
 - Method: every time-sensitive or version-sensitive claim is independently checked against current primary documentation and tagged for lifecycle/risk.
 - Safety design: read/observe first, reversible changes before destructive ones, no blind service/AppX/registry debloat scripts.
 
