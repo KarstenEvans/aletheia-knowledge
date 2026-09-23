@@ -20,26 +20,31 @@ nav .light,.light{background:#fff;color:var(--accent)}h1{line-height:1.15;font-s
 <li>Chat normally, request summaries, ask follow-up questions and create or revise writing.</li>
 <li>Search the live web and request source links when information may have changed.</li>
 <li>Upload some files or images, analyse data and generate images, subject to separate usage limits.</li>
-<li>Use limited Voice, Custom Instructions, Memory and Projects. Free Projects currently hold up to five files each; file uploads also have daily limits.</li>
-<li>Try the Think control for more demanding questions if your app displays it.</li>
+<li>Use limited Voice, Custom Instructions, Memory and Projects. Free Projects currently hold up to five files each; uploads and some other tools have separate limits.</li>
+<li>Try Think for a difficult question on supported mobile apps, or on the web if the control has reached your account.</li>
+<li>Use existing GPTs, but personal Free accounts cannot currently create or publish new GPTs.</li>
+<li>Keep reference files in Library (currently 500 MB on Free). An item in Library is not automatically loaded into every chat or Project.</li>
 </ul>
-<p>Free does not mean that every tool is unlimited or available in every region. A convincing answer is not proof that the AI searched the web or read the file you had in mind.</p>
+<p>Free offers generally unlimited everyday text chat, subject to abuse safeguards, while uploads, data analysis, images and Voice have separate quotas. The current Free model is GPT-5.6 Luna. Free does not mean that every tool is unlimited or available in every region. A convincing answer is not proof that the AI searched the web or read the file you had in mind.</p>
 </section><section class="guide-card"><h2>2. Use the right microphone: Voice versus Dictation</h2>
-<p><strong>Voice:</strong> Choose a live spoken conversation for company, brainstorming, language practice and discussing ideas. ChatGPT Live can search the web and use memory where available, but it runs through a different, conversation-oriented model and a different set of tools. A spoken answer and its transcript may also be less convenient when you need exact quotations, tables, sources or a reusable document.</p>
+<p><strong>Voice:</strong> Choose a live spoken conversation for company, brainstorming, language practice and discussing ideas. ChatGPT&#39;s Live mode can search the web and use memory where available, but uses a different conversation-oriented model (GPT-Live-1 mini on Free). A spoken answer and its transcript may be less convenient when you need exact quotations, tables, sources or a reusable document. Live can accept text and images in the same chat when enabled, but cannot currently retrieve files directly from your ChatGPT Library.</p>
+<p><strong>Voice options:</strong> Under Settings &gt; Voice, your account may offer Live (natural interruption/back-and-forth), Standard (transcribes each turn before answering) or Advanced (older real-time experience with mobile video/screen sharing for eligible subscribers). Available options, limits and controls depend on your account; Live does not support video or screen sharing.</p>
 <p><strong>Dictation:</strong> For research, troubleshooting, calculations, comparisons and longer jobs, tap the microphone that converts your speech into editable text in the ordinary message composer. Read the transcription, correct errors and send it. You can still speak your question without staying in live Voice.</p>
 <p><strong>Listen afterwards:</strong> Where your app offers Read Aloud or a speaker action on a finished answer, use it to listen to the written result. You keep the table and citations on the screen.</p>
-<p>This is a workflow recommendation, not a claim that Voice cannot research. For important questions, a written answer is usually easier to examine and verify.</p>
+<p>This is a workflow recommendation, not a claim that Voice cannot research. For important questions, a written answer is usually easier to examine and verify. Voice transcripts are not verbatim records; check any quoted speech, names or figures.</p>
+<p><strong>Audio privacy difference:</strong> Live and Advanced conversation clips are generally retained for 30 days. Dictation audio is retained with the chat while it remains in your history; after deleting the chat, associated audio is generally removed within 30 days, subject to stated exceptions. Review the separate audio/video sharing toggles in Data controls.</p>
 </section><section class="guide-card"><h2>3. Clean up incorrect assumptions</h2>
 <ul>
 <li>Ask: &#39;What do you currently remember about my preferences for this subject? Label any guesses.&#39;</li>
-<li>Open Settings &gt; Personalization &gt; Memory. Review the Memory summary and Manage controls if they are available for your account.</li>
+<li>Open Settings &gt; Personalization &gt; Memory. Review the Memory summary and its Manage controls if they are available for your account; the summary is not necessarily a full inventory.</li>
+<li>If Sources appear beneath a personalised answer, inspect the referenced chat, saved item, Library file or connected app to understand where an assumption came from.</li>
 <li>Correct the summary when it contains an outdated assumption. For complete removal of an unwanted detail, also delete the source chat and every other source that contains it, such as files or connected-app content.</li>
-<li>Use Settings &gt; Data controls if you want to export your account data or stop your eligible new conversations being used to improve models.</li>
+<li>Use Settings &gt; Data controls if you want to export your account data or stop your eligible new conversations being used to improve models. Turning off training is a separate decision from enabling or deleting Memory.</li>
 <li>Temporary Chat is useful for one-off subjects that should not enter ordinary chat history or create new memories. Choose whether it should use existing personalisation at the start if your app offers that choice.</li>
 </ul>
 <p>Turning Memory off is not the same as deleting chat history. Turning model improvement off is not the same as deleting your account or files.</p>
 </section><section class="guide-card"><h2>4. Put short rules in Custom Instructions</h2>
-<p>Open Settings &gt; Personalization or Customize ChatGPT and find the Custom Instructions controls. They are available on Free accounts. Menu wording may differ between desktop and mobile.</p>
+<p>Open Settings &gt; Personalization or Customize ChatGPT and find the Custom Instructions controls. They are available on Free accounts, with a <strong>1,500-character limit</strong> for Free and Go. Make sure Enable customization is on. Updates apply immediately, but will not erase references to older instructions from earlier conversations. Menu wording may differ between desktop and mobile. A third-party plugin you use may receive relevant instructions, so avoid putting secrets in the global profile.</p>
 <p>A practical short baseline to paste:</p>
 <pre><code>Lead with the answer and complete the task when you have enough information.
 Be concise, plain-spoken and precise. Avoid filler.
@@ -52,7 +57,8 @@ Ask only necessary questions; seek approval before irreversible changes.
 Use light, dry humour only when appropriate.</code></pre>
 <p>Instructions help, but they are not a guarantee. They cannot create a tool your account does not have, force a model to remember everything, or override the platform&#39;s safety rules.</p>
 </section><section class="guide-card"><h2>5. Give continuing work its own free Project</h2>
-<p>Create a Project called Aletheia, Family History, House Repairs or anything meaningful. Put its durable working rules in Project instructions and add only relevant files. Free users can currently add up to five files per Project, with separate upload-rate limits.</p>
+<p>Create a Project called Aletheia, Family History, House Repairs or anything meaningful. Put its durable working rules in Project instructions and add only relevant files. Free users can create unlimited Projects, with up to five files per Project and separate upload-rate limits. <strong>Project instructions override global Custom Instructions inside that Project.</strong></p>
+<p>In Project settings, where available, choose Default or Project-only memory according to whether the project should draw on context outside itself. Shared Projects automatically use Project-only memory; permitted collaborators can see the shared chats, files and instructions. Free owners can currently share a Project with up to five collaborators. Before sharing, inspect every file and the project&#39;s permissions. You can also move eligible old chats into a Project or save a useful ChatGPT answer as a Project source.</p>
 <p>For Aletheia AI Easy, use the small <code>aletheia-bootstrap.md</code> in the Project instructions, then add your reviewed <code>aletheia-memory.md</code> as a Project file if you want portable context. The bootstrap should offer Aletheia&#39;s evidence/continuity rules, optional Thalia humour, and explicit choices for other apps. It must not silently enable them or claim to have saved data that was only displayed.</p>
 <p>Keep your own copies in a Documents/Aletheia folder. The provider&#39;s memory and your portable file are different things; review changes before replacing your file.</p>
 </section><section class="guide-card"><h2>6. Eleven useful prompt shortcuts</h2>
@@ -70,10 +76,23 @@ Use light, dry humour only when appropriate.</code></pre>
 <li><strong>CHECKPOINT:</strong> &#39;Summarise current goal, completed work, verified sources, corrections and next action.&#39;</li>
 <li><strong>HANDOVER:</strong> &#39;Write a portable Markdown brief for another AI, including unknowns and links to files actually seen.&#39;</li>
 </ul>
-<p>For questions that need serious work, combine instructions: &#39;EXECUTE + SEARCH CURRENT + SOURCE CHECK + TABLE&#39;. The words are shorthand for the explicit instructions above, not a secret mode.</p>
+<p>For questions that need serious work, combine instructions: &#39;EXECUTE + SEARCH CURRENT + SOURCE CHECK + TABLE&#39;. Actual built-in navigation includes the Search tool, available from the tools menu or, on supported interfaces, by typing <code>/</code> and selecting Search. This is separate from the sidebar search for your own chats, Projects and files. The words are shorthand for the explicit instructions above, not a secret mode.</p>
 </section><section class="guide-card"><h2>7. What to do if the answer sounds confident but is wrong</h2>
 <p>Ask the AI to show which claims came from its built-in knowledge, which were checked against a source and which remain uncertain. Recheck a surprising result against an official source. For a website, ask it to show the exact page it opened; for a file, ask it to identify the uploaded filename and the relevant passage. A model that never accessed a page cannot honestly say it inspected it.</p>
 <p>Do not upload passwords, one-time codes, recovery keys or private workplace records into a general bootstrap. For health, legal, financial and safety-critical decisions, use appropriate professional or primary-source confirmation.</p>
+</section><section class="guide-card"><h2>8. A privacy checklist worth doing once</h2>
+<p>The controls are separate. Choose the one that matches what you want to happen:</p>
+<ul>
+<li><strong>Stop eligible new chat content being used to improve models:</strong> Settings &gt; Data controls &gt; Improve the model for everyone, then turn it off. Your existing chats remain in history.</li>
+<li><strong>Try something without ordinary chat history or new memories:</strong> Start a Temporary Chat. Before it begins, choose whether it may use your existing personalization if that option appears. Saving a temporary conversation makes it a regular chat.</li>
+<li><strong>Stop an AI assumption being repeated:</strong> Correct your Memory summary or ask ChatGPT not to mention the information again. This does not itself remove the original source.</li>
+<li><strong>Remove sensitive information from remembered context:</strong> Update the Memory summary and delete relevant original chats (including archived chats), Library files and connected-app sources. Allow for propagation time and platform retention exceptions.</li>
+<li><strong>Check what else you have shared:</strong> Review existing shared links, Project collaborators and file permissions. Request a data export before irreversible cleanup if you may need a personal backup.</li>
+</ul>
+<p>Be aware that ChatGPT Search can rewrite a query and send search terms to partner search providers, sometimes using a general location or relevant Memory preferences. Keep unnecessary personal identifiers out of external search requests.</p>
+</section><section class="guide-card"><h2>9. The Aletheia AI Easy three-step setup</h2>
+<p>1. <strong>Personalise:</strong> Copy a short universal profile into Custom Instructions. On Free, keep it within 1,500 characters; let the local setup page count and display its size. 2. <strong>Organise:</strong> Create an Aletheia Project and add the full Project-specific bootstrap to Project instructions. Add a reviewed <code>aletheia-memory.md</code> only if wanted, subject to the Free five-file limit. 3. <strong>Take control:</strong> Review Data controls, select Project memory intentionally, and store your own bootstrap and portable memory in your chosen Documents/Aletheia folder. Use CHECKPOINT and HANDOVER to move work between AIs rather than relying on invisible model memory.</p>
+<p>Aletheia Protocol provides evidence discipline and portable context; Thalia is an optional tone/humour layer. Neither protocol can grant missing tools, change platform memory settings, guarantee accurate research or silently save a file.</p>
 </section><section class="guide-card"><h2>Official OpenAI guidance</h2>
 <ul>
 <li>ChatGPT Free FAQ: <a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" target="_blank" rel="noopener noreferrer">https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq</a></li>
