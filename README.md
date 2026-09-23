@@ -29,12 +29,18 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 - Portable design: stable IDs, plain Markdown metadata, evidence/confidence fields, review dates and a normal resource backlink. Cloudflare AI Search or other retrieval services may add capabilities, but are optional.
 - Resources: `resources/aletheia-weird-history-rsc.htm`
 
+### Aletheia Windows Debloat Tool
+
+- Public tool: https://karstenevans.github.io/aletheia-app/aletheia-windows-debloat/aletheia-windows-debloat.htm
+- Role: read-only planning front end while the earlier Windows Rescue V1.0 scripts await an Aletheia Improve pass.
+- Linked knowledge: `knowledge/aletheia-secret-windows.md`
+
 ### Aletheia Secret Windows
 
 - Knowledge: knowledge/aletheia-secret-windows.md
 - Scope: Windows 7 legacy context, Windows 10/11, supported Windows Server, CMD, PowerShell, repair/recovery, networking, safe debloat, administration, Chrome and a small web-admin crossover.
 - Discovery sources: supplied Windows command, Server, PowerShell and beginner guides are used as topic maps only.
-- Status: curated v0.4 library with a GitHub Pages knowledge reader; resource page is planned, not yet live.
+- Status: curated v0.5 library with a GitHub Pages knowledge reader and live resource page.
 - Method: every time-sensitive or version-sensitive claim is independently checked against current primary documentation and tagged for lifecycle/risk.
 - Safety design: read/observe first, reversible changes before destructive ones, no blind service/AppX/registry debloat scripts.
 
