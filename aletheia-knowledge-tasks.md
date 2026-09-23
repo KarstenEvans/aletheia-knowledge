@@ -197,6 +197,8 @@ Published routes to check:
 - https://karstenevans.github.io/aletheia-knowledge/app/aletheia-secret-windows.htm
 - https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-chatgpt-free-guide.htm
 
+**23 September 2026 feedback-training correction:** Verified the current OpenAI Data controls FAQ. Even when a user has switched off model improvement, voluntarily giving thumbs-up or thumbs-down response feedback may allow the *entire linked conversation* to be used for training. Added this warning to SW-AI-018, the canonical ChatGPT Free guide and its published HTML with a visible callout. The companion AI Easy setup displays the same caution. Static checks pass; public browser refresh still to be confirmed.
+
 ## Next-session handover block
 
 When another ChatGPT or AI joins this project, start by reading the three root guides **and current target files**. Pick one task ID; announce the files you intend to change; preserve concurrent work. Do not regenerate HTML from memories of a previous chat. Source Markdown, approved shared guides and a matching page specification are the durable instructions; HTML is the rendered website. GitHub Pages is how the owner should open or share the library.
