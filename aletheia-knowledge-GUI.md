@@ -151,3 +151,17 @@ For substantial changes, write the page-specific `*-page.md` first, update share
 In a fresh AI session, the current repository and these documents must suffice to reconstruct the page without hunting through old chats. A rebuilt page fails if it loses a required feature, shows placeholder cards, displays literal Markdown, misroutes resource links, points a visitor at GitHub source instead of Pages, breaks mobile controls, or depends on a paid service for ordinary card reading.
 
 **One-line test:** a visitor opens a card, learns something immediately, and can choose MORE for the evidence.
+
+## Storyteller and cinematic story pages (cross-repository convention)
+
+Storyteller itself lives in a **different GitHub repository**, `KarstenEvans/aletheia-app`, at the repository root. Before writing or rebuilding it, read its actual `aletheia-storyteller.htm`, `aletheia-storyteller.md`, `aletheia-storyteller-page.md`, `stories/stories.json` and any current story/artwork being edited. Treat the app's own page specification as authoritative for its cinematic exceptions.
+
+**Visitor-facing app:** https://karstenevans.github.io/aletheia-app/aletheia-storyteller.htm . This must open the runnable HTML, not the GitHub repository browser or a raw `.md` story.
+
+Its GUI intentionally differs from ordinary Knowledge cards: full-screen image stage, unobtrusive transport controls, lower-third readable captions and an upper-right menu. The **initial screen must show a searchable library of stories and biographies**, not start speaking the first story before the reader has selected it. The index is driven by the explicit `stories/stories.json` manifest on static GitHub Pages, not by pretending a web page can list a server folder.
+
+The reader selects one complete Markdown story. Each story may contain square-bracket camera directives that load an image and move between named image hotspots via smooth zoom, pan, wide and hold commands. Keep image text legible, contrast behind captions, unobstructed mobile controls and a reasonable reduced-motion fallback. Source image coordinates are image-specific percentages: test actual artwork, not assumed coordinates.
+
+Every character biography is itself a selectable **BIO** story with a meaningful opening, illustration and narration. Optional inclusion inside another story is explicit via a standalone `[bio-ToomorrowMan.md]` line; Storyteller resolves the file from the same `stories/` folder and narrates it at that point. Do **not** automatically append all character bios to an existing story; expanding a bio also brings in its own image and camera commands. For current details, see the app repo's `aletheia-storyteller.md` and `aletheia-storyteller-page.md`.
+
+Five biographies were added in September 2026: ToomorrowMan, AI-PI, Schrödinger, Elsie Brake and P.R.U.D.E.N.C.E. Before referencing a previously generated picture, verify the exact file is actually in GitHub. As last checked on 23 September, the main story references four missing image filenames, and dedicated Elsie and Prudence portraits have not been verified. Do not present a shared scene illustration as a character portrait without disclosure. Reconcile original assets before a full cinematic release.
