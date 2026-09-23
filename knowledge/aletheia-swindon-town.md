@@ -12,11 +12,15 @@
 
 ## 1. Swindon in one paragraph
 
+**Card preview:** Swindon was a hilltop market town before the Great Western Railway built a second settlement around its railway works in the 1840s. The Works, Railway Village, Mechanics' Institution and Medical Fund reshaped the town, whose later history also includes car manufacturing, music, literature and unusual architecture.
+
 Swindon is a large town in Wiltshire whose modern identity was transformed by the Great Western Railway. Old Swindon grew on the hill around a market settlement; from the 1840s a new railway town developed below it around the GWR Works and Railway Village. The Works became one of the world's major railway engineering complexes, while the associated Mechanics' Institution and Medical Fund created an unusually complete Victorian system of education, welfare and healthcare for railway workers. Swindon's later economy diversified into automotive, electronics, financial services, logistics, public services and technology. It is also a town with oddly deep cultural fingerprints: XTC, Diana Dors, Billie Piper, Justin Hayward, Gilbert O'Sullivan, Mark Lamarr, Richard Jefferies, the Magic Roundabout, *The Curious Incident of the Dog in the Night-Time*, Jasper Fforde's alternative Swindon, and a James Bond villain's lair.
 
 ---
 
 ## 2. Core identity
+
+**Card preview:** Swindon has two historic centres. Old Town grew as a market settlement on higher ground; New Swindon developed below the hill from the 1840s to serve the Great Western Railway. The planned Railway Village was intended to house hundreds of workers and helps explain the town's distinctive layout.
 
 ### Old Town and New Swindon
 
@@ -35,6 +39,8 @@ Sources:
 ---
 
 ## 3. The Great Western Railway and Swindon Works
+
+**Card preview:** Swindon Railway Works opened in 1843 for Great Western Railway maintenance and grew into a vast locomotive-building complex. It built British Railways' final steam locomotive, Evening Star, in 1960, then closed in 1986. Several surviving workshops now have new uses, including museums and shops.
 
 ### What is strongly supported
 
@@ -61,6 +67,8 @@ Sources:
 ---
 
 ## 4. Railway Village, Mechanics' Institution and worker welfare
+
+**Card preview:** Swindon's Railway Village housed incoming GWR workers and developed an unusually extensive network of education and welfare facilities. Its Mechanics' Institution provided a library, learning spaces and social activities. A preserved workers' cottage at 34 Faringdon Road is now the Railway Village Museum.
 
 ### Railway Village
 
@@ -93,6 +101,8 @@ Sources:
 
 ## 5. Swindon and the roots of the NHS
 
+**Card preview:** Swindon's railway workers founded a wage-funded medical society in 1847. The GWR Medical Fund grew to offer doctors, dentistry and other treatments; its facilities were later examined as national healthcare was being developed. It was an important pre-NHS example, not the sole inventor of the NHS.
+
 This is one of Swindon's strongest historical stories, but it should be told carefully.
 
 - The **GWR Medical Fund Society** was founded in 1847, initially known as the Sick Club.
@@ -119,6 +129,8 @@ Sources:
 
 ## 6. Brick, clay and railway construction
 
+**Card preview:** Swindon's surviving railway buildings feature extensive engineering brickwork. Historic England records that bricks for the Health Hydro were made at the GWR brickworks. A separate local claim that clay extraction lowered parts of the surrounding landscape remains unverified and is kept as a research lead.
+
 Swindon's railway landscape contains extensive use of engineering brick. Historic England records blue engineering bricks in surviving GWR structures and states that bricks used in the Health Hydro were made at the GWR brickworks.
 
 The local claim that extraction of clay physically lowered parts of the Swindon/Stratton landscape by about a metre is plausible as an industrial-history lead but was **not confirmed strongly enough in this research pass** to store as an established fact.
@@ -139,6 +151,8 @@ Source:
 
 ## 7. STEAM and "The Works"
 
+**Card preview:** STEAM museum occupies part of the former Great Western Railway Works, including an 1846 machine and fitting shop. The surrounding heritage district, promoted as The Works, links surviving railway buildings, the Railway Village, Health Hydro and the former workshops now used as a shopping outlet.
+
 - **STEAM - Museum of the Great Western Railway** occupies historic buildings within the former railway Works.
 - The earliest part of the museum complex includes the 1846 machine and fitting shop.
 - The council now promotes the connected heritage district under the place brand **The Works**, linking the Railway Village, Health Hydro, STEAM, Designer Outlet, Historic England National Archive and former GWR sites.
@@ -152,6 +166,8 @@ Current visitor source:
 ---
 
 ## 8. Designer Outlet: important 2026 update
+
+**Card preview:** Swindon's designer outlet occupies adapted Great Western Railway workshop buildings and opened in 1997. Earlier sources refer to the McArthurGlen outlet, but the knowledge file records a change in ownership and operation around 2025–26. Check current branding before relying on older visitor guides.
 
 Older sources call it **McArthurGlen Designer Outlet Swindon**. That is now historical branding.
 
@@ -170,6 +186,8 @@ Historical/lead source:
 
 ## 9. The Magic Roundabout
 
+**Card preview:** Swindon's Magic Roundabout is not one ordinary roundabout: five mini-roundabouts surround a central circulation area. Its unusual traffic arrangement has become a local landmark, with some visitors treating a working road junction as a sightseeing stop.
+
 Swindon's Magic Roundabout is one of the town's best-known visual oddities.
 
 - It is a compound junction made from **five mini-roundabouts arranged around a central circulation area**.
@@ -185,6 +203,8 @@ Opinion/review source:
 ---
 
 ## 10. South Marston: planes, then Hondas
+
+**Card preview:** South Marston was a wartime aircraft-manufacturing site associated with Spitfire production before becoming Honda's Swindon car factory. Honda established its operation on the former airfield site in 1985, began car production in 1992 and ended it in 2021. The airfield-to-car-factory story is documented.
 
 This story is much better than the simplified "Honda was built on an old runway."
 
@@ -208,6 +228,8 @@ Sources:
 
 ## 11. Garrard: Swindon helped spin the world's records
 
+**Card preview:** Garrard brought gramophone and turntable manufacturing to Swindon, drawing on the area's precision-engineering workforce. Its record changers and turntables travelled around the world; the Garrard 301 became a well-known hi-fi model. The historic manufacturing connection outlasted the original Swindon production.
+
 Garrard is a splendid Swindon industrial story.
 
 - Garrard's engineering business originated from wartime precision manufacturing.
@@ -225,6 +247,8 @@ Sources:
 ---
 
 ## 12. James Bond in Swindon
+
+**Card preview:** An unlikely James Bond location sits in Swindon: the former Renault Distribution Centre, now the Spectrum Building. Designed by Foster Associates, it appeared in the 1985 film A View to a Kill as part of Max Zorin's industrial complex. The building is Grade II* listed.
 
 ### Verified Bond location
 
@@ -245,6 +269,8 @@ Sources:
 
 ## 13. *The Curious Incident of the Dog in the Night-Time*
 
+**Card preview:** Mark Haddon's 2003 novel The Curious Incident of the Dog in the Night-Time begins in Swindon, following teenage narrator Christopher Boone before his journey to London. The setting gives the town a prominent place in a widely read modern novel and its stage adaptations.
+
 - Mark Haddon's 2003 novel **The Curious Incident of the Dog in the Night-Time** is substantially set in **Swindon**, with a later journey to London.
 - Its narrator is 15-year-old Christopher Boone.
 - Christopher writes an investigation into the killing of a neighbour's dog as part of the story.
@@ -261,6 +287,8 @@ Sources:
 
 ## 14. Jasper Fforde and alternative Swindon
 
+**Card preview:** Jasper Fforde's Thursday Next novels are set partly in an alternative version of Swindon. That fictional setting offers a playful way to compare the town's real streets and landmarks with its imagined literary counterpart.
+
 Jasper Fforde's **Thursday Next** novels use an alternative version of Swindon as a major setting. This gives the town an unusually strong place in modern comic/speculative literature.
 
 Potential knowledge expansion:
@@ -271,6 +299,8 @@ Potential knowledge expansion:
 ---
 
 ## 15. Dark Swindon: the Ship Hotel murder
+
+**Card preview:** A real 1903 murder lies behind a persistent Swindon story about the Ship Hotel. Barmaid Esther Swinford was shot there, and Edward Palmer was executed for her murder in Devizes. The claim that he or others were hanged in the hotel's basement is not supported by the checked evidence.
 
 A remembered local legend turned out to contain a real crime, but not quite in the form retold.
 
@@ -304,6 +334,8 @@ Sources:
 
 ## 16. Roman and prehistoric Swindon
 
+**Card preview:** Housing development at Groundwell Ridge, north of Swindon, revealed a substantial Roman villa complex with a bath suite. Historic England published a major report on the site in 2025. The wider area also has prehistoric earthworks, hillforts and burial monuments, taking Swindon's story far beyond the railway era.
+
 Swindon's history does not begin with Brunel.
 
 ### Groundwell Ridge Roman villa
@@ -331,6 +363,8 @@ Sources:
 
 ## 17. Lydiard Park
 
+**Card preview:** Lydiard Park preserves a different side of Swindon's past. Lydiard House was associated with the St John family for centuries; the estate also served wartime medical purposes. The house, church, gardens and park remain an important historic landscape open to visitors.
+
 Lydiard Park gives Swindon a deep aristocratic and wartime strand often lost beneath the railway story.
 
 - Lydiard House was associated with the **St John family for more than 500 years**.
@@ -348,6 +382,8 @@ Sources:
 ---
 
 ## 18. Famous and notable Swindon people
+
+**Card preview:** Swindon's cultural connections range from screen stars Diana Dors and Billie Piper to musicians XTC, Justin Hayward and Gilbert O'Sullivan, as well as nature writer Richard Jefferies and suffragette Edith New. Some were born in town; others grew up, lived or worked there, so each connection needs accurate wording.
 
 Connections vary: some were born in Swindon, some grew up there, some lived there, and some formed careers or bands there. The relationship should always be stated accurately.
 
@@ -441,6 +477,8 @@ Sources:
 
 ## 19. XTC: keep a dedicated Swindon music section
 
+**Card preview:** XTC formed in Swindon and developed from earlier groups including Star Park and the Helium Kidz. With Andy Partridge and Colin Moulding central to its songwriting, the band achieved international recognition, stopped regular touring in 1982 and continued making studio recordings closely associated with its Swindon roots.
+
 XTC deserve more than a celebrity-list bullet.
 
 Potential Aletheia cards:
@@ -457,6 +495,8 @@ Useful current local source:
 
 ## 20. The unidentified singer/pianist with a cat
 
+**Card preview:** A remembered clue about a famous Swindon-linked singer or pianist who had a cat has not yet produced a reliable identification. This is an open research lead, not a verified biographical fact. The underlying knowledge file records the question without assigning it to the wrong person.
+
 A likely candidate from the clues is **not yet verified**.
 
 Do **not** guess this into the canonical knowledge file. Possible Swindon-associated male singers/pianists include several entertainers, but the distinctive "very famous, sang at a piano, had a cat" clue needs targeted historical/newspaper research.
@@ -466,6 +506,8 @@ Do **not** guess this into the canonical knowledge file. Possible Swindon-associ
 ---
 
 ## 21. Education: current 2026 position
+
+**Card preview:** New College Swindon operates Queens Drive and North Star campuses, offering school-leaver, adult, vocational and higher-education routes. Swindon Academy also serves pupils across multiple stages. Course provision changes, so use the institutions' current websites rather than historic brochures.
 
 ### New College Swindon
 
@@ -507,6 +549,8 @@ Old Scribd uploads such as historic Swindon College prospectuses may be useful f
 
 ## 22. Wiltshire and Swindon History Centre
 
+**Card preview:** The Wiltshire and Swindon History Centre in Chippenham preserves archives and local studies material for the area. Its collections, archaeological services, conservation expertise and searchable catalogue make it a useful starting point for investigating Swindon stories in original records.
+
 The **Wiltshire and Swindon History Centre** remains an active major research resource in Chippenham.
 
 It provides:
@@ -526,6 +570,8 @@ Source:
 
 ## 23. Accessibility
 
+**Card preview:** Accessibility information needs a fresh check before a trip. Euan's Guide contains lived-experience reviews of Swindon venues, but an older town-level listing is not proof of current facilities. Consult recent venue-specific reviews and the venue's own accessibility information.
+
 Euan's Guide contains useful disability-access reviews for Swindon venues, but the general Swindon landing page found during this pass was last updated in **2015**.
 
 It should therefore be used as:
@@ -541,6 +587,8 @@ Lead:
 ---
 
 ## 24. Tourism and visitor opinion
+
+**Card preview:** Visitors commonly explore Swindon's railway heritage at STEAM, the historic landscape of Lydiard Park and the unusual Magic Roundabout. Other attractions include hillforts, churches, parks and family destinations. Visitor-review lists show interest, but they are not historical evidence or live opening-hours guarantees.
 
 Tripadvisor's 2026 Swindon listings indicate persistent visitor interest in:
 - STEAM;
@@ -564,6 +612,8 @@ Visit Wiltshire's Swindon page is current but thin. It is useful chiefly as a ga
 
 ## 25. Swindon Welcomes Ukraine
 
+**Card preview:** Swindon Welcomes Ukraine documents a recent chapter in the town's community life. Its website describes local support, Homes for Ukraine activity and practical orientation for people arriving in Swindon. This belongs to modern community history rather than the town's Victorian railway story.
+
 Swindon Welcomes Ukraine provides a useful modern social-history snapshot.
 
 Its current site describes:
@@ -580,6 +630,8 @@ Source:
 ---
 
 ## 26. Sources supplied but treated cautiously
+
+**Card preview:** Not every online source deserves equal weight. Historic records and current official information are preferred; old Scribd uploads, Google result pages, legacy local sites and tourist listicles can suggest leads but should not automatically be treated as verified history.
 
 ### Scribd
 
@@ -618,6 +670,8 @@ Useful for ideas, weak as a primary authority. Its colourful claims should be ve
 
 ## 27. Things Swindon has lost or transformed
 
+**Card preview:** Swindon has repeatedly adapted former industrial sites. The railway works closed in 1986, Honda ended local car production in 2021, and the former Renault building outlived its original function. Museums, shops and new businesses now occupy parts of a landscape shaped by earlier industries.
+
 A recurring local theme is large employers and industrial identities arriving, dominating, and then leaving or transforming.
 
 Examples:
@@ -636,6 +690,8 @@ That is an interpretation, not a raw fact, but it is well grounded in the town's
 ---
 
 ## 28. Transport: useful framing, avoid brittle journey times
+
+**Card preview:** Swindon sits on the Great Western Main Line near the M4, with direct rail connections to London, Bristol, Bath and South Wales. Exact journey times depend on current timetables and stopping patterns; claims that electrification made a particular trip slower require a defined historical comparison.
 
 Swindon's location on the M4 and the Great Western Main Line makes it unusually connected for an inland town.
 
@@ -691,35 +747,62 @@ Create or expand individual cards for:
 **Type:** HISTORICAL_LESSON  
 Swindon did not simply grow outward from one centre. The old market town occupied the hill, while the Great Western Railway created a new industrial settlement below it. The result was effectively two Swindons learning to become one.
 
+Sources:
+- https://www.swindon.gov.uk/heritageactionzone
+- https://swindonheritage.org.uk/2023/08/the-railway-village-museum-is-open-for-2023/
+
 ### CARD: Healthcare before the NHS
 **Type:** FACT  
 Decades before the NHS, Swindon's railway workers funded a medical society that grew into an extensive service with doctors, dentistry, dispensary care and specialist treatments. Government health planners later inspected it while national healthcare was being developed.
+
+Sources:
+- https://historicengland.org.uk/listing/the-list/list-entry/1382135
+- https://www.swindon.gov.uk/info/20030/planning_and_regeneration/1714/the_health_hydro
 
 ### CARD: Shopping inside a locomotive works
 **Type:** FACT  
 Part of Swindon's former Great Western Railway engineering complex is now a designer outlet. The same district also contains STEAM museum and major surviving railway buildings, making retail reuse part of the heritage landscape rather than a completely separate development.
 
+Sources:
+- https://www.steam-museum.org.uk/visit/about-us/steam-and-the-history-of-swindon-works/
+- https://www.swindon.gov.uk/heritageactionzone
+
 ### CARD: Bond villain by Norman Foster
 **Type:** FACT  
 Swindon's former Renault Centre, now the Spectrum Building, is a celebrated early Norman Foster industrial building. It also appeared in *A View to a Kill* as part of Max Zorin's world, proving that even Bond villains appreciate award-winning steelwork.
+
+Sources:
+- https://historicengland.org.uk/listing/the-list/list-entry/1416061
 
 ### CARD: Planes, cars, archaeology
 **Type:** FACT  
 At South Marston, a wartime aircraft factory and airfield associated with Spitfire production later became Honda's Swindon car-manufacturing site. The landscape therefore moved from aircraft to automobiles within one industrial lifetime.
 
+Sources:
+- https://global.honda/en/newsroom/news/2001/c010718-eng.html
+
 ### CARD: Roman Swindon
 **Type:** FACT  
 Housing development north of Swindon unexpectedly exposed a substantial Roman site at Groundwell Ridge. Archaeology later identified a villa complex with a bath suite and occupation spanning several centuries.
 
+Sources:
+- https://historicengland.org.uk/research/results/reports/60-2024
+
 ### CARD: Swindon in fiction
 **Type:** FACT  
 Mark Haddon's *The Curious Incident of the Dog in the Night-Time* begins in Swindon, while Jasper Fforde made an alternative Swindon central to his Thursday Next novels. The town has quietly acquired a parallel literary existence.
+
+Sources:
+- https://www.theguardian.com/books/2019/may/04/mark-haddon-interview
 
 ### CARD: The Ship Hotel correction
 **Type:** HISTORICAL_LESSON  
 A Swindon story about hangings beneath the Ship Hotel appears to have grown around a real 1903 murder. Barmaid Esther Swinford was shot there by Edward Palmer, but Palmer was executed at Devizes. Local folklore kept the building and the gallows, then moved them into the same room.
 
 ---
+
+Sources:
+- https://radnorstreetcemetery.blog/2024/10/07/esther-swinford-victim-of-a-shooting-tragedy/
 
 ## 31. Open research queue
 
@@ -780,6 +863,8 @@ These should be researched further before being promoted to canonical fact:
 
 ## 33. Aletheia provenance note
 
+**Card preview:** Swindon.org.uk is the home base of Aletheia-Knowledge, a developing collection of portable, source-aware knowledge for people and compatible AI tools. This is the project's own provenance record, not a claim that it is an established town-wide institution.
+
 Canonical home:
 - **Swindon.org.uk**
 - **Aletheia / Thalia protocol project**
@@ -807,6 +892,8 @@ resource_page: https://swindon.org.uk/resources/aletheia-swindon-town-rsc.htm
 ---
 
 ## 34. Modern Swindon: Aletheia, Toomorrowman and AI PI
+
+**Card preview:** Alongside its established industrial and literary history, Swindon.org.uk is hosting Aletheia-Knowledge and the creative story projects Toomorrowman and AI PI. These are contemporary, self-documented digital projects rooted in the site and should be distinguished from historic institutions.
 
 Alongside Swindon's railway, engineering and literary history, **Swindon.org.uk** is becoming the home of a small contemporary digital-fiction and open-knowledge ecosystem.
 
