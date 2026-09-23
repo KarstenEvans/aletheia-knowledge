@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.7
+version: 0.8
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
@@ -236,6 +236,13 @@ SW-OPT-012     | MAINTENANCE   | Windows can pause maintenance when you return t
 SW-OPT-013     | STORAGE       | Disk Cleanup can save named cleanup presets
 SW-OPT-014     | DEBLOAT       | A hidden startup workload may be a scheduled task
 SW-OPT-015     | BROWSER       | A browser cache is useful; routine purging can backfire
+SW-AI-012      | AI            | Free Custom Instructions have a 1,500-character limit
+SW-AI-013      | AI            | Audit memory sources before correcting or deleting
+SW-AI-014      | AI            | Free Projects: five files, project-specific rules and safe sharing
+SW-AI-015      | AI            | Live, Standard and Advanced Voice are different experiences
+SW-AI-016      | AI            | Web search, chat search and search-query privacy are different
+SW-AI-017      | AI            | Free allows existing GPTs, Library and Think, not GPT creation
+SW-AI-018      | AI            | Privacy controls: training, Temporary Chat and deletion differ
 
 ---
 
@@ -3645,6 +3652,173 @@ Do not insert passwords, API keys or private records into a portable handover. A
 ### Sources
 - https://help.openai.com/en/articles/10169521
 - https://help.openai.com/en/articles/8590148
+
+---
+
+## SW-AI-012 | Free Custom Instructions have a 1,500-character limit
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Free and Go profiles accept up to 1,500 characters of Custom Instructions; changes apply immediately. Keep the long Aletheia bootstrap in Project instructions and use a shorter global profile.
+
+### Why useful
+Desktop: Settings > Personalization, enable customization; mobile: Settings > Customize ChatGPT. Keep universal rules short and avoid private identifiers. Relevant Custom Instructions can be passed to a third-party plugin you choose to use. The text of earlier conversations is not retroactively erased by editing the profile.
+
+### Aletheia check
+Do not paste the whole 5.8 KB bootstrap into Free Custom Instructions; have AI Easy offer a character-counted short version.
+
+### Sources
+- https://help.openai.com/en/articles/8096356
+
+---
+
+## SW-AI-013 | Audit memory sources before correcting or deleting
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ChatGPT Memory can draw on chats, custom instructions, Library files and connected apps. The Memory summary is an overview, not a complete inventory of every source.
+
+### Why useful
+In Settings > Personalization > Memory, review the summary and Manage options. Where shown, inspect Sources beneath a personalised answer to see a relevant chat, file, email or saved memory. Asking not to mention something is different from deleting the original. Complete removal involves changing the Memory summary and removing original chats, archived chats, Library copies and connected sources containing the unwanted detail.
+
+### Aletheia check
+Turning Memory off does not delete chats; deleting a chat alone may leave a separately remembered detail. Aletheia's portable memory is its own separate, user-approved file.
+
+### Sources
+- https://help.openai.com/en/articles/8590148
+
+---
+
+## SW-AI-014 | Free Projects: five files, project-specific rules and safe sharing
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ChatGPT Free supports unlimited Projects, with up to five files per Project. Project instructions override global Custom Instructions. Project-only memory is a separate setting.
+
+### Why useful
+Create a Project for each ongoing topic; use a short Project bootstrap and an optional portable memory file. Where available, use Project settings to choose default versus Project-only memory. Shared Projects use Project-only memory; shared chats, files and instructions are visible to permitted collaborators. Free accounts can currently share with up to five collaborators. Save useful answers as Project sources or move eligible earlier chats into the Project.
+
+### Aletheia check
+Project-only memory does not make sharing invisible to collaborators. Review file contents and sharing permissions before inviting someone.
+
+### Sources
+- https://help.openai.com/en/articles/10169521
+- https://help.openai.com/en/articles/8590148
+
+---
+
+## SW-AI-015 | Live, Standard and Advanced Voice are different experiences
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Live Voice can web-search and use memory; Standard transcribes before answering. Advanced can support video/screen sharing for eligible mobile subscribers. ChatGPT Live cannot currently retrieve files from the user's Library.
+
+### Why useful
+For research requiring editable prompts and verifiable tables, Dictation into ordinary text chat is often more convenient. Live's transcript is not verbatim. Live/Advanced Voice clips are generally retained for 30 days; Dictation clips are retained while the chat remains in history, with stated deletion exceptions. Review 'Include your audio recordings' in Data controls before sending sensitive speech. Live can mix text/images with voice where available and may use connected plugins when permitted.
+
+### Aletheia check
+Never say Voice cannot research: it can web-search. Do not claim Read Aloud or Advanced features exist on every account or device.
+
+### Sources
+- https://help.openai.com/en/articles/20001274
+- https://help.openai.com/en/articles/12168547
+- https://help.openai.com/en/articles/7730893
+
+---
+
+## SW-AI-016 | Web search, chat search and search-query privacy are different
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+ChatGPT Free web search looks at current external sources; the sidebar search finds your existing chats, Projects and files. These are not the same search.
+
+### Why useful
+Request Search directly or choose it from the tools menu or slash menu where offered. Open cited sources and check their publication dates. For external web searching, ChatGPT may rewrite the query and share search terms plus general location with partner search providers; enabled memory can shape those query terms. Avoid entering private information merely to make web search more specific.
+
+### Aletheia check
+Do not treat a cited result as proof without checking the target text. Keep personal details out of a query sent to third-party search partners when unnecessary.
+
+### Sources
+- https://help.openai.com/en/articles/9237897
+
+---
+
+## SW-AI-017 | Free allows existing GPTs, Library and Think, not GPT creation
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Free users can use existing GPTs but cannot currently create or publish new GPTs on personal accounts. ChatGPT Free includes 500 MB of Library storage and Think where supported.
+
+### Why useful
+Free text chat is generally unlimited subject to safeguards. Voice, uploads, image generation and data analysis have separate quotas. Think is supported in mobile and rolling out on web. Use a normal Project for Aletheia setup and keep an independent Markdown backup. An uploaded Project file, a chat attachment and a Library file are distinct contexts; check which one the AI can actually access.
+
+### Aletheia check
+Do not publish obsolete fixed rate limits or direct Free users to create new GPTs. Preserve the fallback of pasting the bootstrap and approved memory into an ordinary chat.
+
+### Sources
+- https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+- https://help.openai.com/en/articles/10169521
+
+---
+
+## SW-AI-018 | Privacy controls: training, Temporary Chat and deletion differ
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: ChatGPT Free; availability may vary by region, device and settings
+LIFECYCLE: CURRENT / RECHECK IF PROVIDER CHANGES
+EVIDENCE: STRONG FOR DOCUMENTED FEATURES; CONTEXT FOR WORKFLOW ADVICE
+RISK: LOW FOR READING; MEDIUM WHEN SHARING OR DELETING PRIVATE DATA
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Switching off model improvement does not delete chat history. A Temporary Chat stays outside normal history, creates no new memories and is not used for training, but may use existing personalization if selected.
+
+### Why useful
+In Settings > Data controls, choose whether eligible new conversations can be used for model improvement. Temporary Chat can start with personalization enabled or disabled where offered; if saved, it becomes a regular chat. For deletion of remembered content, change the Memory summary and remove all source chats, Library files and connected app data. Archiving is not deletion. Before irreversible cleanup, consider an account data export and review existing shared links.
+
+### Aletheia check
+Separate voice/dictation recording settings from training, Memory and chat retention. Avoid promising complete immediate erasure.
+
+### Sources
+- https://help.openai.com/en/articles/7730893
+- https://help.openai.com/en/articles/8590148
+- https://help.openai.com/en/articles/20001274
 
 ---
 
