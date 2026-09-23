@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.5
+version: 0.6
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
@@ -113,6 +113,9 @@ The following copyrighted items supplied for this research are used only as topi
     https://www.scribd.com/document/516811615/Windows-11-Cheat-Sheet
 15. Chrome What's New archive
     https://www.google.com/chrome/whats-new/archive/
+
+16. XDA Developers, "Your Windows PC has a built-in maintenance tool that outperforms every paid optimizer on the market" (19 September 2026). Discovery source only; the comparative headline is not supported by published head-to-head measurements in the article.
+    https://www.xda-developers.com/windows-pc-has-built-in-optimization-tool-hidden-plain-sight-beats-every-paid-alternative/
 
 Several Scribd pages expose only previews or challenge pages. Those sources remain useful as provenance/topic maps, but cards below rely on independently checked documentation.
 
@@ -228,6 +231,11 @@ SW-OPT-007     | UPGRADE       | replacing an HDD with an SSD can transform an o
 SW-OPT-008     | UPGRADE       | 8 GB RAM is a strong practical target for light Windows use
 SW-OPT-009     | UPGRADE       | research the exact machine before buying RAM or SSD
 SW-OPT-010     | UPGRADE       | an optical-bay caddy can reuse the old HDD
+SW-OPT-011     | DEBLOAT       | Task Scheduler orchestrates maintenance; it does not optimise by itself
+SW-OPT-012     | MAINTENANCE   | Windows can pause maintenance when you return to the PC
+SW-OPT-013     | STORAGE       | Disk Cleanup can save named cleanup presets
+SW-OPT-014     | DEBLOAT       | A hidden startup workload may be a scheduled task
+SW-OPT-015     | BROWSER       | A browser cache is useful; routine purging can backfire
 
 ---
 
@@ -3201,6 +3209,151 @@ The old HDD is not a backup merely because it moved into a second bay. Keep anot
 
 ### Source
 - https://www.ifixit.com/Wiki/Optical_Bay_to_Hard_Drive_Enclosures
+
+---
+
+
+## SW-OPT-011 | Task Scheduler orchestrates maintenance; it does not optimise by itself
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR INSPECTION; MEDIUM FOR CREATING TASKS
+LAST_CHECKED: 2026-09-23
+
+### The interesting fact
+Windows already includes Task Scheduler, which can run a program when a time, system event or other configured trigger occurs. It is not a standalone speed-boosting algorithm: its value is in coordinating existing, documented tools without buying an additional always-running optimiser.
+
+### Aletheia use
+For an app-based debloat assistant, make task inspection read-only by default. If creating an optional task, disclose the exact executable and arguments, run account, power/idle conditions, output log, failure handling and how to undo the task. Use a supported GUI feature (such as Storage Sense) when simpler. Cross-reference SW-CMD-009, SW-OPT-001 and SW-OPT-002.
+
+### Check on the article
+The XDA headline's claim that Task Scheduler outperforms *every* paid optimiser is not established by comparative benchmarks. The verified fact is that Windows supplies a free, extensible scheduler for maintenance.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows/win32/taskschd/about-the-task-scheduler
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks
+- https://www.xda-developers.com/windows-pc-has-built-in-optimization-tool-hidden-plain-sight-beats-every-paid-alternative/
+
+---
+
+## SW-OPT-012 | Windows can pause maintenance when you return to the PC
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11; power/sleep behaviour depends on machine and policy
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-23
+
+### The interesting fact
+Windows Automatic Maintenance uses Task Scheduler to group background housekeeping. Ordinary maintenance tasks can start opportunistically while the PC is idle and plugged into mains power, and Windows can suspend them when someone returns to work. Critical tasks may be allowed to finish instead.
+
+### Unexpected consequence
+A laptop used constantly on battery power may not spend enough time both idle and plugged in, so maintenance tasks may be delayed. A maintenance time on the clock does not guarantee execution on a sleeping laptop, either: sleep mode, firmware and wake policy matter.
+
+### Safe inspection
+Open Control Panel > System and Security > Security and Maintenance > Automatic Maintenance where available. Inspect the settings and state before changing anything. Do not disable Automatic Maintenance globally to solve an unexplained performance problem; identify the particular process or task first.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows/win32/taskschd/task-maintenence
+- https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/w8cookbook/automatic-maintenance.md
+
+---
+
+## SW-OPT-013 | Disk Cleanup can save named cleanup presets
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM: SELECTED CATEGORIES MAY DELETE WANTED DATA
+LAST_CHECKED: 2026-09-23
+
+### The interesting fact
+The older built-in Disk Cleanup tool can *remember* your chosen cleanup categories. Run cleanmgr /sageset:1 once to pick categories; later cleanmgr /sagerun:1 reuses those choices. The numerical label allows separate presets, and /sagerun enumerates the computer's drives rather than applying the profile exclusively to C:.
+
+### Example
+    cleanmgr /sageset:1
+    cleanmgr /sagerun:1
+
+The article suggests scheduling the latter using Task Scheduler. Use the leading slash exactly as shown above; a bare sagerun:1 argument is not the documented syntax.
+
+### Aletheia safety check
+Show the categories before scheduling; avoid surprise removal of Recycle Bin contents or other wanted material. Test interactively before automation and keep the schedule infrequent. Storage Sense remains the simpler built-in option for routine temporary-file cleanup (SW-OPT-002). Clearing caches or deleting files is not evidence of an automatic speed increase.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cleanmgr
+- https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/automating-disk-cleanup-tool
+- https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/manage-drive-space-with-storage-sense
+
+---
+
+## SW-OPT-014 | A hidden startup workload may be a scheduled task
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR AUDIT; MEDIUM OR HIGH FOR DISABLING
+LAST_CHECKED: 2026-09-23
+
+### The interesting fact
+Installed programs can register Scheduled Tasks to launch update checks, background components or other housekeeping at a specific time or trigger. A PC can therefore run program-created work even when that program is absent from the ordinary Startup Apps list.
+
+### Safe read-only inspection
+    schtasks /query /fo LIST /v
+
+Or inspect Task Scheduler Library. Record the task's publisher, file path, action, trigger, run account, last result and purpose. Cross-reference SW-CMD-009. If a third-party task is confirmed unnecessary, prefer changing the parent application's settings or uninstalling that app. Export the task definition before any manual disable.
+
+### Aletheia safety check
+Do not treat every scheduled task as bloat. Never mass-disable Microsoft, driver, antivirus, backup, servicing or updater tasks; some third-party tasks carry essential security updates. A visible task is an investigation lead, not proof that it is harming performance.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows/win32/taskschd/about-the-task-scheduler
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-query
+- https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/?view=windowsserver2025-ps
+
+---
+
+## SW-OPT-015 | A browser cache is useful; routine purging can backfire
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Chromium-family browsers; use each browser's supported controls
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG FOR CACHE PURPOSE; CONTEXT FOR PERFORMANCE EFFECT
+CONFIDENCE: HIGH
+RISK: MEDIUM FOR UNSUPERVISED PROFILE-FOLDER DELETION
+LAST_CHECKED: 2026-09-23
+
+### The interesting fact
+Browsers save images, text and other page resources specifically to help previously visited pages open faster. Clearing this cache may recover some storage or resolve stale/corrupt page resources, but doing it on a routine timer forces the browser to fetch that material again.
+
+### Aletheia safety check
+Do not adopt the article's proposed generic scheduled PowerShell Remove-Item command against a browser profile's Cache_Data directory. Browser profile locations, multiple profiles and active file use vary; filesystem deletion is more error-prone than the browser's own clearing UI. Prefer targeted clearing when troubleshooting or short of space. Never silently wipe cookies, history, saved passwords or site data.
+
+### Source
+- https://support.google.com/chrome/answer/2392709?hl=en
+
+---
+
+## XDA article check | 19 September 2026
+
+The article is useful for the five card ideas above, but it is not an endorsement of one-click optimisation. These additional recommendations already overlap existing cards or need qualification:
+
+- WinGet upgrades can be scheduled, but prefer manual preview with winget upgrade before winget upgrade --all. The article's --include-unknown broadens the upgrade set to packages whose installed version cannot be determined; do not silently enable it. Avoid hard-coding a versioned WindowsApps path to winget.exe in a portable guide. Cross-reference SW-PKG-002.
+- SFC and CHKDSK are legitimate repair/diagnostic tools, not demonstrated periodic speed boosters. Microsoft recommends DISM before SFC for suspected protected-file corruption; CHKDSK without repair flags reports status but does not fix errors. Cross-reference SW-REP-001, SW-REP-002 and SW-REP-003.
+- Claims of measurable improvement, especially against every paid product, need comparable baseline and post-change measurements. Neither extra scheduled tasks nor regularly deleting useful caches necessarily makes a PC faster.
+
+Primary sources:
+- https://learn.microsoft.com/en-us/windows/package-manager/winget/upgrade
+- https://support.microsoft.com/en-us/windows/experience/backup-recovery/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk
 
 ---
 
