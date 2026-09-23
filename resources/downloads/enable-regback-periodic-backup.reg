@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Aletheia Secret Windows
+; Re-enable Windows periodic RegBack behaviour documented by Microsoft.
+; Review before importing. Administrator approval is required.
+; Restart Windows after applying.
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Configuration Manager]
+"EnablePeriodicBackup"=dword:00000001
