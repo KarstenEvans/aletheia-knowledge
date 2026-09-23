@@ -16,8 +16,8 @@ input[type=search]{flex:1 1 360px;padding:13px;border:1px solid var(--line);bord
 .card{background:white;padding:17px;border:1px solid var(--line);border-radius:18px;box-shadow:0 4px 16px #15304009}
 .card h2{font-size:20px;line-height:1.3;margin:8px 0}.card p{color:#394b52}
 .label{font-size:12px;font-weight:800;color:#587079}
-.details{display:none;margin-top:13px;padding-top:12px;border-top:1px solid var(--line);overflow-wrap:anywhere;white-space:pre-wrap;font-size:14px;line-height:1.55}
-.card.open .details{display:block}.details a{color:var(--accent)}
+.details{display:none;margin-top:13px;padding-top:12px;border-top:1px solid var(--line);overflow-wrap:anywhere;font-size:15px;line-height:1.6}
+.card.open .details{display:block}.details a{color:var(--accent)}.details h3{font-size:17px;margin:17px 0 8px}.details p{margin:9px 0}.details ul,.details ol{padding-left:23px}.details li{margin:5px 0}.details pre{overflow:auto;background:#f3f6f7;border-radius:8px;padding:12px}.details blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:#f3f6f7}
 footer{padding:23px 0 38px;border-top:1px solid var(--line);color:#576873}
 </style></head><body>
 <header><div class="wrap"><h1>🚂 Swindon Town</h1><p>Explore Swindon history, people, places, industrial heritage and oddities in searchable knowledge cards.</p>
@@ -25,7 +25,7 @@ footer{padding:23px 0 38px;border-top:1px solid var(--line);color:#576873}
 </div></header>
 <div class="tools"><div class="wrap"><div class="searchrow"><input id="search" type="search" placeholder="Search knowledge cards…" aria-label="Search knowledge"><button id="surprise">SURPRISE ME</button></div><div class="status" id="status" role="status">Loading knowledge…</div></div></div>
 <main class="wrap"><div id="grid" class="grid"></div></main>
-<footer class="wrap">Free canonical Markdown powers these cards. MORE expands the original knowledge text; WEB SEARCH opens an ordinary Google search in a separate 900 × 760 window.</footer>
+<footer class="wrap">Free canonical Markdown powers these cards. MORE reveals the complete, formatted knowledge and sources; WEB SEARCH opens an ordinary Google search in a separate 900 × 760 window.</footer>
 <script>
 (function(){
 "use strict";
@@ -46,35 +46,65 @@ document.addEventListener("click",function(e){
  if(popup(a.href))e.preventDefault();
 });
 function plain(s){return String(s||"").replace(/^\s*(SECTION|KEY|KEYWORDS|EVIDENCE|STATUS|PERIOD|GEOGRAPHY|CONFIDENCE|DATE_RANGE|DISCOVERY_SOURCE|DISCOVERY_ROLE|LAST_CHECKED|RESOURCE_URL):.*$/gmi,"").replace(/[*#_]/g,"").replace(/\s+/g," ").trim();}
-function linkDetails(s){
- return esc(s).replace(/(https?:\/\/[^\s&lt;&quot;]+)/g,function(url){
-  var end=url.replace(/[.,;]+$/,"");
-  return '<a href="'+end+'" rel="noopener">'+end+"</a>";
+function excerpt(s,max){
+ var p=plain(s);if(p.length<=max)return p;
+ var short=p.slice(0,max),last=short.lastIndexOf(". ");
+ if(last>=Math.floor(max*.55))return short.slice(0,last+1);
+ var gap=short.lastIndexOf(" ");
+ return short.slice(0,gap>0?gap:max).replace(/[,:;\s]+$/,"")+"…";
+}
+function rich(s){
+ return esc(s).replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
+ .replace(/(^|[^*])\*([^*\n]+)\*/g,"$1<em>$2</em>")
+ .replace(/https?:\/\/[^\s<>"']+/g,function(raw){
+   var end=raw.match(/[.,;:]+$/),tail=end?end[0]:"",url=tail?raw.slice(0,-tail.length):raw;
+   return '<a href="'+url+'" rel="noopener noreferrer" target="_blank">'+url+"</a>"+tail;
  });
 }
-function parse(md){
- var out=[];
- md.split(/^## /m).slice(1).forEach(function(p){
-  var header=p.split("\n")[0].trim(),m;
-  if(MODE==="weird"){
-   m=header.match(/^(WH-[A-Z0-9-]+)\s*\|\s*(.+)$/);
-   if(!m)return;
-   var sm=p.match(/### Summary\s*\n([\s\S]*?)(?=\n### |\n---|$)/);
-   out.push({id:m[1],title:m[2].trim(),body:p.slice(header.length).trim(),summary:plain(sm?sm[1]:"").slice(0,350),kind:(p.match(/^SECTION:\s*(.+)$/m)||[])[1]||"HISTORY"});
-  }else{
-   m=header.match(/^(\d+)\.\s*(.+)$/);if(!m)return;
-   if(["29","30","31","32","35","36"].includes(m[1]))return;
-   var body=p.slice(header.length).trim(),first=body.split(/^### /m)[0];
-   out.push({id:"SW-"+m[1],title:m[2],body:body,summary:plain(first).slice(0,350),kind:"SWINDON"});
+function linkDetails(body){
+ var out=[],para=[],kind="",items=[],code=null;
+ function paragraph(){if(para.length){out.push("<p>"+rich(para.join(" "))+"</p>");para=[];}}
+ function list(){if(kind){out.push("<"+kind+">"+items.map(function(t){return "<li>"+rich(t)+"</li>";}).join("")+"</"+kind+">");kind="";items=[];}}
+ body.split(/\r?\n/).forEach(function(line){
+  if(/^\s*~~~/.test(line)||/^\s*\x60\x60\x60/.test(line)){
+   paragraph();list();if(code!==null){out.push("<pre><code>"+esc(code.join("\n"))+"</code></pre>");code=null;}else code=[];return;
   }
+  if(code!==null){code.push(line);return;}
+  if(!line.trim()||/^\s*---\s*$/.test(line)){paragraph();list();return;}
+  var h=line.match(/^\s*#{3,5}\s+(.+)$/);
+  if(h){paragraph();list();out.push("<h3>"+rich(h[1])+"</h3>");return;}
+  if(/^(?:Sources?|Current sources?|Current visitor source|Historical\/lead source|Useful current local source|Opinion\/review source|Lead):\s*$/i.test(line.trim())){
+   paragraph();list();out.push("<h3>"+esc(line.trim().slice(0,-1))+"</h3>");return;
+  }
+  var ul=line.match(/^\s*-\s+(.+)$/),ol=line.match(/^\s*\d+\.\s+(.+)$/);
+  if(ul||ol){paragraph();var type=ul?"ul":"ol";if(kind!==type){list();kind=type;}items.push((ul||ol)[1]);return;}
+  if(/^\s*>\s?/.test(line)){paragraph();list();out.push("<blockquote>"+rich(line.replace(/^\s*>\s?/,""))+"</blockquote>");return;}
+  list();para.push(line.trim());
  });
- if(MODE==="swindon"){
-  var facts=md.match(/^## 30\. Suggested Aletheia fact cards\s*\n([\s\S]*?)(?=^## 31\.)/m);
-  if(facts)facts[1].split(/^### CARD:\s*/m).slice(1).forEach(function(p,i){
-   var title=p.split("\n")[0].trim(),body=p.slice(title.length).trim();
-   out.push({id:"SW-FACT-"+(i+1),title:title,body:body,summary:plain(body).replace(/^Type:\s*\w+\s*/,"").slice(0,350),kind:"FACT"});
-  });
- }
+ paragraph();list();if(code!==null)out.push("<pre><code>"+esc(code.join("\n"))+"</code></pre>");
+ return out.join("");
+}
+function parse(md){
+ var out=[],hidden=["29","30","31","32","35","36"];
+ md.split(/^## /m).slice(1).forEach(function(p){
+  var header=p.split("\n")[0].trim(),m=header.match(/^(\d+)\.\s*(.+)$/);
+  if(!m||hidden.includes(m[1]))return;
+  var body=p.slice(header.length).trim().replace(/\n---\s*$/,"").trim();
+  var preview=(body.match(/^\*\*Card preview:\*\*\s*(.+)$/m)||[])[1];
+  if(!preview)throw Error("Card missing main text: "+m[1]);
+  body=body.replace(/^\*\*Card preview:\*\*[^\n]*\n?/m,"").trim();
+  var kind=m[1]==="20"?"RESEARCH LEAD":m[1]==="26"?"SOURCE CHECK":(["33","34"].includes(m[1])?"PROJECT":"SWINDON");
+  out.push({id:"SW-"+m[1],title:plain(m[2]),body:body,summary:preview.trim(),kind:kind});
+ });
+ var section=md.match(/^## 30\. Suggested Aletheia fact cards\s*\n([\s\S]*?)(?=^## 31\.)/m);
+ if(section)section[1].split(/^### CARD:\s*/m).slice(1).forEach(function(p,i){
+  var title=p.split("\n")[0].trim(),body=p.slice(title.length).trim();
+  var type=(body.match(/^\*\*Type:\*\*\s*(.+)$/m)||[])[1]||"FACT";
+  body=body.replace(/^\*\*Type:\*\*[^\n]*\n?/m,"").trim();
+  var summary=excerpt(body.split(/^Sources:\s*$/m)[0],440);
+  if(!summary)throw Error("Fact card missing main text: "+title);
+  out.push({id:"SW-FACT-"+(i+1),title:title,body:body,summary:summary,kind:type.replace(/_/g," ")});
+ });
  return out;
 }
 function render(){
@@ -82,13 +112,13 @@ function render(){
  var found=cards.filter(function(c){return !q||(c.title+" "+c.summary+" "+c.body).toLowerCase().includes(q);});
  $("#status").textContent=found.length+" of "+cards.length+" cards • canonical Markdown";
  $("#grid").innerHTML=found.map(function(c){
-  return '<article class="card" data-id="'+esc(c.id)+'"><div class="label">'+esc(c.id)+" · "+esc(c.kind)+'</div><h2>'+esc(c.title)+'</h2><p>'+esc(c.summary||"Read the full card with MORE.")+'</p>'+
-  '<div class="actions"><button type="button" class="more secondary">MORE</button><a class="btn" href="../resources/aletheia-swindon-town-rsc.htm">RESOURCES</a><button type="button" class="web secondary">WEB SEARCH</button></div><div class="details"></div></article>';
+  return '<article class="card" data-id="'+esc(c.id)+'"><div class="label">'+esc(c.id)+" · "+esc(c.kind)+'</div><h2>'+esc(c.title)+'</h2><p>'+esc(c.summary)+'</p>'+
+  '<div class="actions"><button type="button" class="more secondary" aria-expanded="false">MORE</button><a class="btn" href="../resources/aletheia-swindon-town-rsc.htm">RESOURCES</a><button type="button" class="web secondary">WEB SEARCH</button></div><div class="details"></div></article>';
  }).join("");
  document.querySelectorAll(".card").forEach(function(el){
   var c=cards.find(function(x){return x.id===el.dataset.id;});
   el.querySelector(".more").onclick=function(){
-   var opened=el.classList.toggle("open");el.querySelector(".more").textContent=opened?"LESS":"MORE";
+   var opened=el.classList.toggle("open");el.querySelector(".more").textContent=opened?"LESS":"MORE";el.querySelector(".more").setAttribute("aria-expanded",String(opened));
    if(opened&&!el.querySelector(".details").hasChildNodes())el.querySelector(".details").innerHTML=linkDetails(c.body);
   };
   el.querySelector(".web").onclick=function(){popup("https://www.google.com/search?q="+encodeURIComponent(c.title+" "+REGION));};
@@ -97,7 +127,7 @@ function render(){
 $("#search").addEventListener("input",render);
 $("#surprise").onclick=function(){
  if(!cards.length)return;var c=cards[Math.floor(Math.random()*cards.length)];
- $("#search").value=c.title;render();var el=$("#grid .card");if(el){el.querySelector(".more").click();el.scrollIntoView({behavior:"smooth",block:"center"});}
+ $("#search").value=c.title;render();var el=$("#grid .card");if(el){el.scrollIntoView({behavior:"smooth",block:"center"});}
 };
 fetch(PATH,{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("HTTP "+r.status);return r.text();}).then(function(md){
  cards=parse(md);if(!cards.length)throw Error("No knowledge cards found");render();
