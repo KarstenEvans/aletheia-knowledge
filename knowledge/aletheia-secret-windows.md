@@ -5,7 +5,7 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.3
+version: 0.4
 created: 2026-09-23
 last_reviewed: 2026-09-23
 resource_url: https://swindon.org.uk/resources/aletheia-secret-windows-rsc.htm
@@ -218,6 +218,9 @@ SW-UPD-004     | DRIVERS       | roll back a driver after a bad Windows Update
 SW-DRV-001     | DRIVERS       | export existing third-party drivers before changing them
 SW-DRV-002     | DRIVERS       | AI may find driver candidates but must not choose blindly
 SW-UPD-005     | RECOVERY      | use an update-recovery ladder before Reset this PC
+SW-REG-001     | REGISTRY      | Windows stopped automatic RegBack in Windows 10 1803
+SW-REG-002     | REGISTRY      | save touched registry keys before applying a profile
+SW-BACK-001    | BACKUP        | build a recovery pack before debloat or update changes
 
 ---
 
@@ -2888,6 +2891,109 @@ When the app and resource pages are live, add plain links near the end of this k
 
 Until those URLs exist, keep them marked PLANNED rather than publishing dead links.
 
+
+
+## SW-REG-001 | Windows stopped automatic RegBack in Windows 10 1803
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10 version 1803 and later
+LIFECYCLE: CURRENT BEHAVIOUR / LEGACY BACKUP CAN BE RE-ENABLED
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Microsoft stopped automatically backing up the system registry into Windows\System32\config\RegBack starting with Windows 10 version 1803. The hive files can still appear in that folder but be 0 KB.
+
+### Why it changed
+Microsoft states that this was a deliberate change intended to reduce the overall disk footprint of Windows.
+
+### Re-enable the legacy periodic backup
+Microsoft documents this registry value:
+
+    HKLM\System\CurrentControlSet\Control\Session Manager\Configuration Manager
+    EnablePeriodicBackup = 1  (REG_DWORD)
+
+After restart, Windows creates registry backups in RegBack and uses the RegIdleBackup scheduled task for later backups.
+
+### Aletheia rule
+The Debloat app may offer this as an explicit option named **RE-ENABLE WINDOWS REGISTRY BACKUP**. It should first read and save the existing Configuration Manager key and explain that Microsoft recommends System Restore as the normal recovery route.
+
+### Source
+- https://learn.microsoft.com/en-us/troubleshoot/windows-client/installing-updates-features-roles/system-registry-no-backed-up-regback-folder
+
+---
+
+## SW-REG-002 | save touched registry keys before applying a profile
+
+STATUS: METHOD
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR SAVE; HIGH FOR RESTORE/APPLY
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Every Aletheia registry profile should create a timestamped backup of the registry keys it is about to change before making the first change.
+
+Windows provides REG SAVE to save a registry subkey to a hive file and REG RESTORE to write a saved hive back.
+
+Example pattern:
+
+    mkdir D:\Aletheia-Backup\2026-09-23-0126
+    reg save "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" "D:\Aletheia-Backup\2026-09-23-0126\WindowsUpdate.hiv"
+
+### Design rule
+Do not dump backups into a Windows-managed temporary folder. Prefer a clearly named Aletheia backup folder, ideally on a second physical disk or external drive when available.
+
+### Restore warning
+Restoring system-critical registry areas is an advanced recovery action. A saved hive is valuable evidence and rollback material, but it is not a substitute for a full system backup or recovery media.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-save
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg-restore
+
+---
+
+## SW-BACK-001 | build a recovery pack before debloat or update changes
+
+STATUS: METHOD
+APPLIES_TO: Aletheia Windows Debloat
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW TO MEDIUM
+LAST_CHECKED: 2026-09-23
+
+### Summary
+Before a high-risk debloat, update-policy or driver operation, create an **Aletheia Recovery Pack**.
+
+### Suggested pack
+1. Machine inventory: Windows edition/build and hardware IDs.
+2. Export third-party drivers with PnPUtil.
+3. Save the registry keys the app will touch.
+4. Optionally re-enable Windows RegBack periodic backups.
+5. Confirm a System Restore point or explain when System Restore is unavailable.
+6. Offer creation of Windows recovery media.
+7. If a second disk is available and the user wants stronger recovery, offer an advanced full/critical-volume backup using a supported imaging method.
+8. Write a plain-text restore manifest explaining what was saved and where.
+
+### Built-in advanced option
+WBADMIN remains documented on Windows 10 and Windows 11 and can create VSS-based backups. The -allCritical option includes volumes required for operating-system state and is intended for bare-metal recovery scenarios.
+
+This should be an **advanced** option because destination selection, available space and recovery testing matter.
+
+### Why useful
+If the SSD containing Windows fails while personal data lives safely on another disk, a driver archive plus recovery media and a proper system backup can turn a ruined afternoon into a fairly dull reinstall. Dull is excellent in disaster recovery.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wbadmin-start-backup
+- https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wbadmin
+- https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/bare-metal-recovery
+
+---
 
 # RESEARCH BACKLOG
 
