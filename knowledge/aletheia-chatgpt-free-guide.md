@@ -108,6 +108,7 @@ Do not upload passwords, one-time codes, recovery keys or private workplace reco
 The controls are separate. Choose the one that matches what you want to happen:
 
 - **Stop eligible new chat content being used to improve models:** Settings > Data controls > Improve the model for everyone, then turn it off. Your existing chats remain in history.
+- **Important feedback exception:** Even after turning off **Improve the model for everyone**, giving a response thumbs up or thumbs down may allow **the entire conversation associated with that feedback** to be used to train OpenAI models. This is specifically stated in OpenAI's Data controls FAQ. Before submitting feedback, consider whether that conversation contains anything private or confidential.
 - **Try something without ordinary chat history or new memories:** Start a Temporary Chat. Before it begins, choose whether it may use your existing personalization if that option appears. Saving a temporary conversation makes it a regular chat.
 - **Stop an AI assumption being repeated:** Correct your Memory summary or ask ChatGPT not to mention the information again. This does not itself remove the original source.
 - **Remove sensitive information from remembered context:** Update the Memory summary and delete relevant original chats (including archived chats), Library files and connected-app sources. Allow for propagation time and platform retention exceptions.
