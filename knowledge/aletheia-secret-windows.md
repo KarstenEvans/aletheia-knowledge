@@ -117,6 +117,9 @@ The following copyrighted items supplied for this research are used only as topi
 16. XDA Developers, "Your Windows PC has a built-in maintenance tool that outperforms every paid optimizer on the market" (19 September 2026). Discovery source only; the comparative headline is not supported by published head-to-head measurements in the article.
     https://www.xda-developers.com/windows-pc-has-built-in-optimization-tool-hidden-plain-sight-beats-every-paid-alternative/
 
+17. Anand Narayanaswamy, *Microsoft Copilot for Windows 11: Understanding the AI-Powered Features in Windows 11* (Apress, September 2024; print ISBN 9798868805820, eBook ISBN 9798868805837). Publisher's table of contents and publicly accessible preview are topic-discovery sources only. Springer Nature sells licensed PDF/EPUB; libraries may carry the OverDrive eBook. No freely redistributable complete text was located. Current Microsoft documentation, not 2024 screenshots, supports SW-COP-001..008.
+    https://link.springer.com/book/10.1007/979-8-8688-0583-7
+
 Several Scribd pages expose only previews or challenge pages. Those sources remain useful as provenance/topic maps, but cards below rely on independently checked documentation.
 
 ## ASCII INDEX
