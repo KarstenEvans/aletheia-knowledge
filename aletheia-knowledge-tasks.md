@@ -36,11 +36,12 @@ Initial commit: `d8c710edb7550308b4f9c39993388a6aa9e53bfe`.
 
 Created this root file to track work, acceptance, testing level, changed paths, handover notes and known problems. Do not confuse `DONE` for the register itself with completion of the backlog below.
 
-### AK-004 | TODO | Confirm root README onboarding links
+### AK-004 | DONE | Confirm root README onboarding links
 
-Add a compact **START HERE / For AI collaborators** section to `README.md` linking the three root documents and describing the `*-page.md` convention. Remove/reconcile stale statements in README only after checking the actual current files (for example an older Secret Windows version or an app once described as not yet published). Keep README small and useful to humans too.
+Added a compact **START HERE** section to `README.md` linking the three root documents and defining the `*-page.md` convention. Updated stale descriptions of Weird History's published reader and Secret Windows' version. README remains a small entry point.
 
-Acceptance: a fresh collaborator opening README finds GUI, code and tasks in one screen; README distinguishes shipped features from proposed work.
+Acceptance: a fresh collaborator opening README finds GUI, code and tasks immediately and can distinguish current features from proposed work.
+Commit: `d18b3bd3e0ffe1b2c765db8e80b2fc2e75f29817`.
 
 ## P0: make every HTML page reconstructable
 
