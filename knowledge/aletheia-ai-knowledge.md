@@ -616,7 +616,9 @@ On ChatGPT Plus, Astra in Work and Codex is explicitly a **limited** allowance, 
 **Last checked:** 2026-09-24
 
 ### Details
-OpenAI's current Work/Codex help says Plus includes limited Astra usage and that consumption depends on task size, input/output length, reasoning settings and Fast mode.
+OpenAI's current usage guide confirms the practical limitation: Work and Codex share one plan allowance. Depending on plan, both a five-hour window and a weekly limit can apply, and a user can exhaust the five-hour allowance before five clock-hours have passed.
+
+For Plus, OpenAI currently gives an **estimated** Astra range of roughly **5–45 local messages per five-hour period**, not a fixed quota. Sol's corresponding estimate is higher. Actual consumption varies with task size, input/output, reasoning level, Fast mode and multi-step work. Astra can therefore be an awkward foundation for a business workflow that assumes one long uninterrupted agent run.
 
 Aletheia should therefore design long jobs so they survive an exhausted allowance:
 
@@ -631,6 +633,7 @@ This is an engineering constraint, not a failure of the Aletheia idea. Agent cap
 
 ### Sources
 - https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex
+- https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex
 
 ---
 
