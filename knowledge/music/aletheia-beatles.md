@@ -1,15 +1,15 @@
-# Aletheia — The Beatles
+# Aletheia — Beatles
 
 **Status:** Working artist knowledge base  
 **Shelf:** [Aletheia Music](index.md)  
 **Catchphrase hub:** [Aletheia Song Catchphrases](aletheia-song-catchphrases.md)  
 **Last research pass:** 2026-09-24
 
-## Why The Beatles matter to the catchphrase project
+## Why Beatles matter to the catchphrase project
 
 The Beatles are unusually dense with phrases that escaped their original songs and became cultural language. Some are commands, some are tiny philosophies, some are names, questions or contradictions, and some are ordinary expressions permanently recoloured by the songs.
 
-Official Charts currently records **18 UK Number 1 singles and 29 UK Top 10 singles** for The Beatles, giving Aletheia a large pool of phrases that meet the Core Catchphrase popularity rule.
+Official Charts currently records **18 UK Number 1 singles and 29 UK Top 10 singles** for Beatles, giving Aletheia a large pool of phrases that meet the Core Catchphrase popularity rule.
 
 ## Core people
 
@@ -245,3 +245,17 @@ For each later Beatles card:
 7. legitimate listen/lyrics/resource links.
 
 Primary source priority: The Beatles' official site, published interviews, official releases and authoritative chart data.
+
+
+---
+
+# Future artist / songwriter branches
+
+Do not merge these into Beatles merely because they began there. They each developed substantial post-Beatles identities:
+
+- **Paul McCartney** — solo work and **Wings**.
+- **John Lennon** — solo catalogue and collaborations with Yoko Ono.
+- **George Harrison** — solo catalogue, including *All Things Must Pass*, plus later Traveling Wilburys work.
+- **Ringo Starr** — solo catalogue.
+
+These are natural seeds for the future **Aletheia Songwriter** / individual-artist branch. Keep formal Beatles Lennon–McCartney credits intact even when a principal writer is well documented.
