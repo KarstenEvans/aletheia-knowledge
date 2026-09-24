@@ -331,4 +331,8 @@ Related app-side work in `KarstenEvans/aletheia-app`:
 - refreshed AI Easy provider installation/user guide;
 - Aletheia Watch and 11 Skills triage ideas/tasks.
 
-Still to verify live: published AI Knowledge reader, new provider filters and source links on desktop/Android/Safari-class browsers.
+Static verification after the provider expansion: **75 unique AI cards, 75 substantive Summary sections, 75 Sources sections**. The AI reader's inline JavaScript compiles and provider filters for Kimi, Manus and Grok are present.
+
+GitHub Pages deployment completed successfully for the current commit chain. The external web-inspection tool still cannot fetch the `github.io` page directly, so this records **deployment success**, not a human/browser interaction test.
+
+Still to verify live on a real browser/device: published AI Knowledge reader, new provider filters and source links on desktop/Android/Safari-class browsers.
