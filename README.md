@@ -5,6 +5,7 @@ Structured, source-traced knowledge libraries and lightweight browser apps for A
 ## START HERE: multi-AI collaboration
 
 - **Public knowledge website:** https://karstenevans.github.io/aletheia-knowledge/ . Send visitors here or to a published app page, not to the raw `.md` or GitHub file viewer.
+- **[Agent router](AGENTS.md):** short entry point for Codex/Kimi/other repository agents; it points to the real guides rather than duplicating them.
 - **[GUI and behaviour contract](aletheia-knowledge-GUI.md):** layout, mobile use, substantive card previews, MORE, links and resources.
 - **[Common code and reusable prompts](aletheia-knowledge-code.md):** HTML patterns, safe parsing, page-spec template and fresh-chat work prompts.
 - **[Shared task register](aletheia-knowledge-tasks.md):** handover, active work, verification and follow-up.
