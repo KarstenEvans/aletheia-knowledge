@@ -232,7 +232,7 @@ The next person should be able to finish the next task without asking where the 
 
 ## P1: Music knowledge shelf
 
-### AK-070 | SOURCE PUBLISHED / APP TODO | Music shelf, catchphrase graph and future subject navigation
+### AK-070 | APP PUBLISHED / VERIFY LIVE | Music shelf, catchphrase graph and future subject navigation
 
 2026-09-24: created a dedicated canonical music shelf at `knowledge/music/` rather than adding more files to the general `knowledge/` root.
 
@@ -257,3 +257,12 @@ Next build:
 Research boundary: short lyric/catchphrase quotation only; no full copyrighted lyrics. Separate formal songwriter credit, documented intent, chart facts and Aletheia interpretation. The current Beatles/Bowie/Marley files are first-pass corpora and should deepen through primary sources rather than folklore.
 
 Static source check on 2026-09-24: all seven paths fetched successfully from the default branch after publication.
+
+
+2026-09-24 | Task AK-070 | APP PUBLISHED / VERIFY LIVE
+Files read: root GUI/code/task guides; current Music index/source files; Weird History reader as implementation reference.
+Files changed: `knowledge/music/index.md`, `knowledge/music/index.html`, `knowledge/music/index-page.md`, `knowledge/music/aletheia-song-catchphrases.md`, `knowledge/music/aletheia-beatles.md`, new `knowledge/music/aletheia-sex-pistols.md`, new `app/aletheia-music.htm`, new `app/aletheia-music-page.md`, new `app/aletheia-song-catchphrases.htm`, new `app/aletheia-song-catchphrases-page.md`, root `index.html`, new root `index-page.md`.
+Key commits: Sex Pistols `dca40d70f76b04825fffa1d5af582ec396a146f4`; catchphrase update `e02c2f4e0dd6ce780ed4f766a45e8174b2bb16b8`; Music app `480a7b3326eec4c9d92c09857b7e52514071d915`; Catchphrases app `1585b58b9a186fd56dcfdbd4b4660831287c02d2`; root index `ecf18c71c94c88f72cab99e6c175f0e9ebf2baaa`.
+Tests passed: both new inline JavaScript blocks compile via V8 `new Function`; canonical Phrase Map parses to **54 phrase rows** spanning Tears for Fears, Beatles, David Bowie/Queen & Bowie, Bob Marley and Sex Pistols; all new GitHub paths refetched successfully.
+Not tested / still uncertain: GitHub Pages live deployment and Android/desktop interaction. The available web viewer could not fetch the Pages host, so do not mark live verification complete.
+Next action: owner test `app/aletheia-music.htm` and `app/aletheia-song-catchphrases.htm` on Android/desktop; then continue phrase/artist research or start Aletheia Improve.
