@@ -1,7 +1,7 @@
 ---
 title: Aletheia AI Knowledge
 slug: aletheia-ai-knowledge
-version: 0.1.0
+version: 0.2.0
 status: active
 last_checked: 2026-09-24
 knowledge_type: provider-neutral AI capability and workflow library
@@ -605,6 +605,62 @@ Multiple agents do not automatically create higher truth. They can also amplify 
 
 ---
 
+
+## AI-027 | Plus Astra allowance makes Work and Codex a scarce resource
+
+### Summary
+On ChatGPT Plus, Astra in Work and Codex is explicitly a **limited** allowance, and Astra can consume that allowance faster than Sol. A long agent job can therefore stop before the underlying project is finished even when ordinary Chat remains available.
+
+**Type:** CHATGPT / LIMITS / WORKFLOW  
+**Evidence:** OFFICIAL OPENAI + USER FIELD EXPERIENCE  
+**Last checked:** 2026-09-24
+
+### Details
+OpenAI's current Work/Codex help says Plus includes limited Astra usage and that consumption depends on task size, input/output length, reasoning settings and Fast mode.
+
+Aletheia should therefore design long jobs so they survive an exhausted allowance:
+
+- break work into independently useful stages;
+- make the agent save progress into the repository or a checkpoint early;
+- make every stage start by reading current files rather than replaying the whole history;
+- avoid using Astra for work Sol/ordinary Chat can do reliably;
+- require a compact receipt before a long run is allowed to finish;
+- keep the canonical state outside the agent session so a later run can continue rather than restart.
+
+This is an engineering constraint, not a failure of the Aletheia idea. Agent capacity is part of the system design.
+
+### Sources
+- https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex
+
+---
+
+## AI-028 | Codex is for repository engineering, not general website brainstorming
+
+### Summary
+Codex is most useful when the work has files, code, tests and a repository state that the agent can inspect and change. For quick design iteration or a small static page, ordinary Chat may be faster; for a multi-file refactor, migration, test/fix loop or repeated maintenance task, Codex is the better-shaped tool.
+
+**Type:** CHATGPT / CODEX / WORKFLOW  
+**Evidence:** OFFICIAL OPENAI + ALETHEIA DESIGN  
+**Last checked:** 2026-09-24
+
+### Details
+Current Codex material describes end-to-end engineering work such as features, refactors, migrations, code review, CI/CD and scheduled maintenance. It supports worktrees, cloud environments and reusable Skills.
+
+The useful Aletheia split is:
+
+- **Chat:** discuss, design, research, review, make a small targeted edit through a connected repository tool.
+- **Codex:** enter the repository, read `AGENTS.md`, inspect several files, edit, run commands/tests, examine failures and keep iterating.
+- **Work:** jobs where browser/computer/app operation matters more than software engineering.
+
+A static Aletheia app can still be built in Chat. Codex earns its keep when the task benefits from an actual engineering loop rather than simply producing source text.
+
+### Sources
+- https://openai.com/codex/
+- https://developers.openai.com/learn/codex
+- https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
+
+---
+
 # Google Gemini
 
 ## AI-100 | Gemini Personal Intelligence combines several personal context sources
@@ -862,6 +918,64 @@ Do not automate an unreliable workflow merely to make it frequent. First prove t
 
 ---
 
+
+## AI-205 | Claude now has both lightweight Projects and longer cloud task workflows
+
+### Summary
+Claude Projects are available even on Free accounts, while paid Claude task workflows can run connected, recurring work in the cloud. Treat Projects as reusable context and scheduled/task execution as a separate capability.
+
+**Type:** CLAUDE / PROJECTS / TASKS  
+**Evidence:** OFFICIAL ANTHROPIC  
+**Last checked:** 2026-09-24
+
+### Details
+Anthropic's current Projects help says Projects provide a self-contained workspace with files, instructions and knowledge; a newer Projects beta begins with Claude Code and can spawn parallel cloud threads that inherit project files, repositories, instructions and memory.
+
+Current scheduled tasks are available on paid plans and can use connected tools, skills and plugins for recurring briefings, reports, research and file work.
+
+For Aletheia, keep three layers distinct:
+
+1. portable Aletheia state;
+2. Claude Project context and memory;
+3. task/Code execution.
+
+Do not treat one layer as proof that another has been saved.
+
+### Sources
+- https://support.claude.com/en/articles/9517075-what-are-projects
+- https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
+
+---
+
+## AI-206 | Claude's current memory is editable, but Aletheia should still carry canonical state
+
+### Summary
+Claude memory now works across chat and its cloud task experience for many personal plans, and Anthropic exposes remembered topics for user review. This improves convenience but does not replace an inspectable project ledger or handover.
+
+**Type:** CLAUDE / MEMORY / ALETHEIA  
+**Evidence:** OFFICIAL ANTHROPIC  
+**Last checked:** 2026-09-24
+
+### Details
+Anthropic's September 2026 release notes say memory is on by default for Free, Pro and Max, with Topics under Settings > Memory that can be edited or deleted; sensitive-topic handling has separate controls.
+
+Aletheia should use provider memory for convenience while preserving:
+
+- explicit corrections;
+- project decisions;
+- unresolved conflicts;
+- source provenance;
+- authority boundaries;
+- handovers/checkpoints.
+
+Those are project records, not assumptions about what a provider remembers.
+
+### Sources
+- https://support.claude.com/en/articles/12138966-release-notes
+- https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context
+
+---
+
 # DeepSeek
 
 ## AI-300 | DeepSeek V4.1 Flash is the current fast multimodal/agent model
@@ -903,6 +1017,62 @@ For higher-sensitivity data, check the current provider privacy policy, account 
 ### Sources
 - https://chat.deepseek.com/
 - https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html
+- https://api-docs.deepseek.com/updates/
+
+---
+
+
+## AI-302 | DeepSeek's API is stateless, so Aletheia must supply state explicitly
+
+### Summary
+DeepSeek's current Chat Completions and Responses APIs do not store the conversation for you. Every multi-turn or agent wrapper must send the required history/state again, which makes an explicit Aletheia state pack particularly natural.
+
+**Type:** DEEPSEEK / API / ALETHEIA  
+**Evidence:** OFFICIAL DEEPSEEK  
+**Last checked:** 2026-09-24
+
+### Details
+DeepSeek documents both APIs as stateless. The Responses API does not support stored conversations or `previous_response_id`.
+
+A good wrapper therefore sends:
+
+- a compact system/Aletheia bootstrap;
+- only the current task-relevant user state;
+- required conversation history;
+- tool results;
+- a checkpoint summary when history is compacted.
+
+DeepSeek's automatic context caching can make repeated stable prefixes cheaper, but caching repeated bytes is not persistent Aletheia memory.
+
+### Sources
+- https://api-docs.deepseek.com/guides/multi_round_chat
+- https://api-docs.deepseek.com/api/create-response/
+- https://api-docs.deepseek.com/guides/kv_cache/
+
+---
+
+## AI-303 | DeepSeek supplies tool-call decisions; the host executes the tools
+
+### Summary
+DeepSeek can request external function/tool calls, including in current thinking modes, but the model does not execute the function itself. The host application or orchestrator remains responsible for permissions, execution and returning the result.
+
+**Type:** DEEPSEEK / AGENT / TOOLS  
+**Evidence:** OFFICIAL DEEPSEEK  
+**Last checked:** 2026-09-24
+
+### Details
+This makes DeepSeek a sensible model inside Odysseus or another Aletheia-controlled harness:
+
+1. model proposes the tool call;
+2. harness checks authority/permission;
+3. harness executes the real function;
+4. result is returned to the model;
+5. Aletheia records consequential effects.
+
+Do not confuse model tool-call capability with permission to act.
+
+### Sources
+- https://api-docs.deepseek.com/guides/tool_calls/
 - https://api-docs.deepseek.com/updates/
 
 ---
@@ -1100,6 +1270,377 @@ For Aletheia AUTO mode, a safe default is **£0.00 unapproved spend**. If the re
 
 ---
 
+
+# Kimi / Moonshot AI
+
+## AI-600 | Kimi now spans Chat, Search, Memory, Agent, Work and Code
+
+### Summary
+Kimi is no longer just a chat model. Its current product family includes ordinary Chat/Search, a long-term Memory Space, autonomous Agent mode, the local Kimi Work agent and Kimi Code for repository engineering.
+
+**Type:** KIMI / PLATFORM  
+**Evidence:** OFFICIAL KIMI  
+**Last checked:** 2026-09-24
+
+### Details
+Kimi's current new-user guide describes:
+
+- **Chat** for ordinary conversation and files;
+- **Search** for current web information;
+- **Memory Space** for durable preferences and references to past chats;
+- **Agent** for autonomous websites, documents, data analysis and presentations;
+- **Kimi Work** as a local knowledge-worker agent;
+- **Kimi Code** as its coding agent.
+
+This is a strong match for Aletheia because the portable layer can remain outside all six surfaces.
+
+### Sources
+- https://www.kimi.com/en/help/new-user-guide/overview
+- https://www.kimi.com/en/help
+
+---
+
+## AI-601 | Kimi's simple Aletheia setup is Memory Space plus a portable file
+
+### Summary
+For ordinary Kimi, keep stable personal preferences in Memory Space only when wanted and keep the inspectable `aletheia-memory.md` as the portable source. Use Search for freshness and Agent only when the task actually needs execution.
+
+**Type:** KIMI / PERSONALISATION / ALETHEIA  
+**Evidence:** OFFICIAL KIMI + ALETHEIA DESIGN  
+**Last checked:** 2026-09-24
+
+### Details
+Recommended route:
+
+1. keep the universal bootstrap short;
+2. use Memory Space for approved durable preferences, not a complete case archive;
+3. attach the portable Aletheia memory/checkpoint when a project needs exact state;
+4. use Quick Prompts for frequently reused small instructions;
+5. move to Agent mode only for an execution-shaped job.
+
+As with every provider memory, an explicit Aletheia correction outranks an older remembered assumption.
+
+### Sources
+- https://www.kimi.com/en/help/new-user-guide/overview
+
+---
+
+## AI-602 | Kimi Work is a local agent with permissions, WebBridge, Skills and schedules
+
+### Summary
+Kimi Work can operate local files and browser workflows, install Skills/plugins, use projects and schedule tasks. Its local schedules only run while Kimi Work is open, whereas Kimi's cloud-created scheduled tasks do not require the desktop client to remain running.
+
+**Type:** KIMI / WORK / AUTOMATION  
+**Evidence:** OFFICIAL KIMI  
+**Last checked:** 2026-09-24
+
+### Details
+Kimi Work exposes three permission levels, from routine automatic operation through manual approval to fully automatic execution. WebBridge can click, scroll and extract data in a browser.
+
+Aletheia should map this to a clearer authority ladder:
+
+- read/observe;
+- draft/preview;
+- modify local reversible state;
+- external or irreversible action.
+
+Do not select fully automatic mode merely for convenience when an action can publish, delete, overwrite or transmit private information.
+
+### Sources
+- https://www.kimi.com/en/help/kimi-work/overview
+- https://www.kimi.com/en/help/kimi-work/kimi-work-faq
+- https://www.kimi.com/en/help/kimi-work/release-notes
+
+---
+
+## AI-603 | Kimi Code understands AGENTS.md, Skills, MCP and Markdown-defined agents
+
+### Summary
+Kimi Code is especially Aletheia-friendly because it can read project `AGENTS.md`, discover reusable `SKILL.md` workflows, connect MCP tools and define custom agents in Markdown.
+
+**Type:** KIMI / CODE / ALETHEIA  
+**Evidence:** OFFICIAL KIMI  
+**Last checked:** 2026-09-24
+
+### Details
+Kimi documents global and project instruction files and can generate an initial `AGENTS.md` with `/init`. It also supports project/user Skills and custom agents.
+
+That means the same small Aletheia repository router created for Codex can serve Kimi Code too, while detailed workflows stay in canonical docs or Skills.
+
+Security boundary: project agent files are themselves instructions and can be untrusted when a repository is unfamiliar. Review agent/skill configuration before granting broad tools.
+
+### Sources
+- https://www.kimi.com/en/help/kimi-code/cli-customization
+- https://www.kimi.com/code/docs/en/kimi-code-cli/customization/agents
+- https://www.kimi.com/code/docs/en/kimi-code-cli/customization/skills.html
+
+---
+
+## AI-604 | Kimi sub-agents preserve main context but multiply token consumption
+
+### Summary
+Kimi sub-agents use isolated context windows, which keeps exploratory work out of the main context and allows parallelism, but each sub-agent consumes its own model tokens. More agents are therefore not automatically more efficient.
+
+**Type:** KIMI / MULTI-AGENT / COST  
+**Evidence:** OFFICIAL KIMI  
+**Last checked:** 2026-09-24
+
+### Details
+This supports an Aletheia rule that should apply across providers: use sub-agents when work is genuinely parallel or needs isolated context; keep simple sequential work in one agent.
+
+A swarm of agents can become a swarm of invoices, duplicated searches and conflicting partial states if orchestration is weak.
+
+### Sources
+- https://www.kimi.com/code/docs/en/kimi-code-cli/customization/agents
+
+---
+
+# Manus
+
+## AI-700 | Manus Projects are persistent reusable Aletheia-shaped workspaces
+
+### Summary
+Manus Projects provide a master instruction, knowledge files and shared/reusable context for sessions. This is one of the cleanest current places to install an Aletheia project adapter without making the provider memory canonical.
+
+**Type:** MANUS / PROJECTS / ALETHEIA  
+**Evidence:** OFFICIAL MANUS  
+**Last checked:** 2026-09-24
+
+### Details
+A practical Aletheia Manus Project can contain:
+
+- the compact Aletheia bootstrap as Project instruction;
+- an approved `aletheia-memory.md` or project-state file;
+- relevant source documents;
+- selected Skills;
+- optional connectors.
+
+Manus can now propose Project instruction/file/skill updates learned from completed work, but official guidance says those context changes require user approval. That fits Aletheia's propose-before-accept pattern well.
+
+### Sources
+- https://manus.im/en/blog/manus-projects
+- https://manus.im/blog/manus-projects-self-updating
+- https://open.manus.im/docs/v2/project.create
+
+---
+
+## AI-701 | Manus Chat is lightweight; Agent mode spends credits on actual execution
+
+### Summary
+Manus separates a lightweight Chat mode from Agent mode. Chat does not currently consume Manus credits, while Agent tasks consume credits based on LLM tokens, virtual-machine use and third-party APIs.
+
+**Type:** MANUS / COST / AGENT  
+**Evidence:** OFFICIAL MANUS  
+**Last checked:** 2026-09-24
+
+### Details
+This is closely related to the practical problem seen with limited agent allowances elsewhere: autonomous work has a real execution budget.
+
+Use Chat for discussion/research when execution is unnecessary. Use Agent for work that genuinely benefits from its sandbox/browser/code/file capabilities. Break expensive long jobs into checkpoints rather than asking the agent to rediscover the whole project after a budget interruption.
+
+### Sources
+- https://help.manus.im/en/articles/11711128-what-are-the-differences-between-chat-mode-and-agent-mode
+- https://help.manus.im/en/articles/11711097-what-are-the-rules-for-credits-consumption-and-how-can-i-obtain-them
+
+---
+
+## AI-702 | Manus Skills can be packaged and imported directly from GitHub
+
+### Summary
+Manus Skills use a `SKILL.md` plus optional scripts/references/templates and can be shared as skill packages, ZIPs or public GitHub repositories. That makes the existing Aletheia 11 Skills pack a realistic candidate for a future compatibility test.
+
+**Type:** MANUS / SKILLS / ALETHEIA  
+**Evidence:** OFFICIAL MANUS  
+**Last checked:** 2026-09-24
+
+### Details
+Do not blindly import all eleven.
+
+First test a small low-risk workflow such as Humanizer or GEO/AEO, then test the competitor-monitor skill with read-only public web sources. Review any third-party Skill before enabling it because a Skill can contain executable resources.
+
+### Sources
+- https://help.manus.im/en/articles/14753565-how-to-share-and-use-skills-in-manus
+
+---
+
+## AI-703 | Manus Scheduled Tasks 2.0 can keep the context where the recurring work lives
+
+### Summary
+Manus schedules can run inside a task, Project or Manus-built web app and reuse that location's instructions, files and results instead of rebuilding context on every run.
+
+**Type:** MANUS / AUTOMATION  
+**Evidence:** OFFICIAL MANUS  
+**Last checked:** 2026-09-24
+
+### Details
+This is a particularly good fit for Aletheia Watch:
+
+- Project holds the business type, postcode/radius, selected competitors and approved watch pages;
+- the first run establishes a dated baseline;
+- a weekly schedule refreshes the same monitored fields;
+- the output records supported changes and unchanged/unknown fields;
+- a human decides whether any response is needed.
+
+### Sources
+- https://manus.im/blog/manus-schedules
+
+---
+
+## AI-704 | Manus can operate cloud or local computers, so the authority envelope matters
+
+### Summary
+Manus offers a persistent Cloud Computer and a Desktop "My Computer" route that can read/edit local files, execute terminal commands and operate workflows. This increases capability and therefore increases the need for narrow permissions and receipts.
+
+**Type:** MANUS / COMPUTER USE / SAFETY  
+**Evidence:** OFFICIAL MANUS  
+**Last checked:** 2026-09-24
+
+### Details
+The Cloud Computer persists files, installed tools and running processes. The desktop app can work in authorised folders and can be remotely tasked.
+
+Aletheia should record:
+
+- which machine/environment is in scope;
+- which folders/accounts are authorised;
+- whether network/external actions are allowed;
+- what irreversible operations still need confirmation;
+- what changed during the run.
+
+### Sources
+- https://help.manus.im/en/articles/15392111-what-is-the-cloud-computer
+- https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of
+- https://help.manus.im/en/articles/11711218-how-can-i-take-over-manus-browser-or-vs-code
+
+---
+
+## AI-705 | Manus connectors can turn an Aletheia Project into an action workflow
+
+### Summary
+Manus connectors can attach Gmail, Calendar, Drive, GitHub, databases and custom/MCP tools to a Project. Keep the Project instruction stable and connect only the systems required for that workflow.
+
+**Type:** MANUS / CONNECTORS  
+**Evidence:** OFFICIAL MANUS  
+**Last checked:** 2026-09-24
+
+### Details
+For Aletheia, connector configuration belongs in the authority layer, not in a public memory file.
+
+A project may recommend or use connectors while each user's account credentials remain separately authorised. Shared instructions do not imply shared private account data.
+
+### Sources
+- https://help.manus.im/en/articles/12231777-how-can-i-use-manus-connectors
+- https://manus.im/blog/projects-connectors
+
+---
+
+# Grok / SpaceXAI
+
+## AI-800 | Grok now has a full coding/build surface, not only conversational Grok
+
+### Summary
+Grok 4.7 is SpaceXAI's current flagship coding/knowledge-work model, and Grok Build is available across plans for building apps, websites, games and dashboards on web and mobile.
+
+**Type:** GROK / MODEL / BUILD  
+**Evidence:** OFFICIAL SPACEXAI  
+**Last checked:** 2026-09-24
+
+### Details
+For Aletheia, separate:
+
+- ordinary Grok conversation;
+- Grok Build for project/code creation;
+- Skills for reusable workflows;
+- Automations for recurring jobs;
+- connectors/MCP for external systems.
+
+The same provider-neutral Aletheia state can sit above all of them.
+
+### Sources
+- https://x.ai/news/grok-4-7
+- https://x.ai/news/grok-build-for-everyone
+- https://x.ai/build/changelog
+
+---
+
+## AI-801 | Grok Skills provide persistent reusable expertise
+
+### Summary
+Grok Skills are designed to carry reusable instructions and workflow expertise across conversations, including document, presentation, spreadsheet and PDF work plus custom user-created Skills.
+
+**Type:** GROK / SKILLS / ALETHEIA  
+**Evidence:** OFFICIAL SPACEXAI  
+**Last checked:** 2026-09-24
+
+### Details
+An Aletheia adapter is a natural custom Skill candidate, but keep the Skill small and point it to portable project state where exact provenance/decisions matter.
+
+Do not assume a Grok Skill package is byte-for-byte compatible with Codex/Kimi/Manus Skills. Reuse the workflow meaning; adapt the packaging to the provider.
+
+### Sources
+- https://x.ai/news/grok-skills
+
+---
+
+## AI-802 | Grok Automations can run on schedules or email triggers
+
+### Summary
+Grok Automations can repeat a saved job on a schedule or when an email arrives, using attached files, connectors and Skills as context.
+
+**Type:** GROK / AUTOMATION  
+**Evidence:** OFFICIAL SPACEXAI  
+**Last checked:** 2026-09-24
+
+### Details
+This is suitable for read-mostly Aletheia monitors such as:
+
+- competitor page changes;
+- vacancy scans;
+- scheduled research;
+- mailbox attention rules.
+
+Use a meaningful-change condition so an automation does not generate noise merely because it ran.
+
+### Sources
+- https://x.ai/news/grok-automations
+
+---
+
+## AI-803 | Grok connectors and custom MCP can attach live systems
+
+### Summary
+Grok currently lists connectors including GitHub, Notion, Vercel, Box, Canva and others, and supports custom MCP servers. Connector availability is capability; Aletheia still controls whether a particular task is authorised to act.
+
+**Type:** GROK / CONNECTORS / MCP  
+**Evidence:** OFFICIAL SPACEXAI  
+**Last checked:** 2026-09-24
+
+### Details
+For private systems, minimise scope and avoid placing credentials or connection secrets in portable Markdown. Keep evidence links and action authority separate.
+
+### Sources
+- https://docs.x.ai/grok/connectors
+
+---
+
+## AI-804 | Grok Build memory separates project notes from global preferences
+
+### Summary
+Grok Build now keeps Markdown memory notes for project conventions/decisions and separate global preferences. Current-conversation instructions take precedence over the stored notes.
+
+**Type:** GROK / MEMORY / ALETHEIA  
+**Evidence:** OFFICIAL SPACEXAI  
+**Last checked:** 2026-09-24
+
+### Details
+This is close to Aletheia's desired split, but Grok's memory remains provider-managed working memory.
+
+Keep canonical evidence/conflicts/decisions in the repository or portable Aletheia state. Use Grok memory for convenient coding conventions and durable preferences, not as the sole audit record.
+
+### Sources
+- https://x.ai/news/grok-build-memory
+
+---
+
 # Cross-provider design
 
 ## AI-500 | Use one portable Aletheia bootstrap plus small provider adapters
@@ -1269,6 +1810,146 @@ This is why Aletheia AI Knowledge should be easy to update card-by-card rather t
 - https://support.google.com/gemini/answer/16598623
 - https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude
 - https://api-docs.deepseek.com/updates/
+
+---
+
+
+## AI-506 | Capability is a stack: model, interface, tools and context
+
+### Summary
+When an AI task fails, do not blame or praise the model alone. The result depends on the model, the interface/harness, available tools and the context supplied to the task.
+
+**Type:** CROSS-PROVIDER / DESIGN  
+**Evidence:** USER-SUPPLIED DISCOVERY MATERIAL + CURRENT PROVIDER DOCUMENTATION  
+**Last checked:** 2026-09-24
+
+### Details
+This explains why the same underlying model can behave very differently in ordinary Chat, Work, Codex, Kimi Work, Manus Agent or an Odysseus harness.
+
+Aletheia debugging should therefore ask:
+
+1. Was the right model chosen?
+2. Did the interface preserve enough working state?
+3. Did the agent actually have the required tool/permission?
+4. Did it receive the right source files, constraints and prior decisions?
+5. Did the execution budget last long enough?
+
+This principle was reinforced by the user-supplied *AI Fundamentals* cheat sheet and by current agent-platform documentation.
+
+### Sources
+- User-supplied PDF: *AI Fundamentals — The Cheat Sheet* (Property Filter, 2026), discovery source
+- https://developers.openai.com/api/docs/guides/agents
+- https://www.kimi.com/en/help/kimi-work/overview
+
+---
+
+## AI-507 | Use an action-permission ladder instead of one giant "agent access" switch
+
+### Summary
+Aletheia interfaces should distinguish observing from drafting, local modification and consequential external action. "The agent has access" is too vague to be a useful permission model.
+
+**Type:** CROSS-PROVIDER / AUTHORITY  
+**Evidence:** ALETHEIA DESIGN + DISCOVERY MATERIAL + PROVIDER PERMISSION MODELS  
+**Last checked:** 2026-09-24
+
+### Details
+Practical ladder:
+
+1. **READ / OBSERVE:** inspect public or authorised data.
+2. **DRAFT / PREVIEW:** prepare a message, change or plan without applying it.
+3. **LOCAL / REVERSIBLE WRITE:** modify an authorised working copy with rollback.
+4. **EXTERNAL / CONSEQUENTIAL ACTION:** send, publish, delete, purchase, merge, change permissions or affect another system/person.
+
+The higher the rung, the clearer the authority and receipt should be.
+
+### Sources
+- User-supplied PDF: *AI Fundamentals — The Cheat Sheet* (Property Filter, 2026), discovery source
+- https://www.kimi.com/en/help/kimi-work/overview
+- https://github.com/KarstenEvans/aletheia-protocol
+
+---
+
+## AI-508 | Mature AI adoption is workflow integration, not simply adding more agents
+
+### Summary
+Across current adoption material, the repeated failure mode is weak context and workflow integration rather than a shortage of AI tools. Add an agent only where it removes a real handoff or recurring workload.
+
+**Type:** CROSS-PROVIDER / ADOPTION  
+**Evidence:** USER-SUPPLIED INDUSTRY MATERIAL + ALETHEIA DESIGN  
+**Last checked:** 2026-09-24
+
+### Details
+Useful progression:
+
+- augment an existing task;
+- automate a proven repeatable step;
+- integrate context/tools across a workflow;
+- only then consider agentic end-to-end operation.
+
+This avoids turning an awkward process into an automated awkward process.
+
+The user-supplied WalkMe and Superside materials repeatedly emphasise workflow context, guidance and integration. Microsoft similarly describes a progression from foundational assistant use to specialised solutions and then agents.
+
+### Sources
+- User-supplied PDF: *The State of Digital Adoption 2026* (WalkMe), discovery source
+- User-supplied PDF: *The AI Reset* (Superside, 2026), discovery source
+- User-supplied PDF: *The IT Guide — Becoming Frontier with Microsoft 365 Copilot and Agents* (Microsoft, 2026), discovery source
+
+---
+
+## AI-509 | Governance should leave evidence, not just a policy statement
+
+### Summary
+For AI that can affect people, data or external systems, Aletheia should preserve who authorised the system, what it was allowed to do, what sources it used, what changed and how incidents/corrections are handled.
+
+**Type:** CROSS-PROVIDER / GOVERNANCE  
+**Evidence:** USER-SUPPLIED GOVERNANCE MATERIAL + ALETHEIA PROTOCOL  
+**Last checked:** 2026-09-24
+
+### Details
+The practical minimum is an inventory plus receipts:
+
+- system/workflow identity and purpose;
+- owner/operator;
+- data and tool scope;
+- impact/risk level;
+- decision/action logs;
+- review/monitoring date;
+- incident/correction route;
+- source/provenance where decisions rely on external evidence.
+
+This aligns strongly with Aletheia's existing Agentic Systems Profile rather than requiring a new competing governance framework.
+
+### Sources
+- User-supplied PDF: *Governing AI in 2026* (OneTrust, 2026), discovery source
+- https://github.com/KarstenEvans/aletheia-protocol
+
+---
+
+## AI-510 | Promote a workflow into an app only when the interface adds real value
+
+### Summary
+A reusable Skill is enough when the job is mainly an instruction pattern. Create an Aletheia app when users benefit from persistent inputs, visual state, saved baselines, filters, files, scheduled monitoring or a task-specific interface.
+
+**Type:** CROSS-PROVIDER / SKILLS / APP DESIGN  
+**Evidence:** ALETHEIA DESIGN + CURRENT SKILL PLATFORMS  
+**Last checked:** 2026-09-24
+
+### Details
+Examples:
+
+- Humanizer: mostly a Skill.
+- Meeting Prep: mostly a Skill plus connectors.
+- Competitor Monitor: becomes a better **Aletheia Watch** app because it needs a watch list, geography, baselines, page selection, schedules and change history.
+- GEO/AEO Optimizer: can remain a Skill when checking text, but overlaps the richer Site Audit app for full websites.
+- Weekly Review: a Skill unless a dashboard/history becomes useful.
+
+The app should not exist merely to wrap a prompt in buttons.
+
+### Sources
+- https://developers.openai.com/api/docs/guides/tools-skills
+- https://www.kimi.com/code/docs/en/kimi-code-cli/customization/skills.html
+- https://help.manus.im/en/articles/14753565-how-to-share-and-use-skills-in-manus
 
 ---
 
