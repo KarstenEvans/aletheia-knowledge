@@ -1276,6 +1276,61 @@ For Aletheia AUTO mode, a safe default is **£0.00 unapproved spend**. If the re
 ---
 
 
+
+## AI-407 | Odysseus supports SKILL.md workflows; repo AGENTS.md support is not yet a baseline assumption
+
+### Summary
+Odysseus currently has a real Skill registry using `SKILL.md`, can import Skills from GitHub, and has migration tooling for bringing Skills/memory/archive material into its workspace. However, automatic repo-local `AGENTS.md` / `CLAUDE.md` context loading appears in the current project as a proposal rather than something Aletheia should assume is already universal.
+
+**Type:** ODYSSEUS / SKILLS / ALETHEIA  
+**Evidence:** CURRENT ODYSSEUS SOURCE + OPEN PROPOSAL  
+**Last checked:** 2026-09-24
+
+### Details
+This changes the integration recommendation:
+
+- keep Aletheia's root `AGENTS.md` because it is immediately useful for Codex/Kimi and as a human-readable project router;
+- for Odysseus today, treat `SKILL.md` as the confirmed reusable workflow route;
+- test any repository-context/AGENTS import path in the installed Odysseus version rather than assuming it;
+- use Odysseus' migration/import mechanisms when explicit import/review is preferable to automatic context loading.
+
+This also makes the existing 11 Aletheia-enabled workflow Skills worth testing in Odysseus without rewriting them first.
+
+### Sources
+- https://github.com/odysseus-dev/odysseus/blob/dev/docs/agent-migration.md
+- https://github.com/odysseus-dev/odysseus/blob/dev/scripts/odysseus-skills
+- https://github.com/odysseus-dev/odysseus/issues/3374
+- https://github.com/odysseus-dev/odysseus/issues/1801
+
+---
+
+## AI-408 | Odysseus has a scoped Codex integration beyond simply using an OpenAI model
+
+### Summary
+Current Odysseus source includes a Codex integration Skill/API path with scoped tokens for capabilities such as email reads, memory access and task data. This is different from merely selecting an OpenAI model as the reasoning backend.
+
+**Type:** ODYSSEUS / CODEX / INTEGRATION  
+**Evidence:** CURRENT ODYSSEUS SOURCE  
+**Last checked:** 2026-09-24
+
+### Details
+Odysseus' Codex integration expects an Odysseus URL plus a scoped API token. The token's capabilities determine what Codex may access.
+
+Aletheia should preserve that scope:
+
+- if email.read is not granted, Codex must not pretend it can inspect email;
+- memory write/delete requires the matching scope;
+- credentials stay outside public Git;
+- receipts should record which capability was exercised.
+
+This is a promising way to let Codex do repository engineering while reaching selected Odysseus-held context/tools without giving it unrestricted access to the whole self-hosted workspace.
+
+### Sources
+- https://github.com/odysseus-dev/odysseus/blob/dev/integrations/codex/skills/odysseus/SKILL.md
+- https://github.com/odysseus-dev/odysseus
+
+---
+
 # Kimi / Moonshot AI
 
 ## AI-600 | Kimi now spans Chat, Search, Memory, Agent, Work and Code
