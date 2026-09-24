@@ -1385,7 +1385,7 @@ As with every provider memory, an explicit Aletheia correction outranks an older
 
 ---
 
-## AI-602 | Kimi Work is a local agent with permissions, WebBridge, Skills and schedules
+## AI-602 | Kimi Work is a local agent with permissions, browser/computer use, Skills and schedules
 
 ### Summary
 Kimi Work can operate local files and browser workflows, install Skills/plugins, use projects and schedule tasks. Its local schedules only run while Kimi Work is open, whereas Kimi's cloud-created scheduled tasks do not require the desktop client to remain running.
@@ -1395,7 +1395,7 @@ Kimi Work can operate local files and browser workflows, install Skills/plugins,
 **Last checked:** 2026-09-24
 
 ### Details
-Kimi Work exposes three permission levels, from routine automatic operation through manual approval to fully automatic execution. WebBridge can click, scroll and extract data in a browser.
+Kimi Work exposes three permission levels: Manual Approval, Default and Fully Automatic. Its Browser Extension can operate signed-in web workflows, while the Computer Use plugin can see the screen and click, scroll and type in desktop applications.
 
 Aletheia should map this to a clearer authority ladder:
 
@@ -1452,6 +1452,142 @@ A swarm of agents can become a swarm of invoices, duplicated searches and confli
 
 ### Sources
 - https://www.kimi.com/code/docs/en/kimi-code-cli/customization/agents
+
+---
+
+
+## AI-605 | Kimi Work also uses AGENTS.md, not only Kimi Code
+
+### Summary
+Kimi's current Academy explicitly documents `AGENTS.md` inside Kimi Work Projects as persistent project instructions. The same small Aletheia root router can therefore guide both Kimi Work and Kimi Code.
+
+**Type:** KIMI / WORK / AGENTS / ALETHEIA  
+**Evidence:** OFFICIAL KIMI ACADEMY  
+**Last checked:** 2026-09-24
+
+### Details
+The Academy says Kimi Work can create and save an `AGENTS.md` through conversation and then reuse those project guidelines across future tasks.
+
+This strengthens the Aletheia repository pattern:
+
+- keep `AGENTS.md` short;
+- route Kimi to the canonical GUI/dev/protocol/page files;
+- put durable facts and decisions in those real source files rather than copying them into the router;
+- treat unfamiliar repository instructions as untrusted until reviewed.
+
+### Sources
+- https://www.kimi.ai/academy/kimi-work-getting-started
+
+---
+
+## AI-606 | Kimi Work Goal mode is built for long test-refine loops
+
+### Summary
+Kimi Work's Goal mode can keep iterating toward a defined outcome for hours. Kimi recommends defining the measurable end state, verification method and constraints before letting it continue autonomously.
+
+**Type:** KIMI / WORK / GOAL / AGENT  
+**Evidence:** OFFICIAL KIMI ACADEMY  
+**Last checked:** 2026-09-24
+
+### Details
+This is unusually close to the Aletheia app-development pattern.
+
+A good Aletheia Goal task should therefore state:
+
+1. the exact deliverable;
+2. the acceptance tests;
+3. constraints and exclusions;
+4. which files are authoritative;
+5. what requires human approval;
+6. where progress/checkpoints must be written.
+
+Even though Goal mode can run for hours, Aletheia should still require durable checkpoints so the project does not depend on one uninterrupted agent session.
+
+### Sources
+- https://www.kimi.ai/academy/kimi-work-getting-started
+
+---
+
+## AI-607 | Kimi Work Agent Swarm should be used for genuinely parallel work
+
+### Summary
+Kimi Work can automatically split a complex task across multiple agents using K3 Swarm. It is most useful for independent workstreams such as data collection, analysis and report production, not as a default replacement for one coherent agent.
+
+**Type:** KIMI / WORK / SWARM / MULTI-AGENT  
+**Evidence:** OFFICIAL KIMI ACADEMY + ALETHEIA DESIGN  
+**Last checked:** 2026-09-24
+
+### Details
+The current Academy demonstrates Swarm by dividing large research work into separate collection, validation, risk-analysis and reporting streams.
+
+Aletheia should require:
+
+- a shared task specification;
+- non-overlapping responsibilities where possible;
+- stable IDs/source locators;
+- explicit merge/conflict handling;
+- a final reconciliation pass;
+- no duplicate external actions.
+
+Parallel agents are valuable when the work is parallel. They are wasteful when they simply repeat the same search or edit the same files.
+
+### Sources
+- https://www.kimi.ai/academy/kimi-work-getting-started
+
+---
+
+## AI-608 | Kimi Code can import Codex and Claude Code instructions, Skills and MCP settings
+
+### Summary
+Kimi Code currently includes an `/import-from-cc-codex` route for importing Claude Code and Codex instructions, Skills and MCP settings. This gives Aletheia a practical interoperability test rather than requiring three independently maintained configurations from day one.
+
+**Type:** KIMI / CODE / INTEROPERABILITY  
+**Evidence:** OFFICIAL KIMI ACADEMY  
+**Last checked:** 2026-09-24
+
+### Details
+The Kimi Code CLI also exposes:
+
+- `/init` to generate or refresh `AGENTS.md`;
+- Plan mode for broad/risky changes;
+- session resume and forking;
+- context compaction;
+- permission controls;
+- MCP status/configuration;
+- Skills invocation;
+- Goal, Swarm and experimental multi-agent orchestration.
+
+For Aletheia, test import fidelity before treating settings as equivalent. Imported configuration is an adapter copy, not the canonical project specification.
+
+### Sources
+- https://www.kimi.ai/academy/kimi-code-cheat-sheet
+
+---
+
+## AI-609 | Kimi models can run directly inside Codex and Claude Code harnesses
+
+### Summary
+Kimi's API is now compatible with both the OpenAI Responses API and Anthropic Messages API, allowing Codex or Claude Code to use Kimi models as a custom provider without a protocol-translation proxy.
+
+**Type:** KIMI / API / CODEX / CLAUDE CODE  
+**Evidence:** OFFICIAL KIMI ACADEMY  
+**Last checked:** 2026-09-24
+
+### Details
+This is strategically useful for Aletheia because **model and coding harness can be separated**.
+
+Examples:
+
+- Codex-style repository workflow + Kimi model;
+- Claude Code workflow + Kimi model;
+- Kimi Code workflow + Kimi model.
+
+That supports Aletheia's provider-neutral architecture: project rules, Skills, tests and receipts remain durable while the underlying model can be changed deliberately.
+
+Do not assume consumer-account memory follows the model into another harness. Supply project state explicitly.
+
+### Sources
+- https://www.kimi.ai/academy/use-kimi-api-in-codex-and-claude-code
 
 ---
 
