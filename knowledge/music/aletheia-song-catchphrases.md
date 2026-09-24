@@ -6,7 +6,10 @@
 
 A song catchphrase is a small piece of language that survives outside its song. It may be a title, refrain, command, question or short lyric fragment. Aletheia tracks **what makes it memorable**, not just where it came from.
 
-## Phrase map — first four artists
+### Album / cultural exception
+A phrase attached to an album, artwork or musical event may be included when the wording itself entered popular culture. **Never Mind the Bollocks** is the first explicit example. Mark it clearly as an album/cultural catchphrase rather than pretending it is a song lyric.
+
+## Phrase map — current artist set
 
 | Phrase | Artist | Vibe / mechanism | Class |
 |---|---|---|---|
@@ -22,20 +25,20 @@ A song catchphrase is a small piece of language that survives outside its song. 
 | Ideas as opiates | Tears for Fears | thought as anaesthetic; compressed concept | Artist |
 | Break it down again | Tears for Fears | analysis; dismantling; restart | Artist |
 | Everybody loves a happy ending | Tears for Fears | narrative expectation; universality | Artist |
-| Hey Jude | The Beatles | personal name; reassurance; singalong | Core |
-| Let it be | The Beatles | acceptance in three words | Core |
-| All you need is love | The Beatles | universal prescription | Core |
-| We can work it out | The Beatles | negotiation; optimism | Core |
-| Help! | The Beatles | one-word vulnerability | Core |
-| Yesterday | The Beatles | memory compressed into one word | Core |
-| Come together | The Beatles | imperative; unity | Core |
-| Get back | The Beatles | return; belonging; command | Core |
-| Hello, goodbye | The Beatles | opposites; nursery-simple pairing | Core |
-| Can't buy me love | The Beatles | money versus affection | Core |
-| A hard day's night | The Beatles | contradiction / accidental idiom | Core |
-| Eight days a week | The Beatles | deliberate impossibility; excess devotion | Core |
-| Here comes the sun | The Beatles | renewal; weather as hope | Artist / enduring |
-| With a little help from my friends | The Beatles | community; modest dependence | Artist / enduring |
+| Hey Jude | Beatles | personal name; reassurance; singalong | Core |
+| Let it be | Beatles | acceptance in three words | Core |
+| All you need is love | Beatles | universal prescription | Core |
+| We can work it out | Beatles | negotiation; optimism | Core |
+| Help! | Beatles | one-word vulnerability | Core |
+| Yesterday | Beatles | memory compressed into one word | Core |
+| Come together | Beatles | imperative; unity | Core |
+| Get back | Beatles | return; belonging; command | Core |
+| Hello, goodbye | Beatles | opposites; nursery-simple pairing | Core |
+| Can't buy me love | Beatles | money versus affection | Core |
+| A hard day's night | Beatles | contradiction / accidental idiom | Core |
+| Eight days a week | Beatles | deliberate impossibility; excess devotion | Core |
+| Here comes the sun | Beatles | renewal; weather as hope | Artist / enduring |
+| With a little help from my friends | Beatles | community; modest dependence | Artist / enduring |
 | Life on Mars? | David Bowie | impossible question; wonder; alienation | Core |
 | Starman | David Bowie | character in one word; cosmic promise | Core |
 | Let's dance | David Bowie | invitation; bodily command | Core |
@@ -47,16 +50,24 @@ A song catchphrase is a small piece of language that survives outside its song. 
 | Sound and vision | David Bowie | sensory pairing | Core |
 | Golden years | David Bowie | nostalgia; promise; idealised time | Core |
 | Under pressure | Queen & David Bowie | stress made physical | Core |
-| One love | Bob Marley & The Wailers | unity compressed to two words | Core on 1984 single |
-| Get up, stand up | Bob Marley & The Wailers | movement; resistance; repeated command | Artist / enduring |
-| No woman, no cry | Bob Marley & The Wailers | consolation; memorable syntax | Core on 1981 reissue |
-| Could you be loved | Bob Marley & The Wailers | question; love and worth | Core |
-| Buffalo Soldier | Bob Marley & The Wailers | historical character phrase | Core |
-| Three little birds | Bob Marley & The Wailers | small comforting image | Artist / enduring |
-| Redemption song | Bob Marley & The Wailers | liberation and music fused | Artist / enduring |
-| I shot the sheriff | Bob Marley & The Wailers | immediate narrative confession | Artist / enduring |
-| Exodus | Bob Marley & The Wailers | migration; scripture; movement | Artist / enduring |
-| Jamming | Bob Marley & The Wailers | shared musical/social action | Artist / enduring |
+| One love | Bob Marley | unity compressed to two words | Core on 1984 single |
+| Get up, stand up | Bob Marley | movement; resistance; repeated command | Artist / enduring |
+| No woman, no cry | Bob Marley | consolation; memorable syntax | Core on 1981 reissue |
+| Could you be loved | Bob Marley | question; love and worth | Core |
+| Buffalo Soldier | Bob Marley | historical character phrase | Core |
+| Three little birds | Bob Marley | small comforting image | Artist / enduring |
+| Redemption song | Bob Marley | liberation and music fused | Artist / enduring |
+| I shot the sheriff | Bob Marley | immediate narrative confession | Artist / enduring |
+| Exodus | Bob Marley | migration; scripture; movement | Artist / enduring |
+| Jamming | Bob Marley | shared musical/social action | Artist / enduring |
+| Never mind the bollocks | Sex Pistols | dismissal; provocation; phrase becomes manifesto | Album / cultural |
+| God Save the Queen | Sex Pistols | appropriation; provocation; familiar phrase inverted | Core |
+| Pretty Vacant | Sex Pistols | wordplay; boredom; insult | Core |
+| Holidays in the Sun | Sex Pistols | cheerful cliché collides with conflict | Core |
+| Anarchy in the U.K. | Sex Pistols | revolt; identity; place | Artist / enduring |
+| No future | Sex Pistols | absolute negation; warning | Artist / enduring |
+| I Wanna Be Me | Sex Pistols | identity; autonomy | Artist |
+
 
 ---
 
@@ -111,7 +122,7 @@ Dony Permedi's 2006 student animation *Kiwi!* originally used music by Tim Casse
 
 ## SC-004 — Hey Jude
 
-**Artist:** The Beatles  
+**Artist:** Beatles  
 **Writer:** Paul McCartney; credited Lennon–McCartney  
 **Class:** CORE CATCHPHRASE  
 **Vibe:** reassurance · affection · resilience · communal release
@@ -126,7 +137,7 @@ The song evolved from "Hey Jules", McCartney's idea for Julian Lennon during Joh
 
 ## SC-005 — Let it be
 
-**Artist:** The Beatles  
+**Artist:** Beatles  
 **Class:** CORE CATCHPHRASE  
 **Vibe:** acceptance · calm · surrender · reassurance
 
@@ -136,7 +147,7 @@ Three words can mean stop interfering, accept what cannot be changed, allow time
 
 ## SC-006 — All you need is love
 
-**Artist:** The Beatles  
+**Artist:** Beatles  
 **Class:** CORE CATCHPHRASE  
 **Vibe:** idealism · universality · simplicity · peace
 
@@ -209,6 +220,61 @@ Its syntax is memorable partly because many listeners initially parse the phrase
 
 **Chart evidence:** 1981 release reached UK No. 8.  
 **Source:** [Official Charts](https://www.officialcharts.com/songs/bob-marley-the-wailers-no-woman-no-cry-1981/)
+
+---
+
+## SC-012 — Never mind the bollocks
+
+**Artist:** Sex Pistols  
+**Source:** *Never Mind the Bollocks, Here's the Sex Pistols*  
+**Type:** ALBUM / CULTURAL CATCHPHRASE  
+**Vibe:** dismissal · provocation · interruption · anti-authority
+
+A pre-existing spoken expression became a record title and visual manifesto. The second half, "here's the Sex Pistols", makes the title behave like an interruption: forget the nonsense; this is the alternative.
+
+**Walkabout:** slang; censorship; record-shop displays; obscenity law; the difference between legal argument and true etymology; Jamie Reid's graphic design.
+
+**Chart evidence:** the album reached UK No. 1 in 1977.  
+**Artist knowledge:** [Sex Pistols](aletheia-sex-pistols.md)
+
+---
+
+## SC-013 — God Save the Queen
+
+**Artist:** Sex Pistols  
+**Class:** CORE CATCHPHRASE  
+**Vibe:** appropriation · provocation · inversion · establishment
+
+The wording was already among the most familiar phrases in Britain. Its catchphrase force comes from putting familiar national language into a deliberately confrontational musical frame.
+
+**Chart evidence:** UK Official Singles Chart No. 2 in 1977.  
+**Source:** [Official Charts](https://www.officialcharts.com/songs/sex-pistols-god-save-the-queen/)
+
+---
+
+## SC-014 — Pretty Vacant
+
+**Artist:** Sex Pistols  
+**Class:** CORE CATCHPHRASE  
+**Vibe:** boredom · sneer · ambiguity · identity
+
+"Pretty" can modify attractiveness or degree; "vacant" can mean empty, absent or disengaged. That compact ambiguity makes the title work as description and insult.
+
+**Chart evidence:** UK No. 6 in 1977.  
+**Source:** [Official Charts](https://www.officialcharts.com/songs/sex-pistols-pretty-vacant/)
+
+---
+
+## SC-015 — Holidays in the Sun
+
+**Artist:** Sex Pistols  
+**Class:** CORE CATCHPHRASE  
+**Vibe:** irony · tourism · conflict · expectation reversal
+
+The phrase sounds like a travel advert. Its power comes from placing that cheerful expectation against political division and the Berlin Wall.
+
+**Chart evidence:** UK No. 8 in 1977.  
+**Source:** [Official Charts](https://www.officialcharts.com/songs/sex-pistols-holiday-in-the-sun/)
 
 ---
 
