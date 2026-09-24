@@ -47,6 +47,7 @@ ROOT: aletheia-knowledge-GUI.md
     + app/<slug>-page.md                 → app/<slug>.htm
     + resources/<slug>-rsc-page.md       → resources/<slug>-rsc.htm
     + knowledge/<slug>.md                → portable facts/cards, loaded by app
+    + knowledge/knowledge.json             → explicit static inventory of published collections
     + declared assets / local data
 ```
 
@@ -57,6 +58,8 @@ Knowledge Markdown is **not** an HTML build specification. A page-specific MD re
 Use Markdown as canonical content, local browser features where appropriate, and static HTML/CSS/JavaScript for the interface. GitHub Pages is the public host; Cloudflare AI, search and Workers are optional enhancements, never foundation bricks.
 
 ## 3. Standard page order
+
+On static hosting, do not pretend a browser can enumerate the repository's knowledge folder. `knowledge/knowledge.json` is the explicit machine-readable inventory for tools that need discovery; keep the visible home page independently usable as a simple static front door.
 
 **Library home, `index.html`:** clear title and one-line purpose; immediate collection choices with meaningful descriptions; optional supporting links; discreet footer. Every collection must lead to a working published app and, where present, a resource page.
 
