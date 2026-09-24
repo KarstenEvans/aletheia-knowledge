@@ -266,3 +266,44 @@ Key commits: Sex Pistols `dca40d70f76b04825fffa1d5af582ec396a146f4`; catchphrase
 Tests passed: both new inline JavaScript blocks compile via V8 `new Function`; canonical Phrase Map parses to **54 phrase rows** spanning Tears for Fears, Beatles, David Bowie/Queen & Bowie, Bob Marley and Sex Pistols; all new GitHub paths refetched successfully.
 Not tested / still uncertain: GitHub Pages live deployment and Android/desktop interaction. The available web viewer could not fetch the Pages host, so do not mark live verification complete.
 Next action: owner test `app/aletheia-music.htm` and `app/aletheia-song-catchphrases.htm` on Android/desktop; then continue phrase/artist research or start Aletheia Improve.
+
+
+## Cross-collection: AI capability knowledge
+
+### AK-080 | PUBLISHED / VERIFY LIVE | Aletheia AI Knowledge, provider adapters and static collection manifest
+
+24 September 2026: created the provider-neutral AI knowledge collection at `knowledge/aletheia-ai-knowledge.md` and its reader/spec at `app/aletheia-ai-knowledge.htm` and `app/aletheia-ai-knowledge-page.md`.
+
+The first library covers current ChatGPT/OpenAI, Gemini, Claude, DeepSeek and Odysseus capabilities plus Aletheia/Thalia integration patterns. Product facts are dated and tied to primary documentation; Reddit/community material is explicitly a **community field note** rather than provider fact. The earlier Gemini/Aletheia adapter material was incorporated without renaming the canonical Aletheia Protocol or creating a vendor-specific competing version.
+
+Added `knowledge/knowledge.json` because a static GitHub Pages site cannot enumerate the repository folder. This is an explicit machine-readable inventory, not a new cloud dependency. Updated the README and shared GUI/code guides to document it.
+
+Updated `index.html` and `index-page.md` with the new AI Knowledge route. During reconciliation, the page specification and prior task log said the Music shelf was published but the current root HTML no longer displayed its card; the Music card was restored while preserving the existing collections.
+
+Research included:
+- OpenAI GPT-6 Astra, Sol/Luna, Work/Codex, connected apps, Gmail/GitHub event tasks, scheduled tasks, Sites and Sora discontinuation.
+- Existing Aletheia Gemini files plus current Google Personal Intelligence, Gems and Spark documentation.
+- Current Claude/Claude Code project instructions, memory and scheduled-task documentation.
+- Current DeepSeek V4.1 Flash documentation.
+- Current Odysseus open-source workspace/MCP documentation.
+- Reddit/GitHub community workflow discovery with community claims kept separate from official facts. Public Discord material was not sufficiently reliable/indexable in this pass and was therefore not invented.
+
+Files changed:
+- `knowledge/aletheia-ai-knowledge.md`
+- `knowledge/knowledge.json`
+- `app/aletheia-ai-knowledge.htm`
+- `app/aletheia-ai-knowledge-page.md`
+- `index.html`
+- `index-page.md`
+- `README.md`
+- `aletheia-knowledge-GUI.md`
+- `aletheia-knowledge-code.md`
+- `aletheia-knowledge-tasks.md`
+
+Acceptance still to verify live:
+- GitHub Pages deployment of the new app.
+- Android/desktop search, provider filter, Jump to Card, Surprise Me and MORE/LESS.
+- All source links and the root AI/Music navigation.
+- Browser console remains free of JavaScript errors.
+
+Next action: open the published AI Knowledge page on PC/Android, test one card from each provider, then run an Aletheia Improve pass on any cards where the useful answer still feels too thin.
