@@ -239,6 +239,12 @@ SW-OPT-012     | MAINTENANCE   | Windows can pause maintenance when you return t
 SW-OPT-013     | STORAGE       | Disk Cleanup can save named cleanup presets
 SW-OPT-014     | DEBLOAT       | A hidden startup workload may be a scheduled task
 SW-OPT-015     | BROWSER       | A browser cache is useful; routine purging can backfire
+SW-OPT-016     | DEBLOAT       | removing an unused app can reduce clutter but does not prove a speed-up
+SW-OPT-017     | STORAGE       | OneDrive unlink, Files On-Demand and uninstall solve different problems
+SW-OPT-018     | DEBLOAT       | Copilot can be uninstalled while the web version remains available
+SW-OPT-019     | DEBLOAT       | new Outlook can be removed without treating Microsoft 365 as the same app
+SW-OPT-020     | DEBLOAT       | Phone Link should be disconnected or disabled, not promised as uninstallable
+SW-OPT-021     | GAMING        | Xbox app, Game Bar and Gaming Services are separate decisions
 SW-AI-001      | AI            | Free ChatGPT is more than a text-only chatbot
 SW-AI-002      | AI            | Talking to ChatGPT is not the same as dictating a research task
 SW-AI-003      | AI            | Prompt shortcuts are plain-language instructions, not magic codes
@@ -3368,6 +3374,172 @@ Do not adopt the article's proposed generic scheduled PowerShell Remove-Item com
 
 ### Source
 - https://support.google.com/chrome/answer/2392709?hl=en
+
+---
+
+## SW-OPT-016 | removing an unused app can reduce clutter but does not prove a speed-up
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT / APP AVAILABILITY VARIES BY BUILD
+EVIDENCE: STRONG FOR SUPPORTED UNINSTALL; ANECDOTAL FOR PERFORMANCE CLAIMS
+CONFIDENCE: HIGH
+RISK: LOW TO MEDIUM
+LAST_CHECKED: 2026-09-24
+
+### Summary
+Windows supports uninstalling many ordinary apps from Start or Settings. If an app also launches at sign-in, syncs data, sends notifications or runs background processes, removing it can reduce that work. But a claim that the whole PC became "smoother" after uninstalling several apps is not proof that every user will see the same result.
+
+### Aletheia method
+Treat three questions separately:
+
+1. **Disk space:** how much installed size or local data is actually recovered?
+2. **Startup/background load:** was the app running or enabled at sign-in before removal?
+3. **Responsiveness:** did boot time, memory pressure, CPU use or app launch time measurably change after reboot?
+
+Prefer normal uninstall and startup controls before PowerShell package removal. Change one app at a time when diagnosing a slow PC.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98
+- https://support.microsoft.com/en-US/Windows/Experience/Startup-Boot/configure-startup-applications-in-windows
+
+---
+
+## SW-OPT-017 | OneDrive unlink, Files On-Demand and uninstall solve different problems
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM IF FILE LOCATION/SYNC STATUS IS NOT UNDERSTOOD
+LAST_CHECKED: 2026-09-24
+
+### Summary
+Microsoft supports unlinking OneDrive and, on supported Windows 10/11 installations, uninstalling the OneDrive sync app. Uninstalling the app does not delete files stored in OneDrive online. If the real problem is local disk space rather than OneDrive itself, Files On-Demand can keep cloud files visible while removing their local storage copy.
+
+### Choose the smallest fix
+- **Do not want this PC syncing:** unlink the PC.
+- **Want OneDrive but need disk space:** use Files On-Demand / Free up space for suitable files.
+- **Do not use OneDrive on this PC:** uninstall through the supported Apps interface where available.
+- Before moving or deleting anything, check whether important files are cloud-synced, local-only or marked always available offline.
+
+### Sources
+- https://support.microsoft.com/en-US/onedrive/turn-off-disable-or-uninstall-onedrive
+- https://support.microsoft.com/en-us/onedrive/delete-files-or-folders-in-onedrive
+
+---
+
+## SW-OPT-018 | Copilot can be uninstalled while the web version remains available
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT / FEATURE SURFACES CAN CHANGE
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-24
+
+### Summary
+Microsoft currently documents a normal uninstall path for the Copilot app on both Windows 10 and Windows 11. Removing the desktop app does not remove access to Copilot in a web browser.
+
+### Aletheia check
+Do not claim a large CPU or RAM saving merely because Copilot is web-based. Check Task Manager before removal and after reboot. Also distinguish the standalone Copilot app from Copilot features embedded in other Microsoft products.
+
+### Source
+- https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-microsoft-copilot
+
+---
+
+## SW-OPT-019 | new Outlook can be removed without treating Microsoft 365 as the same app
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 11; new Outlook also supports Windows 10 version 17763.0 or later
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW TO MEDIUM
+LAST_CHECKED: 2026-09-24
+
+### Summary
+New Outlook is preinstalled on newer Windows 11 installations and can be uninstalled. Microsoft also supports new Outlook on sufficiently recent Windows 10 builds. This is not the same thing as uninstalling the classic Outlook desktop application or an entire Microsoft 365/Office suite.
+
+### Aletheia check
+If the user only reads mail in a browser or another client, removing **new Outlook** may reduce clutter. Identify which Outlook is installed before changing anything. Do not tell a Microsoft 365 user that removing new Outlook will selectively remove classic Outlook from a suite.
+
+### Sources
+- https://support.microsoft.com/en-us/outlook/getstarted/start-using-new-outlook-for-windows
+- https://support.microsoft.com/en-us/outlook/getstarted/outlook-for-windows-not-responding-hangs-freezes-or-stops-working
+- https://support.microsoft.com/en-us/office/lifecycle/officeinstall/uninstall-microsoft-365-or-office-from-a-pc
+
+---
+
+## SW-OPT-020 | Phone Link should be disconnected or disabled, not promised as uninstallable
+
+STATUS: VERIFIED
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW
+LAST_CHECKED: 2026-09-24
+
+### Summary
+Microsoft's current Phone Link FAQ says Phone Link cannot be uninstalled because it is integrated into Windows cross-device experiences. If the user does not want the feature, the supported route is to remove/disconnect the linked phone and turn the feature off where Windows exposes that control.
+
+### Why this matters
+Advice that simply says "uninstall Phone Link" can be wrong even when the rest of a debloat list is reasonable. Aletheia should show **DISCONNECT / DISABLE** for Phone Link rather than escalating to unsupported package-removal commands just to make the app disappear.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/apps/phonelink/frequently-asked-questions-about-the-phone-link
+- https://support.microsoft.com/en-us/windows/apps/phonelink/remove-your-mobile-device-from-phone-link-link-to-windows-and-windows-settings
+- https://support.microsoft.com/en-us/windows/apps/phonelink/phone-link-requirements-and-setup
+
+---
+
+## SW-OPT-021 | Xbox app, Game Bar and Gaming Services are separate decisions
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10, Windows 11
+LIFECYCLE: CURRENT / BUILD-SPECIFIC
+EVIDENCE: GOOD
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-09-24
+
+### Summary
+"Xbox" on Windows is not one single removable lump. The Xbox app, Game Bar, capture settings and Gaming Services have different roles. If an ordinary Xbox app exposes a normal Uninstall action and the owner does not use it, normal uninstall is the lower-risk route. Game Bar can be turned off in Windows gaming settings when unused.
+
+### Aletheia safety check
+Do not blindly remove Gaming Services or related registry/service entries as general debloat. Microsoft documents Gaming Services as a dependency involved in launching/installing some Microsoft Store/Game Pass games. A historical Microsoft repair procedure even removes and then reinstalls Gaming Services specifically to fix gaming faults; that is repair context, not a general optimisation recipe.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98
+- https://support.microsoft.com/en-us/accessibility/windows/use-a-screen-reader-to-record-your-screen-with-xbox-game-bar
+- https://support.microsoft.com/en-au/servicing/os/windows-10/2021/06/kb5004327-error-0x80073d26-or-0x8007139f-occurs-when-you-install-or-start-gaming-services-on-a-windo
+
+---
+
+## MakeUseOf preinstalled-app article check | 24 September 2026
+
+Discovery article: **"My Windows 11 PC runs smoother after I removed these preinstalled Microsoft apps."**
+
+Useful discovery themes:
+- OneDrive, Xbox, Copilot, new Outlook and Phone Link are worth reviewing when they are genuinely unused.
+- The same broad **review first, remove only what you do not use** principle partly applies to Windows 10.
+- App removal, startup reduction and freeing disk space are three different mechanisms and should not be described as one generic "speed boost."
+
+Corrections/qualifications:
+- The article's smoother-PC result is an individual observation, not a controlled performance test.
+- Microsoft currently documents OneDrive and Copilot uninstall paths for Windows 10/11 and a new Outlook uninstall path, but feature availability differs by Windows build.
+- Microsoft currently says Phone Link cannot be uninstalled; disconnect/disable it instead.
+- Xbox app, Game Bar and Gaming Services should not be treated as one package.
+- Aletheia should not copy the blanket rule "if you don't need it, remove it" onto security components, runtimes, Store frameworks or unknown AppX dependencies.
+
+Discovery source:
+- https://www.makeuseof.com/remove-these-preinstalled-microsoft-apps-windows/
+
+Primary evidence is stored in SW-OPT-016 through SW-OPT-021 above.
 
 ---
 
