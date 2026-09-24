@@ -13,9 +13,10 @@ This is not a lyrics archive. Keep lyric quotation short, link to legitimate lyr
 - [Aletheia Song Catchphrases](aletheia-song-catchphrases.md) — cross-artist phrase and vibe hub
 - [Tears for Fears](aletheia-tears-for-fears.md)
 - [Roland Orzabal](aletheia-roland-orzabal.md)
-- [The Beatles](aletheia-beatles.md)
+- [Beatles](aletheia-beatles.md)
 - [David Bowie](aletheia-david-bowie.md)
 - [Bob Marley](aletheia-bob-marley.md)
+- [Sex Pistols](aletheia-sex-pistols.md)
 
 ## Knowledge graph
 
@@ -62,14 +63,15 @@ Qobuz UK is useful for Aletheia because it currently has an Awin programme and o
 
 ## Current research queue
 
-1. Finish Tears for Fears phrase mining
-2. Beatles deep pass
-3. David Bowie deep pass
-4. Bob Marley deep pass
-5. Echo & the Bunnymen
-6. Gary Jules / Michael Andrews and reinterpretation of Mad World
-7. P!nk
-8. New artists discovered naturally through phrase walkabouts
+1. Continue Tears for Fears phrase mining
+2. Continue Beatles deep pass
+3. Continue David Bowie deep pass
+4. Continue Bob Marley deep pass
+5. Continue Sex Pistols / punk phrase walkabout
+6. Echo & the Bunnymen
+7. Gary Jules / Michael Andrews and reinterpretation of Mad World
+8. P!nk
+9. New artists discovered naturally through phrase walkabouts
 
 ## Future public interface
 
