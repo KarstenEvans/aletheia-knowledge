@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aletheia AI Knowledge</title>
-<meta name="description" content="Searchable, source-traced AI capability knowledge for ChatGPT, Gemini, Claude, DeepSeek, Odysseus and Aletheia.">
+<meta name="description" content="Searchable, source-traced AI capability knowledge for ChatGPT, Gemini, Claude, DeepSeek, Kimi, Manus, Grok, Odysseus and Aletheia.">
 <link rel="canonical" href="https://karstenevans.github.io/aletheia-knowledge/app/aletheia-ai-knowledge.htm">
 <style>
 :root{--bg:#eef3f7;--panel:#fff;--ink:#16252d;--muted:#5c6c75;--line:#cdd9df;--accent:#315f86;--soft:#e7f0f7}
@@ -48,7 +48,7 @@ footer{padding:20px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
 <body>
 <header><div class="wrap">
 <h1>🧭 Aletheia AI Knowledge</h1>
-<p class="lead">Useful AI capability facts first, live search second. Compare what ChatGPT, Gemini, Claude, DeepSeek and Odysseus can actually do, with Aletheia patterns for keeping your knowledge and preferences portable.</p>
+<p class="lead">Useful AI capability facts first, live search second. Compare what ChatGPT, Gemini, Claude, DeepSeek, Kimi, Manus, Grok and Odysseus can actually do, with Aletheia patterns for keeping your knowledge and preferences portable.</p>
 <nav class="links" aria-label="Aletheia navigation">
 <a class="btn secondary" href="../index.html">← ALETHEIA KNOWLEDGE</a>
 <a class="btn secondary external" href="https://github.com/KarstenEvans/aletheia-protocol">ALETHEIA PROTOCOL</a>
@@ -69,6 +69,9 @@ footer{padding:20px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
 <option value="claude">Claude / Anthropic</option>
 <option value="deepseek">DeepSeek</option>
 <option value="odysseus">Odysseus</option>
+<option value="kimi">Kimi / Moonshot AI</option>
+<option value="manus">Manus</option>
+<option value="grok">Grok / SpaceXAI</option>
 <option value="cross">Cross-provider</option>
 </select></label>
 <label><span class="label">JUMP TO CARD</span><br><select id="jump" aria-label="Jump to card"><option value="">Choose a card…</option></select></label>
@@ -117,6 +120,9 @@ function providerFor(id,type){
  if(/^AI-3/.test(id)) return "deepseek";
  if(/^AI-4/.test(id)) return /ODYSSEUS/i.test(type)?"odysseus":"aletheia";
  if(/^AI-5/.test(id)) return "cross";
+ if(/^AI-6/.test(id)) return "kimi";
+ if(/^AI-7/.test(id)) return "manus";
+ if(/^AI-8/.test(id)) return "grok";
  return "cross";
 }
 function parse(md){
