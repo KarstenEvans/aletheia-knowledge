@@ -35,7 +35,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 - Public app: https://karstenevans.github.io/aletheia-knowledge/app/aletheia-ai-knowledge.htm
 - Knowledge: `knowledge/aletheia-ai-knowledge.md`
-- Scope: current AI capabilities and practical workflows across ChatGPT/OpenAI, Google Gemini, Claude/Anthropic, DeepSeek, Odysseus and the provider-neutral Aletheia/Thalia layers.
+- Scope: current AI capabilities and practical workflows across ChatGPT/OpenAI, Google Gemini, Claude/Anthropic, DeepSeek, Kimi/Moonshot AI, Manus, Grok/SpaceXAI, Odysseus and the provider-neutral Aletheia/Thalia layers.
 - Method: primary product documentation for capability facts; community reports are explicitly labelled as field notes; time-sensitive claims carry a last-checked date.
 - Design: useful information lives in each card before MORE or WEB SEARCH. Live search refreshes changing facts rather than substituting for stored knowledge.
 - Discovery: `knowledge/knowledge.json` gives static tools and future apps an explicit collection inventory without making the library depend on GitHub API folder listing.
