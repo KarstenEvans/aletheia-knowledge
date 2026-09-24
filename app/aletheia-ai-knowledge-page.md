@@ -37,7 +37,7 @@ Canonical facts remain in the Markdown. The browser app fetches and renders them
 ## Required controls and behaviour
 
 - SEARCH: title, summary, full card and metadata.
-- FILTER: All, Aletheia, ChatGPT/OpenAI, Gemini, Claude, DeepSeek, Odysseus, Cross-provider.
+- FILTER: All, Aletheia, ChatGPT/OpenAI, Gemini, Claude, DeepSeek, Odysseus, Kimi, Manus, Grok and Cross-provider.
 - JUMP TO CARD: generated from the loaded card inventory; selecting one narrows to that card and opens MORE.
 - SURPRISE ME: chooses a real card, displays it and opens MORE.
 - MORE/LESS: MORE renders the full stored card, including limitations and sources, without exposing raw Markdown tokens.
@@ -112,3 +112,5 @@ No AI API, Cloudflare AI, vector database or provider login is required to read 
 ## Change log
 
 2026-09-24: initial specification created with the first Aletheia AI Knowledge library.
+
+2026-09-24: provider coverage expanded to Kimi, Manus and Grok; filter contract updated accordingly.
