@@ -113,15 +113,51 @@ Sources:
 
 Modern etymological sources trace **bollocks / ballocks** to Old English **beallucas**, meaning testicles, ultimately from a Germanic/Indo-European word family associated with swelling or round objects.
 
-There are historical claims that *ballocks/bollocks* was also used as slang for a clergyman. That usage formed part of the famous 1977 defence. But it is **not the established origin of the word**, and there is no good basis for saying the word originally meant monks, authority figures, or that it entered English as a Norwegian Viking description of robed clergy.
+The famous 1977 defence did, however, invoke an old **priest / clergyman** usage. Professor James Kinsley, Head of English at the University of Nottingham, was called as an expert witness and argued that the word had a legitimate historical use connected with priests and that, in the album-title context, it could mean **nonsense**. That argument was part of the real defence and helped create the story that followed.
 
-Sources: [Etymonline — bollocks](https://www.etymonline.com/word/bollocks) · [American Heritage — bollock](https://www.ahdictionary.com/word/search.html?q=bollock)
+Sources: [MACE television archive — Chris Seale cleared](https://www.macearchive.org/films/atv-today-24111977-sex-pistols-court-case) · [Guardian archive, 10 Nov 1977](https://www.theguardian.com/music/1977/nov/10/artsfeatures.popandrock) · [Sex Pistols official album history](https://www.sexpistolsofficial.com/records/never-mind-the-bollocks-heres-the-sex-pistols/) · [Etymonline — bollocks](https://www.etymonline.com/word/bollocks)
+
+## Urban myth — the Vikings, the monks and "they spent all the money"
+
+A colourful version of the story has grown around the court case:
+
+> The Sex Pistols supposedly spent most or all of the money from the record proving that **bollocks** was not really a swear word; the defence supposedly traced the expression through monks or clergymen to Viking contempt for robed religious authorities, with **"a load of bollocks"** ultimately meaning a group of priests or authority figures talking nonsense.
+
+Treat that as **urban myth / folk etymology**, not established history.
+
+### The kernel of truth
+
+- The court case really happened in **1977**, not 1997.
+- Virgin really backed the defence.
+- John Mortimer QC really represented the case.
+- Professor James Kinsley really supplied historical language evidence involving a **priest/clergyman** usage of the word.
+- The defence really argued that the album title could be understood as meaning **nonsense**, rather than as an obscene display.
+- The case really ended in acquittal.
+
+Those genuine ingredients make the later Viking-and-monks version unusually believable.
+
+### Where the myth takes over
+
+There is no reliable evidence that **bollocks originated as a Norwegian/Viking term for monks**, or that Vikings coined it as a dismissal of clergy, kings or authority. The established linguistic trail goes back through Old English **beallucas**.
+
+Likewise, the story that the band or Virgin **spent all the record money** proving the point is not supported by the surviving contemporary figures. Richard Branson estimated Virgin's legal bill at about **£2,500**. That was substantial money in 1977, but a Guardian report from 10 November 1977 quoted Virgin saying that the album had already brought in about **£250,000 before release** and had gone straight to No. 1. The album also had very large advance demand and later substantial certified sales.
+
+Sources: [Melody Maker, 3 Dec 1977 — legal-cost report](https://www.worldradiohistory.com/UK/Melody-Maker/70s/77/Melody-Maker-1977-12-03.pdf) · [Guardian archive — £250,000 pre-release figure](https://www.theguardian.com/music/1977/nov/10/artsfeatures.popandrock) · [Official Charts — album history](https://www.officialcharts.com/albums/sex-pistols-never-mind-the-bollocks-heres-the-sex-pistols/)
+
+### What we do **not** know neatly
+
+Big record sales do not tell us how much money the individual Sex Pistols actually received. Label shares, management arrangements, advances, production costs, publishing and the band's famously tangled business relationships make a simple "the band earned £X" figure unreliable unless a primary accounting source turns up.
 
 ### Aletheia lesson
-A courtroom argument can become folk etymology. Keep three layers apart:
-1. the word's linguistic origin;
-2. later historical slang/usage;
-3. the argument that happened to be useful in a legal defence.
+
+This is a particularly good example of how an urban myth grows:
+
+**real court case → real odd historical usage → memorable legal victory → missing financial detail → Viking/monk explanation → much better story**
+
+Keep all three layers visible:
+1. established etymology;
+2. the genuine 1977 court defence;
+3. the later urban myth.
 
 ---
 
@@ -211,11 +247,13 @@ Jamie Reid demonstrates that catchphrases do not live only in sound. Typeface, c
 
 ---
 
-# Aletheia wordplay seed — "Bollotics"
+# Aletheia wordplay seed — "Bollock'tics"
 
-**Bollotics** is a project-owner coined portmanteau of **bollocks + politics**, used satirically for political language perceived as evasive or nonsensical.
+**Bollock'tics** is an Aletheia creative portmanteau of **bollocks + politics**: a satirical word for political talk that feels evasive, circular, overblown or full of nonsense.
 
-Keep it as **Aletheia creative vocabulary**, not as Sex Pistols history and not as an etymological claim about *bollocks*. It may later be useful in humour, word-generation or songwriting experiments.
+Keep it clearly labelled as **creative vocabulary**, not as Sex Pistols history, not as an established dictionary word, and not as an etymological claim about *bollocks*.
+
+It may later be useful in Aletheia Humour, word-generation or songwriting experiments.
 
 ---
 
