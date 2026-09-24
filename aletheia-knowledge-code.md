@@ -439,3 +439,21 @@ Prepare a local HTML test and a full original backup before publishing.
 Give a .github.io URL to the runnable Storyteller; document bilingual
 dual-caption translation only as a future idea in ideas.md.
 ```
+
+
+## Resumable agent work
+
+Do not design repository maintenance so it succeeds only if one Work/Codex/agent run survives to the end.
+
+For substantial work:
+
+1. inventory current files and save/confirm the target;
+2. research and write source-backed findings before a long implementation stage;
+3. update the page/specification before or alongside a substantial rendition change;
+4. commit/checkpoint coherent stages;
+5. run tests and record exact failures;
+6. publish and LIVE VERIFY as separate steps.
+
+On resume, read current repository state and continue from the last verified checkpoint. Do not restart completed research merely because a provider usage window reset.
+
+Provider-specific `AGENTS.md`, Skills, memory and agent context are adapters. Canonical project knowledge remains in the repository.
