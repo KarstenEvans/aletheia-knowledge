@@ -16,12 +16,12 @@ The folder URL must resolve directly to this `index.html`, rather than sending o
 Cards for:
 - Song Catchphrases
 - Tears for Fears
-- The Beatles
+- Beatles
 - David Bowie
 - Bob Marley
 - Roland Orzabal
 
-The current artist/catchphrase material exists as canonical Markdown only. Until dedicated browser readers exist, any GitHub links must be explicitly labelled **SOURCE MD**, never presented as the main visitor experience.
+The canonical artist/catchphrase material remains Markdown, but dedicated public readers now exist: `app/aletheia-music.htm` for artists and `app/aletheia-song-catchphrases.htm` for the cross-artist phrase library. GitHub links remain secondary and explicitly labelled **SOURCE MD**.
 
 ## Behaviour
 
