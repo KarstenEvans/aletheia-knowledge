@@ -22,12 +22,15 @@ aletheia-knowledge-tasks.md               # work and handover
 app/<slug>.htm                            # browser app
 app/<slug>-page.md                        # target app build specification
 knowledge/<slug>.md                       # canonical knowledge, NOT generated
+knowledge/knowledge.json                     # explicit static inventory of published collections
 resources/<slug>-rsc.htm                  # resources/merchant HTML
 resources/<slug>-rsc-page.md              # target resource build specification
 resources/downloads/                      # relevant downloadable assets
 ```
 
-Current collections include `aletheia-secret-windows`, `aletheia-waste-to-garden`, `aletheia-weird-history` and `aletheia-swindon-town`. The main index also presents the Windows Debloat Tool as a related entry to Secret Windows. Inspect the actual index before modifying any navigation.
+Current collections include `aletheia-ai-knowledge`, `aletheia-secret-windows`, `aletheia-waste-to-garden`, `aletheia-weird-history` and `aletheia-swindon-town`. The main index also presents the Windows Debloat Tool as a related entry to Secret Windows. Inspect the actual index before modifying any navigation.
+
+The explicit `knowledge/knowledge.json` manifest is the machine-readable collection inventory for static consumers. Update it when a collection is published, moved or retired. The human-facing index must still work without JavaScript fetching that manifest; do not make a GitHub API or cloud service a foundation dependency.
 
 `*-page.md` files are a **new target convention**; missing files must be created from the actual working HTML, not pretended to exist. A new page must acquire its page spec when it is created.
 
