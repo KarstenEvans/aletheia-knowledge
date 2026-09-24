@@ -4,7 +4,7 @@
 >
 > **Working rule:** Read `README.md`, `aletheia-knowledge-GUI.md`, `aletheia-knowledge-code.md`, this file and the specific current collection/page files before working. GitHub is the shared master, but reconcile any newer local edits rather than silently discarding them.
 >
-> **Last task-list update:** 2026-09-23. These are project tasks, not scheduled ChatGPT reminders.
+> **Last task-list update:** 2026-09-24. These are project tasks, not scheduled ChatGPT reminders.
 
 ## How to use this register
 
@@ -336,3 +336,24 @@ Static verification after the provider expansion: **75 unique AI cards, 75 subst
 GitHub Pages deployment completed successfully for the current commit chain. The external web-inspection tool still cannot fetch the `github.io` page directly, so this records **deployment success**, not a human/browser interaction test.
 
 Still to verify live on a real browser/device: published AI Knowledge reader, new provider filters and source links on desktop/Android/Safari-class browsers.
+
+
+### AK-082 | SOURCE UPDATE / VERIFY LIVE | Preinstalled Microsoft apps and Windows 10/11 debloat
+
+24 September 2026: reviewed the supplied MakeUseOf article **“My Windows 11 PC runs smoother after I removed these preinstalled Microsoft apps”** as a discovery source, then checked the useful claims against current Microsoft documentation.
+
+Added six evidence-aware Secret Windows cards:
+- SW-OPT-016: app removal can reduce clutter/background work but does not prove a universal speed-up;
+- SW-OPT-017: OneDrive unlink, Files On-Demand and uninstall solve different problems;
+- SW-OPT-018: Copilot desktop can be uninstalled while browser access remains;
+- SW-OPT-019: new Outlook can be removed, but is not the same as classic Outlook/Microsoft 365;
+- SW-OPT-020: current Microsoft guidance says Phone Link cannot be uninstalled, so use disconnect/disable rather than unsupported package surgery;
+- SW-OPT-021: Xbox app, Game Bar and Gaming Services are separate decisions.
+
+Also stored an article-check note separating **disk space**, **startup/background load** and **measured responsiveness**. The article's “smoother” result is retained as an anecdotal observation, not promoted to a benchmark claim.
+
+Knowledge commit: `c6e669ea045b7f82542052887064de1061e67066`.
+
+Static verification: 145 unique `SW-*` card IDs, no duplicate IDs; all six new cards contain source sections and `LAST_CHECKED: 2026-09-24`.
+
+Still to verify live: open the published Secret Windows reader and confirm SW-OPT-016..021 render, filter/search and source links behave correctly on desktop and Android.
