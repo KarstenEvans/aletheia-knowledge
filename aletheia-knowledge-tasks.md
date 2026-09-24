@@ -307,3 +307,28 @@ Acceptance still to verify live:
 - Browser console remains free of JavaScript errors.
 
 Next action: open the published AI Knowledge page on PC/Android, test one card from each provider, then run an Aletheia Improve pass on any cards where the useful answer still feels too thin.
+
+
+### AK-081 | PUBLISHED / VERIFY LIVE | Expand AI Knowledge to Kimi, Manus, Grok and refreshed Claude/DeepSeek
+
+24 September 2026: expanded `knowledge/aletheia-ai-knowledge.md` from the first provider set with current setup/capability cards for Kimi/Moonshot AI, Manus and Grok/SpaceXAI, plus refreshed Claude and DeepSeek notes and a practical ChatGPT Plus/Astra capacity card.
+
+Added cross-provider design cards covering:
+- model + interface + tools + context as the capability stack;
+- READ / DRAFT / reversible write / consequential external-action permission levels;
+- workflow integration before agent proliferation;
+- governance evidence/receipts;
+- when a Skill should remain a Skill versus becoming a dedicated app.
+
+Discovery material included the supplied 2026 AI adoption/governance PDFs. Their useful concepts were independently translated into Aletheia rules rather than copied into the library. Non-AI files such as the MySQL quick-start, TSSA rules and affiliate research were not forced into AI Knowledge merely because they were supplied in the same batch.
+
+Updated `app/aletheia-ai-knowledge.htm` and its page specification with provider filters for Kimi, Manus and Grok.
+
+Related app-side work in `KarstenEvans/aletheia-app`:
+- root `AGENTS.md`;
+- shared `aletheia-GUI.md`;
+- shared `aletheia-dev.md`;
+- refreshed AI Easy provider installation/user guide;
+- Aletheia Watch and 11 Skills triage ideas/tasks.
+
+Still to verify live: published AI Knowledge reader, new provider filters and source links on desktop/Android/Safari-class browsers.
