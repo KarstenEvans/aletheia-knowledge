@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aletheia Music | Aletheia Knowledge</title>
+<meta name="description" content="Browse Aletheia Music artist knowledge and song catchphrases.">
+<style>
+:root{--bg:#f3f0f6;--panel:#fff;--ink:#1e2630;--muted:#66717b;--line:#d9d3df;--accent:#6b3fa0;--soft:#f6f0fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:1080px;margin:auto;padding:0 18px}header{padding:24px 0 16px;background:#ffffff8a;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(31px,5vw,48px);margin:0}.lead{max-width:780px;color:var(--muted)}
+.links,.actions,.searchrow{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
+.btn,button{display:inline-block;border:0;border-radius:999px;background:var(--accent);color:white;text-decoration:none;font:inherit;font-size:14px;font-weight:800;padding:10px 14px;cursor:pointer}
+.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+input[type=search]{flex:1 1 340px;padding:13px;border:1px solid var(--line);border-radius:12px;font:inherit}
+.tools{position:sticky;top:0;z-index:3;padding:9px 0;background:var(--bg);border-bottom:1px solid var(--line)}
+.status{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;padding:22px 0 40px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 4px 16px #37205008}
+.card h2{margin:0 0 8px;font-size:22px}.card p{color:#47545e}
+.badge{display:inline-block;font-size:12px;font-weight:800;color:var(--accent);background:var(--soft);padding:5px 9px;border-radius:999px;margin-bottom:8px}
+.reader{background:white;border:1px solid var(--line);border-radius:20px;padding:clamp(18px,4vw,34px);margin:22px 0 42px;overflow-wrap:anywhere}
+.reader h1{font-size:clamp(28px,5vw,42px)}.reader h2{margin-top:30px}.reader h3{margin-top:24px}
+.reader table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}.reader th,.reader td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.reader a{color:var(--accent)}.reader blockquote{border-left:4px solid var(--accent);margin-left:0;padding-left:16px;color:#53606a}
+.back{margin:20px 0 0}footer{padding:22px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.hidden{display:none!important}
+</style></head>
+<body>
+<header><div class="wrap">
+<h1>🎵 Aletheia Music</h1>
+<p class="lead">Artists, songwriters and the language hiding inside songs. Choose an artist, then follow the phrases, people and ideas outward.</p>
+<nav class="links"><a class="btn secondary" href="../index.html">ALETHEIA KNOWLEDGE</a><a class="btn secondary" href="../knowledge/music/">MUSIC INDEX</a><a class="btn" href="aletheia-song-catchphrases.htm">SONG CATCHPHRASES</a></nav>
+</div></header>
+<div class="tools" id="tools"><div class="wrap"><div class="searchrow"><input id="search" type="search" placeholder="Search artists and songwriters…" aria-label="Search music knowledge"></div><div class="status" id="status">6 knowledge files</div></div></div>
+<main class="wrap">
+<div id="grid" class="grid"></div>
+<div id="readerWrap" class="hidden">
+ <div class="back"><button class="secondary" id="back">← ALL MUSIC</button></div>
+ <article id="reader" class="reader"></article>
+</div>
+</main>
+<footer class="wrap">Canonical artist knowledge lives in <code>knowledge/music/</code>. This reader keeps the Markdown portable while giving visitors a readable front door.</footer>
+<script>
+(function(){
+"use strict";
+var artists=[
+ {slug:"tears-for-fears",name:"Tears for Fears",icon:"😱",file:"aletheia-tears-for-fears.md",desc:"Mad World, Shout, Head Over Heels, Sowing the Seeds of Love, power, psychology and impermanence."},
+ {slug:"roland-orzabal",name:"Roland Orzabal",icon:"✍️",file:"aletheia-roland-orzabal.md",desc:"Songwriter branch following recurring Tears for Fears ideas across decades."},
+ {slug:"beatles",name:"Beatles",icon:"🎸",file:"aletheia-beatles.md",desc:"Hey Jude, Let It Be, Help!, Yesterday and an unusually dense mine of memorable language."},
+ {slug:"david-bowie",name:"David Bowie",icon:"⚡",file:"aletheia-david-bowie.md",desc:"Characters, questions, reinvention and phrases from Life on Mars? to Let's Dance."},
+ {slug:"bob-marley",name:"Bob Marley",icon:"🌍",file:"aletheia-bob-marley.md",desc:"One Love, resistance, reassurance, history, spirituality and plain singable language."},
+ {slug:"sex-pistols",name:"Sex Pistols",icon:"📌",file:"aletheia-sex-pistols.md",desc:"Never Mind the Bollocks, God Save the Queen, punk language, censorship and cultural collision."}
+];
+var $=function(s){return document.querySelector(s);};
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function inline(s){
+ s=esc(s);
+ s=s.replace(/\[([^\]]+)\]\(([^)]+)\)/g,function(_,t,u){return '<a href="'+esc(u)+'" rel="noopener">'+t+"</a>";});
+ s=s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\`([^\`]+)\`/g,"<code>$1</code>");
+ return s;
+}
+function md(md){
+ var lines=md.replace(/\r/g,"").split("\n"),out=[],i=0,inList=false;
+ function closeList(){if(inList){out.push("</ul>");inList=false;}}
+ while(i<lines.length){
+  var line=lines[i];
+  if(/^\|/.test(line)&&i+1<lines.length&&/^\|?\s*[-:]+/.test(lines[i+1].replace(/^\|/,""))){
+   closeList();var rows=[],headers=line.split("|").slice(1,-1).map(function(x){return x.trim();});i+=2;
+   while(i<lines.length&&/^\|/.test(lines[i])){rows.push(lines[i].split("|").slice(1,-1).map(function(x){return x.trim();}));i++;}
+   out.push("<table><thead><tr>"+headers.map(function(x){return "<th>"+inline(x)+"</th>";}).join("")+"</tr></thead><tbody>"+
+     rows.map(function(r){return "<tr>"+r.map(function(x){return "<td>"+inline(x)+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+   continue;
+  }
+  var h=line.match(/^(#{1,4})\s+(.+)$/);
+  if(h){closeList();var n=Math.min(4,h[1].length);out.push("<h"+n+">"+inline(h[2])+"</h"+n+">");i++;continue;}
+  if(/^---+$/.test(line.trim())){closeList();out.push("<hr>");i++;continue;}
+  if(/^[-*]\s+/.test(line)){if(!inList){out.push("<ul>");inList=true;}out.push("<li>"+inline(line.replace(/^[-*]\s+/,""))+"</li>");i++;continue;}
+  closeList();
+  if(!line.trim()){i++;continue;}
+  var para=[line.trim()];i++;
+  while(i<lines.length&&lines[i].trim()&&!/^(#{1,4})\s+/.test(lines[i])&&!/^[-*]\s+/.test(lines[i])&&!/^\|/.test(lines[i])&&!/^---+$/.test(lines[i].trim())){para.push(lines[i].trim());i++;}
+  out.push("<p>"+inline(para.join(" "))+"</p>");
+ }
+ closeList();return out.join("\n");
+}
+function renderGrid(){
+ var q=$("#search").value.toLowerCase().trim();
+ var found=artists.filter(function(a){return !q||(a.name+" "+a.desc).toLowerCase().includes(q);});
+ $("#status").textContent=found.length+" of "+artists.length+" music knowledge files";
+ $("#grid").innerHTML=found.map(function(a){return '<article class="card"><div class="badge">ARTIST / SONGWRITER</div><h2>'+a.icon+" "+esc(a.name)+'</h2><p>'+esc(a.desc)+'</p><div class="actions"><button data-open="'+a.slug+'">OPEN KNOWLEDGE</button><a class="btn secondary" href="aletheia-song-catchphrases.htm?artist='+encodeURIComponent(a.name)+'">CATCHPHRASES</a></div></article>';}).join("");
+ document.querySelectorAll("[data-open]").forEach(function(b){b.onclick=function(){openArtist(b.dataset.open,true);};});
+}
+function openArtist(slug,push){
+ var a=artists.find(function(x){return x.slug===slug;});if(!a)return;
+ $("#status").textContent="Loading "+a.name+"…";
+ fetch("../knowledge/music/"+a.file,{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("HTTP "+r.status);return r.text();}).then(function(txt){
+   $("#reader").innerHTML=md(txt);
+   $("#grid").classList.add("hidden");$("#tools").classList.add("hidden");$("#readerWrap").classList.remove("hidden");
+   document.title=a.name+" | Aletheia Music";window.scrollTo({top:0,behavior:"smooth"});
+   if(push)history.pushState({artist:slug},"","?artist="+encodeURIComponent(slug));
+ }).catch(function(e){$("#status").textContent="Could not load "+a.name+": "+e.message;});
+}
+function home(push){
+ $("#readerWrap").classList.add("hidden");$("#grid").classList.remove("hidden");$("#tools").classList.remove("hidden");
+ document.title="Aletheia Music | Aletheia Knowledge";renderGrid();if(push)history.pushState({},"",location.pathname);
+}
+$("#search").addEventListener("input",renderGrid);$("#back").onclick=function(){home(true);};
+window.addEventListener("popstate",function(){var p=new URLSearchParams(location.search),s=p.get("artist");if(s)openArtist(s,false);else home(false);});
+renderGrid();var initial=new URLSearchParams(location.search).get("artist");if(initial)openArtist(initial,false);
+})();
+</script>
+</body></html>
