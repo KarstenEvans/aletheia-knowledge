@@ -1,0 +1,83 @@
+{
+  "schema": "aletheia-knowledge-manifest-v1",
+  "updated": "2026-09-24",
+  "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
+  "collections": [
+    {
+      "slug": "aletheia-ai-knowledge",
+      "title": "Aletheia AI Knowledge",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "aletheia-ai-knowledge.md",
+      "app": "../app/aletheia-ai-knowledge.htm",
+      "description": "Provider-neutral AI capabilities, agents, automation, models, Aletheia adapters and community field notes."
+    },
+    {
+      "slug": "aletheia-secret-windows",
+      "title": "Secret Windows",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "aletheia-secret-windows.md",
+      "app": "../app/aletheia-secret-windows.htm",
+      "resources": "../resources/aletheia-secret-windows-rsc.htm",
+      "description": "Windows 10/11 and Server repair, recovery, networking, administration, debloat and AI/Copilot cards."
+    },
+    {
+      "slug": "aletheia-waste-to-garden",
+      "title": "Waste to Garden",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "aletheia-waste-to-garden.md",
+      "app": "../app/aletheia-waste-to-garden.htm",
+      "resources": "../resources/aletheia-waste-to-garden-rsc.htm",
+      "description": "Checked gardening knowledge for composting, growing from scraps and reuse."
+    },
+    {
+      "slug": "aletheia-weird-history",
+      "title": "Weird History",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "aletheia-weird-history.md",
+      "app": "../app/aletheia-weird-history.htm",
+      "resources": "../resources/aletheia-weird-history-rsc.htm",
+      "description": "Strange historical gateways into independently checked history."
+    },
+    {
+      "slug": "aletheia-swindon-town",
+      "title": "Swindon Town",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "aletheia-swindon-town.md",
+      "app": "../app/aletheia-swindon-town.htm",
+      "resources": "../resources/aletheia-swindon-town-rsc.htm",
+      "description": "Source-traced Swindon people, places, railway history, oddities and culture."
+    },
+    {
+      "slug": "music",
+      "title": "Music",
+      "kind": "subject-shelf",
+      "status": "published",
+      "knowledge": "music/index.md",
+      "app": "../app/aletheia-music.htm",
+      "description": "Artist knowledge and song catchphrase research."
+    },
+    {
+      "slug": "aletheia-song-catchphrases",
+      "title": "Song Catchphrases",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "music/aletheia-song-catchphrases.md",
+      "app": "../app/aletheia-song-catchphrases.htm",
+      "description": "Short memorable song phrases, language mechanisms, chart context and cultural connections."
+    },
+    {
+      "slug": "aletheia-chatgpt-free-guide",
+      "title": "ChatGPT Free Guide",
+      "kind": "guide",
+      "status": "published",
+      "knowledge": "aletheia-chatgpt-free-guide.md",
+      "resources": "../resources/aletheia-chatgpt-free-guide.htm",
+      "description": "Free-first ChatGPT setup, memory, projects, voice/dictation and privacy guidance."
+    }
+  ]
+}
