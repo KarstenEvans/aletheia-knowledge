@@ -107,6 +107,17 @@ Keep sources with the appropriate claim/card; link directly to primary documenta
 - Keyboard focus visible; meaningful form labels; `aria-expanded` on disclosures; announcements for loading/errors.
 - Respect reduced-motion preferences. Never rely on colour alone to express evidence or risk.
 
+## Browser capability and enhancement rules
+
+Knowledge readers should remain useful when an optional browser capability fails.
+
+- Feature-detect the capability actually needed; do not infer support from operating-system name.
+- Build readable HTML/card content first, then enhance it with sticky controls, popups, local file APIs, graphics or AI.
+- If a library/CDN/browser API fails, show an actionable fallback rather than a blank control/surface.
+- When an app uses WebGL/Three.js or another graphics layer, Safari/WebKit must be tested by renderer/context capability, not categorically disabled as "Apple unsupported".
+- Record STATIC, LOCAL BROWSER, DEVICE and LIVE tests separately.
+- Long-running AI/agent maintenance must save durable checkpoints/results so a provider quota interruption does not force the whole research/build to restart.
+
 ## 6. Search, discovery and expansion
 
 - Search currently loaded local/cached knowledge first. Search title, preview, full card body and useful tags.
