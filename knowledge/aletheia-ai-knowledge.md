@@ -21,6 +21,8 @@ This collection deliberately separates four things that are often blurred togeth
 
 Features change quickly. Every time-sensitive card has a checked date and source links. Community observations never outrank official documentation or a fresh test.
 
+Discovery source register: `aletheia-ai-discovery-sources.md`. Supplied books/reports are used as topic/workflow maps rather than copied into the cards.
+
 ---
 
 ## AI-001 | What Aletheia AI Knowledge is for
