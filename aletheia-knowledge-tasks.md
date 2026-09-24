@@ -228,3 +228,32 @@ Next action:
 ```
 
 The next person should be able to finish the next task without asking where the code, latest facts or active decisions went.
+
+
+## P1: Music knowledge shelf
+
+### AK-070 | SOURCE PUBLISHED / APP TODO | Music shelf, catchphrase graph and future subject navigation
+
+2026-09-24: created a dedicated canonical music shelf at `knowledge/music/` rather than adding more files to the general `knowledge/` root.
+
+Published source files:
+- `knowledge/music/index.md`
+- `knowledge/music/aletheia-song-catchphrases.md`
+- `knowledge/music/aletheia-tears-for-fears.md`
+- `knowledge/music/aletheia-roland-orzabal.md`
+- `knowledge/music/aletheia-beatles.md`
+- `knowledge/music/aletheia-david-bowie.md`
+- `knowledge/music/aletheia-bob-marley.md`
+
+The music index defines the subject-shelf model: sufficiently large domains may later use subfolders such as Music, Health or Pets, each with its own internal index. Do **not** reorganise existing Knowledge collections merely to make the taxonomy look symmetrical.
+
+Next build:
+1. Create `app/aletheia-music-page.md` from the actual music knowledge structure.
+2. Create `app/aletheia-music.htm` as the visitor-facing Music shelf/search page.
+3. Add the Music app to the root public index only after the published app exists and works.
+4. Consider a compact mobile burger/subject menu for the root library **only when enough subject shelves exist to justify it**; preserve direct card/search access and do not hide the primary task behind navigation chrome.
+5. Add a dedicated resource page later for legitimate listen, lyrics, books, physical music, official merch and live links, with factual sources kept separate from affiliate conversion.
+
+Research boundary: short lyric/catchphrase quotation only; no full copyrighted lyrics. Separate formal songwriter credit, documented intent, chart facts and Aletheia interpretation. The current Beatles/Bowie/Marley files are first-pass corpora and should deepen through primary sources rather than folklore.
+
+Static source check on 2026-09-24: all seven paths fetched successfully from the default branch after publication.
