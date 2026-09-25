@@ -45,6 +45,7 @@ ROOT: aletheia-knowledge-GUI.md
     + aletheia-knowledge-tasks.md
     + index-page.md                      → index.html
     + app/<slug>-page.md                 → app/<slug>.htm
+    + resources/index.html               → shared Resources Home
     + resources/<slug>-rsc-page.md       → resources/<slug>-rsc.htm
     + knowledge/<slug>.md                → portable facts/cards, loaded by app
     + knowledge/knowledge.json             → explicit static inventory of published collections
@@ -74,6 +75,8 @@ On static hosting, do not pretend a browser can enumerate the repository's knowl
 7. Footer and unobtrusive disclosures.
 
 **Resource page, `resources/*-rsc.htm`:** purpose and link back to the working knowledge app; relevant free resources and source material; clearly labelled books/tools/gifts or other commercial offers; relevant affiliate disclosure; quiet navigation/footer. Do not move advertisements above the useful answer.
+
+Every resource page must also include a visible **Resources Home** link to `resources/index.html`, normally in the footer, plus a route back to Swindon.org.uk. Reuse an existing collection resource page for related PDFs and small spin-off guides instead of creating a new resource page for every download. Where practical, downloadable PDFs should contain a visible link back to the relevant Swindon.org.uk resource page so copied files still have a route home.
 
 The exact page composition can vary by subject: gardening's HAVE/WANT tabs need not be imposed on Weird History, and Windows risk badges do not belong on a Roman-history card.
 
