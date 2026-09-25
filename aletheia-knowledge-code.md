@@ -23,6 +23,7 @@ app/<slug>.htm                            # browser app
 app/<slug>-page.md                        # target app build specification
 knowledge/<slug>.md                       # canonical knowledge, NOT generated
 knowledge/knowledge.json                     # explicit static inventory of published collections
+resources/index.html                       # shared Resources Home
 resources/<slug>-rsc.htm                  # resources/merchant HTML
 resources/<slug>-rsc-page.md              # target resource build specification
 resources/downloads/                      # relevant downloadable assets
@@ -193,12 +194,14 @@ Simple resource-page shell:
 <body>
   <header><!-- knowledge-app link and useful introduction --></header>
   <main id="main"><!-- free resources first; commercial offers disclosed --></main>
-  <footer><!-- Home · Resources · Privacy · Affiliate Disclosure where applicable --></footer>
+  <footer><!-- Knowledge app · Resources Home · Swindon.org.uk · Privacy · Affiliate Disclosure where applicable --></footer>
   <!-- Only on pages deliberately carrying affiliate-capable commercial links: -->
   <script src="https://www.dwin2.com/pub.3182162.min.js"></script>
 </body>
 </html>
 ```
+
+The shared `resources/index.html` is the navigation home for resource pages. Every `resources/*-rsc.htm` page should link to it, normally in the footer. Prefer adding related downloads, wildlife sheets and small companion guides to the existing collection resource page rather than creating a new `*-rsc.htm` for each file. When a PDF is intended to travel independently, include a visible backlink to the relevant `https://swindon.org.uk/resources/...` page inside the PDF where practical.
 
 This is a **build template**, not a request to add MasterTag to every Markdown/reader. In existing repository resources and the homepage, inspect whether the tag is already present before changing anything. Use it **once, before `</body>`**, not in `footer.html`. Keep plain factual citation links and explicitly attributed Bookshop.org links out of Convert-a-Link according to the site's `data-awinignore` convention, and verify the conversion rules against actual Awin behaviour before assuming they are guaranteed. Put a visible affiliate disclosure near commercial content; the MasterTag is not a disclosure.
 
