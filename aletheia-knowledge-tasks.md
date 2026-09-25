@@ -357,3 +357,11 @@ Knowledge commit: `c6e669ea045b7f82542052887064de1061e67066`.
 Static verification: 145 unique `SW-*` card IDs, no duplicate IDs; all six new cards contain source sections and `LAST_CHECKED: 2026-09-24`.
 
 Still to verify live: open the published Secret Windows reader and confirm SW-OPT-016..021 render, filter/search and source links behave correctly on desktop and Android.
+
+
+2026-09-26 | Awin Publisher MasterTag audit | DONE / VERIFY LIVE
+Files read: all public HTML paths in the Knowledge repository; shared GUI/code guides; Waste to Garden resource page.
+Files changed: all previously untagged public HTML pages; `aletheia-knowledge-GUI.md`; `aletheia-knowledge-code.md`; `resources/aletheia-waste-to-garden-rsc.htm`.
+Rule: public production HTML carries publisher MasterTag `3182162` exactly once immediately before `</body>`; Markdown does not. Use exclusion handling for factual/source links where conversion is inappropriate.
+Static result: all 15 public HTML pages were accounted for; pre-existing tagged pages were left single-tagged and missing pages were updated.
+Live still to verify: deployed GitHub Pages/Swindon mirror loads the tag and Awin Convert-a-Link is enabled/working for approved advertisers.
