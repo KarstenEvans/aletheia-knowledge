@@ -100,4 +100,5 @@ $("#surprise").onclick=function(){var visible=Array.from(document.querySelectorA
 fetch(PATH,{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("HTTP "+r.status);return r.text();}).then(function(md){parse(md);populate();render();}).catch(function(e){$("#status").textContent="Knowledge unavailable";$("#grid").innerHTML='<article class="card"><h2>Could not load catchphrases</h2><p>'+esc(e.message)+'</p></article>';});
 })();
 </script>
+<script src="https://www.dwin2.com/pub.3182162.min.js"></script>
 </body></html>
