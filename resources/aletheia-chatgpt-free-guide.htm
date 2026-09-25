@@ -112,4 +112,5 @@ Use light, dry humour only when appropriate.</code></pre>
 <script>
 document.querySelectorAll('pre').forEach(pre=>{const b=document.createElement('button');b.className='button copy';b.type='button';b.textContent='COPY PROMPT';b.setAttribute('aria-label','Copy prompt');b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(pre.textContent);b.textContent='COPIED';setTimeout(()=>b.textContent='COPY PROMPT',1800)}catch(e){b.textContent='Select text and copy manually'}});pre.after(b)})
 </script>
+<script src="https://www.dwin2.com/pub.3182162.min.js"></script>
 </body></html>
