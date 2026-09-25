@@ -1,7 +1,7 @@
 # Aletheia Waste to Garden Knowledge Library
 
-Version: 0.1
-Date: 2026-09-21
+Version: 0.2
+Date: 2026-09-25
 App file: `aletheia-waste-to-garden.htm`
 
 Purpose: an original, searchable gardening knowledge base for turning household and garden waste into useful growing, composting and reuse actions.
@@ -111,6 +111,11 @@ WTG-REUS-012   | REUSE    | tin can planter            | food tins herbs drainag
 WTG-REUS-013   | REUSE    | sink planter               | ceramic sink trough planter alpine drainage
 WTG-REUS-014   | REUSE    | gutter planter             | guttering herbs strawberries shallow roots
 WTG-REUS-015   | REUSE    | crocks myth                | broken pots drainage gravel layer perched water table
+WTG-REUS-016   | REUSE    | hedgehog shelter reuse      | hedgehog house storage box planter leaves shelter
+WTG-REUS-017   | REUSE    | hedgehog feeding station    | cat food water storage box feeding station hedgehog
+WTG-REUS-018   | REUSE    | solitary bee hotel          | mason bee leafcutter bamboo drilled wood bee hotel
+WTG-REUS-019   | REUSE    | amphibian hibernaculum      | newt frog toad logs bricks rubble woodchip soil
+WTG-REUS-020   | REUSE    | wild corner log leaf pile   | leaves logs dead hedge wildlife shelter insects
 ```
 
 ## CARD LIBRARY
@@ -2358,5 +2363,150 @@ This is a useful example of why Waste to Garden includes an evidence checker rat
 
 ### Sources
 - https://www.rhs.org.uk/garden-inspiration/get-gardening/top-five-gardening-myths
+
+---
+
+
+## WTG-REUS-016 | Reused materials for a hedgehog shelter
+SECTION: REUSE
+KEY: hedgehog shelter reuse
+KEYWORDS: hedgehog house storage box planter leaves shelter
+EVIDENCE: GOOD
+DEEP_QUERY: British Hedgehog Preservation Society Hedgehog Street DIY hedgehog house storage box 13cm entrance
+
+### Summary
+A quiet natural nesting site is often the simplest hedgehog shelter. Gaps under sheds, leaf piles, log piles, shrubs and compost heaps can all be used. Where extra shelter is useful, a sturdy reused storage box or large planter can be turned into a simple hedgehog house.
+
+### How
+Choose a quiet shady spot. Use a sturdy ventilated container that cannot collapse, turn it upside down if appropriate, and provide an entrance around 13cm x 13cm. Add dry leaves or similar bedding and camouflage the shelter with leaves, twigs or soil while keeping the entrance and ventilation clear.
+
+### Technical
+Hedgehog winter nests, or hibernacula, need insulation and stable humidity as well as protection from wind and rain. A tunnel or internal baffle can make a purpose-built house harder for larger predators to reach into.
+
+### Pros
+Reuses existing materials and may be unnecessary if the garden already has a safe natural nesting site.
+
+### Caveats
+Do not disturb an occupied nest. Avoid treated timber, creosote and solvent-based paints or preservatives. Do not block access to an existing under-shed nest.
+
+### Sources
+- https://www.britishhedgehogs.org.uk/hedgehog-homes/
+- https://www.hedgehogstreet.org/help-hedgehogs/hedgehog-homes/
+- https://www.rspb.org.uk/helping-nature/what-you-can-do/activities/build-a-hedgehog-house
+
+---
+
+## WTG-REUS-017 | Reused storage box as a hedgehog feeding station
+SECTION: REUSE
+KEY: hedgehog feeding station
+KEYWORDS: cat food water storage box feeding station hedgehog
+EVIDENCE: GOOD
+DEEP_QUERY: British Hedgehog Preservation Society hedgehog feeding station 13cm cat food water
+
+### Summary
+A lidded plastic or wooden storage box can become a simple feeding station that helps keep hedgehog food drier and makes it harder for cats to reach.
+
+### How
+Cut an entrance around 13cm square, smooth all cut edges, place the food well inside and put a heavy brick or stone on top so the station cannot move. A second brick positioned outside the entrance can make access harder for cats. Put out clean water and meaty cat or dog food, cat biscuits or a suitable meat-based hedgehog food.
+
+### Technical
+Supplementary food can help during dry spells or when natural invertebrate prey is scarce, but it should remain a supplement rather than the animal's whole diet.
+
+### Pros
+Cheap, easy to clean and makes use of a spare storage box.
+
+### Caveats
+Keep food away from the sleeping house once a hedgehog is using it, because food can attract rivals or predators. Clean bowls and the feeding area regularly. Never offer milk or bread.
+
+### Sources
+- https://www.britishhedgehogs.org.uk/hedgehog-homes/
+- https://www.britishhedgehogs.org.uk/a-guide-to-helping-hedgehogs/
+- https://www.rspb.org.uk/helping-nature/what-you-can-do/activities/build-a-hedgehog-house
+
+---
+
+## WTG-REUS-018 | DIY solitary bee hotel from scrap wood or bamboo
+SECTION: REUSE
+KEY: solitary bee hotel
+KEYWORDS: mason bee leafcutter bamboo drilled wood bee hotel
+EVIDENCE: GOOD
+DEEP_QUERY: RHS solitary bee hotel untreated wood 10cm 2mm 10mm mason leafcutter bamboo
+
+### Summary
+Untreated offcuts of solid wood or hollow bamboo can provide nesting cavities for solitary bees such as red mason bees and some leaf-cutting bees.
+
+### How
+For a wood block, use untreated wood at least 10cm deep and drill smooth-ended holes about 2-10mm wide as deeply as practical without drilling through the back. Around 8mm is well suited to red mason bees. Add a small rain-shedding roof and fix the hotel securely in a sunny, sheltered place. Hollow bamboo lengths can be bundled as an alternative.
+
+### Technical
+Leaf-cutting bees line nest cells with pieces of leaf; mason bees use mud or similar material to partition cells. They are different groups of solitary bee, though both can use cavity nests.
+
+### Pros
+Turns small clean timber or bamboo offcuts into useful pollinator habitat.
+
+### Caveats
+Rough splintered holes can damage wings. Avoid chemically treated wood. Nesting tubes and blocks need maintenance and eventual replacement rather than being left indefinitely.
+
+### Sources
+- https://www.rhs.org.uk/wildlife/how-to-make-habitats-for-wild-bees
+- https://www.rhs.org.uk/biodiversity/leaf-cutting-bees
+- https://www.rhs.org.uk/wildlife/in-gardens
+
+---
+
+## WTG-REUS-019 | Amphibian hibernaculum from logs, bricks and rubble
+SECTION: REUSE
+KEY: amphibian hibernaculum
+KEYWORDS: newt frog toad logs bricks rubble woodchip soil
+EVIDENCE: GOOD
+DEEP_QUERY: Froglife hibernaculum newt logs bricks rubble woodchip soil garden
+
+### Summary
+Old logs, clean bricks, stone and rubble can be arranged into a frost-protected hibernaculum where newts, frogs, toads and some reptiles can shelter through winter.
+
+### How
+Choose a well-drained spot, preferably shaded or partly shaded. Lay logs, old bricks or clean rubble so that many small cavities remain. Loosely fill some gaps with woodchip, then cover much of the structure with soil, turf, moss or vegetation while leaving access gaps.
+
+### Technical
+The cavities provide stable temperature and humidity. Good drainage matters because a refuge that floods or becomes waterlogged can become dangerous rather than protective.
+
+### Pros
+Excellent use for awkward natural and masonry materials that would otherwise be discarded.
+
+### Caveats
+If great crested newts may already be present, do not handle them or disturb an existing resting place. Great crested newts and their breeding and resting sites are legally protected in England.
+
+### Sources
+- https://www.froglife.org/info-advice/wintering-sites-or-toad-homes/
+- https://www.gov.uk/guidance/great-crested-newts-protection-surveys-and-licences
+
+---
+
+## WTG-REUS-020 | Leave a wild corner, log pile or leaf pile
+SECTION: REUSE
+KEY: wild corner log leaf pile
+KEYWORDS: leaves logs dead hedge wildlife shelter insects
+EVIDENCE: STRONG
+DEEP_QUERY: RHS wildlife garden log pile leaves dead hedge hedgehog amphibian insects
+
+### Summary
+One of the highest-value forms of garden reuse is simply not removing every fallen leaf, twig and piece of dead wood. A quiet log pile, leaf pile, dead hedge or untidy corner creates shelter and food chains for many species.
+
+### How
+Choose a low-traffic corner, stack logs and prunings securely, allow some leaves to accumulate, and avoid frequent disturbance. Keep loose netting and hazardous rubbish out.
+
+### Technical
+Decaying wood and leaf litter support fungi and invertebrates. Those invertebrates become prey for hedgehogs, amphibians, birds and other garden wildlife, so one pile can serve several trophic levels.
+
+### Pros
+Free, low-effort and often more ecologically useful than decorative manufactured wildlife products.
+
+### Caveats
+Check piles carefully before moving or burning them. An occupied hedgehog nest or protected-species refuge should not be disturbed.
+
+### Sources
+- https://www.rhs.org.uk/wildlife/in-gardens
+- https://www.rhs.org.uk/wildlife/hedge-and-woodland-edge-habitats
+- https://www.hedgehogstreet.org/help-hedgehogs/hedgehog-homes/
 
 ---
