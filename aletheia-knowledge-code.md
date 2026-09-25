@@ -176,7 +176,7 @@ Suggested public navigation links:
 
 Use relative paths only after confirming the HTML's actual folder. The site URL is also suitable for share buttons and responses to the owner.
 
-## 6. HTML shell, SEO and resource-page MasterTag
+## 6. HTML shell, SEO and site-wide Awin MasterTag
 
 A new standalone app should at least have valid HTML5, `lang="en-GB"`, viewport, unique title/description, visible main content, one main heading, labelled search, accessible buttons and its published canonical URL when appropriate. Do not cargo-cult a full Swindon.org.uk site header into every portable knowledge app.
 
@@ -203,7 +203,7 @@ Simple resource-page shell:
 
 The shared `resources/index.html` is the navigation home for resource pages. Every `resources/*-rsc.htm` page should link to it, normally in the footer. Prefer adding related downloads, wildlife sheets and small companion guides to the existing collection resource page rather than creating a new `*-rsc.htm` for each file. When a PDF is intended to travel independently, include a visible backlink to the relevant `https://swindon.org.uk/resources/...` page inside the PDF where practical.
 
-This is a **build template**, not a request to add MasterTag to every Markdown/reader. In existing repository resources and the homepage, inspect whether the tag is already present before changing anything. Use it **once, before `</body>`**, not in `footer.html`. Keep plain factual citation links and explicitly attributed Bookshop.org links out of Convert-a-Link according to the site's `data-awinignore` convention, and verify the conversion rules against actual Awin behaviour before assuming they are guaranteed. Put a visible affiliate disclosure near commercial content; the MasterTag is not a disclosure.
+This is a **build template**. The Awin Publisher MasterTag is a **site-wide requirement for every public HTML page in this repository**. Publisher ID: `3182162`. Use `<script src="https://www.dwin2.com/pub.3182162.min.js"></script>` **exactly once, immediately before `</body>`**. Never put it in Markdown and do not hide it inside a reusable visible footer fragment where it could be duplicated. Before editing an existing page, count the tag first. Keep plain factual citation links and explicitly attributed Bookshop.org links out of Convert-a-Link according to the site's `data-awinignore` convention, and verify the conversion rules against actual Awin behaviour before assuming they are guaranteed. Put a visible affiliate disclosure near commercial content; the MasterTag is not a disclosure.
 
 Do not embed affiliate tags in `knowledge/*.md`, convert scholarly sources, or use a merchant link as the only citation. The HTML resource page may include its own books/gifts/tools and a link back to the running knowledge app.
 
@@ -285,7 +285,7 @@ MORE, search, filters/Jump if present, Surprise Me if present, sources,
 working resource links, keyboard focus, Android-width layout and no overflow.
 Test popup fallback and ensure one external click opens one destination.
 Check offline/local behaviour only for apps that actually implement it.
-Check resource-page affiliate disclosure and one MasterTag where appropriate,
+Check commercial-page affiliate disclosure and exactly one MasterTag on every public HTML page,
 and that factual sources are not affiliate-converted. Do not claim live
 deployment was verified unless it actually was. Update tasks with results.
 ```
