@@ -365,3 +365,18 @@ Files changed: all previously untagged public HTML pages; `aletheia-knowledge-GU
 Rule: public production HTML carries publisher MasterTag `3182162` exactly once immediately before `</body>`; Markdown does not. Use exclusion handling for factual/source links where conversion is inappropriate.
 Static result: all 15 public HTML pages were accounted for; pre-existing tagged pages were left single-tagged and missing pages were updated.
 Live still to verify: deployed GitHub Pages/Swindon mirror loads the tag and Awin Convert-a-Link is enabled/working for approved advertisers.
+
+
+### AK-090 | TODO / PILOT | Answer-ready discovery pilot
+
+Test a small number of question-led public pages based on accepted Aletheia knowledge. Each pilot page should give a concise crawlable answer first, then evidence, caveats, related questions, sources, deeper Aletheia links and one useful resource/download where relevant.
+
+Use **Aletheia Site Audit → Native Ad / Advertorial Pattern** when studying competitors. Extract only ethical architecture and classify techniques as REUSE ETHICALLY / TEST / DO NOT COPY / UNKNOWN.
+
+Measure with Search Console and available analytics before scaling. Record:
+- query impressions/clicks;
+- page-level discovery;
+- referral/citation evidence where observable;
+- whether the page earns discovery beyond branded searches.
+
+Do not build a strategy around retired FAQ rich results or assume `llms.txt` improves Google ranking. Keep ordinary crawlable HTML, internal links, sitemap/canonical hygiene and supported structured data as foundations.
