@@ -4,7 +4,7 @@
 >
 > **Working rule:** Read `README.md`, `aletheia-knowledge-GUI.md`, `aletheia-knowledge-code.md`, this file and the specific current collection/page files before working. GitHub is the shared master, but reconcile any newer local edits rather than silently discarding them.
 >
-> **Last task-list update:** 2026-09-24. These are project tasks, not scheduled ChatGPT reminders.
+> **Last task-list update:** 2026-09-26. These are project tasks, not scheduled ChatGPT reminders.
 
 ## How to use this register
 
@@ -117,6 +117,30 @@ Acceptance: external/resource click opens one target, leaves the original page a
 Inspect each `resources/*-rsc.htm` and the root index. Confirm the Awin MasterTag (publisher `3182162`) appears at most once on each page that intentionally uses it, just before `</body>`, and nowhere in factual Markdown. Verify commercial disclosures, `data-awinignore` behaviour for existing Bookshop.org attribution/source links and the reciprocal app ↔ resources page links.
 
 Acceptance: facts and evidentiary sources remain independent of affiliate conversion; unverified/planned Swindon.org.uk mirror URLs are not presented as live.
+
+### AK-035 | TODO | Pilot Swindon.org.uk ↔ Aletheia cross-pollination
+
+Apply the new reciprocal discovery pattern to a small set before scaling it.
+
+Suggested pilot subjects:
+
+- Waste to Garden: hedgehog habitat / hedgehog house;
+- Waste to Garden: bee hotels / pollinators;
+- Secret Windows: one high-value Windows 10/11 cleanup question;
+- Swindon Town: one strong local-history question.
+
+For each pilot:
+
+1. identify or create only the necessary concise Swindon.org.uk public/resource front door;
+2. preserve deeper evidence/cards/tool behavior in Aletheia Knowledge;
+3. add reciprocal links;
+4. add a few useful neighboring-topic links;
+5. add annotated Go Deeper sources;
+6. record primary/secondary/spoken/AI-answer query variants and metadata;
+7. verify duplicate/canonical behavior;
+8. measure real discovery before scaling.
+
+Acceptance: each pilot has distinct visitor value on both surfaces, no cloned long-form article, working links, and recorded live/browser verification.
 
 ### AK-034 | TODO | Inspect offline/local-first parity by actual need
 
