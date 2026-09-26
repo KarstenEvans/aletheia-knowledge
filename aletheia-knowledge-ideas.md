@@ -29,6 +29,57 @@ Examples:
 
 These pages should be useful even when no search engine or AI ever indexes them.
 
+### Idea: publisher-style topic hubs and two-way discovery
+
+A useful publishing pattern is:
+
+```text
+answer page
+  → topic hub
+     → related answer
+        → deeper specialist tool/knowledge
+```
+
+Aletheia can use the useful part of this pattern without turning the library into a tag farm.
+
+For a substantive concept such as **Hedgehogs**, **Pollinators**, **Compost**, **Windows**, **AI privacy** or **Swindon history**:
+
+- collect genuinely related pages/cards under one curated topic route once enough content exists;
+- give the hub a short original explanation rather than only a list of links;
+- link from each answer/card back to the topic;
+- link the topic to neighboring concepts where the relationship is real;
+- connect the matching Swindon.org.uk front door/resource page to the deeper Aletheia app;
+- connect the Aletheia app/resource metadata back to Swindon.org.uk.
+
+This creates a small knowledge graph for people, crawlers and retrieval systems.
+
+Do not create one public page per keyword variation. Prefer one strong topic hub to many thin tags.
+
+### Idea: discovery-pass output
+
+Aletheia Improve can generate a compact editorial/discovery block for a public target:
+
+```text
+PRIMARY QUERY
+SECONDARY QUERIES
+SPOKEN QUESTION
+AI-ANSWER QUESTION
+SEO TITLE
+META DESCRIPTION
+SUGGESTED SLUG
+DIRECT ANSWER
+3 KEY POINTS
+INTERNAL LINKS
+ALETHEIA DEEP LINK
+SWINDON.ORG.UK FRONT DOOR
+MISSING TOPIC HUB
+3 RELATED QUESTIONS
+GO DEEPER SOURCES
+MEASUREMENT
+```
+
+The block is a planning/checking aid. It must never be mistaken for proof that a page will rank or be cited by an AI.
+
 ### Idea: answer-ready writing
 
 Write important public answers so a search engine, screen reader, human or retrieval system can understand the useful point without executing JavaScript or opening MORE.
