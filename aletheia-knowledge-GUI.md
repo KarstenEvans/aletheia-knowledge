@@ -195,6 +195,61 @@ Default caption display is now **one spoken sentence/cue**, adjustable to two, t
 To prevent accidental overwrites, fetch the exact GitHub source and save a byte-equivalent copy before a substantial app rewrite. The pre-voice Storyteller original lives at `KarstenEvans/aletheia-app/backup/aletheia-storyteller-before-character-voices-20260923.htm`. A self-contained local voice-test file was created before publishing the changes; a complete offline story bundle remains a separate task. New AI sessions should read the app's updated `aletheia-storyteller-page.md` before altering this behaviour.
 
 
+## Swindon.org.uk ↔ Aletheia cross-pollination
+
+Treat Swindon.org.uk and Aletheia as complementary public surfaces, not duplicate mirrors.
+
+Preferred role split:
+
+```text
+Swindon.org.uk
+  concise answer-first public/search front door
+          ↕
+Aletheia Knowledge / app
+  deeper cards, evidence, interaction and reusable knowledge
+```
+
+When a matching public route exists:
+
+- Swindon.org.uk should link to the deeper Aletheia app/collection with meaningful anchor text such as **Explore with Aletheia**, **Open the Aletheia guide**, or a subject-specific label.
+- The Aletheia app/resource/knowledge metadata should link back to the matching Swindon.org.uk resource/front-door page.
+- Both sides may link to a small number of genuinely related topics so a visitor can move sideways through the knowledge graph.
+- Evidence/source links stay distinct from resource/affiliate links.
+- Never invent a Swindon.org.uk destination merely because a planned route appears in metadata. Publish/test it first.
+
+Avoid publishing the same long article twice. If both surfaces exist, give them different jobs. Swindon.org.uk should normally carry the concise public answer and discovery context; Aletheia should carry the deeper explanation, evidence, cards or tool.
+
+### Topic/knowledge hubs
+
+Repeated concepts may become curated topic hubs when enough real content exists. Examples include garden wildlife, pollinators, Windows, AI privacy and Swindon history.
+
+A useful hub should contain:
+
+- a short human-readable explanation;
+- its strongest related pages/cards;
+- links into both Swindon.org.uk and Aletheia where appropriate;
+- no empty keyword-only/tag shell.
+
+As a working threshold, normally wait until at least three substantive pages/cards belong together before creating a public hub.
+
+### Discovery metadata check
+
+For a public collection/page improvement, check whether the surrounding public layer needs:
+
+- primary query/question;
+- secondary query variants;
+- likely spoken question;
+- likely AI-answer/retrieval question;
+- SEO title;
+- meta description;
+- clean slug;
+- answer-first introduction;
+- descriptive headings;
+- related internal links;
+- annotated **Go Deeper** sources.
+
+These are editorial/discovery aids, not evidence of ranking. Measure actual search/referral performance after publication.
+
 ## Answer-ready discovery and ethical AEO
 
 Aletheia Knowledge should be easy for humans, search engines and AI retrieval systems to understand without depending on hidden state or JavaScript-only text.
