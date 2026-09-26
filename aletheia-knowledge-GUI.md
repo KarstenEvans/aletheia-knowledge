@@ -193,3 +193,27 @@ The first adventure has six `[voice-profile;NAME;lang=...]` declarations at its 
 Default caption display is now **one spoken sentence/cue**, adjustable to two, three or off. The still-image pans and zooms remain deliberately gentle for low-intensity storytelling. The heading reader does not insert “New title” or a spoken “pause”: it reads the heading as written, then waits silently for 400 ms. An optional *bilingual learning captions* concept is documented in the app repository's `ideas.md`, not presented as an implemented feature.
 
 To prevent accidental overwrites, fetch the exact GitHub source and save a byte-equivalent copy before a substantial app rewrite. The pre-voice Storyteller original lives at `KarstenEvans/aletheia-app/backup/aletheia-storyteller-before-character-voices-20260923.htm`. A self-contained local voice-test file was created before publishing the changes; a complete offline story bundle remains a separate task. New AI sessions should read the app's updated `aletheia-storyteller-page.md` before altering this behaviour.
+
+
+## Answer-ready discovery and ethical AEO
+
+Aletheia Knowledge should be easy for humans, search engines and AI retrieval systems to understand without depending on hidden state or JavaScript-only text.
+
+For important public topics, prefer a question-led structure:
+
+1. meaningful question/title;
+2. concise direct answer in ordinary crawlable HTML;
+3. evidence / how it works;
+4. limitations or caveats;
+5. genuinely related follow-up questions;
+6. source links;
+7. deeper Aletheia app/card link;
+8. one relevant resource or download where useful.
+
+Do not assume AI systems share a live common memory. The practical discovery route is that public pages may be independently crawled, indexed, retrieved, cited or encountered through search and browsing tools. Therefore make pages **easy to discover, parse, verify and cite**.
+
+Useful competitor architecture may be studied with **Aletheia Site Audit → Native Ad / Advertorial Pattern**, but copy only ethical information architecture. Reuse clarity, semantic breadth, internal linking, useful downloads and strong source trails. Reject fabricated scarcity, fake biographies, disguised sponsorship, misleading locality, fake testimonials and scaled thin pages.
+
+FAQ-style questions remain useful for people and retrieval, but do not depend on FAQ rich-result markup as a ranking trick. `llms.txt` is an optional compatibility aid, not a substitute for crawlable pages, internal links, sitemaps, supported structured data and Search Console evidence.
+
+Measure discovery before scaling a format. Prefer a few genuinely useful pages that earn impressions/citations over hundreds of templated pages.
