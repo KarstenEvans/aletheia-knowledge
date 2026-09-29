@@ -4,6 +4,14 @@
 >
 > Ideas are not evidence. Keep them separate from canonical fact cards until researched and accepted.
 
+## PRIORITY IDEA #001 — Worldwide Aletheia Discover knowledge and editorial layer (29 September 2026)
+
+Provisional names: **Aletheia Atlas**, **Aletheia Mystika**, **Aletheia Discover**; brand undecided. One globally reusable, language-aware knowledge and research layer, not a separate cloned knowledge collection for each city. A manually selected location (including elsewhere from the visitor's current location), topical query and preferred answer language determine on-demand research. Source documents retain their original language; citations, date checked, event local time zone and uncertainty survive translation. Static Knowledge holds only independently checked, durable reusable facts, not invented/automatically bulk-written city cards or copyrighted reposts. On-demand results may be ephemeral and need not become indexable city pages.
+
+The first Swindon.org.uk instance supplies a public front door but Aletheia is worldwide. One Aletheia editorial/newsletter/blog stream can expose optional place, subject and language filters. Source and publisher attribution, human publishing approval, duplicate prevention, free-first results and optional clearly disclosed approved affiliate resources are required. Source/evidence links remain untracked.
+
+Research inspiration: https://secretldn.com/food-drink/ and https://secretmedianetwork.com/en/ for accessible sticky navigation and a readable editorial/category UI, not their city-network/copying approach. Cross project: `KarstenEvans/SwindonOrgUK` Idea/Task #001 and `KarstenEvans/aletheia-app/aletheia-discover/` future UI/specification.
+
 ## Discovery / AEO / answer-ready pages
 
 ### Idea: question-led knowledge front doors
