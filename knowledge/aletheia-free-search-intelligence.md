@@ -79,6 +79,28 @@ Default screens: **WHAT PEOPLE ASK** (real questions) / **TRENDING** (labelled i
 6. Source links remain ordinary links; optional disclosed affiliate recommendations are separate, genuinely relevant and not in source citations.
 7. Human checks one pilot using a UK topic and an outside-UK comparison, desktop/mobile, without requiring paid software.
 
+
+## Updated public tool shelf and film-affiliate research (2026-09-29)
+
+The companion standalone public HTML is maintained in the separate Apps repository: [Affiliate Tools](https://karstenevans.github.io/aletheia-app/aletheia-site-audit/affiliate-tools.htm) and its [rebuild specification](https://github.com/KarstenEvans/aletheia-app/blob/main/aletheia-site-audit/aletheia-site-audit-page.md). The HTML has `Books / Gifts` as the final burger-menu option, with free reading **ahead of** optional shopping. It includes [Accessibility for Everyone](https://accessibilityforeveryone.site/) by Laura Kalbag: genuinely freely readable on the author's successor/publisher site; originally published 2017, openly shared since 2025, with the author's explicit warning that some cited tools may be outdated. No paid affiliate link is needed to access it.
+
+Additional independently sourced no-cost/optional tools, not inherited from the Revenue Tactics sales list:
+
+| Tool | Official source and reason | Boundary |
+| --- | --- | --- |
+| WAVE single-page checker and local browser extension | [WAVE](https://wave.webaim.org/) / [extension](https://wave.webaim.org/extension/). Human accessibility review assisted by checks for errors/structure. | Free checker/extension; optional API paid. Automated test is not proof of WCAG compliance. |
+| WebAIM colour contrast | [Contrast Checker](https://webaim.org/resources/contrastchecker/). Test text/background colour ratios. | Individual pair, not complete page approval. |
+| W3C Nu HTML checker | [Modern HTML validator](https://validator.w3.org/nu/) and [W3C tools](https://www.w3.org/QA/Tools/). | Validation does not guarantee usability or ranking. |
+| Bing IndexNow | [Official get-started](https://www.bing.com/indexnow/getstarted). Owner can submit changed/added/deleted site URLs to participating search engines. | Requires an ownership key. Acknowledgement does not guarantee indexing, and it is not ordinary Google indexing submission. |
+| Google Data Studio | [Current product docs](https://docs.cloud.google.com/data-studio/welcome). The former Looker Studio was renamed **Data Studio in April 2026**. No-cost data reporting tool. | Requires account, optional individual data connectors may have distinct fees, Pro is paid. |
+| Google Alerts | [Official help](https://support.google.com/websearch/answer/4815696?hl=en). Opt-in emails for matching newer search results. | Not a full archive or exact keyword search volume. |
+
+**Film research:** Disney confirms [Hocus Pocus (1993)](https://movies.disney.com/hocus-pocus) and a [UK Disney+ film page](https://www.disneyplus.com/en-gb/browse/entity-b99c38fd-44ae-402f-b727-bc7fccb63740), but **no specific current Aletheia-approved Disney+ affiliate referral** has been established. [Rarewaves has a specific UK Region-2 Hocus Pocus DVD page](https://www.rarewaves.com/products/5017188882095-hocus-pocus-region-b2), barcode **5017188882095**. Awin publicly lists [Rarewaves merchant profile ID 70042](https://ui.awin.com/merchant-profile/70042) and [World of Books UK ID 116709](https://ui.awin.com/merchant-profile/116709). These merchant listings are **research leads only**, not proof Aletheia's publisher account is approved, any item is in stock, any personal tracking URL exists, or a film-streaming programme is available. All public gift-page links remain ordinary `data-awinignore` links pending separate authorised approval. ClickBank's [Marketplace guide](https://support.clickbank.com/en/articles/10535269-what-is-the-clickbank-marketplace) explains its seller-offer model, but no legitimate/rights-cleared Disney/Hocus Pocus film offering was independently verified there. Never promote an unclear seller's movie/stream as a legitimate studio release merely because it is on a marketplace.
+
+The historic name **“Trust Partner”** remains unresolved, not silently identified as TradeTracker, Tradedoubler, Partnerize or a current business. Preserve it as a research question rather than fabricating a match.
+
+The [Aletheia Constellation](https://github.com/KarstenEvans/aletheia-app/blob/main/shared/README.md) adds **curated editorial crosslinks** to standalone Aletheia HTML, with one dated link/icon JSON catalogue. The Halloween `🧙` link to [Halloween Gifts & Resources](https://karstenevans.github.io/aletheia-app/seasonal/halloween-gifts.htm) appears between 1 September and 10 November inclusive; ordinary stars return 11–24 November, and winter sprites run 25 November–31 December. No seasonal sprite links to an unbuilt gift page. This is navigation, not an affiliate-advertising layer. No course-making, auto-posting, paid ad expenditure or false earning claims are introduced by this update.
+
 ## Sources and provenance (checked 2026-09-29)
 
 - [Revenue Tactics public course index](https://www.revenuetactics.com/our-courses/) — seller's course descriptions, not independently verified outcomes.
