@@ -42,3 +42,7 @@ A compact burger/subject menu may become useful when several true subject shelve
 - AI Knowledge and Music app links open published HTML.
 - Existing collections remain unchanged.
 - The homepage remains usable if the JSON manifest is unavailable.
+
+## YouTube Library entry (29 September 2026)
+
+Add a homepage card linking to `youtube/index.html` and a direct secondary route to `youtube/aletheia-7-videos-7-skills.htm`. This is a folder-based library on Aletheia Knowledge, not a Swindon.org.uk resource. Each standalone, content-rich HTML entry has a stable canonical URL and can be indexed individually. The visible library index is maintained explicitly; GitHub Pages does not enumerate folders. Keep author/curator attribution and paid book links distinct from the free original YouTube sources.
