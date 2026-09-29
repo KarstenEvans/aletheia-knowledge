@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-09-24",
+  "updated": "2026-09-29",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -78,6 +78,23 @@
       "knowledge": "aletheia-chatgpt-free-guide.md",
       "resources": "../resources/aletheia-chatgpt-free-guide.htm",
       "description": "Free-first ChatGPT setup, memory, projects, voice/dictation and privacy guidance."
+    },
+    {
+      "slug": "aletheia-12-free-ai-guides",
+      "title": "12 Free AI Guides: learning and evidence notes",
+      "kind": "knowledge",
+      "status": "published",
+      "knowledge": "aletheia-12-free-ai-guides.md",
+      "app": "../linkedin/aletheia-12-free-ai-guides.htm",
+      "description": "Fifteen source-traced learning cards from twelve original AI resources and related editorial methods."
+    },
+    {
+      "slug": "aletheia-creator-os-content-system",
+      "title": "Creator OS: original content workflow research",
+      "kind": "research",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-creator-os-content-system.md",
+      "description": "Ten original knowledge cards extracting reusable content-system principles from a post-signup promotional offer; no HTML, purchase, template clone or autoposting."
     }
   ]
 }
