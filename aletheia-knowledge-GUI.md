@@ -272,3 +272,13 @@ Useful competitor architecture may be studied with **Aletheia Site Audit → Nat
 FAQ-style questions remain useful for people and retrieval, but do not depend on FAQ rich-result markup as a ranking trick. `llms.txt` is an optional compatibility aid, not a substitute for crawlable pages, internal links, sitemaps, supported structured data and Search Console evidence.
 
 Measure discovery before scaling a format. Prefer a few genuinely useful pages that earn impressions/citations over hundreds of templated pages.
+
+## Free Search Intelligence GUI (AK-098, 29 September 2026)
+
+Research-only shared design contract; no Search Intelligence panel is deployed yet. Canonical evidence/method details: [knowledge/aletheia-free-search-intelligence.md](knowledge/aletheia-free-search-intelligence.md).
+
+- Make the question/answer useful before MORE, and show **engine + location + language + date window + last capture + metric/unit** alongside every trend/volume figure. Separate badges: `RELATIVE INTEREST (0–100)`, `ESTIMATED SEARCHES`, `OUR PROPERTY ONLY`, `AI CITATIONS`, `IDEA/UNVERIFIED`. Never put incompatible numbers in a naked common ranking or sum them.
+- First choice: official free Google Trends, Bing Webmaster Keyword Research, owner-verified Google Search Console/Bing Webmaster. Billing-required Google Ads Keyword Planner is research-only under the no-billing policy. Mark unavailable data honestly; no fabricated live dashboard or silent account connection.
+- Location first worldwide: only use browser geolocation after permission; otherwise ask for a town/country. Keep user-selected location, language, engine and time range visible; let visitor search elsewhere. Trends/rising topics may suggest articles, but **never become factual evidence that an event/product exists**.
+- Proposed accessible tabs: WHAT PEOPLE ASK / TRENDING / OUR PAGES / IMPROVEMENT IDEAS. Preserve keyboard/mobile navigation, clear action labels, ordinary first-party source links, source provenance, quiet fallbacks and human publishing approval.
+- For optional Microsoft Clarity or similar recording tools, require a separate privacy/consent assessment and explicit authorisation before loading tracking. Avoid paid upsells, fake urgency or course-advertising placeholders. Commercial recommendations remain visibly disclosed and separate from the source record.
