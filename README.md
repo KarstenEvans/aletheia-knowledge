@@ -35,6 +35,13 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ## Knowledge libraries
 
+### Free Search Intelligence (Google and Bing)
+
+- Canonical source-checked, **knowledge-only** note: [knowledge/aletheia-free-search-intelligence.md](knowledge/aletheia-free-search-intelligence.md); indexed in `knowledge/knowledge.json` and visible in `knowledge/index.html`.
+- Distinguishes Google Trends normalised interest, keyword-volume estimates, verified-property performance and Bing AI citations. Reviews Google/Bing official free-first research tools and ClickBank as a research-only lead, not product endorsement.
+- Future proposal: reuse one measurement/source-provenance contract across Aletheia Improve, Discover, Publisher and Trust Check. **No paid subscription, billing-required Ads setup, tracking install, purchased course, connected account or deployed app.** Tracked in AK-098.
+
+
 ### Creator OS content-system research (knowledge only)
 - Original analysis: [knowledge/aletheia-creator-os-content-system.md](knowledge/aletheia-creator-os-content-system.md) (ten source-traced original cards, added 29 September 2026).
 - Distinguishes Chris Donnelly's advertised post-signup **paid Creator OS Notion framework** from the separate promised free course and earlier **Claude Content OS** link in the [12 Free AI Guides knowledge notes](knowledge/aletheia-12-free-ai-guides.md).
