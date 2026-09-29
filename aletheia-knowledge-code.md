@@ -460,3 +460,13 @@ For substantial work:
 On resume, read current repository state and continue from the last verified checkpoint. Do not restart completed research merely because a provider usage window reset.
 
 Provider-specific `AGENTS.md`, Skills, memory and agent context are adapters. Canonical project knowledge remains in the repository.
+
+## Free Search Intelligence build and data rules (AK-098)
+
+Canonical research: [knowledge/aletheia-free-search-intelligence.md](knowledge/aletheia-free-search-intelligence.md). **Development proposal only**; inspect actual Aletheia Improve/Discover/Publisher/Trust Check owners and source before building or wiring credentials.
+
+Use a typed observation record (not a fabricated score): `{ source, engine, metric_type, unit, value_or_band, term_or_page, location, language, date_start, date_end, captured_at, source_url, access_method, coverage_limit, validation_state }`. Allow `value_or_band: null` and a truthful `NOT_CONNECTED`/`NOT_AVAILABLE` state. Valid `metric_type`: `normalised_interest`, `estimated_volume`, `own_property_impressions`, `own_property_clicks`, `ai_citations`, `exploratory_suggestion`. Never silently infer an absolute Google query count from Trends 0–100, add Google and Bing counts together or equate AI grounding-query groups with verbatim user prompts.
+
+Implementation order: (1) static, source-cited explanatory cards and manual source links; (2) user-exported CSV import with local validation and no default upload; (3) only with explicit approval, verified-property read-only API integration using documented auth and quotas; (4) evaluate optional web analytics with UK privacy/consent requirements. Prefer the Bing Webmaster REST API over retired SOAP/POX versions; do not scrape private dashboards, use unauthorised unofficial Trends APIs, sign users into Ads, launch paid campaigns or start session recording on page load.
+
+For Improve compare same source/metric/location/date-window baselines; note noise and avoid causal claims. For Discover, confirm real event/date/venue with independent organiser evidence. For Publisher, question-led original copy, duplicate/rights/source check, `NO_POST`, exact-revision human approval. For Trust Check, separate affiliate disclosures, vendor assertions, first-party evidence and observed product quality. Make a source receipt for every data snapshot and preserve correction history. Test missing, zero, unsupported-region, partial CSV, currency/unit confusion and no-account states on mobile and desktop.
