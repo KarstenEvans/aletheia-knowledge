@@ -2,7 +2,7 @@
 
 [Aletheia Protocol](https://github.com/KarstenEvans/aletheia-protocol) · [Thalia Protocol](https://github.com/KarstenEvans/thalia-protocol/blob/main/THALIA_PROTOCOL.md)
 
-Public HTML: `youtube/aletheia-7-videos-7-skills.htm`; public canonical: https://karstenevans.github.io/aletheia-knowledge/youtube/aletheia-7-videos-7-skills.htm. Library: `youtube/index.html`.
+Public HTML: `youtube/aletheia-7-videos-7-skills.htm`; public canonical: https://karstenevans.github.io/aletheia-knowledge/youtube/aletheia-7-videos-7-skills.htm. Library: `youtube/index.html` (human) and `youtube/index.json` (maintained machine-readable catalogue). Original source platform **Instagram**, linked media platform **YouTube**; both are recorded separately. The JSON state is GitHub-source committed / live-check pending.
 
 Collection provenance: curator Sabrina Ramonov, original Instagram reel `https://www.instagram.com/reel/Ddwd_33ANhs/`, post ID `Ddwd_33ANhs`. Individual video links and timestamps are documented within the HTML. Date assembled 29 September 2026. This is an original editorial companion, not a verbatim reproduction, endorsed account, or seven independently checked courses.
 
