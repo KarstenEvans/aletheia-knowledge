@@ -483,3 +483,28 @@ Implemented on the entry: seven static crawlable HTML source cards, original You
 - [ ] Use synthetic posts to test duplicate detection, `NO POST` branch, human approval, correction, rights and observed time savings. No unattended publishing or invented client outcomes.
 
 **Acceptance for knowledge stage:** independent Markdown content saved, manifest/crosslink updated, advertising claims labelled, no HTML changed. App/product development remains TODO rather than marked built.
+
+
+### AK-096 | GITHUB SOURCE UPDATED / LIVE VERIFY | Separate YouTube and LinkedIn JSON catalogues
+
+**User decision 29 September 2026:** preserve `youtube/` and `linkedin/` folders and existing public direct links. Add their maintained `index.json` next to the existing human `index.html`. Do not migrate to a physical `social-media/` folder; a future combined virtual view is optional and approval-gated. Existing `knowledge/knowledge.json` continues independently.
+
+- [x] Created `youtube/index.json` containing the Sabrina Ramonov **Instagram-originated** recommendation of seven linked YouTube videos, with explicit original-versus-media platform provenance, path, page spec, count and honest source/live status.
+- [x] Created `linkedin/index.json` containing Chris Donnelly's 12-link LinkedIn collection, path, Knowledge crosslink, original source, screenshots receipt and current check limitations. The later paid Creator OS *knowledge-only* note is **not** a new public collection entry.
+- [x] Updated both folder `index.html` human pages and root homepage navigation so LinkedIn is discoverable. Updated their README/page-spec notes and repository README.
+- [ ] Verify deployed GitHub Pages JSON/HTML links and mobile display independently; never equate GitHub source commits with tested live delivery.
+- [ ] On each future human-approved entry, review matching `index.html` and `index.json` fields together. Optionally validate JSON schema and targets in a local check. No automatic importing/publishing.
+
+**Acceptance:** one correct present entry in each JSON manifest; existing page filenames/URLs unchanged; original source platforms distinguished; no duplicate paid-upgrade page.
+
+### AK-097 | IDEA SAVED / DEVELOPMENT BACK BURNER | Consolidated Aletheia Publisher
+
+**Full canonical proposal:** [ideas/aletheia-publisher.md](ideas/aletheia-publisher.md). Builds on existing *Aletheia LinkedIn Check / proposed LinkedIn Publisher*, Maistro, Agorapulse, Creator OS research [knowledge/aletheia-creator-os-content-system.md](knowledge/aletheia-creator-os-content-system.md), and the two source-attributed collection pages. **Idea registration only; no live app, subscription, automated posting or separate Publisher folder was created.**
+
+- [x] Consolidate research-led idea intake, evidence receipts, true author voice, real reader questions, rights, source and duplication checks, distinct knowledge-versus-HTML-versus-publishing layers, staged human approval, portable channel editions, actual publication receipts, correction history, meaningful measured outcomes and `NO_POST`.
+- [x] Specify JSON catalogues as publishing/discovery metadata without assuming their original source platform matches the media directory; defer a possible virtual Social Media hub.
+- [ ] Before implementation, find and inspect current Aletheia LinkedIn Check/Publisher source in its owning repository; reconcile any newer project notes. Do not build a competing tool.
+- [ ] Prototype a synthetic Markdown-only idea → research → draft → QA → exact-revision approval → manual export → actual URL receipt path, including no-post and revoked/edited approval tests.
+- [ ] Later, consider an accessible UI, editorial calendar or permitted social API only where proven useful, with independent human approval of a publication action. No unsolicited DMs, invented testimonials or unverified growth/time-saved claims.
+
+**Acceptance for this work session:** detailed idea file committed, tasks/ideas/README crosslinked; future app and live verification accurately marked TODO.
