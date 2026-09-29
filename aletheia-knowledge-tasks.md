@@ -4,7 +4,7 @@
 >
 > **Working rule:** Read `README.md`, `aletheia-knowledge-GUI.md`, `aletheia-knowledge-code.md`, this file and the specific current collection/page files before working. GitHub is the shared master, but reconcile any newer local edits rather than silently discarding them.
 >
-> **Last task-list update:** 2026-09-26. These are project tasks, not scheduled ChatGPT reminders.
+> **Last task-list update:** 2026-09-29. These are project tasks, not scheduled ChatGPT reminders.
 
 ## Priority #001 cross-project | Worldwide Discover evidence and editorial layer
 
@@ -415,3 +415,19 @@ Measure with Search Console and available analytics before scaling. Record:
 - whether the page earns discovery beyond branded searches.
 
 Do not build a strategy around retired FAQ rich results or assume `llms.txt` improves Google ranking. Keep ordinary crawlable HTML, internal links, sitemap/canonical hygiene and supported structured data as foundations.
+
+### AK-091 | TODO / FIRST PILOT | Aletheia Learning Paths
+
+**Approved 2026-09-29.** Capture the Learning Paths idea (see `aletheia-knowledge-ideas.md`) and start with one researched, demonstrably useful pilot rather than immediately deploying a generic seven-course app. This is a project task, **not a scheduled automation**.
+
+**First source:** Justin Sung, [How to Learn So Fast People Assume You're Naturally Gifted](https://www.youtube.com/watch?v=nIABz0Z4IRA), linked from [Sabrina Ramonov's seven-video reel](https://www.instagram.com/reel/Ddwd_33ANhs/). Check the original video/available creator material and independently source significant learning claims; don't infer unviewed content from thumbnails or secondary descriptions.
+
+- [ ] Re-read current README, GUI, code, ideas/tasks, AGENTS, AI Knowledge source/app and applicable page specs. Inventory overlapping features before creating anything.
+- [ ] Verify the exact pilot video URL, creator, original title, source availability, quotations and methods; attach a dated source receipt and clearly record anything not viewed.
+- [ ] Prepare a *draft* canonical Knowledge card/lesson: direct answer, concise original explanation, source-vs-interpretation, claim/evidence/uncertainty, a short learning exercise and a specific MicroStation worked example. Explore the "Confusion Compass" idea with correct attribution if supported.
+- [ ] Prepare a mobile-first proof of concept fitting existing reader conventions: visible useful introduction before MORE; original source opening separately; optional interactive "What exactly confuses you?" prompt; accessible controls; optional local-only progress.
+- [ ] Test links, source labelling, factual claims, copyright/attribution, mobile layout, no duplicate content and a learner's ability to complete the exercise. Human approval before making it a published collection.
+- [ ] After pilot acceptance, research all seven reel links/timestamps and creators (Confidence, Learning, AI Basics, Mindset, Business, AI Agents, Content); build original lessons and distinguish commercial/self-recommendations; link relevant existing Aletheia projects without making seven clone apps.
+- [ ] If/when actually published, create/update the reader's `*-page.md`, appropriate `knowledge/*.md`, `knowledge/knowledge.json`, resources and public index; keep the Swindon.org.uk answer-first front door distinct from the deeper Knowledge reader.
+
+**Acceptance:** one evidence-backed, original, accessible lesson; functioning direct original-source link; meaningful claim/uncertainty labels; one executable practice activity; accurate attribution; relevant local/mobile tests recorded. Report actual changed paths/commit and distinguish draft from verified public deployment.
