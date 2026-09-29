@@ -508,3 +508,19 @@ Implemented on the entry: seven static crawlable HTML source cards, original You
 - [ ] Later, consider an accessible UI, editorial calendar or permitted social API only where proven useful, with independent human approval of a publication action. No unsolicited DMs, invented testimonials or unverified growth/time-saved claims.
 
 **Acceptance for this work session:** detailed idea file committed, tasks/ideas/README crosslinked; future app and live verification accurately marked TODO.
+
+### AK-098 | KNOWLEDGE SAVED / PILOT TODO | Free Google/Bing Search Intelligence and affiliate research
+
+**Added 29 September 2026.** User asked for source-based extraction from Revenue Tactics' promotional course/tool descriptions, especially ClickBank, then free official Google/Bing alternatives and reusable improvements for Trust Check, Improve, Discover and Publisher. Source-checked canonical note: [knowledge/aletheia-free-search-intelligence.md](knowledge/aletheia-free-search-intelligence.md). It is registered in `knowledge/knowledge.json` and linked from visible `knowledge/index.html`. Cross-project GUI/rules/development/ideas and Publisher proposal updated. **This is a project task, not a scheduled reminder or an app already built.**
+
+- [x] Independently identify free Google Trends, Bing Webmaster Keyword Research, Google Search Console and Bing Webmaster Search Performance/AI Performance; distinguish sampled relative interest, estimated keyword volume, verified-site metrics and AI citation groups.
+- [x] Record optional access restrictions: Google Ads Keyword Planner needs completed Ads account/billing; Microsoft Ads Planner needs advertiser account; Microsoft Clarity is free but requires a privacy/consent assessment before installation. Record Revenue Tactics vendor/affiliate provenance and current ClickBank fee distinctions.
+- [x] Write one portable source-traced knowledge file, index it, add GUI and code/data rules, AGENTS routing, README, idea and Publisher crosslink. No commercial course content copied or paid service activated.
+- [ ] Read actual current source/docs in the owning Aletheia Improve, Trust Check, Discover and Publisher repositories before any implementation; reconcile overlapping work. Do not create a duplicate app.
+- [ ] Run a **manual, free-first pilot**: one UK local question (e.g., what people ask about Swindon) and one worldwide comparison (e.g., Oslo), with explicit location, language and time range. Export only permitted publicly available or own verified-property data and keep source receipts.
+- [ ] If the user explicitly connects/authorises their verified properties, evaluate Search Console/Bing CSV first, then read-only official APIs with error, quota, privacy, consent and revoked-access handling. Never request billing/advertiser setup as an assumed prerequisite for a free app.
+- [ ] Proposed reusable UI: WHAT PEOPLE ASK / TRENDING / OUR PAGES / IMPROVEMENT IDEAS. Test independent metric units, a missing-data state, mobile/desktop, user-location permission denied and outside-UK location. Label AI grounding phrases as aggregates, not exact prompts.
+- [ ] Trial ethical improvement of a small number of existing source-backed pages and compare like-for-like observations without promising rankings, revenue or causal uplift. Human sign-off before publication or affiliate link changes.
+- [ ] Evaluate ClickBank only as an optional merchant research lead, checking actual offer quality, claims, UK compliance, terms, affiliate conflict and current fee/account conditions. No sign-up or monetisation decision is implied.
+
+**Acceptance now:** canonical knowledge, manifest/index, GUI, code/agent rules, ideas/tasks/Publisher references committed. **Not accepted as done:** real account dashboard access, an actual cross-platform search-volume export, deployed Search Intelligence UI, site installs, analytics consent work or live traffic improvements.
