@@ -431,3 +431,22 @@ Do not build a strategy around retired FAQ rich results or assume `llms.txt` imp
 - [ ] If/when actually published, create/update the reader's `*-page.md`, appropriate `knowledge/*.md`, `knowledge/knowledge.json`, resources and public index; keep the Swindon.org.uk answer-first front door distinct from the deeper Knowledge reader.
 
 **Acceptance:** one evidence-backed, original, accessible lesson; functioning direct original-source link; meaningful claim/uncertainty labels; one executable practice activity; accurate attribution; relevant local/mobile tests recorded. Report actual changed paths/commit and distinguish draft from verified public deployment.
+
+
+### AK-092 | PUBLISHED SOURCE / LIVE VERIFY | Aletheia YouTube Library, first collection
+
+**Approved and implemented 2026-09-29.** This is an ongoing project task, not a scheduled automation. User requested a folder-based library in this repository rather than a Swindon.org.uk resource: `youtube/` is the library; every descriptively named HTML file is a standalone entry with its own page title, canonical path, crawlable source information, SEO/AEO/GEO-ready answers and direct share URL. The folder’s `index.html` explicitly links entries, since GitHub Pages does not generate directory listings automatically.
+
+Published GitHub source: `youtube/index.html`, `youtube/aletheia-7-videos-7-skills.htm`, `youtube/README.md`, `youtube/aletheia-7-videos-7-skills-page.md`. Entry title: **7 Videos. 7 Skills.** First source: Sabrina Ramonov’s original Instagram reel `Ddwd_33ANhs`. No claim of endorsement or a complete fact-check of all seven videos.
+
+Implemented on the entry: seven static crawlable HTML source cards, original YouTube thumbnails loaded by URL with fallback, source timestamps where supplied, independent Aletheia mini-tasks, browser-local progress, expandable AI-agent examples, decorative twinkling stars respecting reduced-motion settings, FAQ/answers, canonical/OG metadata, JSON-LD ItemList, free Aletheia sources, disclosed optional subject books and Halloween/Christmas book gifts. Book links use Aletheia’s existing Bookshop.org UK affiliate ID **18254**, not another storefront. Generic official UK gift-card details are labelled non-affiliate because an Aletheia gift-card affiliate URL was not verified. Awin MasterTag 3182162 should appear once.
+
+- [x] Create the first self-contained entry under `youtube/` and record original post ID/curator/video IDs.
+- [x] Add standalone `youtube/index.html` with the first title and permanent URL, library README and adjacent page specification.
+- [x] Add direct homepage navigation and update project task/idea documentation.
+- [ ] Verify GitHub Pages direct entry and folder index are actually deployed, that all seven original videos/timestamps/creator attributions remain accurate, and that thumbnails/gift retailer pages are live.
+- [ ] Test on Android and desktop: readability, no horizontal scroll, all source links, accessibility, checkbox persistence, thumbnail fallbacks, reduced motion, starfield and sharing button. Fix any issues before announcing broad social sharing.
+- [ ] Create an original social-preview PNG for OG/Twitter metadata, respecting third-party thumbnail licensing; check actual previews on social platforms.
+- [ ] Review deeper claims individually via AK-091, beginning with Justin Sung; do not pass off short descriptions as full-video analyses.
+- [ ] Future imported 7/8/11-video collections: verify source URLs/titles/creators and post ID, deduplicate original video references, produce new unique `youtube/<descriptive-slug>.htm`, new adjacent `*-page.md` and approved title/card in the static folder index. New content requires human review, not auto-posting.
+- [ ] Optional gifts follow-up: verify any Bookshop gift-card affiliate route, consider a dedicated Aletheia gift collection when relevant, and keep free video access prominent.
