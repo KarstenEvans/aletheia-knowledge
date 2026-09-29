@@ -95,6 +95,14 @@
       "status": "knowledge-only",
       "knowledge": "aletheia-creator-os-content-system.md",
       "description": "Ten original knowledge cards extracting reusable content-system principles from a post-signup promotional offer; no HTML, purchase, template clone or autoposting."
+    },
+    {
+      "slug": "aletheia-free-search-intelligence",
+      "title": "Free Search Intelligence: Google, Bing and affiliate research",
+      "kind": "research",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-free-search-intelligence.md",
+      "description": "Source-checked free-first keyword, trends, site performance, Bing AI citations and affiliate-marketing methods; no paid tools or app deployment."
     }
   ]
 }
