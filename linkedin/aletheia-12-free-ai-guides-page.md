@@ -5,7 +5,7 @@
 **Status:** GitHub source committed 29 September 2026, public Pages/mobile checks pending. **Task:** AK-094.
 
 - Public HTML: https://karstenevans.github.io/aletheia-knowledge/linkedin/aletheia-12-free-ai-guides.htm
-- Public folder index: https://karstenevans.github.io/aletheia-knowledge/linkedin/
+- Public folder index: https://karstenevans.github.io/aletheia-knowledge/linkedin/ (`linkedin/index.html` plus the separately maintained `linkedin/index.json`; both must agree on title, path and source provenance).
 - Main source Markdown: `../knowledge/aletheia-12-free-ai-guides.md`, containing 12 original-resource knowledge cards and 3 derived portable-method cards.
 - Collection link and artwork provenance: two user-provided 29 September screenshots; Chris Donnelly's original `https://lnkd.in/p/e9PRGswQ`. Do not replace with another indexed twelve-resource list.
 - Related maintained public folder front door: `knowledge/index.html` plus manifest `knowledge/knowledge.json`.
