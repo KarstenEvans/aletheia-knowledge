@@ -469,3 +469,17 @@ Implemented on the entry: seven static crawlable HTML source cards, original You
 - [ ] Only with further approval, consider safe remediation guidance for original editable source models and controlled republishing. No client/project data in public GitHub.
 
 **Acceptance:** reproducible attribution of an actual warning to the exact separate file amongst representative attached references, using verified read-only file activation; accurate reports and unchanged design inputs. Document unsupported package types and API limitations rather than inventing success.
+
+### AK-095 | KNOWLEDGE COMPLETE / DEVELOPMENT BACK BURNER | Creator OS upsell lessons for Aletheia Publisher
+
+**Added 29 September 2026.** User supplied post-free-LinkedIn-course-signup Creator OS sales page and expressly requested **knowledge-only**, not an HTML page. Source-traced original knowledge: [knowledge/aletheia-creator-os-content-system.md](knowledge/aletheia-creator-os-content-system.md). Registered in `knowledge/knowledge.json` and crosslinked from `knowledge/aletheia-12-free-ai-guides.md`. The earlier item 10 **Claude Content OS** and this separate paid **Creator OS** Notion framework must not be confused.
+
+- [x] Record marketed terms and claims as attributed advertising, not proven outcomes: stated $49 one-time versus $100 usual, 51% offer, bonus mini-courses, 3 million follower and 100+ hours/month claims, and seller-hosted testimonials. No purchase made or recommended.
+- [x] Extract ten independent knowledge cards: idea inbox, truthful editorial voice, grounded audience questions, editorial state machine, platform editions, evidence-led ideas, useful writing/visuals, collaboration receipts, measurement and free-vs-paid distinction.
+- [x] Research relevant independent official Notion calendar/database features and LinkedIn's human-voice/AI-assistance guidance; mark what was/was not accessed.
+- [x] Register the Markdown-only source in the explicit Knowledge manifest; maintain original source and separate marketing context. **No HTML changes, public page, auto-posting, email-connection changes or new paid service for this task.**
+- [ ] If the promised free course arrives, inspect user-provided materials/notes and extract original learning takeaways separately with copyright and evidence safeguards. Do not assume delivery or access now.
+- [ ] When Aletheia LinkedIn Publisher is actually revisited, compare existing LinkedIn Check/Publisher and current GitHub guides before deciding whether a portable idea → source → draft → review → approval → channel edition record adds value.
+- [ ] Use synthetic posts to test duplicate detection, `NO POST` branch, human approval, correction, rights and observed time savings. No unattended publishing or invented client outcomes.
+
+**Acceptance for knowledge stage:** independent Markdown content saved, manifest/crosslink updated, advertising claims labelled, no HTML changed. App/product development remains TODO rather than marked built.
