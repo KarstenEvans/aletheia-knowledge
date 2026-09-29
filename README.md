@@ -19,6 +19,9 @@ Before editing, read those three guides **and** the current target Markdown/HTML
 - `knowledge/` — Markdown knowledge libraries.
 - `knowledge/knowledge.json` — explicit machine-readable inventory of published collections; the static site must not pretend it can enumerate a GitHub folder at runtime.
 - `resources/` — resource / book / gift pages linked from the apps.
+- `youtube/` — standalone source-attributed YouTube-media companions, with `index.html` for people and `index.json` as a maintained manifest; the original recommendation may have come from another platform.
+- `linkedin/` — standalone LinkedIn-source companions, likewise with `index.html` and `index.json`. Keep published paths stable; do not physically move the two libraries into a common folder merely to combine navigation.
+- `ideas/aletheia-publisher.md` — consolidated research-first, human-approved **Aletheia Publisher** idea. Future optional virtual Social Media aggregation can read both JSON catalogues without changing existing public URLs.
 
 ## Current app
 
