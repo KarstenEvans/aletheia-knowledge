@@ -6,6 +6,17 @@
 >
 > **Last task-list update:** 2026-09-26. These are project tasks, not scheduled ChatGPT reminders.
 
+## Priority #001 cross-project | Worldwide Discover evidence and editorial layer
+
+**Status: TODO / DESIGN, 29 September 2026.** Technical ID **AK-DISCOVER-001** (retain existing AK-001 etc. identifiers). Linked to SwindonOrgUK Idea #001 / Task #001 and app Discover task #001.
+
+- [ ] Define reusable source receipt fields: title, original URL, publisher, original language, claim/result type, published/updated/checked dates, place/time zone, evidence/conflict, original-vs-translation status, expiry for events.
+- [ ] Separate dynamic location results from vetted durable Knowledge cards. Never auto-promote fetched search snippets to canonical knowledge.
+- [ ] Draft source-attributed summary template and multilingual quality check; no invented local journalists or first-person local experience.
+- [ ] Define single Aletheia editorial feed: optional place, subject and language filters, a Swindon view, explicit original RSS/licensing permissions, no auto-created per-city newsletters or cloned SEO pages.
+- [ ] Set free-first and affiliate-evidence separation plus human editorial approval; use a pilot with actual Swindon, Cardiff, Oslo and Ayutthaya queries.
+- [ ] Validate first pilot before promoting into the public index or claiming live capabilities.
+
 ## How to use this register
 
 Each task should have a short ID, priority, status, scope/files, acceptance test and concise dated progress notes. Update this file in the **same work session** as accepted code/content changes, whenever possible.
