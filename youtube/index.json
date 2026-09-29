@@ -1,0 +1,32 @@
+{
+  "schema": "aletheia-social-library-manifest-v1",
+  "library": "Aletheia YouTube Learning Library",
+  "folder": "youtube",
+  "updated": "2026-09-29",
+  "index_html": "index.html",
+  "public_index_url": "https://karstenevans.github.io/aletheia-knowledge/youtube/",
+  "purpose": "Manually curated, human-approved source-attributed collection index; no automatic folder listing or bulk publication.",
+  "entries": [
+    {
+      "id": "AY-001",
+      "slug": "aletheia-7-videos-7-skills",
+      "title": "7 Videos. 7 Skills.",
+      "html": "aletheia-7-videos-7-skills.htm",
+      "page_spec": "aletheia-7-videos-7-skills-page.md",
+      "public_url": "https://karstenevans.github.io/aletheia-knowledge/youtube/aletheia-7-videos-7-skills.htm",
+      "origin": {
+        "platform": "Instagram",
+        "curator": "Sabrina Ramonov",
+        "original_url": "https://www.instagram.com/reel/Ddwd_33ANhs/",
+        "source_id": "Ddwd_33ANhs"
+      },
+      "linked_media_platform": "YouTube",
+      "media_count": 7,
+      "format": "original-editorial-companion",
+      "source_date": "not confirmed",
+      "assembled_on": "2026-09-29",
+      "status": "github-source-committed-live-check-pending",
+      "notes": "Individual original video URLs and timestamps reside in the HTML and adjacent page spec. This folder groups YouTube learning resources even when their recommendation originated on Instagram."
+    }
+  ]
+}
