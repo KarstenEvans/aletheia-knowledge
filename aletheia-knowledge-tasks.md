@@ -450,3 +450,22 @@ Implemented on the entry: seven static crawlable HTML source cards, original You
 - [ ] Review deeper claims individually via AK-091, beginning with Justin Sung; do not pass off short descriptions as full-video analyses.
 - [ ] Future imported 7/8/11-video collections: verify source URLs/titles/creators and post ID, deduplicate original video references, produce new unique `youtube/<descriptive-slug>.htm`, new adjacent `*-page.md` and approved title/card in the static folder index. New content requires human review, not auto-posting.
 - [ ] Optional gifts follow-up: verify any Bookshop gift-card affiliate route, consider a dedicated Aletheia gift collection when relevant, and keep free video access prominent.
+
+
+### AK-093 | PRIORITY RESEARCH / TODO | Aletheia CAD Assistant: iDGN reference-warning attribution
+
+**Approved 2026-09-29.** This is a priority development task, **not** cross-project Priority #001. Full idea/specification and handover: [ideas/aletheia-cad-idgn-reference-diagnostic.md](ideas/aletheia-cad-idgn-reference-diagnostic.md). Separate personal reminders are scheduled for 30 September, 1 October and 2 October 2026 (UK mornings); they do not constitute implementation.
+
+**Problem:** an active MicroStation master with many read-only published \`.i.dgn\` references may report a large level-name dictionary warning, but the current Compress Design / Include References route does not reliably give the operator a retained mapping to offending individual files. Distinguish actual standalone published iDGN files from embedded packaged reference models; direct-open/Exchange behaviour and warning hooks are hypotheses to test.
+
+- [ ] Gather exact MicroStation/OpenBuildings build, workspace/ProjectWise context, matching SDK documentation and authorised anonymised sample master + references.
+- [ ] Confirm full Message Center warning text and whether it arises on each candidate's **active-file open**, not merely reference load.
+- [ ] Enumerate attachment-to-file-to-model relationships, nested and repeated references, resolution/permissions, embedded status and cycles; preserve provenance.
+- [ ] Manually verify XD=/Reference Exchange or direct read-only open on an actual separate iDGN, how to restore the master, and what happens with an embedded reference.
+- [ ] Establish a persistent startup message/event logging approach that survives active-file changes; positively verify actual active file identity before attribution.
+- [ ] Write small non-destructive proof-of-concept (VBA vs matching MDL/.NET SDK, optional MicroStation-driven Python orchestration), with checkpoint/error recovery and **no Compress or Save**.
+- [ ] Export individual file names, warning receipts, status and timings as CSV/JSON plus readable Markdown/HTML; preserve INCONCLUSIVE/EMBEDDED/MISSING/ACCESS DENIED states.
+- [ ] Test negative, known-positive, duplicate, nested, embedded, ProjectWise and 50-reference cases; check files unchanged. Quantify observed rather than claimed time savings.
+- [ ] Only with further approval, consider safe remediation guidance for original editable source models and controlled republishing. No client/project data in public GitHub.
+
+**Acceptance:** reproducible attribution of an actual warning to the exact separate file amongst representative attached references, using verified read-only file activation; accurate reports and unchanged design inputs. Document unsupported package types and API limitations rather than inventing success.
