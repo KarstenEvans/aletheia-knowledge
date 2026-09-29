@@ -163,3 +163,25 @@ Research in September 2026 found an advertising/landing-page pattern worth learn
 The presence of `googleads.g.doubleclick.net` indicates Google ad serving/click or conversion measurement infrastructure; it is **not evidence of an affiliate programme**. Google lead-form assets are Google Ads lead-generation tools, not an affiliate network.
 
 A hypothesis that some products may be white-label/dropshipped must remain a hypothesis unless supply-chain/product evidence establishes it. Do not turn visual similarity or consumer allegations into a factual claim.
+
+## Back-burner idea: Aletheia LinkedIn Publisher
+
+> **Status:** idea only; not a subscribed service, scheduled automation, deployed app or approved autoposter. Inspired by Maistro's generated LinkedIn strategy/collateral and Agorapulse's *Make Social Listening Count* ebook (supplied 29 September 2026). Assess later alongside the existing Aletheia LinkedIn Check and Aletheia Improve; avoid another independent content silo.
+>
+> **Method references:** [Aletheia Protocol](https://github.com/KarstenEvans/aletheia-protocol) for evidence, provenance, conflicts and uncertainty; [Thalia Protocol](https://github.com/KarstenEvans/thalia-protocol/blob/main/THALIA_PROTOCOL.md) for optional human humour, not compulsory jokes.
+
+**Problem.** Automated posting can churn out polished but repetitive material with little to teach the reader. In the supplied Maistro collateral, the same local-visibility pitch recurs across lead magnets, direct messages, YouTube scripts and reels. Some first-person customer stories, client numbers and outcome claims are not evidenced by the supplied material. Never silently adopt such examples as the author's achievements. A recognisable personal voice, original observation and genuinely useful information matter more than cadence.
+
+**Concept:** a research-first, approval-gated LinkedIn preparation and publishing workflow:
+1. **Listen:** begin with real questions, current developments, reader feedback, the user's chosen Aletheia/Swindon topics and source material, rather than generating a post because a calendar slot is empty.
+2. **Research and analyse:** verify relevant sources and live destinations, distinguish source facts, personal observations, inference, opinion, and illustrative examples; keep evidence/claim receipts. Treat the Agorapulse *Listen → Analyse → Act → Measure* loop as an inspiration, not a licence to scrape restricted platforms.
+3. **Draft with a consistent author voice:** a configurable personality/style card, topic lanes, intended audience and purpose. Use original examples, practical checks, meaningful takeaways, accessible language and appropriate Aletheia/Swindon resource links. Do not pretend Aletheia Knowledge is just a Swindon business directory.
+4. **Quality gate:** require an answer to 'What does somebody learn, discover or do differently after reading this?' Flag generic filler, clichés, excessive calls to action, repetition against the previous-post register, unverified testimonials, made-up client outcomes, uncertain claims and unattributed generated visuals. Offer **NO POST TODAY** as a successful outcome.
+5. **Human approval:** show the draft, sources, risks, suggested media, audience and destination in a review queue. Edit, reject or approve explicitly. Posting through LinkedIn must use a permitted, authorised route or provide a manual copy/schedule handoff; do not assume browser bots, automatic connection requests or bulk DMs are allowed.
+6. **Measure and learn:** store the approved post and actual publication status separately; capture engagement and useful responses only where lawfully available, then use them to adjust subjects and explanations. No invented analytics or promised reach.
+
+**Potential modes:** useful factual post; real project update; sourced myth/fact check; practical how-to; personal observation; light Thalia-style humour where suitable; and 'no post'. One good post with something to say beats thirty templated ones.
+
+**Maistro lesson:** reuse the *strategy → assets → review → publish → measure* planning shape, not its assumptions or first-person case studies. Its lead magnets may be an editorial prompt but are not evidence of real client work. Approximate advertised price reported by user is only background context, not independently verified current pricing.
+
+**Scope boundaries:** initial version could be a local Markdown brief/profile, draft queue and export/copy workflow. Defer any paid subscription, account connection, unattended publishing, DMs, growth promises and public app until explicit review. If progressed, create a dedicated task and inspect existing Aletheia LinkedIn Check files first.
