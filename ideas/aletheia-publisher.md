@@ -115,6 +115,12 @@ Block or flag: source-only marketing, manufactured urgency, copied paid material
 - Can export an approved post, short excerpt, image/alt text, source links and publication checklist. Records should survive a change of AI platform.
 - Any future app must be justified by real benefits such as visual state, comparison, calendar and evidence/history. Don't make a button-heavy wrapper around a prompt.
 
+### P11. Free search intelligence, not keyword-volume theatre (AK-098)
+
+Use [the source-checked Google/Bing research](../knowledge/aletheia-free-search-intelligence.md) to make reader-question selection more empirical while keeping original author perspective. Start with Google Trends (label relative interest, not search counts), Bing Webmaster Keyword Research (volume/question ideas), and owner-authorised Google/Bing site reports if actually connected or manually imported. Label geography/language/time window, estimated vs sampled vs property-only metrics, date and provenance. Bing AI Performance citations/grounding groups are optional observational AEO inputs, not exact user prompts or guaranteed traffic. No fake live numbers and no cross-engine sums.
+
+A trend is a **research prompt**, not a mandate to publish, a proven local event, an evidence source for a product claim, or permission to manufacture city clones. Keep the human editorial gate, authentic content, source checks, duplicate control and `NO_POST` intact. ClickBank and competitor tools are optional research *leads*; paid ad-spy tools, Ads billing, purchase/affiliate enrolment, recording trackers and ad campaigns are excluded without separate explicit approval. Test one manual free-first pilot and review performance using comparable own-property observations.
+
 ## 5. Suggested portable data contract (future, not created)
 
 ```yaml
