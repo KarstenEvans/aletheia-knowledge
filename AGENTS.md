@@ -26,6 +26,7 @@ For protocol questions, use the canonical repository:
 - External or secondary destinations normally open separately when preserving the current app matters; on mobile or when popups are blocked, use a normal new tab/fallback. Do not double-open one click.
 - Never claim a page, link, deployment or test is live/passed unless it was actually checked.
 - Do not put affiliate conversion into factual knowledge or evidence links.
+- For Google/Bing keyword or affiliate research, follow [Free Search Intelligence](knowledge/aletheia-free-search-intelligence.md): free official sources first; distinguish relative Trends interest, search-volume estimates, own-property impressions/clicks and AI citations. Do not add paid tools, billing, account connections, scraping, tracking or auto-publishing without explicit approval.
 
 ## Agent/action boundary
 
