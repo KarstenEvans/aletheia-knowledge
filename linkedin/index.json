@@ -1,0 +1,34 @@
+{
+  "schema": "aletheia-social-library-manifest-v1",
+  "library": "Aletheia LinkedIn Learning Library",
+  "folder": "linkedin",
+  "updated": "2026-09-29",
+  "index_html": "index.html",
+  "public_index_url": "https://karstenevans.github.io/aletheia-knowledge/linkedin/",
+  "purpose": "Manually curated, human-approved source-attributed independent companions to original LinkedIn collections.",
+  "entries": [
+    {
+      "id": "AL-001",
+      "slug": "aletheia-12-free-ai-guides",
+      "title": "12 Free AI Guides: What's Actually Included?",
+      "html": "aletheia-12-free-ai-guides.htm",
+      "page_spec": "aletheia-12-free-ai-guides-page.md",
+      "knowledge": "../knowledge/aletheia-12-free-ai-guides.md",
+      "public_url": "https://karstenevans.github.io/aletheia-knowledge/linkedin/aletheia-12-free-ai-guides.htm",
+      "origin": {
+        "platform": "LinkedIn",
+        "curator": "Chris Donnelly",
+        "original_url": "https://lnkd.in/p/e9PRGswQ",
+        "source_id": "e9PRGswQ",
+        "receipt": "two reader-supplied screenshots; shortlink direct retrieval not confirmed"
+      },
+      "linked_media_platform": "multiple publisher education sites",
+      "media_count": 12,
+      "format": "original-editorial-companion",
+      "source_date": "not confirmed",
+      "assembled_on": "2026-09-29",
+      "status": "github-source-committed-live-check-pending",
+      "notes": "Twelve source-linked resources, independent summaries and exercises; a separate 15-card Knowledge file. Not twelve accredited certificates. The later Creator OS upsell is knowledge-only and has no LinkedIn collection HTML."
+    }
+  ]
+}
