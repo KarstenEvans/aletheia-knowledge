@@ -193,3 +193,21 @@ A hypothesis that some products may be white-label/dropshipped must remain a hyp
 **Maistro lesson:** reuse the *strategy → assets → review → publish → measure* planning shape, not its assumptions or first-person case studies. Its lead magnets may be an editorial prompt but are not evidence of real client work. Approximate advertised price reported by user is only background context, not independently verified current pricing.
 
 **Scope boundaries:** initial version could be a local Markdown brief/profile, draft queue and export/copy workflow. Defer any paid subscription, account connection, unattended publishing, DMs, growth promises and public app until explicit review. If progressed, create a dedicated task and inspect existing Aletheia LinkedIn Check files first.
+
+## Idea: Aletheia Learning Paths — turn curated sources into checked, actionable learning (29 September 2026)
+
+> **Status:** APPROVED IDEA / FIRST PILOT PLANNED; no new app or public page has yet been deployed. **Related task:** AK-091 in `aletheia-knowledge-tasks.md`.
+>
+> **Method:** [Aletheia Protocol](https://github.com/KarstenEvans/aletheia-protocol) for source receipts, evidence, conflicts and uncertainty; [Thalia Protocol](https://github.com/KarstenEvans/thalia-protocol/blob/main/THALIA_PROTOCOL.md) for optional, context-appropriate humour.
+
+**Inspiration:** Sabrina Ramonov's [seven-video Instagram reel](https://www.instagram.com/reel/Ddwd_33ANhs/). Reuse the clear seven-topic visual navigation and properly credit/link creators; do not copy thumbnails, transcripts, scripts or exact creative expression without applicable permission. An engagement CTA such as "comment MASTERY" is not an evidence credential.
+
+**Purpose:** Curate source videos, articles or documents into independent, accessible mini learning paths that answer: What is being taught? What evidence supports it? What is uncertain or sales-oriented? What can someone actually practise? This is a Knowledge format and optional reader feature, not seven standalone apps or an unattended AI content mill.
+
+**Proposed reader card:** original title, creator/publisher, verified canonical URL, date checked, source type and permitted image/preview; plain-language summary; claims table (SUPPORTED / PLAUSIBLE / UNSUPPORTED / NOT CHECKED with links and meaningful caveats); demonstrated method vs Aletheia interpretation; practical exercise; a self-asked "Where am I confused?" prompt; optional learner progress saved locally; further sources and relevant existing Aletheia/Swindon pages. Show visible value before MORE. Never imply the entire original video was watched where only descriptions/secondary transcripts were reviewed; avoid bulk republishing copyrighted transcripts.
+
+**First pilot: Learning / Justin Sung.** [How to Learn So Fast People Assume You're Naturally Gifted](https://www.youtube.com/watch?v=nIABz0Z4IRA). Investigate and accurately attribute the proposed "Confusion Compass" learning exercise using accessible primary/source material; test it through a concrete worked example (e.g. someone struggling to learn a MicroStation operation). Build one fully researched canonical Markdown card plus an optional small, non-disruptive interactive proof of concept. Distinguish any Aletheia-made teaching prompts from what Sung actually says.
+
+**Next pilot collection:** the seven headings from the reel: Confidence, Learning, AI Basics, Mindset, Business, AI Agents, Content. Preserve source links and original creators, verify each transcribed URL and timestamp before publication, research commercial relationships, check relevant claims, and draft each card separately. Cross-link Aletheia AI Knowledge, Improve and LinkedIn Check/Publisher where genuinely useful; reuse the existing reader conventions, GUI, code guide, page specification and `knowledge/knowledge.json` on actual publication. Human editorial approval is mandatory before publishing, sending or scheduling anything. Source links must remain distinguishable from optional disclosed resource/affiliate links.
+
+**Expansion gate:** evaluate whether the one-card pilot is useful on mobile, whether its source receipts stand up to scrutiny and whether someone can complete its exercise. Only then consider the seven-card path and a reusable template. No automatic posting or separate city-site network.
