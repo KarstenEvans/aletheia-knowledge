@@ -32,6 +32,13 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ## Knowledge libraries
 
+### Creator OS content-system research (knowledge only)
+- Original analysis: [knowledge/aletheia-creator-os-content-system.md](knowledge/aletheia-creator-os-content-system.md) (ten source-traced original cards, added 29 September 2026).
+- Distinguishes Chris Donnelly's advertised post-signup **paid Creator OS Notion framework** from the separate promised free course and earlier **Claude Content OS** link in the [12 Free AI Guides knowledge notes](knowledge/aletheia-12-free-ai-guides.md).
+- Reuses the content-workflow ideas as a possible future extension of Aletheia LinkedIn Publisher; no purchase, HTML reader, Notion clone or automatic social posting exists for this research task. Tracked as AK-095.
+
+
+
 ### Aletheia AI Knowledge
 
 - Public app: https://karstenevans.github.io/aletheia-knowledge/app/aletheia-ai-knowledge.htm
