@@ -361,6 +361,10 @@ For twelve-guide collections, separate official training, publicly readable PDF,
 
 ---
 
+## Related note: the post-signup Creator OS offer (separate paid upsell)
+
+The user later supplied Chris Donnelly's **Creator OS** post-free-course-signup sales page, which advertises a separate $49 Notion framework and four bonus mini-courses. Its reusable content-system concepts, original Aletheia workflows and clear marketing/evidence labels are recorded in [Aletheia Content System: Creator OS lessons](aletheia-creator-os-content-system.md). This is a knowledge-only research note, **not** the free course, an inspected Notion template, or the item 10 **Claude Content OS** link above; do not silently conflate them. No purchase, HTML or automatic publishing was made for this follow-up.
+
 ## Maintenance and crosslinks
 
 - Public companion reader: https://karstenevans.github.io/aletheia-knowledge/linkedin/aletheia-12-free-ai-guides.htm
