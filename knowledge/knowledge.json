@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -103,6 +103,15 @@
       "status": "knowledge-only",
       "knowledge": "aletheia-free-search-intelligence.md",
       "description": "Source-checked free-first keyword, trends, site performance, Bing AI citations and affiliate-marketing methods; no paid tools or app deployment."
+    },
+    {
+      "slug": "aletheia-judgment-over-output",
+      "title": "Judgment Over Output",
+      "kind": "research",
+      "status": "published",
+      "knowledge": "aletheia-judgment-over-output.md",
+      "app": "https://karstenevans.github.io/aletheia-app/aletheia-decision-check/aletheia-decision-check.htm",
+      "description": "Decision-support design: assumptions, evidence, challenge, pre-mortem, uncertainty, Quiet Mode and a deliberate STOP rule."
     }
   ]
 }
