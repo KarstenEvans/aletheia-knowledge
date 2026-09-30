@@ -1,0 +1,20 @@
+{
+  "schema": "aletheia-cabinet-index-v1",
+  "updated": "2026-09-30",
+  "items": [
+    {
+      "title": "Case File 42: The Artificial Intelligence That Vanished Into Everything",
+      "path": "case-file-42-the-ai-that-vanished-into-everything.htm",
+      "kind": "case-file",
+      "status": "published",
+      "date": "2026-09-30"
+    },
+    {
+      "title": "Sif, Archaeologist of the AI Age | OpenAI Video Archive",
+      "path": "aletheia-openai-video-archive.htm",
+      "kind": "digital-archive",
+      "status": "published",
+      "date": "2026-09-30"
+    }
+  ]
+}
