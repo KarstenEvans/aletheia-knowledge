@@ -291,3 +291,11 @@ Preserve these as future Storyteller / ToomorrowMan + AI-PI seeds:
 
 These principles should be reused by Aletheia Knowledge, Improve, Storyteller, Assistant, Publisher and Protocol-compatible agent tooling without claiming that the source articles themselves constitute protocol amendments.
 
+### Additional story seed — The Bazaar Where the Buyers Were Invisible
+
+A busy market appears strangely empty because invisible assistants are comparing stalls for their humans. One stall vanishes from every shortlist because its labels contradict each other and nobody can tell whether anything is in stock.
+
+**Lesson:** AI can become the intermediary between people and shops; trustworthy, current information affects discoverability, while purchase authority still requires explicit delegation.
+
+This came from the third AI Journal walkabout and is recorded with sources in [ideas/aletheia-ai-journal-gold-mine.md](ideas/aletheia-ai-journal-gold-mine.md).
+
