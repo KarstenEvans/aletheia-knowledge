@@ -545,3 +545,92 @@ This is deliberately an implementation suggestion, not a claim that the apps alr
 7. Develop one story first: **The AI That Said It Had Finished**, because it teaches the central Aletheia distinction between assertion and evidence.
 
 The mine should remain open: revisit The AI Journal periodically, but only promote ideas that strengthen an existing Aletheia capability or fill a genuine gap.
+
+## 9. Third walkabout additions
+
+### J. Aletheia Small-Business Tool Fit Check
+
+Start with **the real problem, budget, team size, skill level and existing tools**, then find the smallest suitable AI route. Do not start with a directory of fashionable AI products.
+
+Checks:
+- problem to solve;
+- current manual cost/friction;
+- existing tool already capable?;
+- free/local/open-source option?;
+- setup burden;
+- ongoing subscription burden;
+- privacy/data risk;
+- measurable benefit;
+- exit/export route.
+
+This can become a mode inside **Make or Buy** rather than a separate app.
+
+Sources:
+- https://aijourn.com/why-most-small-businesses-are-using-the-wrong-ai-tools-and-how-to-find-the-right-ones/
+- https://aijourn.com/ai-for-small-business-whats-actually-useful-vs-the-hype/
+
+### K. Aletheia Agentic Commerce Readiness
+
+AI assistants increasingly act as discovery and buying intermediaries. Aletheia Site Audit / Shop Price / Publisher could eventually inspect whether a merchant is legible and safe for machine-mediated shopping.
+
+Possible checks:
+- clear structured product identity;
+- current price/stock/variant data;
+- shipping/returns;
+- merchant identity;
+- product provenance;
+- machine-readable offers where appropriate;
+- separation of recommendation from transaction authority;
+- maximum spend / category / merchant constraints;
+- human confirmation threshold;
+- transaction receipt and cancellation/return route.
+
+**Aletheia boundary:** discovery/comparison can be automated much further than purchase authority. Never infer permission to spend from permission to research.
+
+Sources:
+- https://aijourn.com/agentic-commerce-entering-a-new-era-of-personalised-shopping/
+- https://aijourn.com/agentic-commerce-when-ai-buys-on-your-behalf/
+- https://aijourn.com/when-the-buyer-is-a-bot-vladyslav-kolodistyi-on-agentic-commerce-and-the-checkout-built-for-ai-agents/
+
+### L. Accessibility co-design rule
+
+Accessibility should be tested with affected users and included during design, not appended after implementation.
+
+For Aletheia interfaces:
+- keyboard and screen-reader semantics;
+- adjustable text and speech;
+- reduced-motion;
+- clear language;
+- predictable navigation;
+- non-visual alternatives;
+- accessible onboarding/help;
+- real-user testing where possible.
+
+Source:
+- https://aijourn.com/disabled-people-key-to-ai-accessibility-new-poll-finds/
+
+### M. "Physical AI" consequence ladder
+
+When AI moves from text into machines, vehicles, industrial systems or other physical effects, verification and authority requirements should rise with consequence.
+
+Suggested Aletheia consequence ladder:
+1. **READ** — retrieve/observe.
+2. **DRAFT** — prepare content/plan.
+3. **DIGITAL WRITE** — alter reversible digital state.
+4. **EXTERNAL COMMIT** — publish/send/pay/permission change.
+5. **PHYSICAL EFFECT** — operate hardware or affect the physical environment.
+
+Higher levels require progressively stronger identity, authority, preconditions, receipts and recovery planning.
+
+Source:
+- https://aijourn.com/from-value-chains-to-value-engines-how-physical-ai-is-rewriting-the-enterprise/
+
+### N. Story seed — The Bazaar Where the Buyers Were Invisible
+
+The market is busy, but no customers are walking between the stalls. Instead, tiny invisible assistants whisper to the shopkeepers, compare labels and return to their humans with shortlists.
+
+One stall disappears from every recommendation because its labels are contradictory and nobody can tell whether anything is in stock.
+
+**Lesson:** machines can become intermediaries; clear trustworthy information affects discoverability, but spending authority still belongs to the person unless explicitly delegated.
+
+
