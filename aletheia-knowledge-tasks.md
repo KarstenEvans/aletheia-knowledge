@@ -524,3 +524,26 @@ Implemented on the entry: seven static crawlable HTML source cards, original You
 - [ ] Evaluate ClickBank only as an optional merchant research lead, checking actual offer quality, claims, UK compliance, terms, affiliate conflict and current fee/account conditions. No sign-up or monetisation decision is implied.
 
 **Acceptance now:** canonical knowledge, manifest/index, GUI, code/agent rules, ideas/tasks/Publisher references committed. **Not accepted as done:** real account dashboard access, an actual cross-platform search-volume export, deployed Search Intelligence UI, site installs, analytics consent work or live traffic improvements.
+
+### AK-099 | PRODUCTION PREP | The AI That Said It Had Finished — YouTube adaptation
+
+**Added 30 September 2026.** Canonical story and standalone HTML live in `KarstenEvans/aletheia-app`; this repository owns the existing YouTube media-library/publishing companion layer.
+
+Production pack:
+`youtube/drafts/aletheia-ai-that-said-it-had-finished-youtube.md`
+
+Core teaching:
+**ATTEMPTED → COMPLETED → VERIFIED** and **Done != verified done**.
+
+- [x] Read current YouTube library README, human index and JSON manifest before creating anything.
+- [x] Create a YouTube production pack with title options, description, nine-scene long-video plan, narration/sound direction, thumbnail concepts, four Shorts concepts, discovery phrases, source boundary and publication receipt.
+- [x] Link back to the canonical Storyteller story, standalone HTML and separate resource page rather than duplicating the full story into Knowledge.
+- [x] Keep affiliate links out of factual/source material; the draft description points to the separately disclosed resource page using Bookshop.org UK affiliate ID 18254.
+- [ ] Render and human-review an actual video.
+- [ ] Approve exact title, description, captions and thumbnail.
+- [ ] Publish through the authorised YouTube account and obtain the real video ID/URL.
+- [ ] Verify the published video, captions, description links and mobile playback.
+- [ ] Only then create the public YouTube-library HTML companion/page spec and add the entry consistently to `youtube/index.html` and `youtube/index.json`.
+
+**Do not index the draft as a published YouTube item.** Repository preparation is not evidence that a YouTube video exists.
+
