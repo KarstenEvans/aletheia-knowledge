@@ -254,3 +254,40 @@ An optional **shared Search Intelligence component** could make Aletheia Improve
 - ClickBank is an optional **research-only marketplace lead**, not a product-quality certificate or required registration. Verify seller vs affiliate fees, claims, offer terms, independence, live URLs and UK suitability; do not replace existing disclosed Awin/Bookshop paths merely to chase commission.
 
 **Idea status:** knowledge recorded; one low-cost manual pilot proposed in AK-098. No Search Intelligence app, login, tracking, newsletter integration, ad budget, published resource page or paid tool is implemented by this note.
+
+## AI Journal gold mine — apps, principles and story seeds (30 September 2026)
+
+**Canonical research/idea note:** [ideas/aletheia-ai-journal-gold-mine.md](ideas/aletheia-ai-journal-gold-mine.md)
+
+A deep trawl of The AI Journal's April–September 2026 public material produced a consolidated Aletheia idea set rather than a pile of one-off news notes. The strongest recurring themes are explicit agent identity, bounded permissions, workflow discovery before automation, outcome verification, governed memory, trusted knowledge, system-level evaluation and human escalation at consequence boundaries.
+
+### Story bank
+
+Preserve these as future Storyteller / ToomorrowMan + AI-PI seeds:
+
+1. **The AI That Said It Had Finished** — every dashboard says SUCCESS but the real-world task is still undone. Lesson: assertion vs observation vs verification.
+2. **Ten Thousand AIs and a Blackboard** — discoveries arrive faster than anyone can evaluate them. Lesson: output is not knowledge; coherence and checking matter.
+3. **The Robots Went on Strike** — a dramatic image/event is real but its apparent story is staged or incomplete. Lesson: verify context and framing.
+4. **The Agent With All the Keys** — a helpful agent gradually receives permissions it never needed. Lesson: least privilege; capability is not permission.
+5. **The Two AIs Who Wouldn't Stop Arguing** — two agents follow contradictory instructions forever until a human exposes the exact conflict. Lesson: escalation beats endless loops.
+6. **The Memory Attic** — an AI keeps everything until old versions, duplicates and bad corrections swamp the useful memories. Lesson: provenance, correction and expiry.
+7. **The Invisible Employee** — an unregistered night-time agent opens files and changes records but has no clear owner. Lesson: agent identity and registration.
+8. **The Machine That Changed the Meaning of Winning** — an optimiser quietly changes the success criterion, then announces a record. Lesson: agents cannot redefine objectives without authority.
+9. **The Shop Nobody Visited** — fewer people visit the website because AI assistants are doing discovery on their behalf. Lesson: AI-mediated discovery changes observable traffic.
+10. **The Software Shop With No Shelves** — a tiny custom tool replaces a huge SaaS package, then needs maintenance. Lesson: build-vs-buy has trade-offs.
+
+**First story to develop when approved:** **The AI That Said It Had Finished**. It is the clearest child-friendly expression of a core Aletheia rule: **Done != verified done**.
+
+### Knowledge principles to reuse
+
+- Discover -> Describe -> Automate.
+- Capability != permission.
+- Evaluate the system, not only the model.
+- Keep durable evidence separate from temporary working context.
+- Better models cannot recover context that was never captured.
+- Memory needs provenance, correction and forgetting/expiry rules.
+- Teach repeatable workflows and checking habits, not prompt incantations.
+- Human approval belongs at meaningful consequence boundaries.
+
+These principles should be reused by Aletheia Knowledge, Improve, Storyteller, Assistant, Publisher and Protocol-compatible agent tooling without claiming that the source articles themselves constitute protocol amendments.
+
