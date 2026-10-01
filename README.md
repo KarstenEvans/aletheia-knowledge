@@ -72,7 +72,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 ### Aletheia Windows Debloat Tool
 
 - Public tool: https://karstenevans.github.io/aletheia-app/aletheia-windows-debloat/aletheia-windows-debloat.htm
-- Role: read-only planning front end while the earlier Windows Rescue V1.0 scripts await an Aletheia Improve pass.
+- Role: safe planning front end plus optional Windows Rescue PowerShell companion. The 1 October 2026 Improve pass repaired the companion and added read-only Windows-managed storage measurement; real Windows 10/11 device verification remains pending.
 - Linked knowledge: `knowledge/aletheia-secret-windows.md`
 
 ### Aletheia Secret Windows
