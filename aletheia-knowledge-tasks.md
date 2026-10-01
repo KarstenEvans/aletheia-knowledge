@@ -547,3 +547,16 @@ Core teaching:
 
 **Do not index the draft as a published YouTube item.** Repository preparation is not evidence that a YouTube video exists.
 
+
+
+### AK-100 | UPDATED | Secret Windows storage recovery sync — 1 October 2026
+
+Cross-repository Aletheia Improve pass for `KarstenEvans/aletheia-app/aletheia-windows-debloat`.
+
+- [x] Add source-traced Secret Windows cards SW-OPT-022..024 and SW-REP-007 for hibernation, Delivery Optimization cache, pagefile sizing and the distinction between System Restore and Point-in-time restore.
+- [x] Update the knowledge version/review date and ASCII index.
+- [x] Replace stale resource/README wording that said the PowerShell companion was still waiting for an Improve pass.
+- [x] Keep pagefile/recovery storage diagnostic rather than automatically reclaimable.
+- [ ] After app-side Windows device testing, reconcile any observed Windows 10/11 version differences back into these cards and update LAST_CHECKED where needed.
+
+Source/static verification should be recorded after re-fetch. Live Windows execution belongs to the app repository task WINDOWS-DEBLOAT-002.
