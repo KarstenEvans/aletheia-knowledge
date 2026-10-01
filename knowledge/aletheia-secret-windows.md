@@ -5,9 +5,9 @@ domain: computing
 collection: secret-windows
 status: curated
 language: en-GB
-version: 0.9
+version: 0.10
 created: 2026-09-23
-last_reviewed: 2026-09-23
+last_reviewed: 2026-10-01
 resource_url: https://karstenevans.github.io/aletheia-knowledge/resources/aletheia-secret-windows-rsc.htm
 resource_status: live
 resource_mirror_planned: https://swindon.org.uk/resources/aletheia-secret-windows-rsc.htm
@@ -245,6 +245,10 @@ SW-OPT-018     | DEBLOAT       | Copilot can be uninstalled while the web versio
 SW-OPT-019     | DEBLOAT       | new Outlook can be removed without treating Microsoft 365 as the same app
 SW-OPT-020     | DEBLOAT       | Phone Link should be disconnected or disabled, not promised as uninstallable
 SW-OPT-021     | GAMING        | Xbox app, Game Bar and Gaming Services are separate decisions
+SW-OPT-022     | STORAGE       | hibernation is optional disk footprint, not disposable cache
+SW-OPT-023     | STORAGE       | Delivery Optimization cache can be cleaned without disabling updates
+SW-OPT-024     | STORAGE       | pagefile sizing depends on workload and crash-dump needs
+SW-REP-007     | RECOVERY      | Point-in-time restore and System Restore are different recovery tools
 SW-AI-001      | AI            | Free ChatGPT is more than a text-only chatbot
 SW-AI-002      | AI            | Talking to ChatGPT is not the same as dictating a research task
 SW-AI-003      | AI            | Prompt shortcuts are plain-language instructions, not magic codes
@@ -4211,6 +4215,111 @@ Ask for the exact Windows version and use Settings/official instructions rather 
 
 ### Sources
 - https://support.microsoft.com/en-us/microsoft-copilot/getting-started-with-copilot-on-windows
+
+---
+
+
+## SW-OPT-022 | hibernation is optional disk footprint, not disposable cache
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows 10 and Windows 11 where hibernation is supported
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: MEDIUM
+LAST_CHECKED: 2026-10-01
+
+### Summary
+The hidden hibernation file can occupy several gigabytes because it stores system memory state for Hibernate and also supports Fast Startup on compatible systems. It is reasonable to reclaim that space only when the owner accepts the power-feature trade-off.
+
+### Why useful
+Use \`powercfg /a\` to inspect available sleep states. \`powercfg /hibernate off\` disables hibernation and removes its backing file; \`powercfg /hibernate on\` restores the feature. Windows also supports full and reduced hibernation-file types, with the reduced form intended for hiberboot/Fast Startup rather than full Hibernate.
+
+### Aletheia check
+Do not promise a fixed number of gigabytes. Hibernation-file size depends on RAM and Windows configuration. Prefer a reversible decision over manually deleting \`hiberfil.sys\`.
+
+### Sources
+- https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options
+- https://learn.microsoft.com/en-us/troubleshoot/windows-client/setup-upgrade-and-drivers/disable-and-re-enable-hibernation
+- https://learn.microsoft.com/windows/win32/power/system-power-states
+
+---
+
+## SW-OPT-023 | Delivery Optimization cache can be cleaned without disabling updates
+
+STATUS: VERIFIED
+APPLIES_TO: Supported Windows 10 and Windows 11 editions using Delivery Optimization
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: LOW FOR CACHE CLEANUP; MEDIUM FOR POLICY CHANGES
+LAST_CHECKED: 2026-10-01
+
+### Summary
+Delivery Optimization keeps update/app content in a local cache and can share eligible content with other PCs. Windows provides supported cleanup paths, so reclaiming its cache does not require disabling the Delivery Optimization service or breaking Windows Update.
+
+### Why useful
+Disk Cleanup exposes **Delivery Optimization Files** for manual cleanup. Peer-to-peer sharing can also be limited or turned off in Delivery Optimization settings while downloads continue from Microsoft. PowerShell can expose current Delivery Optimization status for diagnosis.
+
+### Aletheia check
+Cache size and activity vary by machine. Treat it as expendable cached data, not as proof that the service itself is unnecessary. Do not equate “turn off downloads from other PCs” with “turn off Windows Update”.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/delivery-optimization-in-windows
+- https://support.microsoft.com/en-us/windows/privacy/windows-update-delivery-optimization-and-privacy
+- https://learn.microsoft.com/en-us/powershell/module/deliveryoptimization/get-deliveryoptimizationstatus?view=windowsserver2025-ps
+- https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-monitor
+
+---
+
+## SW-OPT-024 | pagefile sizing depends on workload and crash-dump needs
+
+STATUS: VERIFIED
+APPLIES_TO: 64-bit Windows client and server; practical guidance used by Windows Rescue on Windows 10/11
+LIFECYCLE: CURRENT
+EVIDENCE: STRONG
+CONFIDENCE: HIGH
+RISK: HIGH IF DISABLED OR UNDERSIZED
+LAST_CHECKED: 2026-10-01
+
+### Summary
+Windows normally manages the pagefile dynamically. The appropriate size depends on peak committed memory and on whether Windows needs enough paging-file capacity for the configured crash dump. A large \`pagefile.sys\` is therefore something to measure, not automatically something to slash to a fixed internet-recipe size.
+
+### Why useful
+Windows Rescue records allocated, current and peak pagefile use before suggesting any investigation. Low-RAM systems in particular may depend heavily on paging. If storage pressure is severe, check actual memory pressure and crash-dump requirements before considering a bounded custom setting.
+
+### Aletheia check
+Do not use a universal “10 GB is enough” rule and do not disable the pagefile as a routine debloat action. System-managed is the default unless measured evidence supports a different choice.
+
+### Sources
+- https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows
+
+---
+
+## SW-REP-007 | Point-in-time restore and System Restore are different recovery tools
+
+STATUS: VERIFIED_WITH_CONTEXT
+APPLIES_TO: Windows versions/builds where the named recovery features are available; Point-in-time restore availability is version-dependent
+LIFECYCLE: CURRENT / VERSION-SENSITIVE
+EVIDENCE: STRONG
+CONFIDENCE: HIGH FOR DOCUMENTED DIFFERENCES; CHECK INSTALLED BUILD
+RISK: HIGH IF RECOVERY IS DISABLED WITHOUT AN ALTERNATIVE
+LAST_CHECKED: 2026-10-01
+
+### Summary
+Classic System Restore and the newer Point-in-time restore are not interchangeable copies. Microsoft describes System Restore as rolling back system files, registry settings and installed programs without affecting personal files. Point-in-time restore can return the recent PC state including local files, apps and settings.
+
+### Why useful
+Point-in-time restore is designed around a short recent window, while System Restore may provide older restore points depending on configuration and available storage. That means disabling one simply because the other exists can remove a genuinely different recovery route.
+
+### Aletheia check
+Before reclaiming recovery storage, inspect which feature actually exists on that Windows build, current usage/retention and whether another tested backup/rollback path is available. Disk space is not “free” when it is buying the only working escape hatch.
+
+### Sources
+- https://support.microsoft.com/en-us/windows/experience/backup-recovery/system-protection
+- https://support.microsoft.com/en-us/windows/experience/backup-recovery/point-time-restore-for-windows
+- https://learn.microsoft.com/en-us/windows/configuration/point-in-time-restore
+- https://learn.microsoft.com/en-us/previous-versions/windows/desktop/vsswmi/win32-shadowstorage
 
 ---
 
