@@ -33,6 +33,12 @@ Before editing, read those three guides **and** the current target Markdown/HTML
 
 The app loads its Markdown library from `../knowledge/` when hosted. It also supports **LOAD .MD LOCALLY** for offline use or local testing.
 
+## Employment Knowledge (added 2 October 2026)
+
+- Canonical six-card knowledge-only collection: [CV, ATS, vacancy verification and interviews](knowledge/aletheia-employment-knowledge.md).
+- Companion interactive worldwide [Aletheia Job Search](https://karstenevans.github.io/aletheia-app/aletheia-job-search/aletheia-job-search.htm) and [free practical resource cards](https://karstenevans.github.io/aletheia-app/aletheia-job-search/aletheia-job-search-rsc.htm).
+- The collection is listed in the explicit manifest as **knowledge-only**; do not describe a separate Knowledge HTML reader as deployed until it is created and browser-tested.
+
 ## Knowledge libraries
 
 ### Free Search Intelligence (Google and Bing)
