@@ -17,6 +17,13 @@
 - [ ] Set free-first and affiliate-evidence separation plus human editorial approval; use a pilot with actual Swindon, Cardiff, Oslo and Ayutthaya queries.
 - [ ] Validate first pilot before promoting into the public index or claiming live capabilities.
 
+## AK-EMP-001 | SOURCE COMMITTED / READER TODO | Employment Knowledge, 2 October 2026
+
+- [x] Add six fact-first source-linked cards on ATS, truthful CV matching, vacancy checks, employer safety, LinkedIn and interview practice to `knowledge/aletheia-employment-knowledge.md`.
+- [x] Index collection in `knowledge/knowledge.json` as **knowledge-only** and crosslink from worldwide Job Search resource cards.
+- [ ] Create dedicated app reader and page spec only after verifying no existing collection adequately serves the same function; integrate into public Knowledge homepage when tested.
+- [ ] Test browser/mobile, citations, last-check updates and actual GitHub Pages URLs; no live browser success claimed.
+
 ## How to use this register
 
 Each task should have a short ID, priority, status, scope/files, acceptance test and concise dated progress notes. Update this file in the **same work session** as accepted code/content changes, whenever possible.
