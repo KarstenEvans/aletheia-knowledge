@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -112,6 +112,14 @@
       "knowledge": "aletheia-judgment-over-output.md",
       "app": "https://karstenevans.github.io/aletheia-app/aletheia-decision-check/aletheia-decision-check.htm",
       "description": "Decision-support design: assumptions, evidence, challenge, pre-mortem, uncertainty, Quiet Mode and a deliberate STOP rule."
+    },
+    {
+      "slug": "aletheia-employment-knowledge",
+      "title": "Employment: CV, ATS, Job Verification and Interviews",
+      "kind": "knowledge",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-employment-knowledge.md",
+      "description": "Six practical evidence-aware employment cards; interactive Aletheia Job Search and linked resources hosted in aletheia-app."
     }
   ]
 }
