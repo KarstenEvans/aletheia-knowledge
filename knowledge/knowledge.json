@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -120,6 +120,14 @@
       "status": "knowledge-only",
       "knowledge": "aletheia-employment-knowledge.md",
       "description": "Six practical evidence-aware employment cards; interactive Aletheia Job Search and linked resources hosted in aletheia-app."
+    },
+    {
+      "slug": "aletheia-digital-adoption-execution-gap-2026",
+      "title": "The AI Execution Gap (WalkMe 2026 evidence audit)",
+      "kind": "research",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-digital-adoption-execution-gap-2026.md",
+      "description": "Ten sourced digital-adoption findings, survey limitations and proposed ADOPT workflow checks for Aletheia Improve. No app or DAP installed."
     }
   ]
 }
