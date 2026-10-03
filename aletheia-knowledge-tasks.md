@@ -567,3 +567,17 @@ Cross-repository Aletheia Improve pass for `KarstenEvans/aletheia-app/aletheia-w
 - [ ] After app-side Windows device testing, reconcile any observed Windows 10/11 version differences back into these cards and update LAST_CHECKED where needed.
 
 Source/static verification should be recorded after re-fetch. Live Windows execution belongs to the app repository task WINDOWS-DEBLOAT-002.
+
+### AK-101 | KNOWLEDGE COMPLETE / PILOT TODO | WalkMe 2026 execution gap and ADOPT audit
+
+**Added 3 October 2026.** The WalkMe 2026 State of Digital Adoption report was *already present* in AI Discovery Sources. This task is its detailed, non-duplicative review: [knowledge/aletheia-digital-adoption-execution-gap-2026.md](knowledge/aletheia-digital-adoption-execution-gap-2026.md).
+
+- [x] Review the user's full 42-page PDF including methodological appendices; separate vendor surveys, WalkMe behavioural observations, Aletheia inferences and unproven marketing claims.
+- [x] Add ten original source-attributed knowledge cards, an explicitly proposed minimal context packet, and ADOPT-01..08 acceptance checks.
+- [x] Crosslink the earlier WalkMe entry in `knowledge/aletheia-ai-discovery-sources.md` rather than replacing it with another generic summary.
+- [x] Register as **knowledge-only** in `knowledge/knowledge.json` and link from the maintained Knowledge HTML index. Do not claim a deployed reader or a new feature.
+- [ ] In the owning `KarstenEvans/aletheia-app` repository, inspect current **Aletheia Improve** and **Job Search** specs/code before proposing code edits. No duplicate app.
+- [ ] Run one mocked Job Search → Employment Knowledge → same-results pilot. Record task completion, steps, duplicate entry, lost state, mobile keyboard accessibility, explicit permission transitions and correctness against a baseline.
+- [ ] Only after a demonstrated problem and human approval, propose the smallest remedy; regression-test mobile/offline/links and measure observed outcomes. Avoid tracking/telemetry and employer-confidential data without explicit permission.
+
+**Acceptance for this task now:** a knowledge-research commit, correct catalogue registration and documented limitations. **Not complete:** pilot, app GUI or code integration, independently measured ROI, live GitHub Pages browser check.
