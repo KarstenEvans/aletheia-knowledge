@@ -1,7 +1,7 @@
 # Aletheia AI Knowledge — discovery source register
 
 **Status:** research provenance / discovery map  
-**Updated:** 2026-09-24  
+**Updated:** 2026-10-03  
 **Canonical knowledge:** `aletheia-ai-knowledge.md`
 
 ## Purpose
@@ -45,6 +45,9 @@ Aletheia use:
 - app interfaces that reduce copy/paste friction.
 
 #### The State of Digital Adoption 2026 — WalkMe
+Source: [original 42-page report](https://www.walkme.com/wp-content/uploads/2026/04/Soda-Report-2026.pdf), supplied and directly reviewed **2026-10-03**. **WalkMe is an enterprise digital-adoption vendor**, not independent proof of its proposed product's impact.
+Full independent extraction: [The AI Execution Gap: research cards and ADOPT audit](aletheia-digital-adoption-execution-gap-2026.md) (**knowledge-only**).
+
 Useful discovery themes:
 - execution friction from app switching;
 - lost workflow context;
@@ -52,10 +55,18 @@ Useful discovery themes:
 - low trust and manual workarounds;
 - shadow AI as a symptom of approved tools failing the work.
 
+New evidence boundaries from the full PDF:
+- Q1 2026 survey: 1,700 leaders and 2,050 workers across larger organisations; separate behavioural data from WalkMe customers.
+- Reported 37% avoided AI due to broken workflows (p. 12); reported 12% fully confident AI knew their work context (p. 22).
+- Surveyed workers with in-flow support reported higher training relevance (p. 33); do **not** treat the association as causal.
+- 51 lost days/year and $142m/year are vendor estimates/extrapolations, not general measured costs or Aletheia savings.
+- Avoid treating one vendor study as representative of small businesses, UK users or all industries.
+
 Aletheia use:
 - keep project context inspectable;
 - design adapters around real workflows;
-- do not equate more tools/agents with more productivity.
+- test ADOPT-01..08 and use the existing Hint Ladder at the point of difficulty;
+- do not equate more tools/agents with more productivity or copy vendor marketing into product guarantees.
 
 #### The IT Guide — Becoming Frontier with Microsoft 365 Copilot and Agents
 Publisher: Microsoft, 2026.
