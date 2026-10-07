@@ -1,9 +1,9 @@
 ---
 title: Aletheia AI Knowledge
 slug: aletheia-ai-knowledge
-version: 0.2.0
+version: 0.2.1
 status: active
-last_checked: 2026-09-24
+last_checked: 2026-10-07
 knowledge_type: provider-neutral AI capability and workflow library
 resource_url: https://karstenevans.github.io/aletheia-knowledge/app/aletheia-ai-knowledge.htm
 ---
@@ -2146,6 +2146,157 @@ The app should not exist merely to wrap a prompt in buttons.
 - https://developers.openai.com/api/docs/guides/tools-skills
 - https://www.kimi.com/code/docs/en/kimi-code-cli/customization/skills.html
 - https://help.manus.im/en/articles/14753565-how-to-share-and-use-skills-in-manus
+
+---
+
+
+## AI-511 | Prompting is task design, not incantation
+
+### Summary
+A useful prompt is less about magic wording than about making the job legible: what the AI should do, what a good result looks like, what context matters and how the result will be checked.
+
+**Type:** CROSS-PROVIDER / AI FLUENCY  
+**Evidence:** HARVARD HKS + ALETHEIA SYNTHESIS  
+**Last checked:** 2026-10-07
+
+### Details
+Harvard Kennedy School Class 4 teaches a simple prompt anatomy: **Task, Instructions and Context (TIC)**.
+
+Aletheia extends that into the teaching pattern **TOCC**:
+
+- **Task:** what should the AI do?
+- **Outcome:** what does useful look like?
+- **Context:** what information, constraints, audience or examples matter?
+- **Check:** how will the result be tested?
+
+TOCC is an Aletheia synthesis, not Harvard terminology. The added outcome/check steps matter because a polished answer can still solve the wrong problem or contain unsupported claims.
+
+The practical rule is to make the success condition and verification route explicit without turning every request into a giant prompt.
+
+### Sources
+- https://generative-ai-course.hks.harvard.edu/2-using-genai/class-4
+- https://github.com/KarstenEvans/aletheia-protocol
+
+---
+
+## AI-512 | System context, RAG and fine-tuning solve different problems
+
+### Summary
+Do not treat every AI-customisation problem as a prompt problem or every knowledge problem as a RAG problem. Persistent instructions, retrieval and fine-tuning have different jobs.
+
+**Type:** CROSS-PROVIDER / CONTEXT / RETRIEVAL  
+**Evidence:** HARVARD HKS + ALETHEIA ARCHITECTURE  
+**Last checked:** 2026-10-07
+
+### Details
+Harvard Kennedy School Class 5 distinguishes:
+
+- **system prompts/instructions:** persistent context or behaviour rules;
+- **retrieval-augmented generation (RAG):** provide relevant external information at query time;
+- **fine-tuning:** adapt behaviour using training/comparison examples.
+
+For Aletheia, the important architectural consequence is that **durable knowledge should remain separate from the retrieval engine**.
+
+Canonical Markdown, source-traced knowledge cards and evidence records can survive even if the project changes search system, vector store, embedding model or AI provider. Retrieval answers which material to bring into the current task; it does not by itself prove that the material is true, current, complete or free of conflict.
+
+Use the smallest mechanism that solves the real problem.
+
+### Sources
+- https://generative-ai-course.hks.harvard.edu/2-using-genai/class-5
+- https://github.com/KarstenEvans/aletheia-protocol
+
+---
+
+## AI-513 | “Can AI do it?” and “should AI do it?” are separate decisions
+
+### Summary
+Technical capability is not enough to justify deployment. A task can be feasible for generative AI and still be a poor choice because of privacy, error cost, bias, weak oversight or a better non-AI alternative.
+
+**Type:** CROSS-PROVIDER / DECISION / SAFETY  
+**Evidence:** HARVARD HKS + ALETHEIA SYNTHESIS  
+**Last checked:** 2026-10-07
+
+### Details
+Harvard Kennedy School Class 6 evaluates both task suitability and practical deployment considerations. Its examples consider factors such as personalisation, interaction, corpus size, creativity and demonstration data, then privacy, alignment clarity, cost of false information and comparison with alternatives.
+
+Aletheia compresses this into the **FIT Check**:
+
+- **F — Fit:** does generative AI add useful capability for this task?
+- **I — Impact:** what happens if the output is wrong, biased, private or misused?
+- **T — Testability:** can the result be checked before it matters, and is AI actually better than a simpler method?
+
+FIT is an Aletheia synthesis, not a Harvard acronym.
+
+A successful FIT check is allowed to conclude: **do not use AI here**.
+
+### Sources
+- https://generative-ai-course.hks.harvard.edu/2-using-genai/class-6
+- https://github.com/KarstenEvans/aletheia-protocol
+
+---
+
+## AI-514 | Fluent LLM output is not verified fact
+
+### Summary
+Large language models can produce highly fluent, useful text while still being wrong. Verification should therefore be designed into the workflow according to the consequence of error.
+
+**Type:** CROSS-PROVIDER / LLM / VERIFICATION  
+**Evidence:** CS50X 2026 + HARVARD HKS + ALETHEIA  
+**Last checked:** 2026-10-07
+
+### Details
+CS50x 2026 describes large language models as large learned models that predict/generate language from training and relationships represented through neural networks and embeddings, and explicitly notes that LLMs can hallucinate and provide incorrect information.
+
+That means fluency is not evidence.
+
+Match the verification method to the task:
+
+- supplied-text transformation -> compare with the source;
+- arithmetic -> recalculate or use a calculator;
+- code -> execute tests;
+- current product/law/policy claim -> check a current primary source;
+- consequential professional decision -> use appropriate authoritative evidence and human review.
+
+A citation is not enough by itself. Check that the cited source actually supports the exact claim being made.
+
+### Sources
+- https://cs50.harvard.edu/x/weeks/ai/
+- https://cs50.harvard.edu/x/notes/ai/
+- https://generative-ai-course.hks.harvard.edu/society/class-8
+- https://github.com/KarstenEvans/aletheia-protocol
+
+---
+
+## AI-515 | Misinformation and disinformation require different claims about intent
+
+### Summary
+Incorrect or decontextualised information can often be demonstrated from evidence. Deliberate deception requires an additional claim about intent and should not be inferred merely because the information is false.
+
+**Type:** CROSS-PROVIDER / PROVENANCE / MEDIA LITERACY  
+**Evidence:** HARVARD HKS + ALETHEIA  
+**Last checked:** 2026-10-07
+
+### Details
+Harvard Kennedy School Class 11 distinguishes **misinformation** from **disinformation**, with deceptive intent being central to the latter.
+
+Aletheia can frequently establish that a claim is:
+
+- unsupported;
+- contradicted by evidence;
+- outdated;
+- decontextualised;
+- misquoted;
+- superseded.
+
+It may still be unable to establish why a person created or repeated it.
+
+Use an evidence-bounded description instead of jumping from “false claim” to “lie”. If intent matters, record it as a separate claim or hypothesis with its own supporting evidence.
+
+This is a practical example of why Aletheia separates evidence, claims, hypotheses, conflicts and unknowns.
+
+### Sources
+- https://generative-ai-course.hks.harvard.edu/society/class-11
+- https://github.com/KarstenEvans/aletheia-protocol
 
 ---
 
