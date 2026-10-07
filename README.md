@@ -41,6 +41,14 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ## Knowledge libraries
 
+## Metabolic Health Knowledge
+
+- Canonical knowledge-only collection: [food processing, prediabetes, diabetes and gut microbiome](knowledge/aletheia-metabolic-health.md), added 7 October 2026.
+- First evidence card records the 2026 randomized crossover *Nature Metabolism* study in which nutrient-matched UPF and non-UPF meals produced different insulin, substrate-use and neural responses.
+- Separate cards preserve the age/prediabetes nuance and correct the educational gut-battle metaphor: *Bifidobacterium* and *Bacteroides* are not universally "good" and "bad" camps; species, strain, diet, medication and host context matter.
+- Status is **knowledge-only**. No medical advice, personal health record or deployed Metabolic Health reader is claimed.
+
+
 ### Free Search Intelligence (Google and Bing)
 
 - Canonical source-checked, **knowledge-only** note: [knowledge/aletheia-free-search-intelligence.md](knowledge/aletheia-free-search-intelligence.md); indexed in `knowledge/knowledge.json` and visible in `knowledge/index.html`.
