@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-10-03",
+  "updated": "2026-10-07",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -128,6 +128,14 @@
       "status": "knowledge-only",
       "knowledge": "aletheia-digital-adoption-execution-gap-2026.md",
       "description": "Ten sourced digital-adoption findings, survey limitations and proposed ADOPT workflow checks for Aletheia Improve. No app or DAP installed."
+    },
+    {
+      "slug": "aletheia-metabolic-health",
+      "title": "Metabolic Health: Food, Prediabetes, Diabetes and Gut Microbiome",
+      "kind": "knowledge",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-metabolic-health.md",
+      "description": "Source-traced metabolic-health cards on ultraprocessed food responses, prediabetes and ageing, type 2 diabetes mechanisms, and gut-microbiome evidence."
     }
   ]
 }
