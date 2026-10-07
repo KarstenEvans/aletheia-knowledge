@@ -581,3 +581,20 @@ Source/static verification should be recorded after re-fetch. Live Windows execu
 - [ ] Only after a demonstrated problem and human approval, propose the smallest remedy; regression-test mobile/offline/links and measure observed outcomes. Avoid tracking/telemetry and employer-confidential data without explicit permission.
 
 **Acceptance for this task now:** a knowledge-research commit, correct catalogue registration and documented limitations. **Not complete:** pilot, app GUI or code integration, independently measured ROI, live GitHub Pages browser check.
+
+
+### AK-102 | KNOWLEDGE ADDED | Metabolic Health: UPF, prediabetes, diabetes and gut microbiome
+
+**Added 7 October 2026.** User supplied a newly published report on nutritionally matched ultraprocessed versus non-ultraprocessed meals and asked to preserve useful knowledge under food/metabolic health, then identified diabetes/prediabetes and the earlier gut-battle story as the natural context. Canonical note: [knowledge/aletheia-metabolic-health.md](knowledge/aletheia-metabolic-health.md).
+
+- [x] Verify the primary 5 October 2026 *Nature Metabolism* randomized crossover paper rather than relying on the shared-news headline.
+- [x] Record the acute finding accurately: similar overall glucose AUC but greater insulin response after the UPF meal, plus altered substrate oxidation and associated food-cue brain responses.
+- [x] Preserve the key limitation: metabolic-session participants were healthy-weight adults and the study did not test people with prediabetes or diabetes or establish long-term disease causation.
+- [x] Add a UK prediabetes/ageing card and preserve the older-adult nuance that prediabetes-range measurements do not inevitably progress to diabetes.
+- [x] Add a microbiome card and explicitly reject a simplistic *Bifidobacterium* good / *Bacteroides* bad taxonomy; keep species/strain, diet, medication, age and disease-state context.
+- [x] Cross-link the educational logic of the earlier “Trust Your Gut – Is Your Gut Cheating on You?” gut-battlefield story without treating its characters as literal biological camps.
+- [x] Register the collection in `knowledge/knowledge.json`, add it to the visible Knowledge index and README, and keep it knowledge-only.
+- [ ] Future research: controlled feeding evidence in insulin resistance/prediabetes/T2D; food-matrix versus NOVA classification mechanisms; causal microbiome evidence and strain-specific interventions.
+- [ ] Do not build a Metabolic Health app or add personal medical data without a separate explicit task.
+
+**Acceptance now:** public generic evidence is saved and discoverable with sources, evidence limits and retrieval tags. **Not claimed:** personal diagnosis/treatment advice, causal proof that UPFs cause diabetes, microbiome treatment efficacy, or a deployed health app.
