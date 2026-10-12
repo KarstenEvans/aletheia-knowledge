@@ -1,5 +1,17 @@
 # Aletheia Knowledge tasks and cross-AI handover
 
+## AK-UP-20261012 | Credited UsefulPrompts research and Aletheia workflow map
+
+**Status:** Source files committed; live/resource-link verification TODO. 12 October 2026. Original source: https://usefulprompts.ai/; creator @usefulpromptsai. Separate user-provided Threads screenshots supplied five short-video prompts.
+
+- [x] Review source homepage and YouTube generator; record the fifteen generator categories and original source credit without copying visuals/templates.
+- [x] Add source/provenance notes to `knowledge/aletheia-ai-discovery-sources.md` and an original free-first resource page `resources/usefulprompts-ai-rsc.htm` with matching build note `resources/usefulprompts-ai-rsc-page.md`.
+- [x] Link the reference page from the Knowledge Resources homepage (do not create a new Knowledge collection or corrupt `knowledge/knowledge.json`).
+- [ ] Check all outbound URLs and live Pages deployment, source dates, correct credit, original content, keyboard/mobile display and one approved Awin script.
+- [ ] Retest the crosslink to the Aletheia Learn video lesson and verify the lesson/provider handoff on real devices.
+- [ ] Refresh changing source features and credited external resources periodically; no prompt/visual cloning, no paid-course copying and no claim of internal Aletheia tools where only future ideas exist.
+
+
 > **Purpose:** One visible, GitHub-backed task register so work started in one AI conversation or on one device can be continued safely in another.
 >
 > **Working rule:** Read `README.md`, `aletheia-knowledge-GUI.md`, `aletheia-knowledge-code.md`, this file and the specific current collection/page files before working. GitHub is the shared master, but reconcile any newer local edits rather than silently discarding them.
