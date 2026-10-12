@@ -162,3 +162,18 @@ discovery source
 ```
 
 Do not turn one vendor's marketing diagnosis into a universal fact merely because it is persuasive.
+
+
+## UsefulPrompts.ai: task-specific instruction generators and short video workflow (12 October 2026)
+
+**Original creator:** [UsefulPrompts.ai](https://usefulprompts.ai/) and creator's social account **@usefulpromptsai**. **Source checked:** public site on 12 October 2026; user-supplied Threads screenshots of the creator's "5 prompts for short videos with Claude" post supplied the distinct five-stage video example. This is inspiration and link-based credit, not a licence to reproduce the creator's words, graphic cards, or exact proprietary generator implementation.
+
+The site's homepage lists fifteen task-specific generators: Prompt Improver; SEO; LinkedIn; Marketing; YouTube; Etsy; Real Estate; Skill; System; Agent; Resume; Interview; PRD; Image; and Excel Formula. The visible site pattern is one shared instruction-improvement approach and copyable outputs usable in a user-selected AI. Specific tools and features may change. [Original YouTube generator](https://usefulprompts.ai/youtube-prompts).
+
+**Learnable pattern:** Beginner starts with an ordinary-language idea. A task-specific form requests only the missing audience, goal, constraints and output. The app yields a reviewable, portable AI instruction, without insisting on an account or a single AI provider. Do not confuse drafting instructions with carrying out the described work.
+
+**Five-stage video example (separate Threads post):** Create brief script → shot list → plan around equipment already owned → sound-off captions → optional concise AI-video scene description. Original Aletheia lesson [Make a Short Video](https://github.com/KarstenEvans/aletheia-app/blob/main/aletheia-learn/aletheia-learn-video-making.md) adds teach-first worked examples, real camera staging, privacy, rights, timing and honest footage/render statuses. Clean AI footage and separately edited captions are distinct deliverables.
+
+**Existing-work routing:** video teaching → Aletheia Learn; adapting an existing article → Content Repurposer Skill; SEO/AEO evidence and proposed rewrite → existing GEO/AEO Optimizer Skill and optional Site Audit Stage 6; career prompts → existing Job Search; marketing and LinkedIn → proposed Publisher; PRD/Skill generation → Improve/Dev; stories and image descriptions → Storyteller; other generator ideas → root app `ideas.md` and `tasks.md` until required.
+
+**Status:** Source/discovery register and [credited public resource page](https://karstenevans.github.io/aletheia-knowledge/resources/usefulprompts-ai-rsc.htm). This is not a new AI-provider capability claim, independently functioning tool suite or a copied course; any changing claims require independent verification.
