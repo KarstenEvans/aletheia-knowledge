@@ -14,6 +14,12 @@ Public front door for the Aletheia Knowledge GitHub Pages site.
 - Music
 - Windows Debloat Tool (related Secret Windows entry)
 
+## Aletheia Money Saving reader
+- **MONEY SAVING** → `app/aletheia-mse-money-saving.htm`
+- Canonical 48 cards → `knowledge/aletheia-mse-money-saving.md`
+- Sources → `knowledge/aletheia-mse-money-saving-sources.json`
+- Read only; independent from MSE and any AI service; category filters, actions, saved checklist.
+
 ## AI route
 - **AI KNOWLEDGE** → `app/aletheia-ai-knowledge.htm`
 - Canonical source: `knowledge/aletheia-ai-knowledge.md`
