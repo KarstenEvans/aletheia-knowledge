@@ -2,7 +2,7 @@
 
 ## AK-MSE-001 | MONEY SAVING KNOWLEDGE | 13 October 2026
 
-**Status:** Knowledge-only first release committed; reader and runtime QA not implemented. User requested a MoneySavingExpert-based knowledge base. MSE sources are cited by direct article links, not copied. The collection is independent and unaffiliated with MSE.
+**Status:** Reader committed to main with 48 cards and root/library navigation. JavaScript compiled and structural parsing, IDs/categories and source links indexed successfully; live Pages/browser mobile interaction remains unverified. User requested a MoneySavingExpert-based knowledge base. MSE sources are cited by direct article links, not copied. The collection is independent and unaffiliated with MSE.
 
 - [x] Research MSE subject taxonomy, selected current guide pages, tools, and content terms.
 - [x] Add 39 original actionable knowledge cards in `knowledge/aletheia-mse-money-saving.md` with stable IDs, source links, caveats, scope and review intervals.
@@ -10,7 +10,10 @@
 - [x] Register new collection as **knowledge-only** in `knowledge/knowledge.json` and link from README.
 - [ ] Independently review high-impact financial/legal/benefits guidance for jurisdiction and nuance before promoting as definitive advice.
 - [ ] Validate all 39 external source URLs again on schedule and flag changes/redirects; rates and best buys need fresh checks.
-- [ ] With explicit editor approval, consider building an accessible `app/aletheia-mse-money-saving.htm` reader and matching `*-page.md`, then add visitor-facing index/Pages links and test mobile + keyboard + fetch.
+- [x] Create `app/aletheia-mse-money-saving.htm` and `app/aletheia-mse-money-saving-page.md`; register visitor routes from both library indices and explicit manifest.
+- [x] Nine additional forum leads researched with independent government/regulator/consumer verification (MSE-040–048); no YouTube sources and no inaccessible Discord quotation.
+- [x] Check compiled JavaScript syntax, 48 unique card IDs, 11 parsed categories, complete summary/action/caveat/source sections, manifest and homepage links.
+- [ ] Live Pages deployment status and real browser verification (search/category/action storage/copy/local load, keyboard/mobile viewport) remain untested.
 - [ ] Do not ingest full third-party article content, scrape offers without permission, use MSE branding/graphics or imply endorsement.
 
 
