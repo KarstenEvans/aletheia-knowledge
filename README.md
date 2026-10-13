@@ -43,7 +43,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ### Money Saving Knowledge (MSE source guide)
 
-- Knowledge-only first release: [48 source-linked UK money-saving cards](knowledge/aletheia-mse-money-saving.md), with a [machine-readable source index](knowledge/aletheia-mse-money-saving-sources.json), checked 13 October 2026.
+- Knowledge-only first release: [48 source-linked UK money-saving cards](knowledge/aletheia-mse-money-saving.md), with a [machine-readable source index](knowledge/aletheia-mse-money-saving-sources.json) and [community research audit](knowledge/aletheia-mse-money-saving-community-review.md), checked 13 October 2026.
 - Subjects include bills, budgeting, debt, benefits, banking, pensions, mortgages, consumer rights, insurance, travel and shopping. Original guidance and action notes, not a republication of MSE articles.
 - Independent and unaffiliated with MoneySavingExpert.com. Nine additional forum leads have independently checked official/advice links; links return to original MSE guides and checking authorities; current offers, legal rules, eligibility and rates need rechecking before use. Browser reader source: [Aletheia Money Saving](app/aletheia-mse-money-saving.htm), with [reader specification](app/aletheia-mse-money-saving-page.md). GitHub Pages / device tests pending.
 
