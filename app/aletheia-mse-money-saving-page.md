@@ -9,7 +9,7 @@ Resource page: NONE (links go straight to original sources)
 Related task: AK-MSE-001
 
 ## Purpose and scope
-Provide a free, static, provider-agnostic knowledge interface across 48 independently written UK money-saving cards. Original 39 cards used MSE topics and links; nine further cards use public Reddit/MSE forum discussions as leads and checked authoritative references. Independent content only; no MSE logos, article duplication, endorsement, copied forum text or YouTube sources.
+Provide a free, static, provider-agnostic knowledge interface across 48 independently written UK money-saving cards. Original 39 cards used MSE topics and links; nine further cards use public Reddit/MSE forum discussions as leads and checked authoritative references. Research audit: `knowledge/aletheia-mse-money-saving-community-review.md`. Independent content only; no MSE logos, article duplication, endorsement, copied forum text or YouTube sources.
 
 ## Sources of truth
 Read `aletheia-knowledge-GUI.md`, `aletheia-knowledge-code.md`, `aletheia-knowledge-tasks.md`, current source Markdown and this build specification before changing app. The canonical content lives in Markdown and is not hardcoded into HTML.
@@ -43,7 +43,7 @@ Parse only `## MSE-### | Title` headings. Each card reads independent `### Summa
 
 ## Acceptance tests
 - [ ] File exists on GitHub main and GitHub Pages serves 200 status after deployment.
-- [x] Source Markdown static inspection: 48 unique IDs, 11 categories and nonempty summary/action/caveat/source sections. Browser DOM rendering pending.
+- [x] Run actual reader parser with browser URL stub: 48 unique IDs, 11 categories, 48 actionable cards with authoritative primary links; JavaScript syntax compiled. Browser DOM interaction and link HTTP status pending.
 - [ ] Search, category, reset and My actions work together on a browser.
 - [ ] Saved checklist survives a same-browser reload when permitted; optional no-storage mode works.
 - [ ] Copy action list and manual fallback function.
