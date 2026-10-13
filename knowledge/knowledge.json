@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-10-07",
+  "updated": "2026-10-13",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -136,6 +136,15 @@
       "status": "knowledge-only",
       "knowledge": "aletheia-metabolic-health.md",
       "description": "Source-traced metabolic-health cards on ultraprocessed food responses, prediabetes and ageing, type 2 diabetes mechanisms, and gut-microbiome evidence."
+    },
+    {
+      "slug": "aletheia-mse-money-saving",
+      "title": "Money Saving: independent MSE source guide",
+      "kind": "knowledge",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-mse-money-saving.md",
+      "source_index": "aletheia-mse-money-saving-sources.json",
+      "description": "39 original UK money-saving learning cards linking to selected MoneySavingExpert guides; no replicated MSE content, live offers, or published reader."
     }
   ]
 }
