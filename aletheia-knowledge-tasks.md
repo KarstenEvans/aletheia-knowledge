@@ -9,10 +9,10 @@
 - [x] Add `knowledge/aletheia-mse-money-saving-sources.json` with structured URL receipts, checked dates and freshness rules.
 - [x] Register new collection as **knowledge-only** in `knowledge/knowledge.json` and link from README.
 - [ ] Independently review high-impact financial/legal/benefits guidance for jurisdiction and nuance before promoting as definitive advice.
-- [ ] Validate all 39 external source URLs again on schedule and flag changes/redirects; rates and best buys need fresh checks.
+- [ ] Validate all 48+ external source URLs again on schedule and flag changes/redirects; rates and best buys need fresh checks.
 - [x] Create `app/aletheia-mse-money-saving.htm` and `app/aletheia-mse-money-saving-page.md`; register visitor routes from both library indices and explicit manifest.
-- [x] Nine additional forum leads researched with independent government/regulator/consumer verification (MSE-040–048); no YouTube sources and no inaccessible Discord quotation.
-- [x] Check compiled JavaScript syntax, 48 unique card IDs, 11 parsed categories, complete summary/action/caveat/source sections, manifest and homepage links.
+- [x] Nine additional forum leads researched with independent government/regulator/consumer verification (MSE-040–048); no YouTube sources and no inaccessible Discord quotation. Decisions, rejected claims and links recorded in `knowledge/aletheia-mse-money-saving-community-review.md`.
+- [x] Check compiled JavaScript syntax and execute actual reader Markdown parser with browser URL stub: 48 unique card IDs, 11 categories, 48 complete summary/action/caveat/primary-source cards; nine forum leads link primarily to the independent checker. Manifest and homepage links checked.
 - [ ] Live Pages deployment status and real browser verification (search/category/action storage/copy/local load, keyboard/mobile viewport) remain untested.
 - [ ] Do not ingest full third-party article content, scrape offers without permission, use MSE branding/graphics or imply endorsement.
 
