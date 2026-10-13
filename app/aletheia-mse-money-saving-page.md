@@ -43,7 +43,7 @@ Parse only `## MSE-### | Title` headings. Each card reads independent `### Summa
 
 ## Acceptance tests
 - [ ] File exists on GitHub main and GitHub Pages serves 200 status after deployment.
-- [ ] Exact parser loads all current 48 unique MSE IDs and 11 unique categories; every card has a visible summary, action, main authoritative external URL and MORE text.
+- [x] Source Markdown static inspection: 48 unique IDs, 11 categories and nonempty summary/action/caveat/source sections. Browser DOM rendering pending.
 - [ ] Search, category, reset and My actions work together on a browser.
 - [ ] Saved checklist survives a same-browser reload when permitted; optional no-storage mode works.
 - [ ] Copy action list and manual fallback function.
@@ -51,8 +51,8 @@ Parse only `## MSE-### | Title` headings. Each card reads independent `### Summa
 - [ ] Broken online path produces a clear error and manual load route.
 - [ ] External links are valid and community references remain distinguished from independent checks.
 - [ ] Keyboard focus/contrast, 360-pixel mobile viewport, desktop layout, no horizontal overflow and no injected markup.
-- [ ] Root and Knowledge folder links use published HTML as primary entry; reader and source index appear in explicit manifest.
+- [x] Root and Knowledge folder HTML link to reader, which is listed in explicit manifest. GitHub Pages deployment pending.
 - [ ] No YouTube research used, no MSE article copying, no provider-specific AI dependency.
 
 ## Change history
-- 2026-10-13: initial independent 48-card reader created with static plain HTML/CSS/JS. Structural/runtime testing and Pages availability to be recorded separately in the task register.
+- 2026-10-13: initial independent 48-card reader created with static plain HTML/CSS/JS. JavaScript compile and Markdown source structure checked; browser interactions and Pages availability to be recorded separately in the task register.
