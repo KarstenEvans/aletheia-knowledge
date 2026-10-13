@@ -141,10 +141,11 @@
       "slug": "aletheia-mse-money-saving",
       "title": "Money Saving: independent MSE source guide",
       "kind": "knowledge",
-      "status": "knowledge-only",
+      "status": "published",
       "knowledge": "aletheia-mse-money-saving.md",
       "source_index": "aletheia-mse-money-saving-sources.json",
-      "description": "39 original UK money-saving learning cards linking to selected MoneySavingExpert guides; no replicated MSE content, live offers, or published reader."
+      "description": "48 independent actionable UK money-saving cards: MSE guide links and nine verified public-forum leads, with category search, local-only checklist and source receipts. No provider-specific AI.",
+      "app": "../app/aletheia-mse-money-saving.htm"
     }
   ]
 }
