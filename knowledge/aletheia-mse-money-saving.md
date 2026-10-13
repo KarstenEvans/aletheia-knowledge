@@ -912,7 +912,7 @@ England only. Historic Reddit prices are stale; eligible HRT can use a distinct 
 - **Evidence status:** community-origin research lead, independently checked guidance; no personal eligibility inferred
 
 ### Sources
-- Community discussion (unverified lead): https://hr.reddit.com/r/UKPersonalFinance/comments/u6bv4u/really_need_to_sort_my_life_out_please_help/
+- Community discussion (unverified lead): https://www.reddit.com/r/UKPersonalFinance/comments/u6bv4u/really_need_to_sort_my_life_out_please_help/
 - Independent check: https://www.gov.uk/get-a-ppc/standard-ppc
 
 ## MSE-043 | Tax-Free Childcare account
@@ -956,7 +956,7 @@ Not automatic: apply and verify. Different nations and school settings may follo
 - **Evidence status:** community-origin research lead, independently checked guidance; no personal eligibility inferred
 
 ### Sources
-- Community discussion (unverified lead): https://www.reddit.com/r/UKPersonalFinance/comments/17kk03q/the_actual_value_of_30_hours_taxfree_childcare_to/
+- Community discussion (unverified lead): https://www.reddit.com/r/BenefitsAdviceUK/comments/1vrlxjg/quick_reminder_post_all_uc_households_in_england/
 - Independent check: https://www.gov.uk/apply-free-school-meals
 
 ## MSE-045 | WaterSure and water-company social tariffs
