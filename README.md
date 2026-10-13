@@ -41,6 +41,14 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ## Knowledge libraries
 
+### Money Saving Knowledge (MSE source guide)
+
+- Knowledge-only first release: [39 source-linked UK money-saving cards](knowledge/aletheia-mse-money-saving.md), with a [machine-readable source index](knowledge/aletheia-mse-money-saving-sources.json), checked 13 October 2026.
+- Subjects include bills, budgeting, debt, benefits, banking, pensions, mortgages, consumer rights, insurance, travel and shopping. Original guidance and action notes, not a republication of MSE articles.
+- Independent and unaffiliated with MoneySavingExpert.com. Links return to original MSE guides; current offers, legal rules, eligibility and rates need rechecking before use. No dedicated HTML reader is yet deployed.
+
+
+
 ## Metabolic Health Knowledge
 
 - Canonical knowledge-only collection: [food processing, prediabetes, diabetes and gut microbiome](knowledge/aletheia-metabolic-health.md), added 7 October 2026.
