@@ -1,0 +1,362 @@
+{
+  "schema": "aletheia-source-index-v1",
+  "collection": "aletheia-mse-money-saving",
+  "checked_on": "2026-10-13",
+  "source_publisher": "MoneySavingExpert.com",
+  "attribution": "Independent Aletheia source-linked summaries; not affiliated with or endorsed by MSE",
+  "rights": "No copied article content, automation of third-party ingestion, or republication. Click through to original articles.",
+  "coverage": "Curated first-pass topics, not an exhaustive site export",
+  "items": [
+    {
+      "id": "MSE-001",
+      "category": "Budgeting and debt",
+      "title": "Money makeover",
+      "url": "https://www.moneysavingexpert.com/family/money-help/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-002",
+      "category": "Budgeting and debt",
+      "title": "Budget planner and irregular expenses",
+      "url": "https://www.moneysavingexpert.com/banking/budget-planning/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-003",
+      "category": "Budgeting and debt",
+      "title": "Debt problems and free support",
+      "url": "https://www.moneysavingexpert.com/loans/debt-help-plan/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-004",
+      "category": "Budgeting and debt",
+      "title": "Balance transfer cards",
+      "url": "https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-005",
+      "category": "Benefits and council tax",
+      "title": "Check unclaimed benefits",
+      "url": "https://www.moneysavingexpert.com/family/benefits-check/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-006",
+      "category": "Benefits and council tax",
+      "title": "Universal Credit basics",
+      "url": "https://www.moneysavingexpert.com/family/universal-credit/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-007",
+      "category": "Benefits and council tax",
+      "title": "Pension Credit",
+      "url": "https://www.moneysavingexpert.com/savings/pension-credit/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-008",
+      "category": "Benefits and council tax",
+      "title": "Council Tax discount for severe mental impairment",
+      "url": "https://www.moneysavingexpert.com/reclaim/severe-mental-impairment-dementia-council-tax-rebate/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-009",
+      "category": "Benefits and council tax",
+      "title": "Challenge a Council Tax band",
+      "url": "https://www.moneysavingexpert.com/reclaim/council-tax-bands-change/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-010",
+      "category": "Household bills",
+      "title": "Understand the energy price cap",
+      "url": "https://www.moneysavingexpert.com/utilities/what-is-the-energy-price-cap/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-011",
+      "category": "Household bills",
+      "title": "Fix energy tariff or stay variable",
+      "url": "https://www.moneysavingexpert.com/utilities/are-there-any-cheap-fixed-energy-deals-currently-worth-it/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-012",
+      "category": "Household bills",
+      "title": "Help when energy bills are unaffordable",
+      "url": "https://www.moneysavingexpert.com/utilities/how-to-get-help-if-you-re-struggling-with-your-energy-bills-/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-013",
+      "category": "Household bills",
+      "title": "Broadband savings and social tariffs",
+      "url": "https://www.moneysavingexpert.com/broadband-and-tv/cheap-broadband/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-014",
+      "category": "Household bills",
+      "title": "SIM-only mobile plans",
+      "url": "https://www.moneysavingexpert.com/cheap-mobile-finder/sim-only/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-015",
+      "category": "Household bills",
+      "title": "Reduce water bills",
+      "url": "https://www.moneysavingexpert.com/utilities/cut-water-bills/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-016",
+      "category": "Banking and savings",
+      "title": "Current-account switching",
+      "url": "https://www.moneysavingexpert.com/banking/compare-best-bank-accounts/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-017",
+      "category": "Banking and savings",
+      "title": "Compare savings accounts",
+      "url": "https://www.moneysavingexpert.com/savings/savings-accounts-best-interest/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-018",
+      "category": "Banking and savings",
+      "title": "Cash ISA decisions",
+      "url": "https://www.moneysavingexpert.com/savings/best-cash-isa/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-019",
+      "category": "Banking and savings",
+      "title": "Lifetime ISA eligibility",
+      "url": "https://www.moneysavingexpert.com/savings/lifetime-isas/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-020",
+      "category": "Banking and savings",
+      "title": "Private pensions explained",
+      "url": "https://www.moneysavingexpert.com/pensions/how-pensions-work/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-021",
+      "category": "Banking and savings",
+      "title": "State Pension forecast",
+      "url": "https://www.moneysavingexpert.com/pensions/state-pensions/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-022",
+      "category": "Homes and mortgages",
+      "title": "First-time buyer planning",
+      "url": "https://www.moneysavingexpert.com/mortgages/mortgage-guide/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-023",
+      "category": "Homes and mortgages",
+      "title": "Mortgage repayment sensitivity",
+      "url": "https://www.moneysavingexpert.com/mortgages/mortgage-rate-calculator/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-024",
+      "category": "Homes and mortgages",
+      "title": "Mortgage overpayment versus savings",
+      "url": "https://www.moneysavingexpert.com/mortgages/mortgages-vs-savings/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-025",
+      "category": "Insurance",
+      "title": "Compare car insurance properly",
+      "url": "https://www.moneysavingexpert.com/insurance/car-insurance/how-to-get-cheap-car-insurance/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-026",
+      "category": "Insurance",
+      "title": "Travel insurance with pre-existing conditions",
+      "url": "https://www.moneysavingexpert.com/insurance/pre-existing-travel-insurance/",
+      "checked_on": "2026-10-13",
+      "review_interval": "before-travel",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-027",
+      "category": "Consumer rights and reclaiming",
+      "title": "Consumer rights for faulty goods",
+      "url": "https://www.moneysavingexpert.com/reclaim/consumer-rights-refunds-exchange/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-028",
+      "category": "Consumer rights and reclaiming",
+      "title": "Section 75 credit protection",
+      "url": "https://www.moneysavingexpert.com/reclaim/section75-protect-your-purchases/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-029",
+      "category": "Consumer rights and reclaiming",
+      "title": "Chargeback as a recovery route",
+      "url": "https://www.moneysavingexpert.com/reclaim/visa-mastercard-chargeback/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-030",
+      "category": "Consumer rights and reclaiming",
+      "title": "Car finance commission complaints",
+      "url": "https://www.moneysavingexpert.com/reclaim/reclaim-car-finance/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-031",
+      "category": "Consumer rights and reclaiming",
+      "title": "Challenge private parking charges",
+      "url": "https://www.moneysavingexpert.com/reclaim/private-parking-tickets/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-032",
+      "category": "Travel and transport",
+      "title": "Find cheaper train tickets",
+      "url": "https://www.moneysavingexpert.com/travel/cheap-train-tickets/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-033",
+      "category": "Travel and transport",
+      "title": "Train delay compensation",
+      "url": "https://www.moneysavingexpert.com/reclaim/train-delays/",
+      "checked_on": "2026-10-13",
+      "review_interval": "quarterly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-034",
+      "category": "Travel and transport",
+      "title": "Compare flights by total trip cost",
+      "url": "https://www.moneysavingexpert.com/travel/cheap-flights/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-035",
+      "category": "Travel and transport",
+      "title": "Cards for spending overseas",
+      "url": "https://www.moneysavingexpert.com/credit-cards/travel-credit-cards/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-036",
+      "category": "Shopping and groceries",
+      "title": "Supermarket cost reduction",
+      "url": "https://www.moneysavingexpert.com/shopping/cheap-supermarket-shopping/",
+      "checked_on": "2026-10-13",
+      "review_interval": "weekly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-037",
+      "category": "Shopping and groceries",
+      "title": "Cashback site caution",
+      "url": "https://www.moneysavingexpert.com/shopping/cashback-websites/",
+      "checked_on": "2026-10-13",
+      "review_interval": "monthly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-038",
+      "category": "Tax and students",
+      "title": "Plan 5 student-loan decisions",
+      "url": "https://www.moneysavingexpert.com/students/student-loans-england-plan-5/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-039",
+      "category": "Tax and students",
+      "title": "Take-home pay and tax calculator",
+      "url": "https://www.moneysavingexpert.com/tax-calculator/",
+      "checked_on": "2026-10-13",
+      "review_interval": "yearly",
+      "status": "editorial-reference-only"
+    }
+  ]
+}
