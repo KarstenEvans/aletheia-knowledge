@@ -2,10 +2,10 @@
   "schema": "aletheia-source-index-v1",
   "collection": "aletheia-mse-money-saving",
   "checked_on": "2026-10-13",
-  "source_publisher": "MoneySavingExpert.com",
+  "source_publisher": "MSE topic links plus public forums and independent verification sources",
   "attribution": "Independent Aletheia source-linked summaries; not affiliated with or endorsed by MSE",
   "rights": "No copied article content, automation of third-party ingestion, or republication. Click through to original articles.",
-  "coverage": "Curated first-pass topics, not an exhaustive site export",
+  "coverage": "39 original MSE-linked cards and nine community-led cards with independent source checks. Not an exhaustive MSE archive.",
   "items": [
     {
       "id": "MSE-001",
@@ -357,6 +357,105 @@
       "checked_on": "2026-10-13",
       "review_interval": "yearly",
       "status": "editorial-reference-only"
+    },
+    {
+      "id": "MSE-040",
+      "category": "Household bills",
+      "title": "TV Licence: check if you actually need one",
+      "community_lead_url": "https://www.reddit.com/r/UKFrugal/comments/1q2doex/thinking_of_cancelling_tv_licence_need_some/",
+      "verification_url": "https://www.tvlicensing.co.uk/check-if-you-need-one/topics/what-can-i-watch-without-a-tv-licence",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "UK",
+      "review_interval": "yearly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-041",
+      "category": "Benefits and council tax",
+      "title": "Single-person Council Tax discount",
+      "community_lead_url": "https://www.reddit.com/r/UKPersonalFinance/comments/1sfr4ou/single_person_council_tax_discount_gap/",
+      "verification_url": "https://www.gov.uk/government/publications/paying-the-right-level-of-council-tax-a-plain-english-guide-to-council-tax/paying-the-right-level-of-council-tax-a-plain-english-guide-to-council-tax",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "England",
+      "review_interval": "yearly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-042",
+      "category": "Health and prescriptions",
+      "title": "NHS prescription prepayment certificate",
+      "community_lead_url": "https://hr.reddit.com/r/UKPersonalFinance/comments/u6bv4u/really_need_to_sort_my_life_out_please_help/",
+      "verification_url": "https://www.gov.uk/get-a-ppc/standard-ppc",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "England",
+      "review_interval": "quarterly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-043",
+      "category": "Benefits and council tax",
+      "title": "Tax-Free Childcare account",
+      "community_lead_url": "https://www.reddit.com/r/UKPersonalFinance/comments/1rtg909/20_tax_free_childcare_never_used_before/",
+      "verification_url": "https://www.gov.uk/tax-free-childcare/check-if-youre-eligible",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "UK",
+      "review_interval": "quarterly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-044",
+      "category": "Benefits and council tax",
+      "title": "Free school meals: check expanded eligibility",
+      "community_lead_url": "https://www.reddit.com/r/UKPersonalFinance/comments/17kk03q/the_actual_value_of_30_hours_taxfree_childcare_to/",
+      "verification_url": "https://www.gov.uk/apply-free-school-meals",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "England",
+      "review_interval": "quarterly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-045",
+      "category": "Household bills",
+      "title": "WaterSure and water-company social tariffs",
+      "community_lead_url": "https://forums.moneysavingexpert.com/discussion/6674994/water-sure-united-utitlies",
+      "verification_url": "https://www.citizensadvice.org.uk/consumer/water/problems-with-paying-your-water-bill/watersure-scheme-help-with-paying-water-bills/",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "England and Wales",
+      "review_interval": "quarterly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-046",
+      "category": "Banking and savings",
+      "title": "Incorrect Direct Debit? Check refund rights",
+      "community_lead_url": "https://www.reddit.com/r/UKPersonalFinance/comments/x742jm/do_failed_direct_debits_affect_credit_score/",
+      "verification_url": "https://www.moneyhelper.org.uk/en/everyday-money/banking/direct-debits-and-standing-orders",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "UK",
+      "review_interval": "yearly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-047",
+      "category": "Shopping and groceries",
+      "title": "Compare grocery unit prices, not offer stickers",
+      "community_lead_url": "https://www.reddit.com/r/UKFrugal/comments/1vlds57/ive_been_recording_prices_at_13_uk_supermarkets/",
+      "verification_url": "https://www.gov.uk/government/publications/price-marking-order-2004-government-guidance/price-marking-order-2004-government-guidance",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "Great Britain",
+      "review_interval": "quarterly",
+      "status": "forum-lead-verified-with-independent-guidance"
+    },
+    {
+      "id": "MSE-048",
+      "category": "Household bills",
+      "title": "Check Ofcom-listed broadband social tariffs",
+      "community_lead_url": "https://www.reddit.com/r/UKBroadband/comments/1syvbfn/are_social_tariffs_worth_it_for_a_busy_household/",
+      "verification_url": "https://www.ofcom.org.uk/phones-and-broadband/saving-money/social-tariffs",
+      "checked_on": "2026-10-13",
+      "jurisdiction": "UK",
+      "review_interval": "monthly",
+      "status": "forum-lead-verified-with-independent-guidance"
     }
   ]
 }
