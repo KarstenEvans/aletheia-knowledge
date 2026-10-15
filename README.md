@@ -41,6 +41,12 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 ## Knowledge libraries
 
+### Stanford CME 295 — LLMs, agents and evaluation (knowledge only)
+
+- [Original course-source and application review](knowledge/aletheia-stanford-cme295.md), added 15 October 2026; Stanford's complete 2025 nine-lecture series is distinguished from its in-progress 2026 edition.
+- Proposed: measurable Aletheia Improve acceptance tests, relevant-only Markdown retrieval, portable handovers, and an original accessible Smart Learn nine-lesson path. The licence distinction between MIT-licensed author cheatsheets and separately hosted Stanford teaching materials is explicit.
+- **Status: knowledge-only.** No new public app, Stanford-media copy, changed Improve process or implemented Learn course; tracked in AK-103.
+
 ### Money Saving Knowledge (MSE source guide)
 
 - Knowledge-only first release: [48 source-linked UK money-saving cards](knowledge/aletheia-mse-money-saving.md), with a [machine-readable source index](knowledge/aletheia-mse-money-saving-sources.json) and [community research audit](knowledge/aletheia-mse-money-saving-community-review.md), checked 13 October 2026.
