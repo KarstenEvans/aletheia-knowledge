@@ -299,3 +299,11 @@ A busy market appears strangely empty because invisible assistants are comparing
 
 This came from the third AI Journal walkabout and is recorded with sources in [ideas/aletheia-ai-journal-gold-mine.md](ideas/aletheia-ai-journal-gold-mine.md).
 
+## Stanford CME 295 — evaluation-first Smart Learn and Improve research (15 October 2026)
+
+**Canonical source note:** [knowledge/aletheia-stanford-cme295.md](knowledge/aletheia-stanford-cme295.md) · **Task:** AK-103.
+
+The user shared a LinkedIn list of the 2025 Stanford course's nine publicly linked lectures. Aletheia's strongest reusable ideas are a **small, source-aware evaluation scorecard** from Lecture 8 and **on-demand relevant Markdown retrieval** from Lecture 7. A later beginner/practical/technical Smart Learn route can teach all nine topics through independently written bite-sized lessons and tests. The 2026 course adds related themes but is **in progress**, so do not turn announced lectures into 'completed' source claims.
+
+Guardrails: existing Aletheia Improve already covers diagnostics; test a real failure before modifying it, do not build a replacement or AI-provider-specific agent, do not force RAG infrastructure, preserve evidence and permission, do not reproduce Stanford videos/slides/textbook. This is an **idea backed by a source-traced note**, not an app change or benchmark result.
+
