@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-10-13",
+  "updated": "2026-10-15",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -146,6 +146,14 @@
       "source_index": "aletheia-mse-money-saving-sources.json",
       "description": "48 independent actionable UK money-saving cards: MSE guide links and nine verified public-forum leads, with category search, local-only checklist and source receipts. No provider-specific AI.",
       "app": "../app/aletheia-mse-money-saving.htm"
+    },
+    {
+      "slug": "aletheia-stanford-cme295",
+      "title": "Stanford CME 295: learning, agents and evaluation for Aletheia",
+      "kind": "research",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-stanford-cme295.md",
+      "description": "Original source-traced 2025 course review, 2026 edition caveats, evaluation and retrieval proposals, and nine free-first Smart Learn lesson outlines. No app or code deployment."
     }
   ]
 }
