@@ -1,5 +1,21 @@
 # Aletheia Knowledge tasks and cross-AI handover
 
+## AK-103 | STANFORD CME 295 — SOURCED RESEARCH SAVED / EVALUATION PILOT PENDING | 15 October 2026
+
+**Knowledge only:** [Stanford CME 295: Aletheia learning, retrieval and evaluation notes](knowledge/aletheia-stanford-cme295.md). Original discovery: https://lnkd.in/p/e668zrGZ ; official: https://cme295.stanford.edu/syllabus/ . The 2025 course has nine publicly linked lectures; the 2026 edition is still progressing. Preserve 2025/2026 version and lecture-status distinctions.
+
+- [x] Verify LinkedIn discovery, official 2025 course topics, official 2025 playlist, author-announced 2026 updates and MIT licence on the *cheatsheet repository* (not automatically on Stanford videos/slides/textbook).
+- [x] Add original accessible beginner/practical/technical Smart Learn lesson map, four Aletheia-specific research patterns and explicit source/interpretation/test distinctions.
+- [x] Register the note as **knowledge-only** in the explicit collection manifest and root research/idea references. **No GUI, reader, new app or protocol amendment.**
+- [ ] In owning `KarstenEvans/aletheia-app` repo, inspect the CURRENT Aletheia Improve GUI/dev/ideas/task/code before proposing any evaluation changes.
+- [ ] Run a 3-case manual trial (correct, deliberately false, incomplete) with actual source receipts and the existing Improve process; record baseline, pass/partial/fail/not-tested results, false positives, limitations and value of any proposed change.
+- [ ] Only if validated and authorised, propose a minimal update to existing Improve acceptance tests. Preserve AI independence, user-owned Markdown and human permission boundaries.
+- [ ] Inspect CURRENT Aletheia Smart Learn specs before implementing the original 9 micro-lessons. No clone of Stanford teaching media; make free/low-bandwidth and no-prerequisites beginner track.
+- [ ] Recheck Stanford's live official 2026 lecture recordings/slides on later dates; do not treat a scheduled lesson or third-party pre-lecture summary as released official content.
+- [ ] If a public Knowledge card/reader is later wanted, create page spec, visitor routes and browser/mobile testing in a separate authorised task.
+
+**Verified here:** repository commit and source links. **Not verified:** full video watch-through, lecture slide-by-slide claims, working 2026 recordings beyond externally signalled availability, Improve/Smart Learn integration or public frontend deployment.
+
 ## AK-MSE-001 | MONEY SAVING KNOWLEDGE | 13 October 2026
 
 **Status:** Reader committed to main with 48 cards and root/library navigation. JavaScript compiled and structural parsing, IDs/categories and source links indexed successfully; live Pages/browser mobile interaction remains unverified. User requested a MoneySavingExpert-based knowledge base. MSE sources are cited by direct article links, not copied. The collection is independent and unaffiliated with MSE.
