@@ -644,3 +644,14 @@ Source/static verification should be recorded after re-fetch. Live Windows execu
 - [ ] Do not build a Metabolic Health app or add personal medical data without a separate explicit task.
 
 **Acceptance now:** public generic evidence is saved and discoverable with sources, evidence limits and retrieval tags. **Not claimed:** personal diagnosis/treatment advice, causal proof that UPFs cause diabetes, microbiome treatment efficacy, or a deployed health app.
+
+## AK-104 — AI Visibility and Trust Gate (20 October 2026)
+
+- [x] Add original, source-attributed knowledge-only note `knowledge/aletheia-ai-visibility-trust-gate.md` on a review branch.
+- [x] Register in `knowledge/knowledge.json` as knowledge-only and expose from `knowledge/index.html`.
+- [ ] Merge after reviewer confirms source scope and wording; no live-reachability claims based on an inaccessible web tool.
+- [ ] Check production GitHub Pages HTML/links and mobile once merged; do not claim live publication from a branch.
+- [ ] Carry out owner-backed bot access, Search Console/Bing, robots and sitemap verification for Swindon.org.uk; no host-wide Fasthosts allegation without logs.
+- [ ] Link final downloadable original PDF from appropriate Aletheia resource page after file upload and publication.
+
+Related: Aletheia Site Audit, Trust Check, Learn optional field lab, Worldwide AI site's `ai-visibility/` branch page. The Contentsquare user-supplied MHTML exposed the opening pages, not a complete extractable 15-page report; source claims must be marked accordingly.
