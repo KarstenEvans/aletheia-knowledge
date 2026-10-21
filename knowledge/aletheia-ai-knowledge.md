@@ -2300,6 +2300,39 @@ This is a practical example of why Aletheia separates evidence, claims, hypothes
 
 ---
 
+## AI-516 | Make your AI messages and credits go further
+
+### Summary
+Small habits can make free or limited AI services more useful: ask clearly, give only relevant context, correct just what needs changing, and save a short handover for long jobs. No new app, subscription or token calculator is required.
+
+**Type:** CROSS-PROVIDER / FREE-FIRST / PRACTICAL GUIDE  
+**Evidence:** OFFICIAL CLAUDE USAGE GUIDANCE + ALETHEIA WORKFLOW SYNTHESIS; Ruben Hassid's 12 April 2026 tips are a discovery source, not independent proof of quoted token savings  
+**Last checked:** 2026-10-21
+
+### Details
+
+Practical tips, in plain English:
+
+1. **Say what you want and why.** For example: “Summarise this letter in five plain-English sentences. Highlight anything I must act on.”
+2. **Send only what matters.** When a long document is not needed in full, share the relevant page or section. Keep the full original available if later checking is necessary.
+3. **Fix one part, not everything.** Say: “Keep the answer, but correct paragraph three.” Regenerate the whole result only when necessary.
+4. **Use the tools you already have.** Ordinary chat may be enough. Extra agents, browsing, image tools or premium models should be used only when they improve the task.
+5. **Save a handover for long work.** Aletheia AI Easy already offers `CHECKPOINT` and `HANDOVER`; use them to keep decisions, sources and the next action when switching chats or AI providers.
+6. **Keep your own copy.** Store useful results in a small, user-controlled Markdown file rather than relying entirely on an AI chat history.
+
+These habits may reduce repeated work and make limited allowances last longer; the actual savings depend on the provider, model, files, tools, caching and plan. Do not claim that one PDF page or screenshot always costs a fixed number of tokens. Trimming sources can lose evidence, so preserve the original and quote the material needed to verify important claims. Free-tier availability is provider-specific and may change.
+
+**Aletheia decision:** Put these tips into AI Knowledge and a short section of Aletheia AI Easy. Do not create an “AI Token Saver” app, run a token meter, rank AI brands or force a separate course.
+
+### Sources
+- https://support.claude.com/en/articles/9797557-usage-limit-best-practices
+- https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work
+- https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt
+- https://github.com/KarstenEvans/aletheia-protocol
+- https://github.com/KarstenEvans/thalia-protocol/blob/main/THALIA_PROTOCOL.md
+
+---
+
 # Research queue
 
 The next provider-specific research passes should deepen:
