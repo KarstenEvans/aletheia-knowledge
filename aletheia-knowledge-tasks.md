@@ -550,7 +550,9 @@ Implemented on the entry: seven static crawlable HTML source cards, original You
 
 **Acceptance:** one correct present entry in each JSON manifest; existing page filenames/URLs unchanged; original source platforms distinguished; no duplicate paid-upgrade page.
 
-### AK-097 | IDEA SAVED / DEVELOPMENT BACK BURNER | Consolidated Aletheia Publisher
+### AK-097 | P1 HIGH PRIORITY / TO DO | Consolidated Aletheia Publisher
+
+**Priority raised by project owner on 22 October 2026.** The Publisher is an approved research/design proposal **not yet a fully implemented app**. Begin implementation planning next, after inspecting existing LinkedIn Check/Publisher rather than creating a duplicate. Two writing ideas to retain: open with a real reader problem, and offer two or three original alternative opening sentences. No promise of engagement growth, no misleading hooks, no autoposting.
 
 **Full canonical proposal:** [ideas/aletheia-publisher.md](ideas/aletheia-publisher.md). Builds on existing *Aletheia LinkedIn Check / proposed LinkedIn Publisher*, Maistro, Agorapulse, Creator OS research [knowledge/aletheia-creator-os-content-system.md](knowledge/aletheia-creator-os-content-system.md), and the two source-attributed collection pages. **Idea registration only; no live app, subscription, automated posting or separate Publisher folder was created.**
 
