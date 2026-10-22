@@ -73,6 +73,14 @@ Approval is bound to the **exact revision, content, media rights, selected desti
 - A post has **one principal purpose**. Optional Thalia humour is a seasoning, not a quota. It must not turn source uncertainty into a punchline.
 - Use `Aletheia LinkedIn Check` as the first compatibility target; review actual files before implementation.
 
+### Two simple opening suggestions (owner-approved, 22 October 2026)
+
+Optional editorial assistance only:
+1. **Start with a real problem the reader recognises**, rooted in an actual question or sourced situation.
+2. **Offer two or three different opening sentences** so the author can pick one in their own voice.
+
+Avoid manufactured urgency, misleading curiosity hooks, generic AI hype, invented anecdotes or promises of reach. These suggestions belong to the current Publisher design and Content Repurposer Skill, not another app.
+
 ### P3. Reader question and useful original writing
 - Start from real observed questions, relevant firsthand experience, user-approved project developments and verifiable external documents.
 - Lightweight brief: who is this for, what do they need to do, which real source supports it, why now, what is the original contribution, and why should it exist as a post rather than only a knowledge card?
