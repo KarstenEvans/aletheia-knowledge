@@ -1,5 +1,19 @@
 # Aletheia Knowledge tasks and cross-AI handover
 
+## AK-103 | 2026 COURSE REFRESH AND RESOURCE INTEGRATION | 30 October 2026
+
+**Status: KNOWLEDGE + LEARN RESOURCES + OPTIONAL FLUENCY LABS UPDATED; RECEIVING-AI A/B + LIVE BROWSER QA PENDING.** This is a continuation of the 15 October AK-103 record below, not a replacement or duplicate task.
+
+- [x] Distinguish the 29 October user-shared **2025 LinkedIn post** from Stanford's in-progress autumn **2026 CME295**.
+- [x] Refresh [original source review](knowledge/aletheia-stanford-cme295.md) with 2026 official syllabus, public 2025/2026 lectures, CME296 diffusion course, CS329Z, MIT-licensed instructor cheatsheets and accessible Aletheia priorities.
+- [x] Update existing Aletheia Learn Resources to free-first course links, optional books (Super Study Guide unavailable as a verified UK Bookshop.org listing), digital AI gifting restrictions and AI-themed gadgets.
+- [x] Upgrade existing AI Fluency 0.2.2 with small Stanford-inspired optional exercises, not a second Stanford course or a new module.
+- [x] Link Improve's existing evaluation experiment, not a new evaluator; add an explicit proposed A/B receipt, maintaining read-only safety and provider neutrality.
+- [ ] Verify the forthcoming official November 2026 agent lecture recording *after release* and then update claims, not before.
+- [ ] Run real receiving-model A/B test and live UI/device/accessibility checks; the 15 October synthetic PASS/FAIL/PARTIAL fixture alone is not model-reliability evidence.
+- [ ] Resolve retail availability and toy-safety qualification before any AI-PI product launch.
+
+
 ## AK-103 | STANFORD CME 295 — RESEARCH SAVED / OFFLINE EVALUATION FIXTURE COMPLETE / AI PILOT PENDING | 15 October 2026
 
 **Knowledge only:** [Stanford CME 295: Aletheia learning, retrieval and evaluation notes](knowledge/aletheia-stanford-cme295.md). Original discovery: https://lnkd.in/p/e668zrGZ ; official: https://cme295.stanford.edu/syllabus/ . The 2025 course has nine publicly linked lectures; the 2026 edition is still progressing. Preserve 2025/2026 version and lecture-status distinctions.
