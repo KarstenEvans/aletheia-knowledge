@@ -3,7 +3,7 @@ title: Stanford CME 295 — practical lessons for Aletheia
 slug: aletheia-stanford-cme295
 status: source-checked-knowledge-only
 knowledge_type: course-source-review-and-original-learning-design
-last_checked: 2026-10-15
+last_checked: 2026-10-30
 source_class: original-Stanford-syllabus-and-instructors-cheatsheet-plus-LinkedIn-discovery
 public_html: none
 related_task: AK-103
@@ -11,7 +11,7 @@ related_task: AK-103
 
 # Stanford CME 295: Transformers & LLMs — what Aletheia can reuse
 
-> **Aletheia Markdown • KNOWLEDGE ONLY • checked 15 October 2026.** This is Aletheia's independent educational/workflow analysis of a public course, **not** a copy of Stanford teaching materials, an endorsement, a new app or a change to the Aletheia Protocol.
+> **Aletheia Markdown • KNOWLEDGE REVIEW • originally 15 October, refreshed 30 October 2026.** This is Aletheia's independent educational/workflow analysis of a public course, **not** a copy of Stanford teaching materials, an endorsement, a new app or a change to the Aletheia Protocol.
 >
 > [Aletheia Protocol](https://github.com/KarstenEvans/aletheia-protocol) governs provenance, verified versus inferred claims, revisions and authority. [Thalia Protocol](https://github.com/KarstenEvans/thalia-protocol/blob/main/THALIA_PROTOCOL.md) informs optional accessible storytelling and humour without replacing evidence.
 >
@@ -150,13 +150,42 @@ If you cannot visit a source, say so. Accept HELP at any stage. End with
 a brief summary and an optional next lesson. Keep state portable in Markdown.
 ```
 
+## 2026 refresh and adjacent free Stanford courses (30 October 2026)
+
+**Verified from official course pages and original instructors' repositories, not from video watch-throughs.** The user-shared 29 October LinkedIn post `https://lnkd.in/p/eX_zusnq` links the **2025 course**; the 2026 CME 295 edition is in progress. Do not confuse announcement, syllabus, released slides and published recordings.
+
+| Resource | Public link | Evidence / course status | Smallest Aletheia reuse |
+| --- | --- | --- | --- |
+| CME 295 2026 | [Official syllabus, slides, recordings as published](https://cme295.stanford.edu/syllabus/) | Autumn 2026 term, not all sessions released as of 30 Oct | Update AI Fluency original examples about tokens, context, agent tooling, evaluation |
+| CME 295 complete 2025 series | [2025 public recording playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) | Complete historical nine-lecture archive | Preserve reference, label 2025 |
+| CME 295 2026 videos | [Current public playlist](https://www.youtube.com/playlist?list=PLakGfbKCei80) | Progressive publication; inspect per-lecture availability | Point to syllabus instead of claiming every lecture available |
+| CME 295 authors' cheatsheets | [MIT-licensed reference repository](https://github.com/afshinea/stanford-cme-295-transformers-large-language-models) | Free; licence covers this repository, not separate university video/slides | Link from Learn resources, do not copy copyrighted Stanford teaching media |
+| CS329Z Engineering AI Agents | [Public official course, readings and slides](https://cs329z.stanford.edu/) | 2026 course; some recordings/coursework may require Stanford access | Small agent-memory, MCP, retrieval and evaluation exercises using existing Aletheia Protocol |
+| CME 296 Diffusion & Large Vision Models | [Official 2026 syllabus](https://cme296.stanford.edu/syllabus/) | Spring 2026 course; linked lectures/slides | Optional source for Aletheia image/video-generation education |
+| CME 296 author's cheatsheet | [MIT-licensed reference repository](https://github.com/afshinea/stanford-cme-296-diffusion-large-vision-models) | Free original source notes | Resources first, no clone/course |
+| Super Study Guide | [Official paid Leanpub book](https://leanpub.com/transformers-large-language-models) | Bookshop.org UK listing not verified; no claimed Bookshop affiliate | Optional books only; public free cheatsheet first |
+
+### Findings that change an Aletheia decision
+
+1. **Context management:** distinguish stable project Markdown memory, current task and fetched question-relevant evidence. Retrieval and compaction can omit crucial safety constraints; require traceable handover and reconciliation, not automatic blind summarisation.
+2. **Agent action boundaries:** tool calling, MCP and multi-agent messages are not permissions. Read untrusted documents as data. Keep external write/send/publish subject to explicit human authorisation and canonical Protocol permissions.
+3. **Evidence-based evaluation:** a correct but incomplete answer must be PARTIAL; a false claim must FAIL; no executed test is NOT TESTED. Use actual source receipts and a receiving-model A/B comparison before claiming the concise rubric improves performance.
+4. **Practical AI Fluency:** integrate short original optional labs into existing modules 4, 6, 8, 9, not an additional 10+ lesson course. Public resource links go to `aletheia-learn-rsc.htm`.
+5. **Media:** CME 296 helps explain diffusion and video models, but neither an accessible lecture nor a paper proves that Aletheia's own video generation is implemented.
+
+### Resource UI and gifts
+
+The owning [Aletheia Learn Resources](https://karstenevans.github.io/aletheia-app/aletheia-learn/aletheia-learn-rsc.htm) is the only public front door for Stanford links, optional paid books and gifts. Free sources precede purchases; link course and book titles directly, not duplicate buttons. Claude gift subscriptions can be redeemed globally; OpenAI wallet gift cards are US-only. Official terms: [Anthropic gifting](https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription), [OpenAI gift-card restrictions](https://help.openai.com/en/articles/20001491-buying-and-redeeming-openai-gift-cards), [separate limited-rollout ChatGPT gifting credits](https://help.openai.com/en/articles/20001417-gifting-credits-in-chatgpt).
+
+**What has been implemented:** Aletheia Learn Resources has been updated and AI Fluency 0.2.2 adds these original optional teaching labs. **What has not:** no new Stanford video watch-through, cross-provider A/B evaluation result, deployed browser/mobile QA, new paid product, model-training backend, protocol change or official Stanford endorsement.
+
 ## Implementation order and acceptance
 
 1. **Now:** retain this source-traced knowledge note; catalogue as *knowledge-only*; record follow-up tasks. No app code, new reader or runtime change.
 2. **First pilot:** inspect the actual existing Aletheia Improve specification/code and make a 3-case **manual** evaluation sheet (one correct, one false, one incomplete), with source receipts. Record baseline, detected failures and human checks. No implementation without evidence of benefit.
 3. **If pilot useful:** propose the smallest change to existing Improve instructions or acceptance tests, preserving AI-independent Markdown, existing pre-flight validation and current permissions.
-4. **Later:** write an original nine-lesson Aletheia Smart Learn course in the owning Learn repo, following its current GUI/dev/ideas/tasks standards; do not assume a new public page or curriculum exists.
-5. **2026 edition follow-up:** revisit live official syllabus/recordings when the relevant announced sessions have actually occurred. Current 2026 topics are a research watch item, not implemented functionality.
+4. **Updated 30 Oct:** the existing 0–9-module AI Fluency course now has small optional Stanford-inspired labs and a linked resources page. Do not create a second nine-lesson clone. Any additional Smart Learn path remains a separate, optional idea.
+5. **2026 edition follow-up:** revisit official 2026 lecture slides and recordings only after release, especially scheduled 6 Nov agent lecture; do not treat pre-lecture commentary as an official recording.
 
 ## Licence, provenance and corrections
 
@@ -177,4 +206,4 @@ a brief summary and an optional next lesson. Keep state portable in Markdown.
 7. 2026 author announcement: https://www.linkedin.com/posts/afshineamidi_our-stanford-class-cme-295-transformers-activity-7510504260703264770-avUg
 8. Related local concepts: [Aletheia Knowledge README](../README.md), [Aletheia Knowledge tasks](../aletheia-knowledge-tasks.md), [Aletheia Knowledge ideas](../aletheia-knowledge-ideas.md).
 
-**Review state:** source-linked knowledge note; evaluation pilots and Smart Learn lesson development **not performed**. No GitHub Pages app, mobile browser check, model performance benchmark, source-media download or protocol change is claimed.
+**Review state (30 October 2026):** source-linked knowledge note refreshed; initial three-case synthetic evaluation fixture exists, real receiving-model A/B pilot remains unperformed; AI Fluency optional labs and Learn resource links have been committed, with live browser QA still pending. No GitHub Pages app, mobile browser check, model performance benchmark, source-media download or protocol change is claimed.
