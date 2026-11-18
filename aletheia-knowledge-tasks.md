@@ -1,3 +1,12 @@
+## AK-MAKE-A-WILL-0.1 | 18 November 2026
+
+**Status:** Knowledge-only collection committed and indexed in `knowledge/knowledge.json`: [Make a Will Knowledge](knowledge/aletheia-make-a-will-knowledge.md). Nine source-linked sections cover wills, family handover, probate, gifts, trusts, pensions, first-time buyer ISAs and trustworthy advice. The interactive app remains owned by `KarstenEvans/aletheia-app`; there is no duplicate Knowledge-specific browser app.
+
+- [x] Canonical Markdown added, linked to Aletheia App.
+- [x] Knowledge registry updated for static discovery.
+- [ ] Recheck legislation, especially 2027 pension inheritance tax rules and any new First Time Buyer ISA 2029 rules, when they take effect.
+- [ ] Manual web discovery and subject-page testing pending.
+
 # Aletheia Knowledge tasks and cross-AI handover
 
 ## AK-103 | 2026 COURSE REFRESH AND RESOURCE INTEGRATION | 30 October 2026
