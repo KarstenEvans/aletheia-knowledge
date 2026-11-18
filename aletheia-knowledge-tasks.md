@@ -680,3 +680,20 @@ Source/static verification should be recorded after re-fetch. Live Windows execu
 - [ ] Link final downloadable original PDF from appropriate Aletheia resource page after file upload and publication.
 
 Related: Aletheia Site Audit, Trust Check, Learn optional field lab, Worldwide AI site's `ai-visibility/` branch page. The Contentsquare user-supplied MHTML exposed the opening pages, not a complete extractable 15-page report; source claims must be marked accordingly.
+
+
+## AK-105 | KNOWLEDGE ADDED | Ageing War: Inhibit the Inhibitors (18 November 2026)
+
+**Research-only v0.1.0**. Canonical source: [Ageing War knowledge](knowledge/aletheia-ageing-war-inhibit-the-inhibitors.md).
+
+- [x] Read the primary 2026 *Gastroenterology* abstract/report on PDAC IL-18 -> STAT1 -> tumour CD47, macrophage evasion and KRAS inhibitor response.
+- [x] Reconcile the comparison with published 2020 senescence/SASP -> macrophage CD38/NAD+ work; explicitly avoid claiming ROS alone directly induces CD38.
+- [x] Distinguish CD38 from CD47/SIRPα, tumour from macrophage roles, and explain that IL-18 can be anti-tumour in other contexts.
+- [x] Record CD47's normal blood-cell protective roles and safety concerns of broadly targeting it.
+- [x] Create canonical research Markdown with hypotheses, contradicting evidence, future experiments, DOI/source links and no personal medical information.
+- [x] Register in knowledge/knowledge.json and link it from the visible Knowledge index; add README entry. Do not claim a dedicated reader app or human clinical treatment.
+- [ ] Go Walkabout: seek spatial and single-cell human PDAC evidence for IL-18 source, tumour CD47 and macrophage CD38/SIRPα relationships, separating associations from mechanisms.
+- [ ] Build independent, source-checked evidence cards for PARP/NAMPT/SARM1/NNMT/LPS and other original Ageing War targets, including protective roles and contradictory evidence.
+- [ ] If an app is wanted later, specify and test it separately. Keep current v0.1.0 knowledge-only.
+
+**Acceptance now:** a source-traced canonical project and catalogue/index links. **Not complete:** human validation, trial evidence, live site/mobile browser test or an Ageing War interactive app.
