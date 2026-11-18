@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-10-20",
+  "updated": "2026-11-18",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -162,6 +162,15 @@
       "status": "knowledge-only",
       "knowledge": "aletheia-ai-visibility-trust-gate.md",
       "description": "Original source-checked explanation of website accessibility, crawler policy, AI citations, evidence-based trust and the gated-community problem."
+    },
+    {
+      "slug": "aletheia-make-a-will-knowledge",
+      "title": "Aletheia Make a Will Knowledge",
+      "kind": "knowledge",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-make-a-will-knowledge.md",
+      "app": "https://karstenevans.github.io/aletheia-app/aletheia-make-a-will/aletheia-make-a-will.htm",
+      "description": "England and Wales: ordinary wills, family handover, probate, lawful gifting, pensions and multigenerational family legacy planning."
     }
   ]
 }
