@@ -59,7 +59,7 @@ The app loads its Markdown library from `../knowledge/` when hosted. It also sup
 
 - [Original, source-traced Ageing War research](knowledge/aletheia-ageing-war-inhibit-the-inhibitors.md), added 18 November 2026. Compares senescence/SASP -> macrophage CD38 -> NAD+ decline with pancreatic-cancer IL-18 -> STAT1 -> tumour-cell CD47 -> macrophage immune evasion.
 - Explicitly preserves the opposite, immune-stimulating roles of IL-18 in other cancers, and the clinical blood-cell toxicity risk of broad CD47/SIRPα blockade.
-- Status: **knowledge-only** (v0.1.0). No approved therapy, reader app, clinical claim, or personal medical file is implied.
+- Status: **knowledge-only** (v0.2.0): expanded PS-exposure and CD47 maturation/trafficking hypotheses, including safety counterevidence. No approved therapy, reader app, clinical claim, or personal medical file is implied.
 
 ## Metabolic Health Knowledge
 
