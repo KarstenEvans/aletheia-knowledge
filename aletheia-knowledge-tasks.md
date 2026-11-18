@@ -697,3 +697,11 @@ Related: Aletheia Site Audit, Trust Check, Learn optional field lab, Worldwide A
 - [ ] If an app is wanted later, specify and test it separately. Keep current v0.1.0 knowledge-only.
 
 **Acceptance now:** a source-traced canonical project and catalogue/index links. **Not complete:** human validation, trial evidence, live site/mobile browser test or an Ageing War interactive app.
+
+### AK-105 supplement | 18 November 2026: Restore, Redirect, Reveal
+- [x] Correct 'inhibit everything' framing; distinguish phosphatidylserine lipid externalization from CD47 protein production.
+- [x] Source primary 2025 JCI mouse pancreatic cancer paper: pyrimidine-synthesis alteration exposes PS and enhances phagocytosis while CD47 stays unchanged.
+- [x] Add counterevidence that chronic PS signalling can support immune suppression.
+- [x] Source production-stage CD47 alternatives: QPCTL-dependent pyroglutamate maturation and long/short 3'-UTR-dependent surface trafficking; clarify that CD48 is a separate active immune protein, not an interchangeable safe variant.
+- [ ] Investigate tumour selectivity, normal tissue effects, macrophage state and clinical translation before contemplating any therapy claim.
+- Knowledge revised to v0.2.0. Still no new app or human treatment validation.
