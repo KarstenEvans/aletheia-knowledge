@@ -1,11 +1,11 @@
 # Aletheia Ageing War: Inhibit the Inhibitors
 
 Status: KNOWLEDGE-ONLY / RESEARCH PROJECT / NOT TREATMENT ADVICE  
-Version: 0.1.0  
+Version: 0.2.0  
 Created: 18 November 2026  
 Last evidence review: 18 November 2026  
 Scope: cellular senescence, inflammatory signalling, macrophage reprogramming, NAD metabolism, immune evasion, pancreatic cancer, and the risks of indiscriminate inhibition.  
-Project principle: **Find the pathological brake, identify who is pressing it, and preserve the healthy brakes.**
+Project principle: **Reveal harmful cells, restore useful clearance, redirect immune signals; inhibit only where necessary.**
 
 > This public file records research hypotheses and independently attributable findings. It is neither a cancer-treatment protocol nor an instruction to use medicines, supplements or unapproved interventions. It contains no personal health information.
 
@@ -13,7 +13,7 @@ Project principle: **Find the pathological brake, identify who is pressing it, a
 
 Many biological signals have two or more roles. A protective signal may be hijacked by diseased cells; a normal immune reaction may contribute to age-related metabolic dysfunction; a molecule that blocks immune attack in one context can stimulate it in another.
 
-**Inhibit the inhibitors** is an *investigation framework*, not a rule to inhibit everything marked inhibitory. The research sequence is:
+**Inhibit the inhibitors** is only one tactic. Also test ways to expose recognition signals, restore immunity, redirect protein processing or trafficking, and selectively mark harmful cells. The research sequence is:
 
 1. Identify the initiating cell and trigger, and distinguish a proved cause from a plausible upstream trigger.
 2. Trace the message, receptor, signalling pathway, responding cell and downstream effect.
@@ -123,6 +123,61 @@ Sources:
 
 ---
 
+## WAR-IMM-005 | PS is a lipid to expose, not a substitute protein for CD47
+
+### Summary
+CD47 is a cell-surface protein encoded by the CD47 gene. PS (phosphatidylserine, PtdSer) is a **phospholipid** usually kept on the inner plasma-membrane leaflet. Changing CD47 mRNA translation cannot turn CD47 into PS: they are chemically and biosynthetically different materials. The relevant PS intervention question is **outer-surface exposure**, not necessarily producing more total PS.
+
+Flippases ATP11A/ATP11C normally return PS inside. Scramblases including XKR8 (apoptosis-linked) and TMEM16F (calcium-activated) can expose PS outside. PS exposure can invite macrophage engulfment but can also promote immunosuppressive cleanup via receptors including TAM/TIM-family pathways. It is not a universally beneficial 'eat-me' trigger in cancer.
+
+### Direct pancreatic-cancer proof of principle
+Zhao et al. (*Journal of Clinical Investigation*, 17 November 2025) found that disrupting pancreatic cancer-cell de novo pyrimidine synthesis (CAD deficiency, or DHODH targeting) promoted macrophage-dependent UMP depletion, PS exposure and macrophage phagocytosis in mouse pancreatic cancer models. **CD47 surface levels stayed unchanged.** Tumour burden fell in tested models. The authors could not fully separate PS-driven engulfment of viable cells from recognition of cells entering early apoptosis. It is preclinical, not a human treatment.
+
+### Evidence
+- Primary: https://doi.org/10.1172/JCI193370
+- Flippase/scramblase biology: https://pmc.ncbi.nlm.nih.gov/articles/PMC10134735/
+- Counterevidence: prolonged PS exposure can drive tumour immune evasion: https://doi.org/10.1038/s41420-025-02789-y
+- PS immune checkpoint review: https://pubmed.ncbi.nlm.nih.gov/38573347/
+
+EVIDENCE: tested mouse PDAC mechanism; PS immune effects are context-dependent.
+
+---
+
+## WAR-IMM-006 | Make CD47 incorrectly: change maturation or destination rather than replace it with CD48
+
+### Summary
+A nucleated cancer cell continuously makes new CD47, whereas a circulating **mature** red blood cell lacks protein-synthesis machinery. This suggests a relative production-stage vulnerability, **not inherent tumour selectivity**: normal tissues and developing blood cells also manufacture CD47.
+
+### Three production-line concepts
+1. **Incorrect finishing / QPCTL:** QPCTL modifies newly synthesized CD47 to create N-terminal pyroglutamate (pGlu) important for SIRPα recognition. Experimental QPCTL loss or interference can preserve total surface CD47 while reducing its functional binding to macrophage SIRPα. A 2026 B-ALL study directly compared wild-type protein with a mutated CD47 N-terminal amino acid, finding poorer SIRPα binding in the latter. Neither finding demonstrates a selective approved PDAC treatment.
+2. **Wrong delivery address / CD47 mRNA 3'-UTRs:** In a 2015 *Nature* study, long versus short CD47 mRNA 3'-UTRs encoded the **same protein sequence** but directed it differently. Long 3'-UTR CD47 was delivered efficiently to the cell surface; short 3'-UTR CD47 was largely retained internally. HuR/SET/RAC1-mediated trafficking contributes. Tumour-specific control of this mechanism is a research hypothesis.
+3. **Wrong translated protein / RNA or DNA changes:** Gene or RNA editing can, in principle, alter a protein sequence. No validated strategy safely and uniformly reprograms CD47 across pancreatic tumours to generate a harmless replacement. Tumour targeting, tumour heterogeneity, non-cancer-cell effects and normal CD47 function are major obstacles.
+
+**CD48 is a real, biologically active and unrelated immune signalling glycoprotein**, not an inert CD47 variant. It participates in CD2 and CD244 (2B4) pathways; expression could be useful or harmful depending on cell context. Converting CD47 into CD48 is not a one-step alternative.
+
+### Complications
+- Already circulating mature red cells cannot produce or process new CD47, but **newly developing** erythrocytes, other immune cells and normal nucleated tissues do, so a systemic processing/trafficking intervention is not automatically safe.
+- Removing functional CD47 alone may be insufficient to trigger engulfment without a positive macrophage-activating cue.
+- Broad PS exposure can push macrophages into tolerance; aim for defined tumour-specific outcomes rather than PS quantity alone.
+
+### Evidence and original source links
+- CD47 QPCTL maturation: https://doi.org/10.1038/s41591-019-0356-z
+- CD47 Q1A mutation and SIRPα binding (B-ALL rather than PDAC): https://ashpublications.org/bloodneoplasia/article/doi/10.1016/j.bneo.2026.100242/568193/
+- CD47 long vs short 3'-UTRs and protein localization: https://doi.org/10.1038/nature14321
+- CD48 physiology and human immunity: https://jci.org/articles/view/191340
+- CD48 dual effects in cancer: https://pubmed.ncbi.nlm.nih.gov/42500566
+
+EVIDENCE: protein maturation and trafficking mechanisms experimentally demonstrated, tumour-selective therapeutic exploitation hypothetical.
+
+### Go Walkabout priorities
+1. Compare tumour-versus-normal pancreas **total CD47, functional pGlu-CD47, QPCTL, long/short CD47 3'-UTRs and surface CD47**.
+2. Test whether IL-18/STAT1-mediated CD47 increases change dependence on CD47 maturation or trafficking.
+3. Compare macrophage phagocytosis with PS exposed but CD47 unchanged, and with defective CD47 but no extra PS cue.
+4. Record erythrocyte precursors, normal tissues, immune-cell adverse effects, macrophage inflammatory polarization and human trial evidence.
+5. Explore tumour-specific delivery and markers without assuming a single pan-cancer solution.
+
+---
+
 ## WAR-RESEARCH-001 | Go Walkabout: falsifiable questions
 
 1. **Origin:** In human PDAC specimens, what proportion of IL-18 comes from malignant epithelial cells versus immune/stromal cells, and how does this vary by stage, subtype and KRAS treatment?
@@ -138,4 +193,5 @@ Sources:
 For each new paper, record date, model/population, cell source, signalling arrow, measured outcome, intervention, adverse effects, evidence grade and a strongest alternative explanation. Maintain separate labels **Established in tested model / Supported association / Aletheia hypothesis / Contradictory evidence / Human clinical evidence**. Update the chain when a new paper contradicts it; don't preserve metaphors at the expense of biology.
 
 ## Change log
+- **2026-11-18, v0.2.0**: Added non-inhibition strategy, direct 2025 JCI mouse PDAC surface-PS evidence and its immune-suppression counterexamples; QPCTL-dependent CD47 maturation; CD47 long/short mRNA 3'-UTR-dependent localization; CD48 distinction and tumour specificity limits. Not a clinical treatment.
 - **2026-11-18, v0.1.0**: Project knowledge branch created. Added the Sun et al. (2026) IL-18 -> STAT1 -> CD47/SIRPα pancreatic cancer mechanism, compared with senescence/SASP -> CD38/NAD+ ageing mechanism, documented IL-18's conflicting roles and CD47 safety constraints, and defined next research tests. No therapy or public app is claimed.
