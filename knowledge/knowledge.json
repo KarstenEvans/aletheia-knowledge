@@ -138,6 +138,14 @@
       "description": "Source-traced metabolic-health cards on ultraprocessed food responses, prediabetes and ageing, type 2 diabetes mechanisms, and gut-microbiome evidence."
     },
     {
+      "slug": "aletheia-ageing-war-inhibit-the-inhibitors",
+      "title": "Ageing War: Inhibit the Inhibitors",
+      "kind": "research",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-ageing-war-inhibit-the-inhibitors.md",
+      "description": "Research-first map of senescence/SASP to macrophage CD38 and NAD+ consumption, pancreatic cancer IL-18/STAT1/CD47 immune escape, conflicting IL-18 roles, safety and open experiments."
+    },
+    {
       "slug": "aletheia-mse-money-saving",
       "title": "Money Saving: independent MSE source guide",
       "kind": "knowledge",
