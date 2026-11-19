@@ -705,3 +705,11 @@ Related: Aletheia Site Audit, Trust Check, Learn optional field lab, Worldwide A
 - [x] Source production-stage CD47 alternatives: QPCTL-dependent pyroglutamate maturation and long/short 3'-UTR-dependent surface trafficking; clarify that CD48 is a separate active immune protein, not an interchangeable safe variant.
 - [ ] Investigate tumour selectivity, normal tissue effects, macrophage state and clinical translation before contemplating any therapy claim.
 - Knowledge revised to v0.2.0. Still no new app or human treatment validation.
+
+### AK-105 PS flippase follow-up | 19 November 2026
+- [x] Trace healthy PS membrane asymmetry to ATP11A/C flippases and CDC50A/TMEM30A, with XKR8/TMEM16F scrambling.
+- [x] Record that reducing a flippase alone generally does not induce rapid PS exposure without scramblase action.
+- [x] Include opposed primary tumour findings: 2022 colon cancer PS-out / CDC50A-deficient tumors grew faster with immunosuppression; 2025 pancreatic cancer CAD/DHODH-linked PS exposure under macrophage cytokines increased phagocytosis and reduced tumour burden in mouse models.
+- [x] Record PS signalling through macrophage TIM-3 and potential STING / NK / T-cell consequences, plus recent XKR8/ANO6 research.
+- [x] Update canonical research to v0.3.0, explicitly labeling all translational proposals speculative.
+- [ ] Test predictions in matched human tumour and normal-tissue systems; characterise macrophage clearance vs immunosuppression, and platelet/erythrocyte safety. No unsupervised therapeutic application.
