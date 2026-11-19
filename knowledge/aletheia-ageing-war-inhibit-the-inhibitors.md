@@ -1,9 +1,9 @@
 # Aletheia Ageing War: Inhibit the Inhibitors
 
 Status: KNOWLEDGE-ONLY / RESEARCH PROJECT / NOT TREATMENT ADVICE  
-Version: 0.2.0  
+Version: 0.3.0  
 Created: 18 November 2026  
-Last evidence review: 18 November 2026  
+Last evidence review: 19 November 2026  
 Scope: cellular senescence, inflammatory signalling, macrophage reprogramming, NAD metabolism, immune evasion, pancreatic cancer, and the risks of indiscriminate inhibition.  
 Project principle: **Reveal harmful cells, restore useful clearance, redirect immune signals; inhibit only where necessary.**
 
@@ -178,6 +178,56 @@ EVIDENCE: protein maturation and trafficking mechanisms experimentally demonstra
 
 ---
 
+## WAR-IMM-010 | What prevents PS from reaching the outer membrane? ATP11A/C, CDC50A and the two-switch paradox
+
+### Summary
+Phosphatidylserine (PS/PtdSer) is a phospholipid normally kept mainly on the **cytoplasmic (inner) leaflet** of healthy plasma membranes. P4-ATPase **flippases ATP11A and ATP11C**, working with the chaperone **CDC50A** (encoded by **TMEM30A**), actively transfer exposed PS back inward using ATP. **Scramblases XKR8 and TMEM16F/ANO6** permit relatively rapid bidirectional transfer; XKR8 is caspase-activated in apoptosis, whereas TMEM16F responds to raised intracellular calcium in viable cells.
+
+### Mechanistic answer to 'could we inhibit what inhibits PS exposure?'
+Yes in principle: reducing inward flippase activity removes a brake on outer-surface PS exposure. **However, flippase inactivation alone is generally insufficient to cause *rapid* PS externalization**, because the charged PS headgroup crosses the hydrophobic membrane core extremely slowly without an active transport route. In normal apoptosis, caspases coordinate **ATP11A/C inactivation + XKR8 activation**. During some transient calcium elevations, calcium suppresses ATP11A/C function while activating TMEM16F. Increased PS synthesis is not necessarily required.
+
+**This biology is essential in healthy cells** for coagulation (particularly platelets), immune-cell activation, efferocytosis, membrane polarity, signalling and red-cell stability. There is no justified general approach of globally inhibiting flippases or activating scramblases.
+
+### Direct falsification test: more exposed PS made tumours grow *faster*
+A 2022 *Cell Reports* primary study (Xue et al., 41:111582) disabled **Tmem30a/CDC50A** in MC38 mouse colon adenocarcinoma cells. The living cancer cells constitutively exposed surface PS (**PS-out**). In immunocompetent mice, the engineered PS-out tumours **grew faster**, showing more immunosuppressive/M2-like tumour-associated macrophages (TAMs) and fewer tumour-antigen-specific T cells. Macrophage **TIM-3** was implicated in PS sensing.
+
+The same study generated the opposite condition by removing **XKR8** to limit PS exposure during apoptosis (**PS-in**); tumours grew more slowly, with an experimental **cGAMP -> STING** signal and stronger tumour-antagonistic myeloid/NK responses. The researchers also tested *masking exposed PS* with a soluble PS-binding MFG-E8 C-terminal fragment that lacked its usual signalling-binding portion; it reduced tumour growth in the tested models. That is an example of **changing a signal's interpretation**, not simply increasing PS.
+
+**Do not generalize** a colon cancer mouse model to all pancreatic tumours or senescent cells.
+
+### Equally important counterexample: more PS accompanied greater pancreatic-cancer clearance
+A different primary study (Zhao et al., *J Clin Invest* 2025, 135:e193370) found that impairing cancer-cell pyrimidine synthesis (CAD / DHODH / UMPS pathway) under macrophage-produced inflammatory signals depleted tumour UMP, caused greater **surface PS on PI-negative viable/pre-apoptotic pancreatic tumour cells**, and enhanced macrophage engulfment and reduced tumour burden in mouse models. Tumour **CD47 surface abundance did not change**. The authors note that the role of PS itself versus emerging apoptotic cell states requires further analysis.
+
+**Aletheia hypothesis:** The outcome could depend on whether PS exposure signals 'specific defective tumour-cell clearance' or 'chronic immunosuppressive apoptotic mimicry', and on accompanying macrophage cytokines, TIM-3/TAM receptors, CD47/SIRPα, antigen presentation and T-cell state. These differences are testable but the complete unifying mechanism is *not proven*.
+
+### New 2025–2026 reverse-direction research
+- A 2025 *PNAS* study implicated **TMEM16F-dependent PS exposure** in immunosuppressive macrophage/TGF-beta signalling. Blocking TMEM16F-dependent PS exposure improved experimental antitumour immunity (context-specific).
+- An experimental study indexed in 2026 found that targeting PS-synthesis gene **PTDSS1**, XKR8 or ANO6/TMEM16F can sensitize certain tumours to PD-1 checkpoint blockade. This strengthens the warning that 'more PS outside is always good' is false.
+- A recent study indexed in 2026 reported **increased CD47 and surface proteome remodeling in TMEM30A-deficient immune cells**, further undermining any assumption that impairing a flippase only changes PS localization. Do not transfer immune-cell results directly to pancreatic cancer without tests.
+
+### Alternative research strategies that go beyond blocking a protein
+1. **Reveal then correctly interpret:** Determine whether tumour PS exposure in a specific model predicts macrophage destruction or suppressive efferocytosis. It is an outcome to measure, not an a priori therapy.
+2. **Target PS that is *already exposed*:** Explore tumour-local or tumour-marker-gated PS-binding probes/antibodies or signalling-neutralising adaptors. The 2022 MFG-E8 fragment is a preclinical example; normal activated platelets, apoptotic cells and healthy immune tissues can also display PS, so off-target risks remain.
+3. **Rescue productive clearance:** Investigate macrophage and dendritic-cell antigen handling, T-cell priming and inflammatory-versus-resolving states after uptake. A successful 'engulfment' event alone is not proof of durable antitumour immunity.
+4. **Production-stage CD47:** Compare QPCTL-dependent surface CD47 maturation and PS externalization as **separate mechanisms** with distinct risks. Mature erythrocytes may be less affected by new protein maturation, but developing red cells and normal nucleated cells remain at risk.
+
+### Minimal evidence-based comparison for future experiments
+Compare **surface PS** (e.g. binding assay), **total PS**, **viability/apoptosis**, **ATP11A/C + CDC50A**, **XKR8/TMEM16F activation**, **CD47 abundance and QPCTL-dependent function**, **macrophage uptake and phenotype**, **antigen-specific T-cell activation**, and **normal-cell/platelet toxicity**. Use matched controls and distinguish tumour types; measure both tumour clearance and sustained immune outcomes, including negative results.
+
+### Sources
+- **Primary flippase mechanism:** Segawa K et al. (2014). *Caspase-mediated cleavage of phospholipid flippase for apoptotic phosphatidylserine exposure.* Science. https://doi.org/10.1126/science.1252809
+- **Independent mechanistic synthesis:** Sakuragi T, Nagata S. (2023). *Regulation of phospholipid distribution in the lipid bilayer by flippases and scramblases.* Nat Rev Mol Cell Biol. https://doi.org/10.1038/s41580-023-00604-z
+- **Primary counterexample, colon cancer:** Xue et al. (2022). *Mobilizing phospholipids on tumor plasma membrane implicates phosphatidylserine externalization blockade for cancer immunotherapy.* Cell Reports 41:111582. https://doi.org/10.1016/j.celrep.2022.111582
+- **Primary pancreatic cancer positive PS-exposure context:** Zhao et al. (2025). *Targeting plasticity in the pyrimidine synthesis pathway potentiates macrophage-mediated phagocytosis in pancreatic cancer models.* JCI. https://doi.org/10.1172/JCI193370
+- **Additional PS immune escape:** Gadiyar V et al. (2025). *Phospholipid scramblases TMEM16F and Xkr8 mediate distinct features of PS externalization and immune suppression to promote tumor growth.* Cell Death Discovery. https://doi.org/10.1038/s41420-025-02789-y
+- **2025 TMEM16F immune effect:** Wu M et al. (2025). *TMEM16F phospholipid scramblase regulates tumorigenesis by modulating the tumor immune microenvironment.* PNAS. https://doi.org/10.1073/pnas.2513910122
+- **2026 PS resistance to immune checkpoint blockade:** *Suppressing phosphatidylserine externalization overcomes cancer immune evasion and enhances immunotherapy.* PubMed: https://pubmed.ncbi.nlm.nih.gov/42684101/
+- **2026 immune-cell membrane / CD47 reorganisation:** *Cell surface remodeling caused by the loss of the flippase subunit TMEM30A in immune cells.* PubMed: https://pubmed.ncbi.nlm.nih.gov/42599021/
+
+EVIDENCE: Primary mechanistic biology and opposing preclinical animal tumour models. No safe selective human PS-exposure manipulation treatment established.
+
+---
+
 ## WAR-RESEARCH-001 | Go Walkabout: falsifiable questions
 
 1. **Origin:** In human PDAC specimens, what proportion of IL-18 comes from malignant epithelial cells versus immune/stromal cells, and how does this vary by stage, subtype and KRAS treatment?
@@ -193,5 +243,6 @@ EVIDENCE: protein maturation and trafficking mechanisms experimentally demonstra
 For each new paper, record date, model/population, cell source, signalling arrow, measured outcome, intervention, adverse effects, evidence grade and a strongest alternative explanation. Maintain separate labels **Established in tested model / Supported association / Aletheia hypothesis / Contradictory evidence / Human clinical evidence**. Update the chain when a new paper contradicts it; don't preserve metaphors at the expense of biology.
 
 ## Change log
+- **2026-11-19, v0.3.0**: Go Walkabout into PS asymmetry: ATP11A/C, CDC50A/TMEM30A, XKR8 and TMEM16F; added opposing primary tumour outcomes (2022 colon PS-out increased growth vs 2025 pancreatic PS exposure with clearance), 2025–26 immune-suppression research, and revised research tests. No clinical treatment implied.
 - **2026-11-18, v0.2.0**: Added non-inhibition strategy, direct 2025 JCI mouse PDAC surface-PS evidence and its immune-suppression counterexamples; QPCTL-dependent CD47 maturation; CD47 long/short mRNA 3'-UTR-dependent localization; CD48 distinction and tumour specificity limits. Not a clinical treatment.
 - **2026-11-18, v0.1.0**: Project knowledge branch created. Added the Sun et al. (2026) IL-18 -> STAT1 -> CD47/SIRPα pancreatic cancer mechanism, compared with senescence/SASP -> CD38/NAD+ ageing mechanism, documented IL-18's conflicting roles and CD47 safety constraints, and defined next research tests. No therapy or public app is claimed.
