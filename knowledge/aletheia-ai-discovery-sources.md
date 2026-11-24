@@ -197,3 +197,13 @@ The site's homepage lists fifteen task-specific generators: Prompt Improver; SEO
 | [AI Prompting for Everyone](https://www.deeplearning.ai/courses/ai-prompting-for-everyone/) | Fluency | Additional candidate; verify current access terms |
 
 **Research discovery:** [OpenAI Research](https://openai.com/research/index/), [Google DeepMind](https://deepmind.google/research/), [Anthropic](https://www.anthropic.com/research), [Microsoft Research](https://www.microsoft.com/en-us/research/), [Meta AI Research](https://ai.meta.com/research/). These are discovery channels, not independent validation. Inspect original papers, methods, datasets, limitations and independent replications. Use the existing [Aletheia Go research discussion workflow](https://github.com/KarstenEvans/aletheia/blob/main/DISCUSSIONS.md#aletheia-go-research-discussions). Avoid duplicate cards; relevant existing IDs AI-504 and AI-510–514 were extended in place.
+
+## SCOUT research follow-up — 24 November 2026
+
+- [WebMCP Community Group draft](https://webmachinelearning.github.io/webmcp/) and [27 October W3C polyfill pilot](https://www.w3.org/blog/2026/w3c-launches-second-pilot-of-program-to-support-open-source-projects/): ClipPipe research only, not a standards-track guarantee.
+- [OpenAI jagged frontier](https://openai.com/index/research-acceleration-jagged-frontier/) (18 November): internal task-specific observations, not universal performance; AI-506 and AI Fluency.
+- [AlphaProof Code](https://deepmind.google/blog/introducing-alphaproof-code/) (10 November): developer report of formal verification of specified cryptographic code properties; existing Secure Development profile informative note.
+- [MKA evaluation](https://artificialanalysis.ai/evaluations/mka) (10 November launch; [18 November preprint](https://arxiv.org/abs/2611.25228)): AI-514 and AK-093 visual evidence experiment; not CAD validation.
+- [MedChemBench](https://openai.com/index/introducing-medchembench/) (20 November): retrospective benchmark, not clinical validation; Aletheia Go optional held-out prediction exercise.
+
+See existing canonical cards and linked project notes rather than duplicating knowledge. Vendor reports and preprints require independent checks before broader claims; no experiments claimed.
