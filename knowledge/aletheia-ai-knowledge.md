@@ -2035,6 +2035,8 @@ Aletheia debugging should therefore ask:
 
 This principle was reinforced by the user-supplied *AI Fundamentals* cheat sheet and by current agent-platform documentation.
 
+**SCOUT extension (24 November 2026):** [OpenAI jagged frontier](https://openai.com/index/research-acceleration-jagged-frontier/) reports uneven autonomous performance across internal research tasks. Compare task-level results for the actual model, interface and available tools, not a universal intelligence score. Vendor-specific observations do not establish independent generalisation.
+
 ### Sources
 - User-supplied PDF: *AI Fundamentals — The Cheat Sheet* (Property Filter, 2026), discovery source
 - https://developers.openai.com/api/docs/guides/agents
@@ -2276,6 +2278,8 @@ A citation is not enough by itself. Check that the cited source actually support
 
 ### Practical extension (2026-11-24)
 For each material research claim record the exact source, evidence location, date, scope and whether it is observed, reported, inferred or hypothetical. Seek contradictory evidence and alternative explanations; note missing data instead of filling gaps. An independent AI review should start from the original question and sources before seeing the first conclusion; agreement is not independent empirical replication. Reuse the Stanford Improve scorecard: PASS / PARTIAL / FAIL / NOT TESTED, with actual receipts. Public discussion workflow: [Aletheia Discussions](https://github.com/KarstenEvans/aletheia/blob/main/DISCUSSIONS.md).
+
+**SCOUT visual-evidence extension (24 November 2026):** [MKA](https://artificialanalysis.ai/evaluations/mka), launched 10 November with [18 November preprint](https://arxiv.org/abs/2611.25228), evaluates visually dependent professional tasks. Preserve original images, drawings, revision and spatial references alongside extracted text; test visual-only, text-only and combined evidence against known ground truth. Do not equate OCR success or fluent descriptions with topology or dimensional correctness. See [CAD diagnostic experiment](https://github.com/KarstenEvans/aletheia-knowledge/blob/main/ideas/aletheia-cad-idgn-reference-diagnostic.md).
 
 ### Sources
 - https://cs50.harvard.edu/x/weeks/ai/
