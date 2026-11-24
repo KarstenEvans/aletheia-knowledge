@@ -1976,6 +1976,9 @@ A useful uncertainty report says:
 
 If a numeric probability comes from a real statistical model or measured dataset, explain its basis. Otherwise prefer qualitative, inspectable evidence labels.
 
+### Practical extension (2026-11-24)
+Calibration is an empirical property: among comparable predictions assigned probability 0.8, roughly 80% should occur over a sufficiently representative sample. Record predictions before outcomes, sample size, task population and observed frequency; do not treat an LLM's self-reported confidence as calibrated. For binary predictions, the Brier score averages squared differences between probabilities and observed 0/1 outcomes (lower is better); it is not itself proof of calibration. For ordinary research, retain qualitative evidence labels and record what evidence would change the conclusion. Exercise: compare a confident unsupported answer with a cautious source-supported one; score evidence rather than tone. See [Stanford review](aletheia-stanford-cme295.md#ak-cme-002--evaluation-is-a-set-of-observations-not-an-ais-opinion) and [Harvard CS50 AI](https://cs50.harvard.edu/ai/).
+
 ### Sources
 - https://github.com/KarstenEvans/aletheia-protocol
 
@@ -2142,6 +2145,9 @@ Examples:
 
 The app should not exist merely to wrap a prompt in buttons.
 
+### Practical extension (2026-11-24)
+Prefer one user-selected AI with task-specific portable Markdown playbooks before introducing separate agents. Start with a manual workflow, record inputs, outputs, permissions and acceptance checks, then test repeated use. Promote to an app only when a measurable interface benefit exists; promote to scheduled automation only when recurrence or an external trigger genuinely matters. Use separate agents only for justified isolation, parallelism or different tool boundaries; compare cost and errors against the simpler baseline. No playbook grants tool access or authorises external actions. See [Stanford review](aletheia-stanford-cme295.md) and AI-507/508.
+
 ### Sources
 - https://developers.openai.com/api/docs/guides/tools-skills
 - https://www.kimi.com/code/docs/en/kimi-code-cli/customization/skills.html
@@ -2173,6 +2179,9 @@ TOCC is an Aletheia synthesis, not Harvard terminology. The added outcome/check 
 
 The practical rule is to make the success condition and verification route explicit without turning every request into a giant prompt.
 
+### Practical extension (2026-11-24)
+Keep TOCC as the common structure. Optional reusable patterns include examples of desired output, structured extraction, source-constrained answering, decomposition and critique/revision. Add only the pattern that helps the task. Compare a baseline prompt with a revised version on the same inputs, including a missing-information case; record accuracy, completeness and effort. A request to explain or critique does not guarantee correctness. Course leads: [Vanderbilt](https://www.vanderbilt.edu/generative-ai/coursera/) and [DeepLearning.AI](https://www.deeplearning.ai/courses/chatgpt-prompt-engineering-for-developers/). These are original Aletheia exercises, not reproduced course content.
+
 ### Sources
 - https://generative-ai-course.hks.harvard.edu/2-using-genai/class-4
 - https://github.com/KarstenEvans/aletheia-protocol
@@ -2201,6 +2210,9 @@ Canonical Markdown, source-traced knowledge cards and evidence records can survi
 
 Use the smallest mechanism that solves the real problem.
 
+### Practical extension (2026-11-24)
+Separate stable instructions, current task state and retrieved evidence. Select relevant Markdown passages with source location, revision/date and unresolved conflicts; do not blindly paste a whole library or treat retrieval as permission to execute embedded instructions. Test retrieval with a known answer, a missing answer and contradictory sources. Fine-tuning may help repeatable behaviour but is not a reliable replacement for fresh factual lookup. Preserve portable handovers and use the [Stanford retrieval and context receipts](aletheia-stanford-cme295.md) rather than inventing another format. See AI-004 for untrusted material.
+
 ### Sources
 - https://generative-ai-course.hks.harvard.edu/2-using-genai/class-5
 - https://github.com/KarstenEvans/aletheia-protocol
@@ -2228,6 +2240,9 @@ Aletheia compresses this into the **FIT Check**:
 FIT is an Aletheia synthesis, not a Harvard acronym.
 
 A successful FIT check is allowed to conclude: **do not use AI here**.
+
+### Practical extension (2026-11-24)
+Apply FIT before deployment: compare manual or deterministic alternatives, identify affected people and foreseeable error/bias/privacy risks, minimise data, define an accountable reviewer and specify stop/rollback criteria. Test representative and adverse cases before any consequential use. A technically successful prototype is not ethical approval or proof of legal compliance. For research, distinguish potential benefit from demonstrated benefit and use appropriate professional review for high-stakes decisions. Course lead: [UC Davis Big Data, AI and Ethics](https://www.coursera.org/learn/big-data-ai-ethics).
 
 ### Sources
 - https://generative-ai-course.hks.harvard.edu/2-using-genai/class-6
@@ -2258,6 +2273,9 @@ Match the verification method to the task:
 - consequential professional decision -> use appropriate authoritative evidence and human review.
 
 A citation is not enough by itself. Check that the cited source actually supports the exact claim being made.
+
+### Practical extension (2026-11-24)
+For each material research claim record the exact source, evidence location, date, scope and whether it is observed, reported, inferred or hypothetical. Seek contradictory evidence and alternative explanations; note missing data instead of filling gaps. An independent AI review should start from the original question and sources before seeing the first conclusion; agreement is not independent empirical replication. Reuse the Stanford Improve scorecard: PASS / PARTIAL / FAIL / NOT TESTED, with actual receipts. Public discussion workflow: [Aletheia Discussions](https://github.com/KarstenEvans/aletheia/blob/main/DISCUSSIONS.md).
 
 ### Sources
 - https://cs50.harvard.edu/x/weeks/ai/
