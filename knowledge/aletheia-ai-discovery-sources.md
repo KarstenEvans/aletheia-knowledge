@@ -1,7 +1,7 @@
 # Aletheia AI Knowledge — discovery source register
 
 **Status:** research provenance / discovery map  
-**Updated:** 2026-10-03  
+**Updated:** 2026-11-24  
 **Canonical knowledge:** `aletheia-ai-knowledge.md`
 
 ## Purpose
@@ -177,3 +177,23 @@ The site's homepage lists fifteen task-specific generators: Prompt Improver; SEO
 **Existing-work routing:** video teaching → Aletheia Learn; adapting an existing article → Content Repurposer Skill; SEO/AEO evidence and proposed rewrite → existing GEO/AEO Optimizer Skill and optional Site Audit Stage 6; career prompts → existing Job Search; marketing and LinkedIn → proposed Publisher; PRD/Skill generation → Improve/Dev; stories and image descriptions → Storyteller; other generator ideas → root app `ideas.md` and `tasks.md` until required.
 
 **Status:** Source/discovery register and [credited public resource page](https://karstenevans.github.io/aletheia-knowledge/resources/usefulprompts-ai-rsc.htm). This is not a new AI-provider capability claim, independently functioning tool suite or a copied course; any changing claims require independent verification.
+
+## AI course and official research discovery sources (24 November 2026)
+
+**Scope:** User-supplied course shortlist; public course descriptions and prior source review, not full course completion. Use original explanations and exercises, not copied teaching material. Access, enrolment, certificates and API credits may have different costs; recheck before recommending. The existing Stanford review remains canonical for its retrieval and evaluation exercises.
+
+| Source | Suggested level | Access note / reuse |
+| --- | --- | --- |
+| [Microsoft AI learning](https://learn.microsoft.com/en-us/ai/) | 101 / Fluency | Public learning hub; individual credentials or services may cost; responsible use and workflow design |
+| [Google Skills](https://www.skills.google/paths/118) | 101 / Fluency | Check individual enrolment and credit requirements; practical AI literacy |
+| [Vanderbilt generative AI courses](https://www.vanderbilt.edu/generative-ai/coursera/) | Fluency | Coursera access/certificates vary; AI-511 prompt patterns |
+| [Harvard CS50 AI with Python](https://cs50.harvard.edu/ai/) | AIxpert | Public course material; optional credential arrangements separate; classical search, probability and learning |
+| [UC Davis Big Data, AI and Ethics](https://www.coursera.org/learn/big-data-ai-ethics) | Fluency / AIxpert | Check enrolment terms; AI-513 ethics and data governance |
+| [DeepLearning.AI and OpenAI prompting for developers](https://www.deeplearning.ai/courses/chatgpt-prompt-engineering-for-developers/) | Fluency / AIxpert | Check current access and API costs; AI-511 iterative prompting |
+| [edX AI Applications and Prompt Engineering](https://www.edx.org/learn/computer-programming/edx-ai-applications-and-prompt-engineering) | AIxpert | Check audit, assessment and certificate terms; application exercises |
+| [AWS Foundations of Prompt Engineering](https://skillbuilder.aws/learn/VF6H4SZ1BU/foundations-of-prompt-engineering/7U8XFUVXD) | Fluency / AIxpert | Check account, course and cloud service charges separately |
+| [Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/) | 101 | Check enrolment options; capabilities and limitations |
+| [LinkedIn Learning AI literacy](https://www.linkedin.com/learning/paths/building-ai-literacy) | 101 / Fluency | Usually subscription or institutional access; not assumed free |
+| [AI Prompting for Everyone](https://www.deeplearning.ai/courses/ai-prompting-for-everyone/) | Fluency | Additional candidate; verify current access terms |
+
+**Research discovery:** [OpenAI Research](https://openai.com/research/index/), [Google DeepMind](https://deepmind.google/research/), [Anthropic](https://www.anthropic.com/research), [Microsoft Research](https://www.microsoft.com/en-us/research/), [Meta AI Research](https://ai.meta.com/research/). These are discovery channels, not independent validation. Inspect original papers, methods, datasets, limitations and independent replications. Use the existing [Aletheia Go research discussion workflow](https://github.com/KarstenEvans/aletheia/blob/main/DISCUSSIONS.md#aletheia-go-research-discussions). Avoid duplicate cards; relevant existing IDs AI-504 and AI-510–514 were extended in place.
