@@ -199,3 +199,7 @@ Read current repository guides (\`README.md\`, \`aletheia-knowledge-GUI.md\`, \`
 - [MicroVisie 2015/1: Level Name Dictionary warning and historical compress behaviour](https://tmc-nederland.nl/protected_download.php?file=%2Fwp-content%2Fuploads%2F2018%2F03%2FMicroVisie-2015-1.pdf)
 
 **Provenance:** User's original proposed troubleshooting route and requirements are firsthand operational context; product behaviour above is separately attributed. No runnable tool has been created or safety-tested by writing this document.
+
+## SCOUT S4 — visual evidence preservation (24 November 2026)
+
+The [MKA benchmark](https://artificialanalysis.ai/evaluations/mka) evaluates professional work involving visually dense files; see the [18 November preprint](https://arxiv.org/abs/2611.25228). It does not validate Bentley DGN/iDGN or IFC diagnostics. Extend AK-093 research, not a new app: prepare a synthetic non-confidential reference tree and schematic with a missing reference, repeated labels, crossing lines without junction, a known dimension and a revision discrepancy. Compare text-only extraction, original visual input and combined structured metadata plus visual evidence on identical tasks. Use known ground truth, record page/view coordinates and source revision, count wrong/missed relationships and unsupported inferences, and record model/tool access and costs. Never infer hidden geometry from a screenshot; use supported CAD/IFC metadata and professional review. No live engineering data, file modification or test execution authorised by this note.
