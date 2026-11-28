@@ -1,3 +1,9 @@
+## AK-RESEARCH-SOURCES-0.1 | 28 November 2026
+
+- [x] Canonical [Aletheia Research Sources](knowledge/aletheia-research-sources.md) committed and read back; five core and five supporting sources.
+- [x] Register as knowledge-only in the Knowledge manifest and README; no new HTML reader required.
+- [ ] Receiving-AI research coverage/claim checks, live API access and public Pages discovery test; no claim that a source search has been executed by installing the register.
+
 ## AK-MAKE-A-WILL-0.1 | 18 November 2026
 
 **Status:** Knowledge-only collection committed and indexed in `knowledge/knowledge.json`: [Make a Will Knowledge](knowledge/aletheia-make-a-will-knowledge.md). Nine source-linked sections cover wills, family handover, probate, gifts, trusts, pensions, first-time buyer ISAs and trustworthy advice. The interactive app remains owned by `KarstenEvans/aletheia-app`; there is no duplicate Knowledge-specific browser app.
