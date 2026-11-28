@@ -9,6 +9,10 @@ Project principle: **Reveal harmful cells, restore useful clearance, redirect im
 
 > This public file records research hypotheses and independently attributable findings. It is neither a cancer-treatment protocol nor an instruction to use medicines, supplements or unapproved interventions. It contains no personal health information.
 
+## Research continuation
+
+For new investigations or material updates, retrieve [Aletheia Research Sources](https://raw.githubusercontent.com/KarstenEvans/aletheia-knowledge/main/knowledge/aletheia-research-sources.md) and apply its biomedical source and evidence rules. Distinguish human, animal, cell, computational and hypothesis-level findings; check linked preprint/publication versions and conflicting evidence. This workflow link does not update the last evidence-review date or establish a new treatment claim.
+
 ## Philosophy: the internal war is not simply good cells against bad cells
 
 Many biological signals have two or more roles. A protective signal may be hijacked by diseased cells; a normal immune reaction may contribute to age-related metabolic dysfunction; a molecule that blocks immune attack in one context can stimulate it in another.
