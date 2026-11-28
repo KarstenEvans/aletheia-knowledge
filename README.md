@@ -13,6 +13,10 @@ Structured, source-traced knowledge libraries and lightweight browser apps for A
 Before editing, read those three guides **and** the current target Markdown/HTML. Every HTML page should have a matching `*-page.md` build specification (see the task register for legacy pages still awaiting theirs). The GitHub source is shared master; reconcile more recent local edits rather than overwriting them. Canonical facts live in `knowledge/`; the runnable website lives on GitHub Pages.
 
 
+## Shared scholarly research
+
+- [Aletheia Research Sources](knowledge/aletheia-research-sources.md) — canonical free-first register for scientific/medical/scholarly research; retrieve on demand for materially relevant research, record coverage and limitations, retain original evidence and avoid counting preprints and journal versions twice. No mandatory API or background search.
+
 ## Repository structure
 
 - `app/` — lightweight `.htm` interfaces.
