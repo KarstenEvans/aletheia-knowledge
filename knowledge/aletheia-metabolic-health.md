@@ -7,6 +7,10 @@ Purpose: preserve useful, source-traced findings without turning association int
 
 > This is general health knowledge, not a personal medical record. Personal symptoms, medicines, laboratory results or diagnoses do not belong in this public knowledge file.
 
+## Research continuation
+
+For new investigations or material updates to these knowledge nodes, retrieve [Aletheia Research Sources](https://raw.githubusercontent.com/KarstenEvans/aletheia-knowledge/main/knowledge/aletheia-research-sources.md) and apply its biomedical evidence rules. Prioritise PubMed and Europe PMC, consider relevant preprints and systematic reviews, and record access, study type, contrary evidence and limitations. This workflow link does not change any previously recorded finding or imply a new evidence review.
+
 ## MH-FOOD-001 | Ultraprocessed food can alter post-meal metabolism even when nutrition labels are closely matched
 
 ### Summary
