@@ -1,6 +1,6 @@
 {
   "schema": "aletheia-knowledge-manifest-v1",
-  "updated": "2026-11-18",
+  "updated": "2026-11-28",
   "purpose": "Explicit inventory for the static Aletheia Knowledge library. GitHub Pages cannot enumerate repository folders at runtime.",
   "collections": [
     {
@@ -179,6 +179,14 @@
       "knowledge": "aletheia-make-a-will-knowledge.md",
       "app": "https://karstenevans.github.io/aletheia-app/aletheia-make-a-will/aletheia-make-a-will.htm",
       "description": "England and Wales: ordinary wills, family handover, probate, lawful gifting, pensions and multigenerational family legacy planning."
+    },
+    {
+      "slug": "aletheia-research-sources",
+      "title": "Aletheia Research Sources",
+      "kind": "research",
+      "status": "knowledge-only",
+      "knowledge": "aletheia-research-sources.md",
+      "description": "Canonical scholarly research source register: arXiv, PubMed, Europe PMC, bioRxiv, medRxiv and five supporting sources; evidence coverage, deduplication and portable knowledge nodes."
     }
   ]
 }
