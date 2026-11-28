@@ -2,6 +2,7 @@
 
 - [x] Canonical [Aletheia Research Sources](knowledge/aletheia-research-sources.md) committed and read back; five core and five supporting sources.
 - [x] Register as knowledge-only in the Knowledge manifest and README; no new HTML reader required.
+- [x] Metabolic Health and Ageing War records include a forward-looking research-continuation link; prior evidence and evidence-review dates unchanged.
 - [ ] Receiving-AI research coverage/claim checks, live API access and public Pages discovery test; no claim that a source search has been executed by installing the register.
 
 ## AK-MAKE-A-WILL-0.1 | 18 November 2026
